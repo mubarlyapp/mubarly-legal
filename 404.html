@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mubarly</title>
+<style>
+:root{color-scheme:light dark;--bg:#F4EEDF;--fg:#0B3B2C;--muted:#5F5A48;--gold:#9A7424;--card:#fffaf0}
+@media (prefers-color-scheme:dark){:root{--bg:#061A13;--fg:#EDE6CF;--muted:#BDB292;--gold:#D4B062;--card:#0b2a1f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:48px 16px;text-align:center}
+.card{background:var(--card);border-radius:16px;padding:24px 20px;margin-top:20px}
+a.btn{display:block;margin:12px 0;padding:14px 16px;border-radius:999px;background:var(--gold);color:#fff;text-decoration:none;font-weight:700}
+a.alt{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
+p{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>Mubarly</h1>
+<div class="card">
+<p id="msg">Bağlantı Mubarly uygulamasında açılıyor… · Opening in the Mubarly app…</p>
+<a class="btn" id="open" href="#">Uygulamada aç · Open in the app</a>
+<a class="btn alt" href="https://play.google.com/store/apps/details?id=app.mubarly">Google Play’den indir · Get it on Google Play</a>
+</div>
+<p><a href="/mubarly-legal/" style="color:var(--gold)">Gizlilik ve şartlar · Privacy and terms</a></p>
+</main>
+<script>
+// A shared Mubarly link (an invite or a dua: /dua/<id>, /rings?join=, /family?join=, /my-mosque?join=) is not a page
+// of this site: it is opened in the installed app (mubarly://...), with the Play Store as the way to get the app.
+(function () {
+  var path = location.pathname.replace(/^\/mubarly-legal/, '');
+  var known = /^\/(dua|ring|rings|family|my-mosque)(\/|$)/.test(path);
+  var open = document.getElementById('open');
+  if (!known) {
+    document.getElementById('msg').textContent = 'Sayfa bulunamadı · Page not found';
+    open.style.display = 'none';
+    return;
+  }
+  var app = 'mubarly:/' + path + location.search;
+  open.href = app;
+  location.href = app;
+})();
+</script>
+</body>
+</html>
