@@ -78,6 +78,8 @@ h1{font-size:clamp(1.75rem,4.2vw,2.9rem);line-height:1.15;margin:0 0 16px;letter
 .lead{font-size:1.12rem;color:#d9d1b8;margin:0 0 24px;max-width:34em}
 .stores{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 36px}.stores a{display:inline-block;padding:12px 20px;border-radius:999px;background:#D4B062;color:#061A13;text-decoration:none;font-weight:700}
 .stores a.badge{padding:0;background:none;border-radius:0}.stores a.badge img{display:block;width:200px;height:auto}
+.stores a.ag{display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;width:172px;height:59px;margin:9px;padding:0 18px;border-radius:9px;border:1px solid #a6a6a6;background:#000;color:#fff;font:600 1.3rem/1.05 system-ui,sans-serif;letter-spacing:-.01em}
+.stores a.ag small{font-size:.58rem;font-weight:500;letter-spacing:.14em;color:#ddd}
 .hero figure{margin:0;align-self:end;text-align:center}.hero figure img{width:min(340px,100%);height:auto;display:inline-block;border-radius:26px 26px 0 0;box-shadow:0 -10px 60px #0008}
 .shots{padding-top:48px;padding-bottom:8px}.shots h2,.about h2.title{font-size:1.4rem;color:var(--fg);margin:0 0 18px;letter-spacing:0}
 .strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-width:thin}
@@ -87,7 +89,8 @@ h1{font-size:clamp(1.75rem,4.2vw,2.9rem);line-height:1.15;margin:0 0 16px;letter
 .doc h2{font-size:1.04rem;letter-spacing:.02em;margin:1.4em 0 .3em;color:var(--gold)}ul{padding-inline-start:1.2em;margin:.3em 0}li{margin:.15em 0}
 footer{padding:28px 0 48px;border-top:1px solid var(--line);margin-top:40px}.meta{color:var(--muted);font-size:.92rem}
 nav.langs{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.95rem;margin:0 0 16px}nav.legal{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.92rem;margin:0 0 10px}
-@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:8px;padding-top:28px}.stores{margin-bottom:24px}.hero figure img{width:min(300px,82%)}.strip{grid-auto-columns:62%}.doc{padding:6px 18px 18px}}</style>
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:8px;padding-top:28px}.stores{margin-bottom:24px}.hero figure img{width:min(300px,82%)}.stores{gap:8px}.stores a.badge img{width:170px}.stores a.ag{width:146px;height:50px;margin:7.7px;padding:0 14px;font-size:1.1rem;border-radius:8px}.strip{grid-auto-columns:62%}.doc{padding:6px 18px 18px}}
+@media (max-width:380px){.stores a.badge img{width:156px}.stores a.ag{width:134px;height:46px;margin:7px;padding:0 12px;font-size:1rem}}</style>
 </head>
 <body>
 <header class="hero">
@@ -96,7 +99,7 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.95rem;margin:0 0 1
 <div class="brand"><img src="../img/icon-192.png" alt="" width="52" height="52"><span>MUBARLY</span></div>
 <h1>Mubarly: نماز ٹائم، قرآن پاک</h1>
 <p class="lead">لاہور، اسلام آباد، کراچی، ریاض، دبئی یا دنیا وچ کتے وی، Mubarly اج دا نماز ٹائم تہاڈے فون تے ای حساب کردی اے، تے فون سائلنٹ تے ہووے تاں وی اذان الارم وانگوں وج سکدی اے۔ قبلہ ڈائریکشن، سحری تے افطاری دا ٹائم، قرآن پاک تلاوت تے انگریزی ترجمے نال، تے قضا نمازاں دا حساب وی ایسے ایپ وچ نیں۔</p>
-<div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ur&utm_source=mubarly_site&utm_campaign=landing_pa" rel="noopener"><img src="../img/badges/ur.png" alt="Google Play" width="200" height="77"></a></div>
+<div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ur&utm_source=mubarly_site&utm_campaign=landing_pa" rel="noopener"><img src="../img/badges/ur.png" alt="Google Play" width="200" height="77"></a><a class="ag" href="https://appgallery.huawei.com/app/C119470731" rel="noopener" aria-label="Huawei AppGallery"><small>HUAWEI</small>AppGallery</a></div>
 </div>
 <figure><img src="../img/screens/ur/01-360.webp" srcset="../img/screens/ur/01-360.webp 360w, ../img/screens/ur/01-720.webp 720w" sizes="(max-width:760px) 300px, 340px" width="360" height="640" alt="نماز ٹائم تے اذان – اگلی نماز تے اج دے ویلے" fetchpriority="high" decoding="async"></figure>
 </div>
@@ -190,8 +193,9 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.95rem;margin:0 0 1
 </section>
 </main>
 <footer class="wrap">
-<nav class="langs" aria-label="Languages"><a href="../" lang="en" hreflang="en">English</a><a href="../tr/" lang="tr" hreflang="tr">Türkçe</a><a href="../ar/" lang="ar" hreflang="ar">العربية</a><a href="../id/" lang="id" hreflang="id">Bahasa Indonesia</a><a href="../ur/" lang="ur" hreflang="ur">اردو</a><a href="../fr/" lang="fr" hreflang="fr">Français</a><a href="../ru/" lang="ru" hreflang="ru">Русский</a><a href="../bn/" lang="bn" hreflang="bn">বাংলা</a><a href="../fa/" lang="fa" hreflang="fa">فارسی</a><a href="../ms/" lang="ms" hreflang="ms">Bahasa Melayu</a><a href="../sw/" lang="sw" hreflang="sw">Kiswahili</a><a href="../ha/" lang="ha" hreflang="ha">Hausa</a><a href="../uz/" lang="uz" hreflang="uz">Oʻzbekcha</a><a href="../ky/" lang="ky" hreflang="ky">Кыргызча</a><a href="../so/" lang="so" hreflang="so">Soomaali</a><a href="../ckb/" lang="ku-Arab" hreflang="ku-Arab">کوردی</a><a href="../hi/" lang="hi" hreflang="hi">हिन्दी</a><a href="../ps/" lang="ps" hreflang="ps">پښتو</a><a href="../ku/" lang="ku-Latn" hreflang="ku-Latn">Kurmancî</a><strong lang="pa-Arab">پنجابی</strong></nav>
+<nav class="langs" aria-label="Languages"><a href="../" data-lang="en" lang="en" hreflang="en">English</a><a href="../tr/" data-lang="tr" lang="tr" hreflang="tr">Türkçe</a><a href="../ar/" data-lang="ar" lang="ar" hreflang="ar">العربية</a><a href="../id/" data-lang="id" lang="id" hreflang="id">Bahasa Indonesia</a><a href="../ur/" data-lang="ur" lang="ur" hreflang="ur">اردو</a><a href="../fr/" data-lang="fr" lang="fr" hreflang="fr">Français</a><a href="../ru/" data-lang="ru" lang="ru" hreflang="ru">Русский</a><a href="../bn/" data-lang="bn" lang="bn" hreflang="bn">বাংলা</a><a href="../fa/" data-lang="fa" lang="fa" hreflang="fa">فارسی</a><a href="../ms/" data-lang="ms" lang="ms" hreflang="ms">Bahasa Melayu</a><a href="../sw/" data-lang="sw" lang="sw" hreflang="sw">Kiswahili</a><a href="../ha/" data-lang="ha" lang="ha" hreflang="ha">Hausa</a><a href="../uz/" data-lang="uz" lang="uz" hreflang="uz">Oʻzbekcha</a><a href="../ky/" data-lang="ky" lang="ky" hreflang="ky">Кыргызча</a><a href="../so/" data-lang="so" lang="so" hreflang="so">Soomaali</a><a href="../ckb/" data-lang="ckb" lang="ku-Arab" hreflang="ku-Arab">کوردی</a><a href="../hi/" data-lang="hi" lang="hi" hreflang="hi">हिन्दी</a><a href="../ps/" data-lang="ps" lang="ps" hreflang="ps">پښتو</a><a href="../ku/" data-lang="ku" lang="ku-Latn" hreflang="ku-Latn">Kurmancî</a><strong lang="pa-Arab">پنجابی</strong></nav>
 <nav class="legal"><a href="../privacy.html">رازداری دی پالیسی</a><a href="../terms.html">ورتن دیاں شرطاں</a><a href="../delete-account.html">میرا کھاتہ مٹاؤ</a></nav>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('nav.langs a[data-lang]');if(a)try{localStorage.setItem('lang',a.getAttribute('data-lang'))}catch(x){}});</script>
 <p class="meta">© Mubarly · <a href="mailto:support@mubarly.com">support@mubarly.com</a></p>
 </footer>
 </body>
