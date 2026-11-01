@@ -91,8 +91,8 @@ a{color:var(--gold)}img{max-width:100%}.wrap{width:100%;max-width:1160px;margin:
 h1{font-size:clamp(2.2rem,5.4vw,4rem);line-height:1.04;letter-spacing:-.025em;margin:0 0 20px;font-weight:800}
 h1 em{font-style:normal;background:linear-gradient(90deg,#F2D58C,#C9973A);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{font-size:1.15rem;color:#CFC6AA;margin:0 0 30px;max-width:36em}
-.stores{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.stores a.badge{display:block;line-height:0}.stores a.badge img{width:200px;height:auto}
-.stores a.agb{display:block;line-height:0;margin-inline:4px}.stores a.agb img{display:block;width:auto;height:52px}
+.stores{display:flex;flex-direction:column;align-items:flex-start;gap:10px}.stores .badge{display:block;line-height:0}.stores .badge img{display:block;width:180px;height:auto}
+.stores .soon{display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;width:180px;height:54px;padding-inline:18px;border-radius:9px;border:1px dashed #ffffff59;color:#EDE6CF;font:600 1.15rem/1.1 system-ui,sans-serif}.stores .soon small{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#D4B062}
 .chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:26px 0 0}.chips li{padding:6px 12px;border-radius:999px;font-size:.88rem;color:#E8DDBB;background:#ffffff0d;border:1px solid #ffffff1c}
 .phones{position:relative;height:600px}.phones figure{position:absolute;margin:0;width:290px;border-radius:30px;overflow:hidden;box-shadow:0 40px 80px -30px #000,0 0 0 1px #ffffff1a}
 .phones img{display:block;width:100%;height:auto}.phones .p1{inset-inline-start:22%;top:0;transform:rotate(-3deg);z-index:2;animation:float 7s ease-in-out infinite}
@@ -122,7 +122,7 @@ h2{font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.12;letter-spacing:-.02em;m
 .cities h2 a{color:#F3E7C2;text-decoration:none}.cities .sub{color:#CFC6AA}.cities ul{position:relative;list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px}
 .cities li a{display:inline-block;padding:8px 16px;border-radius:999px;background:#ffffff0f;border:1px solid #ffffff22;color:#EDE6CF;text-decoration:none;transition:background .2s}.cities li a:hover{background:#d4b06233}
 .cities .all{position:relative;display:inline-block;margin-top:24px;font-weight:700;color:var(--gold2)}
-.download{text-align:center}.download .icon{width:104px;height:104px;border-radius:26px;box-shadow:var(--shadow);margin-bottom:24px}.download .stores{justify-content:center;margin-top:28px}
+.download{text-align:center}.download .icon{width:104px;height:104px;border-radius:26px;box-shadow:var(--shadow);margin-bottom:24px}.download .stores{align-items:center;margin-top:28px}.download .soon{color:var(--fg);border-color:var(--muted)}.download .soon small{color:var(--gold)}
 footer{background:var(--deep);color:#BDB292;padding:64px 0 36px;font-size:.95rem}footer a{color:#E2D6B2;text-decoration:none}footer a:hover{color:var(--gold2)}
 .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.cols .h{color:#F1E7C8;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
 .cols nav{display:flex;flex-direction:column;gap:8px}footer .brand{margin-bottom:14px}footer .about{margin:0;max-width:30em}
@@ -133,8 +133,8 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 16px;margin:40px 0 0;padding-top:2
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:20px;padding-top:36px;padding-bottom:90px}.phones{height:470px}.phones figure{width:230px}.phones .p1{inset-inline-start:8%}.phones .p2{inset-inline-start:40%;top:44px}.halo{width:320px;height:320px}
 .row,.row:nth-child(even){grid-template-columns:1fr;gap:28px}.row:nth-child(even) .pic{order:0}.spot{gap:72px}.sec{padding-block:72px}.cols{grid-template-columns:1fr 1fr}.cols>div:first-child{grid-column:1/-1}.cities .box{padding:40px 24px;border-radius:24px}}
 @media (max-width:520px){.wrap{padding-inline:16px}.bar .pill{display:none}.lang-menu summary span{display:none}h1{font-size:2.15rem}.phones{height:400px}.phones figure{width:196px;border-radius:22px}.phones .p1{inset-inline-start:4%}.phones .p2{inset-inline-start:42%}
-.stores a.badge img{width:170px}.stores a.badge img{width:160px}.stores a.agb img{height:42px}.num{font-size:3.4rem}.strip{grid-auto-columns:68%}.cols{grid-template-columns:1fr}.card{padding:22px 20px}}
-@media (max-width:380px){.stores a.badge img{width:148px}.stores a.agb img{height:38px}}</style>
+.num{font-size:3.4rem}.strip{grid-auto-columns:68%}.cols{grid-template-columns:1fr}.card{padding:22px 20px}}
+</style>
 </head>
 <body>
 <div class="bar"><div class="wrap">
@@ -148,7 +148,7 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 16px;margin:40px 0 0;padding-top:2
 <p class="eyebrow"><svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true"><g fill="#D4B062"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Entendez l’adhan au volume de l’alarme, même en silencieux</p>
 <h1>Mubarly: <em>Horaires de prière</em></h1>
 <p class="lead">Mubarly calcule les horaires de prière de votre ville, partout dans le monde, et l’adhan peut sonner même en silencieux. Vous y trouverez aussi la direction de la qibla, le Coran en arabe et en français, les invocations du matin et du soir, un guide pour apprendre la prière et les 99 noms d’Allah.</p>
-<div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=landing_fr" rel="noopener"><img src="../img/badges/fr.png" alt="Google Play" width="200" height="77"></a><a class="agb" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="../img/badges/appgallery.svg" alt="Explore it on AppGallery" width="175" height="52"></a></div>
+<div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=landing_fr" rel="noopener"><img src="../img/badges/fr.png" alt="Google Play" width="180" height="54"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="../img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54"></a><span class="badge soon" role="img" aria-label="App Store – Bientôt disponible"><small>Bientôt disponible</small>App Store</span></div>
 <ul class="chips"><li>Gratuit</li><li>hors ligne</li><li>20 langues</li><li>les quatre écoles</li></ul>
 </div>
 <div class="phones" aria-hidden="false"><div class="halo"></div><figure class="p2"><img src="../img/screens/fr/02-360.webp" srcset="../img/screens/fr/02-360.webp 360w, ../img/screens/fr/02-720.webp 720w" sizes="(max-width:760px) 300px, 340px" width="360" height="640" alt="L’adhan, même en silencieux – Au volume de l’alarme, prière par prière" loading="lazy" decoding="async"></figure><figure class="p1"><img src="../img/screens/fr/01-360.webp" srcset="../img/screens/fr/01-360.webp 360w, ../img/screens/fr/01-720.webp 720w" sizes="(max-width:760px) 300px, 340px" width="360" height="640" alt="Horaires de prière et adhan – Pour votre ville, partout dans le monde" fetchpriority="high" decoding="async"></figure></div>
@@ -198,7 +198,7 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 16px;margin:40px 0 0;padding-top:2
 <img class="icon reveal" src="../img/icon-192.png" alt="Mubarly" width="104" height="104" loading="lazy">
 <h2 class="reveal">Entendez l’adhan au volume de l’alarme, même en silencieux</h2>
 <p class="sub reveal" style="margin-inline:auto">Gratuit · hors ligne · 20 langues · les quatre écoles</p>
-<div class="stores reveal"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=landing_fr" rel="noopener"><img src="../img/badges/fr.png" alt="Google Play" width="200" height="77"></a><a class="agb" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="../img/badges/appgallery.svg" alt="Explore it on AppGallery" width="175" height="52"></a></div>
+<div class="stores reveal"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=landing_fr" rel="noopener"><img src="../img/badges/fr.png" alt="Google Play" width="180" height="54"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="../img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54"></a><span class="badge soon" role="img" aria-label="App Store – Bientôt disponible"><small>Bientôt disponible</small>App Store</span></div>
 </section>
 </main>
 <footer>
