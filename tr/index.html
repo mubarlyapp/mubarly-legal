@@ -66,123 +66,151 @@
 <link rel="icon" type="image/png" href="../img/icon-192.png">
 <link rel="apple-touch-icon" href="../img/icon-192.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MobileApplication","name":"Mubarly","alternateName":"Mubarly: Namaz Vakitleri, Ezan","description":"Sessizde de ezan vakti alarmı, kıble pusulası, Kuran, imsakiye ve zikirmatik","url":"https://mubarly.com/tr/","image":"https://mubarly.com/img/icon-512.png","screenshot":["https://mubarly.com/img/screens/tr/01-720.webp","https://mubarly.com/img/screens/tr/02-720.webp","https://mubarly.com/img/screens/tr/03-720.webp","https://mubarly.com/img/screens/tr/04-720.webp","https://mubarly.com/img/screens/tr/05-720.webp","https://mubarly.com/img/screens/tr/06-720.webp","https://mubarly.com/img/screens/tr/07-720.webp","https://mubarly.com/img/screens/tr/08-720.webp"],"operatingSystem":"Android","applicationCategory":"LifestyleApplication","inLanguage":["en","tr","ar","id","ur","fr","ru","bn","fa","ms","sw","ha","uz","ky","so","ku-Arab","hi","ps","ku-Latn","pa-Arab"],"installUrl":"https://play.google.com/store/apps/details?id=app.mubarly","downloadUrl":"https://play.google.com/store/apps/details?id=app.mubarly","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Mubarly","url":"https://mubarly.com/"}}]}</script>
-<style>:root{color-scheme:light dark;--bg:#F4EEDF;--fg:#0B3B2C;--muted:#5F5A48;--gold:#9A7424;--card:#fffaf0;--line:#e4dac2}
-@media (prefers-color-scheme:dark){:root{--bg:#061A13;--fg:#EDE6CF;--muted:#BDB292;--gold:#D4B062;--card:#0b2a1f;--line:#173d2f}}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif}
-a{color:var(--gold)}img{max-width:100%}.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-.hero{color:#EDE6CF;background:radial-gradient(120% 90% at 85% 10%,#174d39 0,#0B3B2C 38%,#061A13 100%);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding-top:40px;padding-bottom:0}
-.brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}.brand img{width:52px;height:52px;border-radius:14px;box-shadow:0 6px 20px #0006}
-.brand span{color:#D4B062;font-weight:700;letter-spacing:.22em;font-size:1rem}
-h1{font-size:clamp(1.75rem,4.2vw,2.9rem);line-height:1.15;margin:0 0 16px;letter-spacing:-.01em}
-.lead{font-size:1.12rem;color:#d9d1b8;margin:0 0 24px;max-width:34em}
-.stores{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 36px}.stores a{display:inline-block;padding:12px 20px;border-radius:999px;background:#D4B062;color:#061A13;text-decoration:none;font-weight:700}
-.stores a.badge{padding:0;background:none;border-radius:0}.stores a.badge img{display:block;width:200px;height:auto}
-.stores a.ag{display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;width:172px;height:59px;margin:9px;padding:0 18px;border-radius:9px;border:1px solid #a6a6a6;background:#000;color:#fff;font:600 1.3rem/1.05 system-ui,sans-serif;letter-spacing:-.01em}
+<link rel="preload" href="/fonts/jakarta-800.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{color-scheme:light dark;--bg:#F6F1E4;--bg2:#EFE7D3;--fg:#0B2F24;--muted:#5D5A4A;--gold:#A87F2A;--gold2:#D4B062;--card:#FFFBF2;--line:#E6DCC4;--deep:#061A13;--green:#0B3B2C;--shadow:0 24px 60px -24px #0b3b2c55}
+@media (prefers-color-scheme:dark){:root{--bg:#071C15;--bg2:#0A241B;--fg:#EEE7D2;--muted:#B9AF92;--gold:#D4B062;--card:#0D2A20;--line:#1B3F31;--shadow:0 24px 60px -24px #000c}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;overflow-x:hidden}
+h1,h2,h3,.brand span,.num{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif}
+a{color:var(--gold)}img{max-width:100%}.wrap{width:100%;max-width:1160px;margin:0 auto;padding-inline:20px}
+.bar{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);background:#061a13c4;border-bottom:1px solid #ffffff14}
+.bar .wrap{display:flex;align-items:center;gap:14px;height:64px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-inline-end:auto}
+.brand img{width:36px;height:36px;border-radius:10px}.brand span{color:var(--gold2);font-weight:800;letter-spacing:.2em;font-size:.95rem}
+.lang-menu{position:relative;color:#EDE6CF;font-size:.92rem}.lang-menu summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid #ffffff2a;border-radius:999px}
+.lang-menu summary::-webkit-details-marker{display:none}.lang-menu[open] summary{background:#ffffff14}
+.lang-menu nav{position:absolute;inset-inline-end:0;top:calc(100% + 8px);width:min(520px,calc(100vw - 40px));display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:2px;padding:10px;background:#0B2A1F;border:1px solid #ffffff1f;border-radius:16px;box-shadow:0 30px 60px -20px #000}
+.lang-menu nav a,.lang-menu nav strong{display:block;padding:8px 10px;border-radius:10px;color:#EDE6CF;text-decoration:none}.lang-menu nav a:hover{background:#ffffff12}.lang-menu nav strong{color:var(--gold2)}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--gold2);color:#061A13;font-weight:700;text-decoration:none;font-size:.92rem;white-space:nowrap}
+.hero{position:relative;color:#EDE6CF;background:radial-gradient(60% 70% at 78% 30%,#1d5a42 0,transparent 70%),radial-gradient(50% 60% at 10% 90%,#3a2f0f66 0,transparent 70%),linear-gradient(160deg,#0B3B2C 0,#061A13 70%);overflow:hidden;margin-top:-64px;padding-top:64px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;mask-image:linear-gradient(180deg,#000 30%,transparent 95%);-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 95%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:110px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 20px;padding:7px 14px 7px 8px;border-radius:999px;background:#ffffff10;border:1px solid #d4b0623d;color:#EADFBF;font-size:.9rem}
+.eyebrow svg{flex:none}
+h1{font-size:clamp(2.2rem,5.4vw,4rem);line-height:1.04;letter-spacing:-.025em;margin:0 0 20px;font-weight:800}
+h1 em{font-style:normal;background:linear-gradient(90deg,#F2D58C,#C9973A);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:#CFC6AA;margin:0 0 30px;max-width:36em}
+.stores{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.stores a.badge{display:block;line-height:0}.stores a.badge img{width:200px;height:auto}
+.stores a.ag{display:flex;flex-direction:column;justify-content:center;width:172px;height:59px;margin:9px;padding:0 18px;border-radius:9px;border:1px solid #a6a6a6;background:#000;color:#fff;text-decoration:none;font:600 1.3rem/1.05 system-ui,sans-serif;letter-spacing:-.01em}
 .stores a.ag small{font-size:.58rem;font-weight:500;letter-spacing:.14em;color:#ddd}
-.hero figure{margin:0;align-self:end;text-align:center}.hero figure img{width:min(340px,100%);height:auto;display:inline-block;border-radius:26px 26px 0 0;box-shadow:0 -10px 60px #0008}
-.shots{padding-top:48px;padding-bottom:8px}.shots h2,.about h2.title{font-size:1.4rem;color:var(--fg);margin:0 0 18px;letter-spacing:0}
-.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-width:thin}
-.strip figure{margin:0;scroll-snap-align:start}.strip img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 8px 24px #0002}
-.strip figcaption{margin-top:10px;font-weight:700;line-height:1.35}.strip figcaption small{display:block;font-weight:400;color:var(--muted);margin-top:2px}
-.about{padding-top:24px;padding-bottom:8px}.doc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:8px 24px 22px}
-.doc h2{font-size:1.04rem;letter-spacing:.02em;margin:1.4em 0 .3em;color:var(--gold)}ul{padding-inline-start:1.2em;margin:.3em 0}li{margin:.15em 0}
-footer{padding:28px 0 48px;border-top:1px solid var(--line);margin-top:40px}.meta{color:var(--muted);font-size:.92rem}
-.cities{padding-top:32px}.cities h2{font-size:1.4rem;margin:0 0 14px}.cities h2 a{color:var(--fg);text-decoration:none}.cities ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}.cities li a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none;color:var(--fg)}
-nav.langs{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.95rem;margin:0 0 16px}nav.legal{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.92rem;margin:0 0 10px}
-@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:8px;padding-top:28px}.stores{margin-bottom:24px}.hero figure img{width:min(300px,82%)}.stores{gap:8px}.stores a.badge img{width:170px}.stores a.ag{width:146px;height:50px;margin:7.7px;padding:0 14px;font-size:1.1rem;border-radius:8px}.strip{grid-auto-columns:62%}.doc{padding:6px 18px 18px}}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:26px 0 0}.chips li{padding:6px 12px;border-radius:999px;font-size:.88rem;color:#E8DDBB;background:#ffffff0d;border:1px solid #ffffff1c}
+.phones{position:relative;height:600px}.phones figure{position:absolute;margin:0;width:290px;border-radius:30px;overflow:hidden;box-shadow:0 40px 80px -30px #000,0 0 0 1px #ffffff1a}
+.phones img{display:block;width:100%;height:auto}.phones .p1{inset-inline-start:22%;top:0;transform:rotate(-3deg);z-index:2;animation:float 7s ease-in-out infinite}
+.phones .p2{inset-inline-start:46%;top:60px;transform:rotate(7deg);opacity:.92;animation:float 7s ease-in-out -3.5s infinite}
+.halo{position:absolute;inset-inline-start:20%;top:12%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,#d4b06255,transparent 65%);filter:blur(10px)}
+@keyframes float{50%{translate:0 -14px}}
+.wave{position:absolute;inset-inline:0;bottom:-1px;width:100%;height:70px;display:block}
+section{position:relative}.sec{padding-block:96px}.kicker{display:flex;align-items:center;gap:10px;color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;margin:0 0 14px}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 16px;font-weight:800}.sub{color:var(--muted);font-size:1.1rem;max-width:44em;margin:0}
+.spot{display:grid;gap:120px;margin-top:64px}.row{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.row:nth-child(even) .pic{order:2}
+.pic{position:relative;display:flex;justify-content:center}.pic:before{content:"";position:absolute;inset:8% 14%;border-radius:40px;background:linear-gradient(140deg,var(--gold2),#0B3B2C);opacity:.28;transform:rotate(-6deg)}
+.pic img{position:relative;width:min(340px,100%);height:auto;border-radius:28px;box-shadow:var(--shadow)}
+.num{font-size:4.5rem;line-height:1;font-weight:800;color:transparent;-webkit-text-stroke:1.5px var(--gold);margin:0 0 10px}
+.row h3{font-size:clamp(1.5rem,2.8vw,2.2rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 12px}.row p{color:var(--muted);font-size:1.12rem;margin:0}
+.features{background:var(--bg2)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin-top:48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 24px 22px;transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card h3{display:flex;align-items:center;gap:12px;font-size:1.12rem;line-height:1.3;margin:0 0 12px}.card svg{flex:none}
+.card ul{margin:0;padding-inline-start:1.1em;color:var(--muted);font-size:.97rem}.card li{margin:.25em 0}.card li::marker{color:var(--gold)}
+.promise{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:22px}.promise p{margin:0;padding:22px 24px;border-radius:22px;background:linear-gradient(135deg,#0B3B2C,#061A13);color:#DDD3B4;font-size:1rem}
+.gallery{overflow:hidden}.strip{display:grid;grid-auto-flow:column;grid-auto-columns:250px;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 20px 26px;margin-top:40px;scrollbar-width:thin}
+.strip figure{margin:0;scroll-snap-align:center}.strip img{display:block;width:100%;height:auto;border-radius:24px;box-shadow:var(--shadow)}
+.strip figcaption{margin-top:14px;font-weight:700;line-height:1.35}.strip figcaption small{display:block;font-weight:400;color:var(--muted);margin-top:3px}
+.cities .box{position:relative;overflow:hidden;border-radius:32px;padding:56px 48px;color:#EDE6CF;background:linear-gradient(150deg,#0B3B2C,#061A13)}
+.cities .box:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.06}
+.cities h2 a{color:#F3E7C2;text-decoration:none}.cities .sub{color:#CFC6AA}.cities ul{position:relative;list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px}
+.cities li a{display:inline-block;padding:8px 16px;border-radius:999px;background:#ffffff0f;border:1px solid #ffffff22;color:#EDE6CF;text-decoration:none;transition:background .2s}.cities li a:hover{background:#d4b06233}
+.cities .all{position:relative;display:inline-block;margin-top:24px;font-weight:700;color:var(--gold2)}
+.download{text-align:center}.download .icon{width:104px;height:104px;border-radius:26px;box-shadow:var(--shadow);margin-bottom:24px}.download .stores{justify-content:center;margin-top:28px}
+footer{background:var(--deep);color:#BDB292;padding:64px 0 36px;font-size:.95rem}footer a{color:#E2D6B2;text-decoration:none}footer a:hover{color:var(--gold2)}
+.cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.cols h4{color:#F1E7C8;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
+.cols nav{display:flex;flex-direction:column;gap:8px}footer .brand{margin-bottom:14px}footer .about{margin:0;max-width:30em}
+nav.langs{display:flex;flex-wrap:wrap;gap:6px 16px;margin:40px 0 0;padding-top:24px;border-top:1px solid #ffffff14}nav.langs strong{color:var(--gold2)}
+.copy{margin-top:22px;font-size:.88rem;color:#8E866D}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.phones .p1,.phones .p2{animation:none}.card{transition:none}}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:20px;padding-top:36px;padding-bottom:90px}.phones{height:470px}.phones figure{width:230px}.phones .p1{inset-inline-start:8%}.phones .p2{inset-inline-start:40%;top:44px}.halo{width:320px;height:320px}
+.row,.row:nth-child(even){grid-template-columns:1fr;gap:28px}.row:nth-child(even) .pic{order:0}.spot{gap:72px}.sec{padding-block:72px}.cols{grid-template-columns:1fr 1fr}.cols>div:first-child{grid-column:1/-1}.cities .box{padding:40px 24px;border-radius:24px}}
+@media (max-width:520px){.wrap{padding-inline:16px}.bar .pill{display:none}.lang-menu summary span{display:none}h1{font-size:2.15rem}.phones{height:400px}.phones figure{width:196px;border-radius:22px}.phones .p1{inset-inline-start:4%}.phones .p2{inset-inline-start:42%}
+.stores a.badge img{width:170px}.stores a.ag{width:146px;height:50px;margin:7.7px;padding:0 14px;font-size:1.1rem;border-radius:8px}.num{font-size:3.4rem}.strip{grid-auto-columns:68%}.cols{grid-template-columns:1fr}.card{padding:22px 20px}}
 @media (max-width:380px){.stores a.badge img{width:156px}.stores a.ag{width:134px;height:46px;margin:7px;padding:0 12px;font-size:1rem}}</style>
 </head>
 <body>
+<div class="bar"><div class="wrap">
+<a class="brand" href="../"><img src="../img/icon-192.png" alt="" width="36" height="36"><span>MUBARLY</span></a>
+<details class="lang-menu"><summary><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><span>Türkçe</span></summary><nav aria-label="Languages"><a href="../" data-lang="en" lang="en" hreflang="en">English</a><strong lang="tr">Türkçe</strong><a href="../ar/" data-lang="ar" lang="ar" hreflang="ar">العربية</a><a href="../id/" data-lang="id" lang="id" hreflang="id">Bahasa Indonesia</a><a href="../ur/" data-lang="ur" lang="ur" hreflang="ur">اردو</a><a href="../fr/" data-lang="fr" lang="fr" hreflang="fr">Français</a><a href="../ru/" data-lang="ru" lang="ru" hreflang="ru">Русский</a><a href="../bn/" data-lang="bn" lang="bn" hreflang="bn">বাংলা</a><a href="../fa/" data-lang="fa" lang="fa" hreflang="fa">فارسی</a><a href="../ms/" data-lang="ms" lang="ms" hreflang="ms">Bahasa Melayu</a><a href="../sw/" data-lang="sw" lang="sw" hreflang="sw">Kiswahili</a><a href="../ha/" data-lang="ha" lang="ha" hreflang="ha">Hausa</a><a href="../uz/" data-lang="uz" lang="uz" hreflang="uz">Oʻzbekcha</a><a href="../ky/" data-lang="ky" lang="ky" hreflang="ky">Кыргызча</a><a href="../so/" data-lang="so" lang="so" hreflang="so">Soomaali</a><a href="../ckb/" data-lang="ckb" lang="ku-Arab" hreflang="ku-Arab">کوردی</a><a href="../hi/" data-lang="hi" lang="hi" hreflang="hi">हिन्दी</a><a href="../ps/" data-lang="ps" lang="ps" hreflang="ps">پښتو</a><a href="../ku/" data-lang="ku" lang="ku-Latn" hreflang="ku-Latn">Kurmancî</a><a href="../pa/" data-lang="pa" lang="pa-Arab" hreflang="pa-Arab">پنجابی</a></nav></details>
+<a class="pill" href="#download">Google Play</a>
+</div></div>
 <header class="hero">
-<div class="wrap">
+<div class="wrap hero-grid">
 <div>
-<div class="brand"><img src="../img/icon-192.png" alt="" width="52" height="52"><span>MUBARLY</span></div>
-<h1>Mubarly: Namaz Vakitleri, Ezan</h1>
+<p class="eyebrow"><svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true"><g fill="#D4B062"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Ezanı telefon sessizdeyken bile alarm gibi duyun</p>
+<h1>Mubarly: <em>Namaz Vakitleri, Ezan</em></h1>
 <p class="lead">Mubarly, İstanbul'dan Ankara'ya Türkiye'nin 81 ili ve ilçeleri, Köln, Berlin, Frankfurt ve tüm dünya için namaz vakitlerini telefonda hesaplar; Türkiye'deki 853 ilçe takvimiyle karşılaştırmamızda vakitlerin %99'undan fazlası dakikası dakikasına tuttu. İftar sayacı ve kaza namazı hesaplama da içinde.</p>
 <div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=landing_tr" rel="noopener"><img src="../img/badges/tr.png" alt="Google Play" width="200" height="77"></a><a class="ag" href="https://appgallery.huawei.com/app/C119470731" rel="noopener" aria-label="Huawei AppGallery"><small>HUAWEI</small>AppGallery</a></div>
+<ul class="chips"><li>Ücretsiz</li><li>internetsiz çalışır</li><li>20 dil</li><li>dört mezhep</li></ul>
 </div>
-<figure><img src="../img/screens/tr/01-360.webp" srcset="../img/screens/tr/01-360.webp 360w, ../img/screens/tr/01-720.webp 720w" sizes="(max-width:760px) 300px, 340px" width="360" height="640" alt="Namaz vakitleri ve ezan vakti – 81 ilde ve dünyanın her yerinde, internetsiz" fetchpriority="high" decoding="async"></figure>
+<div class="phones" aria-hidden="false"><div class="halo"></div><figure class="p2"><img src="../img/screens/tr/02-360.webp" srcset="../img/screens/tr/02-360.webp 360w, ../img/screens/tr/02-720.webp 720w" sizes="(max-width:760px) 300px, 340px" width="360" height="640" alt="Sessizde de ezan alarmı – Rahatsız Etmeyin’de de, alarm ses düzeyinde" loading="lazy" decoding="async"></figure><figure class="p1"><img src="../img/screens/tr/01-360.webp" srcset="../img/screens/tr/01-360.webp 360w, ../img/screens/tr/01-720.webp 720w" sizes="(max-width:760px) 300px, 340px" width="360" height="640" alt="Namaz vakitleri ve ezan vakti – 81 ilde ve dünyanın her yerinde, internetsiz" fetchpriority="high" decoding="async"></figure></div>
 </div>
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70V34C240 2 480-6 720 18s480 46 720 14V70z" fill="var(--bg)"/></svg>
 </header>
 <main>
-<section class="shots wrap" aria-labelledby="shots-title">
-<h2 id="shots-title">Namaz vakitleri ve ezan vakti</h2>
-<div class="strip">
-<figure><img src="../img/screens/tr/02-360.webp" srcset="../img/screens/tr/02-360.webp 360w, ../img/screens/tr/02-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="Sessizde de ezan alarmı – Rahatsız Etmeyin’de de, alarm ses düzeyinde" loading="lazy" decoding="async"><figcaption>Sessizde de ezan alarmı<small>Rahatsız Etmeyin’de de, alarm ses düzeyinde</small></figcaption></figure>
-<figure><img src="../img/screens/tr/03-360.webp" srcset="../img/screens/tr/03-360.webp 360w, ../img/screens/tr/03-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="Kıble bulma – Manyetik sapma düzeltmeli kıble pusulası" loading="lazy" decoding="async"><figcaption>Kıble bulma<small>Manyetik sapma düzeltmeli kıble pusulası</small></figcaption></figure>
-<figure><img src="../img/screens/tr/04-360.webp" srcset="../img/screens/tr/04-360.webp 360w, ../img/screens/tr/04-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="Kuran-ı Kerim ve Türkçe meal – Sesli Kuran: indirin, internetsiz dinleyin" loading="lazy" decoding="async"><figcaption>Kuran-ı Kerim ve Türkçe meal<small>Sesli Kuran: indirin, internetsiz dinleyin</small></figcaption></figure>
-<figure><img src="../img/screens/tr/05-360.webp" srcset="../img/screens/tr/05-360.webp 360w, ../img/screens/tr/05-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="İmsakiye, sahur ve iftar – Sahur alarmı, iftara canlı geri sayım" loading="lazy" decoding="async"><figcaption>İmsakiye, sahur ve iftar<small>Sahur alarmı, iftara canlı geri sayım</small></figcaption></figure>
-<figure><img src="../img/screens/tr/06-360.webp" srcset="../img/screens/tr/06-360.webp 360w, ../img/screens/tr/06-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="Ana ekranda namaz vakitleri – Geri sayımlı widget, tek dokunuşla “Kıldım”" loading="lazy" decoding="async"><figcaption>Ana ekranda namaz vakitleri<small>Geri sayımlı widget, tek dokunuşla “Kıldım”</small></figcaption></figure>
-<figure><img src="../img/screens/tr/07-360.webp" srcset="../img/screens/tr/07-360.webp 360w, ../img/screens/tr/07-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="Zikirmatik ve günlük dualar – Sabah-akşam zikirleri ve Esmaül Hüsna" loading="lazy" decoding="async"><figcaption>Zikirmatik ve günlük dualar<small>Sabah-akşam zikirleri ve Esmaül Hüsna</small></figcaption></figure>
-<figure><img src="../img/screens/tr/08-360.webp" srcset="../img/screens/tr/08-360.webp 360w, ../img/screens/tr/08-720.webp 720w" sizes="(max-width:760px) 62vw, 260px" width="360" height="640" alt="Namaz takibi ve kaza namazı – Serinizi koruyun, kaza borcunuzu hesaplayın" loading="lazy" decoding="async"><figcaption>Namaz takibi ve kaza namazı<small>Serinizi koruyun, kaza borcunuzu hesaplayın</small></figcaption></figure>
+<section class="sec wrap" aria-labelledby="spot-title">
+<p class="kicker"><svg viewBox="0 0 40 40" width="18" height="18" aria-hidden="true"><g fill="var(--gold)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Mubarly</p>
+<h2 id="spot-title" class="reveal">Sessizde de ezan vakti alarmı, kıble pusulası, Kuran, imsakiye ve zikirmatik</h2>
+<div class="spot">
+<div class="row reveal"><div class="pic"><img src="../img/screens/tr/02-360.webp" srcset="../img/screens/tr/02-360.webp 360w, ../img/screens/tr/02-720.webp 720w" sizes="(max-width:900px) 80vw, 340px" width="360" height="640" alt="Sessizde de ezan alarmı – Rahatsız Etmeyin’de de, alarm ses düzeyinde" loading="lazy" decoding="async"></div><div><p class="num">01</p><h3>Sessizde de ezan alarmı</h3><p>Rahatsız Etmeyin’de de, alarm ses düzeyinde</p></div></div>
+<div class="row reveal"><div class="pic"><img src="../img/screens/tr/03-360.webp" srcset="../img/screens/tr/03-360.webp 360w, ../img/screens/tr/03-720.webp 720w" sizes="(max-width:900px) 80vw, 340px" width="360" height="640" alt="Kıble bulma – Manyetik sapma düzeltmeli kıble pusulası" loading="lazy" decoding="async"></div><div><p class="num">02</p><h3>Kıble bulma</h3><p>Manyetik sapma düzeltmeli kıble pusulası</p></div></div>
+<div class="row reveal"><div class="pic"><img src="../img/screens/tr/04-360.webp" srcset="../img/screens/tr/04-360.webp 360w, ../img/screens/tr/04-720.webp 720w" sizes="(max-width:900px) 80vw, 340px" width="360" height="640" alt="Kuran-ı Kerim ve Türkçe meal – Sesli Kuran: indirin, internetsiz dinleyin" loading="lazy" decoding="async"></div><div><p class="num">03</p><h3>Kuran-ı Kerim ve Türkçe meal</h3><p>Sesli Kuran: indirin, internetsiz dinleyin</p></div></div>
 </div>
 </section>
-<section class="cities wrap"><h2><a href="/tr/namaz-vakitleri/">Şehirlere göre namaz vakitleri</a></h2><ul><li><a href="/tr/namaz-vakitleri/istanbul/">İstanbul</a></li><li><a href="/tr/namaz-vakitleri/ankara/">Ankara</a></li><li><a href="/tr/namaz-vakitleri/izmir/">İzmir</a></li><li><a href="/tr/namaz-vakitleri/bursa/">Bursa</a></li><li><a href="/tr/namaz-vakitleri/antalya/">Antalya</a></li><li><a href="/tr/namaz-vakitleri/konya/">Konya</a></li><li><a href="/tr/namaz-vakitleri/adana/">Adana</a></li><li><a href="/tr/namaz-vakitleri/gaziantep/">Gaziantep</a></li><li><a href="/tr/namaz-vakitleri/sanliurfa/">Şanlıurfa</a></li><li><a href="/tr/namaz-vakitleri/kayseri/">Kayseri</a></li><li><a href="/tr/namaz-vakitleri/diyarbakir/">Diyarbakır</a></li><li><a href="/tr/namaz-vakitleri/trabzon/">Trabzon</a></li><li><a href="/tr/namaz-vakitleri/samsun/">Samsun</a></li><li><a href="/tr/namaz-vakitleri/erzurum/">Erzurum</a></li><li><a href="/tr/namaz-vakitleri/kocaeli/">Kocaeli</a></li><li><a href="/tr/namaz-vakitleri/mersin/">Mersin</a></li><li><a href="/tr/namaz-vakitleri/sakarya/">Sakarya</a></li><li><a href="/tr/namaz-vakitleri/eskisehir/">Eskişehir</a></li><li><a href="/tr/namaz-vakitleri/malatya/">Malatya</a></li><li><a href="/tr/namaz-vakitleri/van/">Van</a></li><li><a href="/tr/namaz-vakitleri/mardin/">Mardin</a></li><li><a href="/tr/namaz-vakitleri/batman/">Batman</a></li><li><a href="/tr/namaz-vakitleri/hatay/">Hatay</a></li><li><a href="/tr/namaz-vakitleri/denizli/">Denizli</a></li></ul></section>
-<section class="about wrap">
-<div class="doc">
-<p>Mubarly ile namaz vakitleri ve ezan vakti, kıble pusulası, Kuran-ı Kerim ve meali, imsakiye, dualar ve zikirmatik tek uygulamada. Ezan alarmı, telefonunuz sessizdeyken ya da Rahatsız Etmeyin açıkken de alarm ses düzeyinde çalabilir; vakitler ve ezan saatleri internetsiz çalışır. Türkiye'nin 81 ili ve tüm ilçeleri, Almanya, Hollanda, Belçika, Avusturya ve dünyanın her yeri için namaz vakitleri telefonda hesaplanır.</p>
-<h2>Namaz vakitleri ve ezan</h2>
-<ul>
-<li>Türkiye yöntemi: 853 ilçe takvimiyle karşılaştırmamızda vakitlerin %99'undan fazlası dakikası dakikasına tuttu; imsak hiçbir gün takvimdekinden geç, iftar hiçbir gün takvimdekinden erken çıkmadı</li>
-<li>Her namaz vakti için ayrı ezan alarmı ve vakitten önce hatırlatma; ses seçimi: Mekke, Medine ya da Balkan makamı (üçü de ezanın ilk tekbirleri)</li>
-<li>Adım adım kurulum: gereken izinler ve pil ayarları yapılır; ezan gecikebilecek ya da sessiz kalabilecekse uyarır</li>
-<li>Ana ekran widget'ları: sıradaki ezan vakti ve geri sayım, günün namaz vakitleri; widget'tan tek dokunuşla “Kıldım”</li>
-<li>30 günlük vakit çizelgesi (PDF), hicri takvim, dini günler ve kandil geceleri</li>
-</ul>
-<h2>Ramazan: sahur ve iftar</h2>
-<ul>
-<li>Sahur alarmı imsaktan önce alarm ses düzeyinde, sessizde de çalabilir; “Uyandım”a dokunmazsanız 3 ve 6 dakika sonra yine çalar</li>
-<li>İftara ne kadar kaldı, sahur ne zaman bitiyor: canlı geri sayım; akşam ezanıyla iftar bildirimi</li>
-<li>Ramazan imsakiyesi 2027: Ramazan'a kalan gün sayısı, ay başlayınca imsak ve iftar 30 günlük çizelgede; oruç hükümleri mezhebinize göre, Türkiye için fitre tutarı</li>
-</ul>
-<h2>Kıble pusulası ve camiler</h2>
-<ul>
-<li>Manyetik sapma düzeltmeli kıble pusulası; telefon dik dursa da kıble yönü doğru, metal yakınsa uyarır</li>
-<li>Pusulasız kıble bulma: güneşe göre kıble saati</li>
-<li>Yakındaki camiler: dünyada 300.000'den fazla cami haritada, yol tarifi ve kıble çizgisi; Camim ile cemaat vakitleri</li>
-</ul>
-<h2>Kuran-ı Kerim</h2>
-<ul>
-<li>Osmanî hat ya da imlâî yazım ve 604 sayfalık mushaf; Arapça metin internetsiz açılır</li>
-<li>Türkçe meal; internetle kelime meali ve tefsir; mealli dinlemede ayet mealini telefon sesli okur</li>
-<li>Sesli Kuran dinleme: Abdülbasit Abdüssamed gibi 9 ünlü hafız, ayet tekrarı</li>
-<li>Yasin, Mülk (Tebareke) ve Kehf gibi sık okunan sureleri, namaz sureleri dahil Amme cüzünü ya da Kur'an'ın tamamını indirip internetsiz dinleyin</li>
-<li>Elif-Ba ile Kur'an öğrenme: harflerden başlayan yedi ders</li>
-</ul>
-<h2>Dualar, zikirmatik ve Esmaül Hüsna</h2>
-<ul>
-<li>Sabah-akşam zikirleri, günlük dualar: 55 zikir, her biri hadis kaynağıyla</li>
-<li>Zikirmatik: hedefli tesbih, namaz tesbihatı ve zikir geçmişi</li>
-<li>Esmaül Hüsna: Allah'ın 99 ismi ve anlamları; Cevşen'den seçmeler</li>
-<li>Hadisler, Kırk Hadis, peygamberler ve İslam tarihi</li>
-</ul>
-<h2>Namaz takibi ve kaza namazı</h2>
-<ul>
-<li>Namaz takibi: vaktinde, geç ya da cemaatle kıldığınızı işaretleyin; seriniz uzasın, ibadet bahçeniz büyüsün; kadınlar için özel hal takibi</li>
-<li>Kaza namazı hesaplama ve takip: kılınmamış vakitler ve oruç borcu mezhebinize göre</li>
-</ul>
-<h2>Rehberler, zekat ve hatim</h2>
-<ul>
-<li>Namaz rehberi: namaz nasıl kılınır, abdest ve gusül adım adım</li>
-<li>Hac ve umre rehberi: menasik adım adım, umre duaları, tavaf ve sa'y sayacı, hazırlık listesi</li>
-<li>Zekat hesaplama: altın, gümüş ve nakit, güncel gram fiyatıyla ya da kendi fiyatınızla</li>
-<li>Hatim Halkası ile cüz dağıtma, Aile Modu ve Kardeşlik: dua isteyin, “Âmin” deyin; üyelik gerekmez</li>
-</ul>
-<p>Dört mezhep</p>
-<p>Mubarly her Müslüman için: ikindi vakti, oruç, kaza, zekat ve yolculuk hükümleri ile namaz rehberi seçtiğiniz mezhebe (Hanefi, Şafii, Maliki ya da Hanbeli) göre gösterilir. Türkçe, Kürtçe ve Arapça dahil 20 dil; büyük yazılı Basit Mod ve koyu tema.</p>
-<p>Premium</p>
-<p>Namaz vakitleri, Kuran ve tüm ibadet bölümleri herkese ücretsizdir. Premium ile reklamlar kalkar; Hafızlık Modu, Uyku ve Tefekkür, ek pusula ve zikirmatik temaları açılır; kısa bir video izleyerek Premium'u birkaç saatliğine de açabilirsiniz. Tam ekran reklam yoktur; Kuran, ezan, kıble ve zikirmatik ekranlarında reklam gösterilmez.</p>
-<p>Gizlilik: Hesap gerekmez; Google ile giriş yalnızca yedekleme ve eşitleme içindir. Konum arka planda alınmaz, kamera ve mikrofon kullanılmaz. Mubarly verilerinizi satmaz.</p>
+<section class="sec features" id="features" aria-labelledby="features-title">
+<div class="wrap">
+<p class="kicker"><svg viewBox="0 0 40 40" width="18" height="18" aria-hidden="true"><g fill="var(--gold)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Mubarly</p>
+<h2 id="features-title" class="reveal">Namaz Vakitleri, Ezan</h2>
+<p class="sub reveal">Mubarly ile namaz vakitleri ve ezan vakti, kıble pusulası, Kuran-ı Kerim ve meali, imsakiye, dualar ve zikirmatik tek uygulamada. Ezan alarmı, telefonunuz sessizdeyken ya da Rahatsız Etmeyin açıkken de alarm ses düzeyinde çalabilir; vakitler ve ezan saatleri internetsiz çalışır. Türkiye'nin 81 ili ve tüm ilçeleri, Almanya, Hollanda, Belçika, Avusturya ve dünyanın her yeri için namaz vakitleri telefonda hesaplanır.</p>
+<div class="grid">
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Namaz vakitleri ve ezan</h3><ul><li>Türkiye yöntemi: 853 ilçe takvimiyle karşılaştırmamızda vakitlerin %99'undan fazlası dakikası dakikasına tuttu; imsak hiçbir gün takvimdekinden geç, iftar hiçbir gün takvimdekinden erken çıkmadı</li><li>Her namaz vakti için ayrı ezan alarmı ve vakitten önce hatırlatma; ses seçimi: Mekke, Medine ya da Balkan makamı (üçü de ezanın ilk tekbirleri)</li><li>Adım adım kurulum: gereken izinler ve pil ayarları yapılır; ezan gecikebilecek ya da sessiz kalabilecekse uyarır</li><li>Ana ekran widget'ları: sıradaki ezan vakti ve geri sayım, günün namaz vakitleri; widget'tan tek dokunuşla “Kıldım”</li><li>30 günlük vakit çizelgesi (PDF), hicri takvim, dini günler ve kandil geceleri</li></ul></article>
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Ramazan: sahur ve iftar</h3><ul><li>Sahur alarmı imsaktan önce alarm ses düzeyinde, sessizde de çalabilir; “Uyandım”a dokunmazsanız 3 ve 6 dakika sonra yine çalar</li><li>İftara ne kadar kaldı, sahur ne zaman bitiyor: canlı geri sayım; akşam ezanıyla iftar bildirimi</li><li>Ramazan imsakiyesi 2027: Ramazan'a kalan gün sayısı, ay başlayınca imsak ve iftar 30 günlük çizelgede; oruç hükümleri mezhebinize göre, Türkiye için fitre tutarı</li></ul></article>
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Kıble pusulası ve camiler</h3><ul><li>Manyetik sapma düzeltmeli kıble pusulası; telefon dik dursa da kıble yönü doğru, metal yakınsa uyarır</li><li>Pusulasız kıble bulma: güneşe göre kıble saati</li><li>Yakındaki camiler: dünyada 300.000'den fazla cami haritada, yol tarifi ve kıble çizgisi; Camim ile cemaat vakitleri</li></ul></article>
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Kuran-ı Kerim</h3><ul><li>Osmanî hat ya da imlâî yazım ve 604 sayfalık mushaf; Arapça metin internetsiz açılır</li><li>Türkçe meal; internetle kelime meali ve tefsir; mealli dinlemede ayet mealini telefon sesli okur</li><li>Sesli Kuran dinleme: Abdülbasit Abdüssamed gibi 9 ünlü hafız, ayet tekrarı</li><li>Yasin, Mülk (Tebareke) ve Kehf gibi sık okunan sureleri, namaz sureleri dahil Amme cüzünü ya da Kur'an'ın tamamını indirip internetsiz dinleyin</li><li>Elif-Ba ile Kur'an öğrenme: harflerden başlayan yedi ders</li></ul></article>
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Dualar, zikirmatik ve Esmaül Hüsna</h3><ul><li>Sabah-akşam zikirleri, günlük dualar: 55 zikir, her biri hadis kaynağıyla</li><li>Zikirmatik: hedefli tesbih, namaz tesbihatı ve zikir geçmişi</li><li>Esmaül Hüsna: Allah'ın 99 ismi ve anlamları; Cevşen'den seçmeler</li><li>Hadisler, Kırk Hadis, peygamberler ve İslam tarihi</li></ul></article>
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Namaz takibi ve kaza namazı</h3><ul><li>Namaz takibi: vaktinde, geç ya da cemaatle kıldığınızı işaretleyin; seriniz uzasın, ibadet bahçeniz büyüsün; kadınlar için özel hal takibi</li><li>Kaza namazı hesaplama ve takip: kılınmamış vakitler ve oruç borcu mezhebinize göre</li></ul></article>
+<article class="card reveal"><h3><svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><g fill="var(--gold2)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Rehberler, zekat ve hatim</h3><ul><li>Namaz rehberi: namaz nasıl kılınır, abdest ve gusül adım adım</li><li>Hac ve umre rehberi: menasik adım adım, umre duaları, tavaf ve sa'y sayacı, hazırlık listesi</li><li>Zekat hesaplama: altın, gümüş ve nakit, güncel gram fiyatıyla ya da kendi fiyatınızla</li><li>Hatim Halkası ile cüz dağıtma, Aile Modu ve Kardeşlik: dua isteyin, “Âmin” deyin; üyelik gerekmez</li></ul></article>
 </div>
+<div class="promise"><p class="reveal">Dört mezhep</p><p class="reveal">Mubarly her Müslüman için: ikindi vakti, oruç, kaza, zekat ve yolculuk hükümleri ile namaz rehberi seçtiğiniz mezhebe (Hanefi, Şafii, Maliki ya da Hanbeli) göre gösterilir. Türkçe, Kürtçe ve Arapça dahil 20 dil; büyük yazılı Basit Mod ve koyu tema.</p><p class="reveal">Premium</p><p class="reveal">Namaz vakitleri, Kuran ve tüm ibadet bölümleri herkese ücretsizdir. Premium ile reklamlar kalkar; Hafızlık Modu, Uyku ve Tefekkür, ek pusula ve zikirmatik temaları açılır; kısa bir video izleyerek Premium'u birkaç saatliğine de açabilirsiniz. Tam ekran reklam yoktur; Kuran, ezan, kıble ve zikirmatik ekranlarında reklam gösterilmez.</p><p class="reveal">Gizlilik: Hesap gerekmez; Google ile giriş yalnızca yedekleme ve eşitleme içindir. Konum arka planda alınmaz, kamera ve mikrofon kullanılmaz. Mubarly verilerinizi satmaz.</p></div>
+</div>
+</section>
+<section class="sec gallery" aria-label="Mubarly: Namaz Vakitleri, Ezan">
+<div class="wrap"><p class="kicker"><svg viewBox="0 0 40 40" width="18" height="18" aria-hidden="true"><g fill="var(--gold)"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>Namaz vakitleri ve ezan vakti</p><h2 class="reveal">81 ilde ve dünyanın her yerinde, internetsiz</h2></div>
+<div class="strip">
+<figure><img src="../img/screens/tr/05-360.webp" srcset="../img/screens/tr/05-360.webp 360w, ../img/screens/tr/05-720.webp 720w" sizes="(max-width:520px) 68vw, 250px" width="360" height="640" alt="İmsakiye, sahur ve iftar – Sahur alarmı, iftara canlı geri sayım" loading="lazy" decoding="async"><figcaption>İmsakiye, sahur ve iftar<small>Sahur alarmı, iftara canlı geri sayım</small></figcaption></figure>
+<figure><img src="../img/screens/tr/06-360.webp" srcset="../img/screens/tr/06-360.webp 360w, ../img/screens/tr/06-720.webp 720w" sizes="(max-width:520px) 68vw, 250px" width="360" height="640" alt="Ana ekranda namaz vakitleri – Geri sayımlı widget, tek dokunuşla “Kıldım”" loading="lazy" decoding="async"><figcaption>Ana ekranda namaz vakitleri<small>Geri sayımlı widget, tek dokunuşla “Kıldım”</small></figcaption></figure>
+<figure><img src="../img/screens/tr/07-360.webp" srcset="../img/screens/tr/07-360.webp 360w, ../img/screens/tr/07-720.webp 720w" sizes="(max-width:520px) 68vw, 250px" width="360" height="640" alt="Zikirmatik ve günlük dualar – Sabah-akşam zikirleri ve Esmaül Hüsna" loading="lazy" decoding="async"><figcaption>Zikirmatik ve günlük dualar<small>Sabah-akşam zikirleri ve Esmaül Hüsna</small></figcaption></figure>
+<figure><img src="../img/screens/tr/08-360.webp" srcset="../img/screens/tr/08-360.webp 360w, ../img/screens/tr/08-720.webp 720w" sizes="(max-width:520px) 68vw, 250px" width="360" height="640" alt="Namaz takibi ve kaza namazı – Serinizi koruyun, kaza borcunuzu hesaplayın" loading="lazy" decoding="async"><figcaption>Namaz takibi ve kaza namazı<small>Serinizi koruyun, kaza borcunuzu hesaplayın</small></figcaption></figure>
+<figure><img src="../img/screens/tr/01-360.webp" srcset="../img/screens/tr/01-360.webp 360w, ../img/screens/tr/01-720.webp 720w" sizes="(max-width:520px) 68vw, 250px" width="360" height="640" alt="Namaz vakitleri ve ezan vakti – 81 ilde ve dünyanın her yerinde, internetsiz" loading="lazy" decoding="async"><figcaption>Namaz vakitleri ve ezan vakti<small>81 ilde ve dünyanın her yerinde, internetsiz</small></figcaption></figure>
+</div>
+</section>
+<section class="sec cities wrap"><div class="box reveal"><p class="kicker" style="color:#D4B062"><svg viewBox="0 0 40 40" width="18" height="18" aria-hidden="true"><g fill="#D4B062"><rect x="8" y="8" width="24" height="24" rx="2"/><rect x="8" y="8" width="24" height="24" rx="2" transform="rotate(45 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#0B3B2C"/></svg>33 · Şehirlere göre namaz vakitleri</p><h2><a href="/tr/namaz-vakitleri/">Şehirlere göre namaz vakitleri</a></h2><ul><li><a href="/tr/namaz-vakitleri/istanbul/">İstanbul</a></li><li><a href="/tr/namaz-vakitleri/ankara/">Ankara</a></li><li><a href="/tr/namaz-vakitleri/izmir/">İzmir</a></li><li><a href="/tr/namaz-vakitleri/bursa/">Bursa</a></li><li><a href="/tr/namaz-vakitleri/antalya/">Antalya</a></li><li><a href="/tr/namaz-vakitleri/konya/">Konya</a></li><li><a href="/tr/namaz-vakitleri/adana/">Adana</a></li><li><a href="/tr/namaz-vakitleri/gaziantep/">Gaziantep</a></li><li><a href="/tr/namaz-vakitleri/sanliurfa/">Şanlıurfa</a></li><li><a href="/tr/namaz-vakitleri/kayseri/">Kayseri</a></li><li><a href="/tr/namaz-vakitleri/diyarbakir/">Diyarbakır</a></li><li><a href="/tr/namaz-vakitleri/trabzon/">Trabzon</a></li><li><a href="/tr/namaz-vakitleri/samsun/">Samsun</a></li><li><a href="/tr/namaz-vakitleri/erzurum/">Erzurum</a></li><li><a href="/tr/namaz-vakitleri/kocaeli/">Kocaeli</a></li><li><a href="/tr/namaz-vakitleri/mersin/">Mersin</a></li><li><a href="/tr/namaz-vakitleri/sakarya/">Sakarya</a></li><li><a href="/tr/namaz-vakitleri/eskisehir/">Eskişehir</a></li></ul><a class="all" href="/tr/namaz-vakitleri/">Şehirlere göre namaz vakitleri →</a></div></section>
+<section class="sec download wrap" id="download">
+<img class="icon reveal" src="../img/icon-192.png" alt="Mubarly" width="104" height="104" loading="lazy">
+<h2 class="reveal">Ezanı telefon sessizdeyken bile alarm gibi duyun</h2>
+<p class="sub reveal" style="margin-inline:auto">Ücretsiz · internetsiz çalışır · 20 dil · dört mezhep</p>
+<div class="stores reveal"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=landing_tr" rel="noopener"><img src="../img/badges/tr.png" alt="Google Play" width="200" height="77"></a><a class="ag" href="https://appgallery.huawei.com/app/C119470731" rel="noopener" aria-label="Huawei AppGallery"><small>HUAWEI</small>AppGallery</a></div>
 </section>
 </main>
-<footer class="wrap">
+<footer>
+<div class="wrap">
+<div class="cols">
+<div><a class="brand" href="../"><img src="../img/icon-192.png" alt="" width="36" height="36"><span>MUBARLY</span></a><p class="about">Sessizde de ezan vakti alarmı, kıble pusulası, Kuran, imsakiye ve zikirmatik</p></div>
+<div><h4>Mubarly</h4><nav><a href="../privacy.html">Gizlilik politikası</a><a href="../terms.html">Kullanım şartları</a><a href="../kvkk.html">KVKK aydınlatma metni</a><a href="../delete-account.html">Hesabımı sil</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav></div>
+<div><h4>Social</h4><nav aria-label="Social"><a href="https://www.instagram.com/mubarly" rel="me noopener">Instagram</a><a href="https://www.tiktok.com/@mubarly" rel="me noopener">TikTok</a><a href="https://www.youtube.com/@mubarly" rel="me noopener">YouTube</a><a href="https://www.facebook.com/mubarlyapp" rel="me noopener">Facebook</a><a href="https://x.com/mubarlyapp" rel="me noopener">X</a></nav></div>
+</div>
 <nav class="langs" aria-label="Languages"><a href="../" data-lang="en" lang="en" hreflang="en">English</a><strong lang="tr">Türkçe</strong><a href="../ar/" data-lang="ar" lang="ar" hreflang="ar">العربية</a><a href="../id/" data-lang="id" lang="id" hreflang="id">Bahasa Indonesia</a><a href="../ur/" data-lang="ur" lang="ur" hreflang="ur">اردو</a><a href="../fr/" data-lang="fr" lang="fr" hreflang="fr">Français</a><a href="../ru/" data-lang="ru" lang="ru" hreflang="ru">Русский</a><a href="../bn/" data-lang="bn" lang="bn" hreflang="bn">বাংলা</a><a href="../fa/" data-lang="fa" lang="fa" hreflang="fa">فارسی</a><a href="../ms/" data-lang="ms" lang="ms" hreflang="ms">Bahasa Melayu</a><a href="../sw/" data-lang="sw" lang="sw" hreflang="sw">Kiswahili</a><a href="../ha/" data-lang="ha" lang="ha" hreflang="ha">Hausa</a><a href="../uz/" data-lang="uz" lang="uz" hreflang="uz">Oʻzbekcha</a><a href="../ky/" data-lang="ky" lang="ky" hreflang="ky">Кыргызча</a><a href="../so/" data-lang="so" lang="so" hreflang="so">Soomaali</a><a href="../ckb/" data-lang="ckb" lang="ku-Arab" hreflang="ku-Arab">کوردی</a><a href="../hi/" data-lang="hi" lang="hi" hreflang="hi">हिन्दी</a><a href="../ps/" data-lang="ps" lang="ps" hreflang="ps">پښتو</a><a href="../ku/" data-lang="ku" lang="ku-Latn" hreflang="ku-Latn">Kurmancî</a><a href="../pa/" data-lang="pa" lang="pa-Arab" hreflang="pa-Arab">پنجابی</a></nav>
-<nav class="legal"><a href="../privacy.html">Gizlilik politikası</a><a href="../terms.html">Kullanım şartları</a><a href="../kvkk.html">KVKK aydınlatma metni</a><a href="../delete-account.html">Hesabımı sil</a></nav>
-<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('nav.langs a[data-lang]');if(a)try{localStorage.setItem('lang',a.getAttribute('data-lang'))}catch(x){}});</script>
-<nav class="legal" aria-label="Social"><a href="https://www.instagram.com/mubarly" rel="me noopener">Instagram</a><a href="https://www.tiktok.com/@mubarly" rel="me noopener">TikTok</a><a href="https://www.youtube.com/@mubarly" rel="me noopener">YouTube</a><a href="https://www.facebook.com/mubarlyapp" rel="me noopener">Facebook</a><a href="https://x.com/mubarlyapp" rel="me noopener">X</a></nav>
-<p class="meta">© Mubarly · <a href="mailto:support@mubarly.com">support@mubarly.com</a></p>
+<p class="copy">© 2026 Mubarly</p>
+</div>
 </footer>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-lang]');if(a)try{localStorage.setItem('lang',a.getAttribute('data-lang'))}catch(x){}});(function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){e.forEach(function(x){x.classList.add('in')});return}
+var o=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});e.forEach(function(x){o.observe(x)})})();</script>
 </body>
 </html>
