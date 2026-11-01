@@ -1,0 +1,97 @@
+# Mubarly
+
+> Azan alarm even on silent, namaz times, Qibla, Quran offline, duas and tasbih
+
+Mubarly is a free Islamic app for Android (Google Play and Huawei AppGallery) in 20 languages. Prayer times are
+calculated on the phone for the user's location with the method used in their country; the adhan plays at alarm
+volume at each prayer time, even when the phone is on silent. It follows all four Sunni schools (Hanafi, Shafi'i,
+Maliki, Hanbali), needs no account, and its worship screens carry no ads.
+
+## App
+- [Google Play](https://play.google.com/store/apps/details?id=app.mubarly)
+- [Huawei AppGallery](https://appgallery.huawei.com/app/C119470731)
+- [Home page (English)](https://mubarly.com/)
+- [Türkçe](https://mubarly.com/tr/)
+- [العربية](https://mubarly.com/ar/)
+- [Bahasa Indonesia](https://mubarly.com/id/)
+- [اردو](https://mubarly.com/ur/)
+- [Français](https://mubarly.com/fr/)
+- [Русский](https://mubarly.com/ru/)
+- [বাংলা](https://mubarly.com/bn/)
+- [فارسی](https://mubarly.com/fa/)
+- [Bahasa Melayu](https://mubarly.com/ms/)
+- [Kiswahili](https://mubarly.com/sw/)
+- [Hausa](https://mubarly.com/ha/)
+- [Oʻzbekcha](https://mubarly.com/uz/)
+- [Кыргызча](https://mubarly.com/ky/)
+- [Soomaali](https://mubarly.com/so/)
+- [کوردی](https://mubarly.com/ckb/)
+- [हिन्दी](https://mubarly.com/hi/)
+- [پښتو](https://mubarly.com/ps/)
+- [Kurmancî](https://mubarly.com/ku/)
+- [پنجابی](https://mubarly.com/pa/)
+
+## Prayer times by city
+- [Prayer times by city](https://mubarly.com/prayer-times/) (en, 62 cities)
+- [Şehirlere göre namaz vakitleri](https://mubarly.com/tr/namaz-vakitleri/) (tr, 33 cities)
+- [مواقيت الصلاة حسب المدينة](https://mubarly.com/ar/mawaqit-al-salah/) (ar, 43 cities)
+- [Jadwal sholat per kota](https://mubarly.com/id/jadwal-sholat/) (id, 22 cities)
+- [شہر کے لحاظ سے نماز کے اوقات](https://mubarly.com/ur/namaz-ke-auqat/) (ur, 26 cities)
+- [Horaires de prière par ville](https://mubarly.com/fr/horaires-de-priere/) (fr, 30 cities)
+- [Время намаза по городам](https://mubarly.com/ru/vremya-namaza/) (ru, 21 cities)
+- [শহর অনুযায়ী নামাজের সময়](https://mubarly.com/bn/namazer-shomoy/) (bn, 17 cities)
+- [اوقات نماز بر اساس شهر](https://mubarly.com/fa/oghat-e-namaz/) (fa, 18 cities)
+- [Waktu solat mengikut bandar](https://mubarly.com/ms/waktu-solat/) (ms, 18 cities)
+- [Nyakati za sala kwa miji](https://mubarly.com/sw/nyakati-za-sala/) (sw, 12 cities)
+- [Lokutan sallah bisa birni](https://mubarly.com/ha/lokutan-sallah/) (ha, 15 cities)
+- [Shaharlar bo‘yicha namoz vaqtlari](https://mubarly.com/uz/namoz-vaqtlari/) (uz, 14 cities)
+- [Шаарлар боюнча намаз убактысы](https://mubarly.com/ky/namaz-ubaktysy/) (ky, 12 cities)
+- [Waqtiyada salaadda magaalo ahaan](https://mubarly.com/so/waqtiyada-salaadda/) (so, 13 cities)
+- [کاتەکانی نوێژ بەپێی شار](https://mubarly.com/ckb/katakani-nwezh/) (ckb, 8 cities)
+- [शहर के अनुसार नमाज़ का समय](https://mubarly.com/hi/namaz-ka-samay/) (hi, 18 cities)
+- [د ښار له مخې د لمانځه وختونه](https://mubarly.com/ps/da-lmonz-wakhtuna/) (ps, 10 cities)
+- [Demên nimêjê li gorî bajaran](https://mubarly.com/ku/demen-nimeje/) (ku, 15 cities)
+- [شہر دے حساب نال نماز دے ویلے](https://mubarly.com/pa/namaz-de-vele/) (pa, 8 cities)
+
+## Features
+- Namaz times anywhere in the world, calculated on your phone with 14 calculation methods
+- The azan can ring at alarm volume even on silent or in Do Not Disturb, so it also works as a Fajr alarm; you choose per prayer
+- Adhan (athan) sound: the opening takbirs in Makkah, Madinah or Balkan style, or a soft tone
+- Reminders before each salah
+- A guided setup turns on what the adhan needs and warns you if it could be late or muted
+- Prayer times widgets for your home screen with a live countdown
+- 30-day timetable as PDF, Hanafi or Shafi'i Asr and high-latitude rules
+- Islamic calendar with hijri dates, holy days and blessed nights
+- Suhoor alarm at alarm volume, even on silent, repeating until you tap "I'm awake"
+- Iftar alert and a live countdown to the end of sehri and to iftar
+- Ramadan 2027: fasting rules for your school and a fasting and tarawih record
+- Corrected for magnetic declination, works flat or upright
+- No compass? Find the direction by the sun or on the mosque map
+- The Arabic text is built in: read it offline in Uthmani or simple script or as 604 mushaf pages
+- English translations with footnotes (Saheeh International, Pickthall), word-by-word meanings and tafsir (online)
+- Listen to 9 reciters, such as Mishary Alafasy and Abdul Basit
+- Download Surah Yaseen, Al-Kahf, Ar-Rahman, Al-Waqiah, Al-Mulk, Juz 'Amma or all 114 surahs to listen offline
+- Bookmarks, notes, Alif Ba lessons for beginners and Islamic radio
+- Morning and evening azkar and duas for daily life, each with its source
+- Dhikr and tasbih counter like a digital tasbeeh, with targets and the tasbihat after salah
+- 99 Names of Allah (Asmaul Husna) with their meanings
+- Hadith library with grades and explanations, and Forty Hadith
+- Prayer guide: learn salah step by step and how to pray by your school
+- Hajj and Umrah guide: rites step by step, day by day, with duas, a tawaf and sa'y counter and a packing list
+- Stories of the prophets and key events of Islamic history
+- Mark each prayer on time, late or in congregation, keep your streak
+- Qaza namaz calculator and tracker for missed prayers and fasts
+- Women can mark menstruation days without losing their streak
+- Mosque finder: 300,000+ mosques worldwide with walking directions, and your masjid's iqamah times
+- Zakat calculator for gold, silver and cash with live gram prices in your currency
+- Family Mode, Khatm circles and a moderated dua community
+- Asr, fasting, qada, zakat, travel and menstruation rules, the prayer guide and the Hajj guide follow your school: Hanafi, Shafi'i, Maliki or Hanbali
+- Content comes with its sources; for your own situation, ask a scholar
+- Simple Mode with large text, high contrast and color-blind friendly colors
+- 20 languages, including English, Urdu, Bengali, Hindi and Arabic
+
+## Policies
+- [Privacy policy](https://mubarly.com/privacy.html)
+- [Terms of use](https://mubarly.com/terms.html)
+- [Account deletion](https://mubarly.com/delete-account.html)
+- Contact: support@mubarly.com
