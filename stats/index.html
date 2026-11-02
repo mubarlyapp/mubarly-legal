@@ -40,6 +40,11 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
 <h2>Şehirler</h2><div id="cities"></div>
 <div class="grid2"><div><h2>Dil</h2><div id="langs"></div></div><div><h2>Nereden geldiler</h2><div id="referrers"></div></div></div>
 <h2>Sayfalar</h2><div id="pages"></div>
+<h2>Google aramaları</h2>
+<p class="muted" id="search-note">Google'da hangi kelimelerle arandığınız (Search Console). Google veriyi 2–3 gün geç verir.</p>
+<section class="cards" id="search-totals"></section>
+<h2>Arama kelimeleri</h2><div id="search-queries"></div>
+<div class="grid2"><div><h2>Aramada görünen sayfalar</h2><div id="search-pages"></div></div><div><h2>Aramaların ülkeleri</h2><div id="search-countries"></div></div></div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
@@ -47,6 +52,8 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
   var sb = supabase.createClient('https://vvrfovaixhhlrpvadgmm.supabase.co', 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
   var signedIn = false;
   var region = new Intl.DisplayNames(['tr'], { type: 'region' }), langName = new Intl.DisplayNames(['tr'], { type: 'language' });
+  // Search Console gives ISO 3166 alpha-3 country codes.
+  var A3 = {TUR: 'TR',USA: 'US',GBR: 'GB',DEU: 'DE',FRA: 'FR',NLD: 'NL',BEL: 'BE',AUT: 'AT',CHE: 'CH',SWE: 'SE',NOR: 'NO',DNK: 'DK',FIN: 'FI',ITA: 'IT',ESP: 'ES',PRT: 'PT',IRL: 'IE',POL: 'PL',RUS: 'RU',UKR: 'UA',AZE: 'AZ',KAZ: 'KZ',UZB: 'UZ',KGZ: 'KG',TJK: 'TJ',TKM: 'TM',AFG: 'AF',PAK: 'PK',IND: 'IN',BGD: 'BD',LKA: 'LK',MDV: 'MV',NPL: 'NP',IRN: 'IR',IRQ: 'IQ',SYR: 'SY',LBN: 'LB',JOR: 'JO',PSE: 'PS',ISR: 'IL',SAU: 'SA',ARE: 'AE',QAT: 'QA',KWT: 'KW',BHR: 'BH',OMN: 'OM',YEM: 'YE',EGY: 'EG',LBY: 'LY',TUN: 'TN',DZA: 'DZ',MAR: 'MA',MRT: 'MR',SDN: 'SD',SOM: 'SO',DJI: 'DJ',ETH: 'ET',KEN: 'KE',TZA: 'TZ',UGA: 'UG',NGA: 'NG',NER: 'NE',SEN: 'SN',MLI: 'ML',GIN: 'GN',CIV: 'CI',GHA: 'GH',BFA: 'BF',TCD: 'TD',CMR: 'CM',ZAF: 'ZA',IDN: 'ID',MYS: 'MY',SGP: 'SG',BRN: 'BN',THA: 'TH',PHL: 'PH',CHN: 'CN',HKG: 'HK',JPN: 'JP',KOR: 'KR',AUS: 'AU',NZL: 'NZ',CAN: 'CA',MEX: 'MX',BRA: 'BR',ARG: 'AR',BIH: 'BA',ALB: 'AL',XKX: 'XK',MKD: 'MK',SRB: 'RS',BGR: 'BG',GRC: 'GR',ROU: 'RO',HUN: 'HU',CZE: 'CZ',CYP: 'CY',GEO: 'GE',ARM: 'AM'};
   var DEVICE = { android: 'Android', huawei: 'Huawei / Honor', ios: 'iPhone / iPad', desktop: 'Bilgisayar', other: 'Diğer' };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var n = function (x) { return (x || 0).toLocaleString('tr-TR'); };
@@ -78,6 +85,12 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
         document.getElementById('langs').innerHTML = table(d.langs, [['lang', 'Sayfa dili', function (v) { try { return v === '?' ? 'Bilinmiyor' : langName.of(v); } catch (e) { return v; } }], ['views', 'Görüntüleme']], 'views');
         document.getElementById('referrers').innerHTML = table(d.referrers, [['referrer', 'Kaynak'], ['views', 'Görüntüleme']], 'views');
         document.getElementById('pages').innerHTML = table(d.pages, [['path', 'Sayfa', decodeURIComponent], ['views', 'Görüntüleme'], ['clicks', 'Mağaza tıklaması']], 'views');
+        var g = d.search || { totals: {}, queries: [], pages: [], countries: [] };
+        document.getElementById('search-note').textContent = "Google'da hangi kelimelerle arandığınız (Search Console). Google veriyi 2–3 gün geç verir." + (g.updated ? ' Son veri günü: ' + g.updated + '.' : ' Henüz veri yok: site yeni, Google sayfaları dizine alıyor.');
+        document.getElementById('search-totals').innerHTML = [['Google\'da gösterim', g.totals.impressions], ['Google\'dan tıklama', g.totals.clicks]].map(function (c) { return '<div class="card"><b>' + n(c[1]) + '</b><span>' + c[0] + '</span></div>'; }).join('');
+        document.getElementById('search-queries').innerHTML = table(g.queries, [['query', 'Aranan kelime'], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Ortalama sıra']], 'impressions');
+        document.getElementById('search-pages').innerHTML = table(g.pages, [['page', 'Sayfa', function (v) { try { return decodeURIComponent(v.replace('https://mubarly.com', '')) || '/'; } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Sıra']], 'impressions');
+        document.getElementById('search-countries').innerHTML = table(g.countries, [['country', 'Ülke', function (v) { try { return region.of(v.length === 3 ? A3[v.toUpperCase()] || v : v); } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama']], 'impressions');
       })
       .catch(function (e) { document.getElementById('err').textContent = e.message; });
   }
