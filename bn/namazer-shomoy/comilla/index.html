@@ -45,51 +45,27 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
 .dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
 @media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
-@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+h1,h2,h3{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;letter-spacing:-.01em}
+.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:#EDE6CF;background:radial-gradient(110% 90% at 85% 0,#1a5a43 0,#0B3B2C 45%,#061A13 100%);padding:6px 0 30px;margin-bottom:8px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;pointer-events:none}.hero .wrap{position:relative}
+.hero h1{color:#F3E7C2;font-weight:800;margin:6px 0 10px}.hero .lead{color:#CFC6AA;max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:#BDB292}
+.hero .mini{background:#ffffff0d;border-color:#ffffff24;color:#EDE6CF;backdrop-filter:blur(2px)}.hero .mini small{color:#CFC6AA}.hero a.dl{background:#D4B062;color:#061A13}
+main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:none;width:6px;height:1.1em;border-radius:3px;background:linear-gradient(#D4B062,#76571A)}
+.tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/bn/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
-<main class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/bn/">Mubarly</a> › <a href="/bn/namazer-shomoy/">নামাজের সময়</a> › কুমিল্লা</nav>
+<section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/bn/">Mubarly</a> › <a href="/bn/namazer-shomoy/">নামাজের সময়</a> › কুমিল্লা</nav>
 <h1>কুমিল্লা নামাজের সময়</h1>
-<p class="lead">কুমিল্লা-এ ২০২৭ সালের শেষ পর্যন্ত প্রতিদিনের ফজর, সূর্যোদয়, জোহর, আসর, মাগরিব ও এশা, রমজান ২০২৭-এর সেহরি ও ইফতার এবং কিবলার দিক।</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>ফোন সাইলেন্টে থাকলেও অ্যালার্মের আওয়াজে আজান শুনুন</strong><small>বিনামূল্যে · ইন্টারনেট ছাড়া · ২০টি ভাষা · চার মাজহাব</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=bn&utm_source=mubarly_site&utm_campaign=top" rel="noopener">বিনামূল্যে ডাউনলোড</a></aside>
+<p class="lead">কুমিল্লা-এ ২০২৭ সালের শেষ পর্যন্ত প্রতিদিনের ফজর, সূর্যোদয়, জোহর, আসর, মাগরিব ও এশা, রমজান ২০২৭-এর সেহরি ও ইফতার এবং কিবলার দিক।</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>ফোন সাইলেন্টে থাকলেও অ্যালার্মের আওয়াজে আজান শুনুন</strong><small>বিনামূল্যে · ইন্টারনেট ছাড়া · ২০টি ভাষা · চার মাজহাব</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=bn&utm_source=mubarly_site&utm_campaign=top" rel="noopener">বিনামূল্যে ডাউনলোড</a></aside></div></section>
+<main class="wrap">
+
 <section id="today" class="card" hidden aria-live="polite"><p class="d">আজ</p><ul><li><b>—</b><span>ফজর</span></li><li><b>—</b><span>সূর্যোদয়</span></li><li><b>—</b><span>যোহর</span></li><li><b>—</b><span>আসর</span></li><li><b>—</b><span>মাগরিব</span></li><li><b>—</b><span>এশা</span></li></ul></section>
-<div class="cta"><p><strong>ফোন সাইলেন্টে থাকলেও অ্যালার্মের আওয়াজে আজান শুনুন</strong><small>বিনামূল্যে · ইন্টারনেট ছাড়া · ২০টি ভাষা · চার মাজহাব</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=bn&utm_source=mubarly_site&utm_campaign=city_bn" rel="noopener"><img src="/img/badges/bn.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – শীঘ্রই আসছে"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>শীঘ্রই আসছে</small>App Store</span></span></div></div>
-<h2 id="ramadan">কুমিল্লা-এ রমজান ২০২৭: সেহরি ও ইফতারের সময়</h2>
-<p class="note">রমজান ১৪৪৮ 9 ফেব্রুয়ারি, 2027 তারিখে শুরু হওয়ার কথা। শুরু চাঁদ দেখার ওপর নির্ভর করে, এক দিন আগে-পরে হতে পারে। <a href="/bn/romjaner-shomoysuchi-2027/">রমজান ২০২৭ সময়সূচি: শহর অনুযায়ী সেহরি ও ইফতারের সময়</a></p>
-<div class="scroll"><table><thead><tr><th>দিন</th><th>তারিখ</th><th>সেহরির শেষ সময় (ফজর শুরু)</th><th>ইফতার (মাগরিবের আজান)</th></tr></thead><tbody>
-<tr data-d="2027-02-09"><td>1</td><td>মঙ্গলবার, 9 ফেব্রুয়ারি, 2027</td><td>05:15</td><td>17:47</td></tr>
-<tr data-d="2027-02-10"><td>2</td><td>বুধবার, 10 ফেব্রুয়ারি, 2027</td><td>05:15</td><td>17:48</td></tr>
-<tr data-d="2027-02-11"><td>3</td><td>বৃহস্পতিবার, 11 ফেব্রুয়ারি, 2027</td><td>05:14</td><td>17:48</td></tr>
-<tr data-d="2027-02-12"><td>4</td><td>শুক্রবার, 12 ফেব্রুয়ারি, 2027</td><td>05:14</td><td>17:49</td></tr>
-<tr data-d="2027-02-13"><td>5</td><td>শনিবার, 13 ফেব্রুয়ারি, 2027</td><td>05:13</td><td>17:50</td></tr>
-<tr data-d="2027-02-14"><td>6</td><td>রবিবার, 14 ফেব্রুয়ারি, 2027</td><td>05:13</td><td>17:50</td></tr>
-<tr data-d="2027-02-15"><td>7</td><td>সোমবার, 15 ফেব্রুয়ারি, 2027</td><td>05:12</td><td>17:51</td></tr>
-<tr data-d="2027-02-16"><td>8</td><td>মঙ্গলবার, 16 ফেব্রুয়ারি, 2027</td><td>05:12</td><td>17:51</td></tr>
-<tr data-d="2027-02-17"><td>9</td><td>বুধবার, 17 ফেব্রুয়ারি, 2027</td><td>05:11</td><td>17:52</td></tr>
-<tr data-d="2027-02-18"><td>10</td><td>বৃহস্পতিবার, 18 ফেব্রুয়ারি, 2027</td><td>05:10</td><td>17:52</td></tr>
-<tr data-d="2027-02-19"><td>11</td><td>শুক্রবার, 19 ফেব্রুয়ারি, 2027</td><td>05:10</td><td>17:53</td></tr>
-<tr data-d="2027-02-20"><td>12</td><td>শনিবার, 20 ফেব্রুয়ারি, 2027</td><td>05:09</td><td>17:54</td></tr>
-<tr data-d="2027-02-21"><td>13</td><td>রবিবার, 21 ফেব্রুয়ারি, 2027</td><td>05:09</td><td>17:54</td></tr>
-<tr data-d="2027-02-22"><td>14</td><td>সোমবার, 22 ফেব্রুয়ারি, 2027</td><td>05:08</td><td>17:55</td></tr>
-<tr data-d="2027-02-23"><td>15</td><td>মঙ্গলবার, 23 ফেব্রুয়ারি, 2027</td><td>05:07</td><td>17:55</td></tr>
-<tr data-d="2027-02-24"><td>16</td><td>বুধবার, 24 ফেব্রুয়ারি, 2027</td><td>05:06</td><td>17:56</td></tr>
-<tr data-d="2027-02-25"><td>17</td><td>বৃহস্পতিবার, 25 ফেব্রুয়ারি, 2027</td><td>05:06</td><td>17:56</td></tr>
-<tr data-d="2027-02-26"><td>18</td><td>শুক্রবার, 26 ফেব্রুয়ারি, 2027</td><td>05:05</td><td>17:57</td></tr>
-<tr data-d="2027-02-27"><td>19</td><td>শনিবার, 27 ফেব্রুয়ারি, 2027</td><td>05:04</td><td>17:57</td></tr>
-<tr data-d="2027-02-28"><td>20</td><td>রবিবার, 28 ফেব্রুয়ারি, 2027</td><td>05:03</td><td>17:58</td></tr>
-<tr data-d="2027-03-01"><td>21</td><td>সোমবার, 1 মার্চ, 2027</td><td>05:03</td><td>17:58</td></tr>
-<tr data-d="2027-03-02"><td>22</td><td>মঙ্গলবার, 2 মার্চ, 2027</td><td>05:02</td><td>17:59</td></tr>
-<tr data-d="2027-03-03"><td>23</td><td>বুধবার, 3 মার্চ, 2027</td><td>05:01</td><td>17:59</td></tr>
-<tr data-d="2027-03-04"><td>24</td><td>বৃহস্পতিবার, 4 মার্চ, 2027</td><td>05:00</td><td>17:59</td></tr>
-<tr data-d="2027-03-05"><td>25</td><td>শুক্রবার, 5 মার্চ, 2027</td><td>04:59</td><td>18:00</td></tr>
-<tr data-d="2027-03-06"><td>26</td><td>শনিবার, 6 মার্চ, 2027</td><td>04:58</td><td>18:00</td></tr>
-<tr data-d="2027-03-07"><td>27</td><td>রবিবার, 7 মার্চ, 2027</td><td>04:57</td><td>18:01</td></tr>
-<tr data-d="2027-03-08"><td>28</td><td>সোমবার, 8 মার্চ, 2027</td><td>04:56</td><td>18:01</td></tr>
-<tr data-d="2027-03-09"><td>29</td><td>মঙ্গলবার, 9 মার্চ, 2027</td><td>04:56</td><td>18:02</td></tr>
-</tbody></table></div>
-<h2 id="monthly">কুমিল্লা মাসিক নামাজের সময়সূচি</h2>
-<details class="m" open><summary>নভেম্বর 2026</summary><div class="scroll"><table><thead><tr><th>তারিখ</th><th>ফজর</th><th>সূর্যোদয়</th><th>যোহর</th><th>আসর<small>হানাফি (ইমাম আবু হানিফা)</small></th><th>আসর<small>সাধারণ</small></th><th>মাগরিব</th><th>এশা</th></tr></thead><tbody>
+<section class="tab" data-tab="নামাজের সময়" id="monthly"><h2>কুমিল্লা মাসিক নামাজের সময়সূচি</h2><details class="m" open><summary>নভেম্বর 2026</summary><div class="scroll"><table><thead><tr><th>তারিখ</th><th>ফজর</th><th>সূর্যোদয়</th><th>যোহর</th><th>আসর<small>হানাফি (ইমাম আবু হানিফা)</small></th><th>আসর<small>সাধারণ</small></th><th>মাগরিব</th><th>এশা</th></tr></thead><tbody>
 <tr data-d="2026-11-01" data-l="রবিবার, 1 নভেম্বর, 2026"><td>1 রবি</td><td>04:44</td><td>06:01</td><td>11:40</td><td>15:40</td><td>14:52</td><td>17:17</td><td>18:33</td></tr>
 <tr data-d="2026-11-02" data-l="সোমবার, 2 নভেম্বর, 2026"><td>2 সোম</td><td>04:45</td><td>06:01</td><td>11:40</td><td>15:40</td><td>14:52</td><td>17:16</td><td>18:33</td></tr>
 <tr data-d="2026-11-03" data-l="মঙ্গলবার, 3 নভেম্বর, 2026"><td>3 মঙ্গল</td><td>04:45</td><td>06:02</td><td>11:40</td><td>15:39</td><td>14:51</td><td>17:16</td><td>18:32</td></tr>
@@ -543,15 +519,45 @@ a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-h
 <tr data-d="2027-12-30" data-l="বৃহস্পতিবার, 30 ডিসেম্বর, 2027"><td>30 বৃহস্পতি</td><td>05:16</td><td>06:36</td><td>11:59</td><td>15:43</td><td>14:59</td><td>17:19</td><td>18:39</td></tr>
 <tr data-d="2027-12-31" data-l="শুক্রবার, 31 ডিসেম্বর, 2027"><td>31 শুক্র</td><td>05:16</td><td>06:37</td><td>11:59</td><td>15:44</td><td>14:59</td><td>17:19</td><td>18:40</td></tr>
 </tbody></table></div></details>
-<p class="note">গণনা পদ্ধতি: Pakistan and India। আসর দুইভাবে দেওয়া হয়েছে: সাধারণ (শাফেয়ি, মালেকি, হাম্বলি) এবং হানাফি (ইমাম আবু হানিফা)। হিজরি মাসের শুরু হিসাবের উপর নির্ভরশীল; আপনার দেশের সরকারি ঘোষণা এক দিন ভিন্ন হতে পারে।</p>
-<h2 id="qibla">কিবলা</h2>
-<p>কুমিল্লা থেকে কিবলা ভৌগোলিক উত্তর থেকে ঘড়ির কাঁটার দিকে 278.1°। কাবা 5,255 কিমি দূরে। <a href="/bn/kiblar-dik/">আমার অবস্থান থেকে কিবলা খুঁজুন →</a></p>
-<section class="faq"><h2>সাধারণ প্রশ্ন</h2>
-<h3>কুমিল্লা-এ রমজান ২০২৭ কবে শুরু?</h3><p>কুমিল্লা-এ রমজান ১৪৪৮ 9 ফেব্রুয়ারি, 2027 তারিখে শুরু হওয়ার কথা। সঠিক শুরু দেশে চাঁদ দেখার ঘোষণার ওপর নির্ভর করে।</p>
+<p class="note">গণনা পদ্ধতি: Pakistan and India। আসর দুইভাবে দেওয়া হয়েছে: সাধারণ (শাফেয়ি, মালেকি, হাম্বলি) এবং হানাফি (ইমাম আবু হানিফা)। হিজরি মাসের শুরু হিসাবের উপর নির্ভরশীল; আপনার দেশের সরকারি ঘোষণা এক দিন ভিন্ন হতে পারে।</p></section>
+<section class="tab" data-tab="রমজান" id="ramadan"><h2>কুমিল্লা-এ রমজান ২০২৭: সেহরি ও ইফতারের সময়</h2><p class="note">রমজান ১৪৪৮ 9 ফেব্রুয়ারি, 2027 তারিখে শুরু হওয়ার কথা। শুরু চাঁদ দেখার ওপর নির্ভর করে, এক দিন আগে-পরে হতে পারে। <a href="/bn/romjaner-shomoysuchi-2027/">রমজান ২০২৭ সময়সূচি: শহর অনুযায়ী সেহরি ও ইফতারের সময়</a></p>
+<div class="scroll"><table><thead><tr><th>দিন</th><th>তারিখ</th><th>সেহরির শেষ সময় (ফজর শুরু)</th><th>ইফতার (মাগরিবের আজান)</th></tr></thead><tbody>
+<tr data-d="2027-02-09"><td>1</td><td>মঙ্গলবার, 9 ফেব্রুয়ারি, 2027</td><td>05:15</td><td>17:47</td></tr>
+<tr data-d="2027-02-10"><td>2</td><td>বুধবার, 10 ফেব্রুয়ারি, 2027</td><td>05:15</td><td>17:48</td></tr>
+<tr data-d="2027-02-11"><td>3</td><td>বৃহস্পতিবার, 11 ফেব্রুয়ারি, 2027</td><td>05:14</td><td>17:48</td></tr>
+<tr data-d="2027-02-12"><td>4</td><td>শুক্রবার, 12 ফেব্রুয়ারি, 2027</td><td>05:14</td><td>17:49</td></tr>
+<tr data-d="2027-02-13"><td>5</td><td>শনিবার, 13 ফেব্রুয়ারি, 2027</td><td>05:13</td><td>17:50</td></tr>
+<tr data-d="2027-02-14"><td>6</td><td>রবিবার, 14 ফেব্রুয়ারি, 2027</td><td>05:13</td><td>17:50</td></tr>
+<tr data-d="2027-02-15"><td>7</td><td>সোমবার, 15 ফেব্রুয়ারি, 2027</td><td>05:12</td><td>17:51</td></tr>
+<tr data-d="2027-02-16"><td>8</td><td>মঙ্গলবার, 16 ফেব্রুয়ারি, 2027</td><td>05:12</td><td>17:51</td></tr>
+<tr data-d="2027-02-17"><td>9</td><td>বুধবার, 17 ফেব্রুয়ারি, 2027</td><td>05:11</td><td>17:52</td></tr>
+<tr data-d="2027-02-18"><td>10</td><td>বৃহস্পতিবার, 18 ফেব্রুয়ারি, 2027</td><td>05:10</td><td>17:52</td></tr>
+<tr data-d="2027-02-19"><td>11</td><td>শুক্রবার, 19 ফেব্রুয়ারি, 2027</td><td>05:10</td><td>17:53</td></tr>
+<tr data-d="2027-02-20"><td>12</td><td>শনিবার, 20 ফেব্রুয়ারি, 2027</td><td>05:09</td><td>17:54</td></tr>
+<tr data-d="2027-02-21"><td>13</td><td>রবিবার, 21 ফেব্রুয়ারি, 2027</td><td>05:09</td><td>17:54</td></tr>
+<tr data-d="2027-02-22"><td>14</td><td>সোমবার, 22 ফেব্রুয়ারি, 2027</td><td>05:08</td><td>17:55</td></tr>
+<tr data-d="2027-02-23"><td>15</td><td>মঙ্গলবার, 23 ফেব্রুয়ারি, 2027</td><td>05:07</td><td>17:55</td></tr>
+<tr data-d="2027-02-24"><td>16</td><td>বুধবার, 24 ফেব্রুয়ারি, 2027</td><td>05:06</td><td>17:56</td></tr>
+<tr data-d="2027-02-25"><td>17</td><td>বৃহস্পতিবার, 25 ফেব্রুয়ারি, 2027</td><td>05:06</td><td>17:56</td></tr>
+<tr data-d="2027-02-26"><td>18</td><td>শুক্রবার, 26 ফেব্রুয়ারি, 2027</td><td>05:05</td><td>17:57</td></tr>
+<tr data-d="2027-02-27"><td>19</td><td>শনিবার, 27 ফেব্রুয়ারি, 2027</td><td>05:04</td><td>17:57</td></tr>
+<tr data-d="2027-02-28"><td>20</td><td>রবিবার, 28 ফেব্রুয়ারি, 2027</td><td>05:03</td><td>17:58</td></tr>
+<tr data-d="2027-03-01"><td>21</td><td>সোমবার, 1 মার্চ, 2027</td><td>05:03</td><td>17:58</td></tr>
+<tr data-d="2027-03-02"><td>22</td><td>মঙ্গলবার, 2 মার্চ, 2027</td><td>05:02</td><td>17:59</td></tr>
+<tr data-d="2027-03-03"><td>23</td><td>বুধবার, 3 মার্চ, 2027</td><td>05:01</td><td>17:59</td></tr>
+<tr data-d="2027-03-04"><td>24</td><td>বৃহস্পতিবার, 4 মার্চ, 2027</td><td>05:00</td><td>17:59</td></tr>
+<tr data-d="2027-03-05"><td>25</td><td>শুক্রবার, 5 মার্চ, 2027</td><td>04:59</td><td>18:00</td></tr>
+<tr data-d="2027-03-06"><td>26</td><td>শনিবার, 6 মার্চ, 2027</td><td>04:58</td><td>18:00</td></tr>
+<tr data-d="2027-03-07"><td>27</td><td>রবিবার, 7 মার্চ, 2027</td><td>04:57</td><td>18:01</td></tr>
+<tr data-d="2027-03-08"><td>28</td><td>সোমবার, 8 মার্চ, 2027</td><td>04:56</td><td>18:01</td></tr>
+<tr data-d="2027-03-09"><td>29</td><td>মঙ্গলবার, 9 মার্চ, 2027</td><td>04:56</td><td>18:02</td></tr>
+</tbody></table></div></section>
+<section class="tab" data-tab="কিবলা" id="qibla"><h2>কিবলা</h2><p>কুমিল্লা থেকে কিবলা ভৌগোলিক উত্তর থেকে ঘড়ির কাঁটার দিকে 278.1°। কাবা 5,255 কিমি দূরে। <a href="/bn/kiblar-dik/">আমার অবস্থান থেকে কিবলা খুঁজুন →</a></p></section>
+<section class="tab" data-tab="সাধারণ প্রশ্ন" id="faq"><h2>সাধারণ প্রশ্ন</h2><div class="faq"><h3>কুমিল্লা-এ রমজান ২০২৭ কবে শুরু?</h3><p>কুমিল্লা-এ রমজান ১৪৪৮ 9 ফেব্রুয়ারি, 2027 তারিখে শুরু হওয়ার কথা। সঠিক শুরু দেশে চাঁদ দেখার ঘোষণার ওপর নির্ভর করে।</p>
 <h3>কুমিল্লা-এ রমজানের প্রথম দিন সেহরি ও ইফতার কখন?</h3><p>9 ফেব্রুয়ারি, 2027 তারিখে কুমিল্লা-এ সেহরি শেষ 05:15-এ (ফজর) এবং ইফতার 17:47-এ (মাগরিব)।</p>
 <h3>কুমিল্লা-এ কিবলা কোন দিকে?</h3><p>কুমিল্লা থেকে কিবলা ভৌগোলিক উত্তর থেকে ঘড়ির কাঁটার দিকে 278.1°। কাবা 5,255 কিমি দূরে।</p>
-<h3>কুমিল্লা-এ নামাজের সময় আমার ফোন কি আজান দিতে পারে?</h3><p>হ্যাঁ। Mubarly কুমিল্লা-এ প্রতিটি নামাজের সময় অ্যালার্মের আওয়াজে আজান দেয়, ফোন সাইলেন্টে থাকলেও। ইন্টারনেট ও অ্যাকাউন্ট ছাড়াই চলে।</p>
-</section>
+<h3>কুমিল্লা-এ নামাজের সময় আমার ফোন কি আজান দিতে পারে?</h3><p>হ্যাঁ। Mubarly কুমিল্লা-এ প্রতিটি নামাজের সময় অ্যালার্মের আওয়াজে আজান দেয়, ফোন সাইলেন্টে থাকলেও। ইন্টারনেট ও অ্যাকাউন্ট ছাড়াই চলে।</p></div></section>
+<div class="cta" id="app"><p><strong>ফোন সাইলেন্টে থাকলেও অ্যালার্মের আওয়াজে আজান শুনুন</strong><small>বিনামূল্যে · ইন্টারনেট ছাড়া · ২০টি ভাষা · চার মাজহাব</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=bn&utm_source=mubarly_site&utm_campaign=city_bn" rel="noopener"><img src="/img/badges/bn.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – শীঘ্রই আসছে"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>শীঘ্রই আসছে</small>App Store</span></span></div></div>
 <h2>অন্যান্য শহর</h2>
 <ul class="cities"><li><a href="/bn/namazer-shomoy/mecca/">মক্কা</a></li><li><a href="/bn/namazer-shomoy/medina/">মদিনা</a></li><li><a href="/bn/namazer-shomoy/riyadh/">রিয়াদ</a></li><li><a href="/bn/namazer-shomoy/jeddah/">জেদ্দা</a></li><li><a href="/bn/namazer-shomoy/dubai/">দুবাই</a></li><li><a href="/bn/namazer-shomoy/kolkata/">কলকাতা</a></li><li><a href="/bn/namazer-shomoy/dhaka/">ঢাকা</a></li><li><a href="/bn/namazer-shomoy/chittagong/">চট্টগ্রাম</a></li><li><a href="/bn/namazer-shomoy/sylhet/">সিলেট</a></li><li><a href="/bn/namazer-shomoy/rajshahi/">রাজশাহী</a></li><li><a href="/bn/namazer-shomoy/khulna/">খুলনা</a></li><li><a href="/bn/namazer-shomoy/barisal/">বরিশাল</a></li><li><a href="/bn/namazer-shomoy/rangpur/">রংপুর</a></li><li><a href="/bn/namazer-shomoy/mymensingh/">ময়মনসিংহ</a></li><li><a href="/bn/namazer-shomoy/gazipur/">গাজীপুর</a></li><li><a href="/bn/namazer-shomoy/narayanganj/">নারায়ণগঞ্জ</a></li><li><a href="/bn/namazer-shomoy/london/">লন্ডন</a></li><li><a href="/bn/namazer-shomoy/new-york/">নিউ ইয়র্ক</a></li></ul>
 <script>(function(){try{var d=new Intl.DateTimeFormat('en-CA',{timeZone:"Asia/Dhaka",year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());var r=document.querySelector('tr[data-d="'+d+'"]');if(!r)return;
@@ -565,7 +571,10 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/bn/islamic-guide/">ইসলামিক গাইড</a><a href="/bn/privacy.html">গোপনীয়তা নীতি</a><a href="/bn/terms.html">ব্যবহারের শর্ত</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
+<script>(function(){var ts=[].slice.call(document.querySelectorAll('main .tab'));if(ts.length<2)return;var bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');ts[0].parentNode.insertBefore(bar,ts[0]);document.querySelector('main').classList.add('tabbed');
+var bs=ts.map(function(t,i){var b=document.createElement('button');b.type='button';b.id='tb-'+t.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',t.id);t.setAttribute('role','tabpanel');t.setAttribute('aria-labelledby',b.id);b.textContent=t.getAttribute('data-tab');b.onclick=function(){show(i,true)};b.onkeydown=function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(document.dir==='rtl')k=-k;if(k){var n=(i+k+ts.length)%ts.length;show(n,true);bs[n].focus()}};bar.appendChild(b);return b});
+function show(i,user){ts.forEach(function(t,j){t.hidden=j!==i;bs[j].setAttribute('aria-selected',j===i);bs[j].tabIndex=j===i?0:-1});if(user){history.replaceState(null,'','#'+ts[i].id);bs[i].scrollIntoView({block:'nearest',inline:'center'});if(bar.getBoundingClientRect().top<0||window.scrollY>bar.offsetTop)bar.scrollIntoView()}}
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1)),k=-1;ts.forEach(function(t,j){if(t.id===h||t.querySelector('[id="'+h+'"]'))k=j});return k}var k0=fromHash();show(Math.max(0,k0));if(k0>0)bs[k0].scrollIntoView({block:'nearest',inline:'center'});addEventListener('hashchange',function(){var k=fromHash();if(k>=0)show(k)})})();(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';

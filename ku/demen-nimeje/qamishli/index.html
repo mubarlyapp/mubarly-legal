@@ -46,51 +46,27 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
 .dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
 @media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
-@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+h1,h2,h3{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;letter-spacing:-.01em}
+.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:#EDE6CF;background:radial-gradient(110% 90% at 85% 0,#1a5a43 0,#0B3B2C 45%,#061A13 100%);padding:6px 0 30px;margin-bottom:8px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;pointer-events:none}.hero .wrap{position:relative}
+.hero h1{color:#F3E7C2;font-weight:800;margin:6px 0 10px}.hero .lead{color:#CFC6AA;max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:#BDB292}
+.hero .mini{background:#ffffff0d;border-color:#ffffff24;color:#EDE6CF;backdrop-filter:blur(2px)}.hero .mini small{color:#CFC6AA}.hero a.dl{background:#D4B062;color:#061A13}
+main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:none;width:6px;height:1.1em;border-radius:3px;background:linear-gradient(#D4B062,#76571A)}
+.tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/ku/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
-<main class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/ku/">Mubarly</a> › <a href="/ku/demen-nimeje/">Demên nimêjê</a> › Qamişlo</nav>
+<section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/ku/">Mubarly</a> › <a href="/ku/demen-nimeje/">Demên nimêjê</a> › Qamişlo</nav>
 <h1>Demên nimêjê li Qamişlo</h1>
-<p class="lead">Li Qamişlo ji bo her rojê heta dawiya 2027an demên sibê, rojhilat, nîvro, esir, mexrib û eşa, paşîv û fitara Remezana 2027 û alîyê qibleyê.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Bangê bi dengê alarmê bibihîze, heta ku telefon bêdeng be jî</strong><small>Belaş · bê înternet · 20 ziman · çar mezheb</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Belaş daxe</a></aside>
+<p class="lead">Li Qamişlo ji bo her rojê heta dawiya 2027an demên sibê, rojhilat, nîvro, esir, mexrib û eşa, paşîv û fitara Remezana 2027 û alîyê qibleyê.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Bangê bi dengê alarmê bibihîze, heta ku telefon bêdeng be jî</strong><small>Belaş · bê înternet · 20 ziman · çar mezheb</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Belaş daxe</a></aside></div></section>
+<main class="wrap">
+
 <section id="today" class="card" hidden aria-live="polite"><p class="d">Îro</p><ul><li><b>—</b><span>Beyanî</span></li><li><b>—</b><span>Hilatina rojê</span></li><li><b>—</b><span>Nîvro</span></li><li><b>—</b><span>Êvarî</span></li><li><b>—</b><span>Mexrib</span></li><li><b>—</b><span>Eşa</span></li></ul></section>
-<div class="cta"><p><strong>Bangê bi dengê alarmê bibihîze, heta ku telefon bêdeng be jî</strong><small>Belaş · bê înternet · 20 ziman · çar mezheb</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=city_ku" rel="noopener"><img src="/img/badges/en.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Di nêzîk de"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Di nêzîk de</small>App Store</span></span></div></div>
-<h2 id="ramadan">Remezana 2027 li Qamişlo: demên paşîv û fitarê</h2>
-<p class="note">Tê payîn ku Remezana 1448an di 8ê sibata 2027an de dest pê bike. Destpêk bi dîtina hîvê ve girêdayî ye û dibe ku rojekê cuda be. <a href="/ku/remezan-2027/">Bernameya Remezanê 2027: Demên Paşîv û Fitarê li gorî Bajaran</a></p>
-<div class="scroll"><table><thead><tr><th>Roj</th><th>Dîrok</th><th>Îmsak (paşîv bi dawî dibe)</th><th>Fitar (banga mexribê)</th></tr></thead><tbody>
-<tr data-d="2027-02-08"><td>1</td><td>duşem, 8ê sibata 2027an</td><td>05:36</td><td>17:47</td></tr>
-<tr data-d="2027-02-09"><td>2</td><td>sêşem, 9ê sibata 2027an</td><td>05:35</td><td>17:48</td></tr>
-<tr data-d="2027-02-10"><td>3</td><td>çarşem, 10ê sibata 2027an</td><td>05:34</td><td>17:49</td></tr>
-<tr data-d="2027-02-11"><td>4</td><td>pêncşem, 11ê sibata 2027an</td><td>05:33</td><td>17:50</td></tr>
-<tr data-d="2027-02-12"><td>5</td><td>înî, 12ê sibata 2027an</td><td>05:33</td><td>17:51</td></tr>
-<tr data-d="2027-02-13"><td>6</td><td>şemî, 13ê sibata 2027an</td><td>05:32</td><td>17:53</td></tr>
-<tr data-d="2027-02-14"><td>7</td><td>yekşem, 14ê sibata 2027an</td><td>05:31</td><td>17:54</td></tr>
-<tr data-d="2027-02-15"><td>8</td><td>duşem, 15ê sibata 2027an</td><td>05:30</td><td>17:55</td></tr>
-<tr data-d="2027-02-16"><td>9</td><td>sêşem, 16ê sibata 2027an</td><td>05:29</td><td>17:56</td></tr>
-<tr data-d="2027-02-17"><td>10</td><td>çarşem, 17ê sibata 2027an</td><td>05:27</td><td>17:57</td></tr>
-<tr data-d="2027-02-18"><td>11</td><td>pêncşem, 18ê sibata 2027an</td><td>05:26</td><td>17:58</td></tr>
-<tr data-d="2027-02-19"><td>12</td><td>înî, 19ê sibata 2027an</td><td>05:25</td><td>17:59</td></tr>
-<tr data-d="2027-02-20"><td>13</td><td>şemî, 20ê sibata 2027an</td><td>05:24</td><td>18:00</td></tr>
-<tr data-d="2027-02-21"><td>14</td><td>yekşem, 21ê sibata 2027an</td><td>05:23</td><td>18:01</td></tr>
-<tr data-d="2027-02-22"><td>15</td><td>duşem, 22ê sibata 2027an</td><td>05:22</td><td>18:02</td></tr>
-<tr data-d="2027-02-23"><td>16</td><td>sêşem, 23ê sibata 2027an</td><td>05:21</td><td>18:03</td></tr>
-<tr data-d="2027-02-24"><td>17</td><td>çarşem, 24ê sibata 2027an</td><td>05:19</td><td>18:04</td></tr>
-<tr data-d="2027-02-25"><td>18</td><td>pêncşem, 25ê sibata 2027an</td><td>05:18</td><td>18:05</td></tr>
-<tr data-d="2027-02-26"><td>19</td><td>înî, 26ê sibata 2027an</td><td>05:17</td><td>18:06</td></tr>
-<tr data-d="2027-02-27"><td>20</td><td>şemî, 27ê sibata 2027an</td><td>05:16</td><td>18:07</td></tr>
-<tr data-d="2027-02-28"><td>21</td><td>yekşem, 28ê sibata 2027an</td><td>05:14</td><td>18:08</td></tr>
-<tr data-d="2027-03-01"><td>22</td><td>duşem, 1ê adara 2027an</td><td>05:13</td><td>18:09</td></tr>
-<tr data-d="2027-03-02"><td>23</td><td>sêşem, 2ê adara 2027an</td><td>05:12</td><td>18:10</td></tr>
-<tr data-d="2027-03-03"><td>24</td><td>çarşem, 3ê adara 2027an</td><td>05:10</td><td>18:11</td></tr>
-<tr data-d="2027-03-04"><td>25</td><td>pêncşem, 4ê adara 2027an</td><td>05:09</td><td>18:12</td></tr>
-<tr data-d="2027-03-05"><td>26</td><td>înî, 5ê adara 2027an</td><td>05:07</td><td>18:13</td></tr>
-<tr data-d="2027-03-06"><td>27</td><td>şemî, 6ê adara 2027an</td><td>05:06</td><td>18:14</td></tr>
-<tr data-d="2027-03-07"><td>28</td><td>yekşem, 7ê adara 2027an</td><td>05:05</td><td>18:15</td></tr>
-<tr data-d="2027-03-08"><td>29</td><td>duşem, 8ê adara 2027an</td><td>05:03</td><td>18:16</td></tr>
-</tbody></table></div>
-<h2 id="monthly">Salnameya nimêjê ya mehane ya Qamişlo</h2>
-<details class="m" open><summary>mijdara 2026an</summary><div class="scroll"><table><thead><tr><th>Dîrok</th><th>Beyanî</th><th>Hilatina rojê</th><th>Nîvro</th><th>Êvarî<small>Standard</small></th><th>Êvarî<small>Henefî (Ebû Henîfe)</small></th><th>Mexrib</th><th>Eşa</th></tr></thead><tbody>
+<section class="tab" data-tab="Demên nimêjê" id="monthly"><h2>Salnameya nimêjê ya mehane ya Qamişlo</h2><details class="m" open><summary>mijdara 2026an</summary><div class="scroll"><table><thead><tr><th>Dîrok</th><th>Beyanî</th><th>Hilatina rojê</th><th>Nîvro</th><th>Êvarî<small>Standard</small></th><th>Êvarî<small>Henefî (Ebû Henîfe)</small></th><th>Mexrib</th><th>Eşa</th></tr></thead><tbody>
 <tr data-d="2026-11-01" data-l="yekşem, 1ê mijdara 2026an"><td>1, yşm</td><td>05:04</td><td>06:39</td><td>12:00</td><td>14:54</td><td>15:38</td><td>17:18</td><td>18:43</td></tr>
 <tr data-d="2026-11-02" data-l="duşem, 2ê mijdara 2026an"><td>2, dşm</td><td>05:04</td><td>06:40</td><td>12:00</td><td>14:53</td><td>15:37</td><td>17:17</td><td>18:42</td></tr>
 <tr data-d="2026-11-03" data-l="sêşem, 3ê mijdara 2026an"><td>3, sşm</td><td>05:05</td><td>06:41</td><td>12:00</td><td>14:53</td><td>15:36</td><td>17:16</td><td>18:41</td></tr>
@@ -544,15 +520,45 @@ a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-h
 <tr data-d="2027-12-30" data-l="pêncşem, 30ê berfanbara 2027an"><td>30, pşm</td><td>05:47</td><td>07:28</td><td>12:18</td><td>14:49</td><td>15:28</td><td>17:07</td><td>18:38</td></tr>
 <tr data-d="2027-12-31" data-l="înî, 31ê berfanbara 2027an"><td>31, înî</td><td>05:47</td><td>07:28</td><td>12:19</td><td>14:50</td><td>15:29</td><td>17:08</td><td>18:38</td></tr>
 </tbody></table></div></details>
-<p class="note">Rêbaza hesabkirinê: Egypt. Esir du caran hatiye dayîn: Standard (Şafiî, Malikî, Henbelî) û Henefî (Ebû Henîfe). Destpêka mehên Hîcrî xwe dispêre hesêb; ragihandina fermî ya welatê te dikare rojekê cuda be.</p>
-<h2 id="qibla">Qible</h2>
-<p>Ji Qamişlo qible 184,8° ji bakurê rastîn e, li gorî zivirîna demjimêrê. Kabe 1.743 km dûr e. <a href="/ku/aliye-qible/">Qibleyê ji cihê min bibîne →</a></p>
-<section class="faq"><h2>Pirsên pir tên pirsîn</h2>
-<h3>Remezana 2027 li Qamişlo kengê dest pê dike?</h3><p>Tê payîn ku Remezana 1448an li Qamişlo di 8ê sibata 2027an de dest pê bike. Destpêka rast bi ragihandina dîtina hîvê ya welêt ve girêdayî ye.</p>
+<p class="note">Rêbaza hesabkirinê: Egypt. Esir du caran hatiye dayîn: Standard (Şafiî, Malikî, Henbelî) û Henefî (Ebû Henîfe). Destpêka mehên Hîcrî xwe dispêre hesêb; ragihandina fermî ya welatê te dikare rojekê cuda be.</p></section>
+<section class="tab" data-tab="Remezan" id="ramadan"><h2>Remezana 2027 li Qamişlo: demên paşîv û fitarê</h2><p class="note">Tê payîn ku Remezana 1448an di 8ê sibata 2027an de dest pê bike. Destpêk bi dîtina hîvê ve girêdayî ye û dibe ku rojekê cuda be. <a href="/ku/remezan-2027/">Bernameya Remezanê 2027: Demên Paşîv û Fitarê li gorî Bajaran</a></p>
+<div class="scroll"><table><thead><tr><th>Roj</th><th>Dîrok</th><th>Îmsak (paşîv bi dawî dibe)</th><th>Fitar (banga mexribê)</th></tr></thead><tbody>
+<tr data-d="2027-02-08"><td>1</td><td>duşem, 8ê sibata 2027an</td><td>05:36</td><td>17:47</td></tr>
+<tr data-d="2027-02-09"><td>2</td><td>sêşem, 9ê sibata 2027an</td><td>05:35</td><td>17:48</td></tr>
+<tr data-d="2027-02-10"><td>3</td><td>çarşem, 10ê sibata 2027an</td><td>05:34</td><td>17:49</td></tr>
+<tr data-d="2027-02-11"><td>4</td><td>pêncşem, 11ê sibata 2027an</td><td>05:33</td><td>17:50</td></tr>
+<tr data-d="2027-02-12"><td>5</td><td>înî, 12ê sibata 2027an</td><td>05:33</td><td>17:51</td></tr>
+<tr data-d="2027-02-13"><td>6</td><td>şemî, 13ê sibata 2027an</td><td>05:32</td><td>17:53</td></tr>
+<tr data-d="2027-02-14"><td>7</td><td>yekşem, 14ê sibata 2027an</td><td>05:31</td><td>17:54</td></tr>
+<tr data-d="2027-02-15"><td>8</td><td>duşem, 15ê sibata 2027an</td><td>05:30</td><td>17:55</td></tr>
+<tr data-d="2027-02-16"><td>9</td><td>sêşem, 16ê sibata 2027an</td><td>05:29</td><td>17:56</td></tr>
+<tr data-d="2027-02-17"><td>10</td><td>çarşem, 17ê sibata 2027an</td><td>05:27</td><td>17:57</td></tr>
+<tr data-d="2027-02-18"><td>11</td><td>pêncşem, 18ê sibata 2027an</td><td>05:26</td><td>17:58</td></tr>
+<tr data-d="2027-02-19"><td>12</td><td>înî, 19ê sibata 2027an</td><td>05:25</td><td>17:59</td></tr>
+<tr data-d="2027-02-20"><td>13</td><td>şemî, 20ê sibata 2027an</td><td>05:24</td><td>18:00</td></tr>
+<tr data-d="2027-02-21"><td>14</td><td>yekşem, 21ê sibata 2027an</td><td>05:23</td><td>18:01</td></tr>
+<tr data-d="2027-02-22"><td>15</td><td>duşem, 22ê sibata 2027an</td><td>05:22</td><td>18:02</td></tr>
+<tr data-d="2027-02-23"><td>16</td><td>sêşem, 23ê sibata 2027an</td><td>05:21</td><td>18:03</td></tr>
+<tr data-d="2027-02-24"><td>17</td><td>çarşem, 24ê sibata 2027an</td><td>05:19</td><td>18:04</td></tr>
+<tr data-d="2027-02-25"><td>18</td><td>pêncşem, 25ê sibata 2027an</td><td>05:18</td><td>18:05</td></tr>
+<tr data-d="2027-02-26"><td>19</td><td>înî, 26ê sibata 2027an</td><td>05:17</td><td>18:06</td></tr>
+<tr data-d="2027-02-27"><td>20</td><td>şemî, 27ê sibata 2027an</td><td>05:16</td><td>18:07</td></tr>
+<tr data-d="2027-02-28"><td>21</td><td>yekşem, 28ê sibata 2027an</td><td>05:14</td><td>18:08</td></tr>
+<tr data-d="2027-03-01"><td>22</td><td>duşem, 1ê adara 2027an</td><td>05:13</td><td>18:09</td></tr>
+<tr data-d="2027-03-02"><td>23</td><td>sêşem, 2ê adara 2027an</td><td>05:12</td><td>18:10</td></tr>
+<tr data-d="2027-03-03"><td>24</td><td>çarşem, 3ê adara 2027an</td><td>05:10</td><td>18:11</td></tr>
+<tr data-d="2027-03-04"><td>25</td><td>pêncşem, 4ê adara 2027an</td><td>05:09</td><td>18:12</td></tr>
+<tr data-d="2027-03-05"><td>26</td><td>înî, 5ê adara 2027an</td><td>05:07</td><td>18:13</td></tr>
+<tr data-d="2027-03-06"><td>27</td><td>şemî, 6ê adara 2027an</td><td>05:06</td><td>18:14</td></tr>
+<tr data-d="2027-03-07"><td>28</td><td>yekşem, 7ê adara 2027an</td><td>05:05</td><td>18:15</td></tr>
+<tr data-d="2027-03-08"><td>29</td><td>duşem, 8ê adara 2027an</td><td>05:03</td><td>18:16</td></tr>
+</tbody></table></div></section>
+<section class="tab" data-tab="Qible" id="qibla"><h2>Qible</h2><p>Ji Qamişlo qible 184,8° ji bakurê rastîn e, li gorî zivirîna demjimêrê. Kabe 1.743 km dûr e. <a href="/ku/aliye-qible/">Qibleyê ji cihê min bibîne →</a></p></section>
+<section class="tab" data-tab="Pirsên pir tên pirsîn" id="faq"><h2>Pirsên pir tên pirsîn</h2><div class="faq"><h3>Remezana 2027 li Qamişlo kengê dest pê dike?</h3><p>Tê payîn ku Remezana 1448an li Qamişlo di 8ê sibata 2027an de dest pê bike. Destpêka rast bi ragihandina dîtina hîvê ya welêt ve girêdayî ye.</p>
 <h3>Li Qamişlo di roja yekem a Remezanê de paşîv û fitar di saet çendan de ne?</h3><p>Di 8ê sibata 2027an de li Qamişlo paşîv di 05:36 de diqede (sibê) û fitar di 17:47 de ye (mexrib).</p>
 <h3>Li Qamişlo qible li kîjan alî ye?</h3><p>Ji Qamişlo qible 184,8° ji bakurê rastîn e, li gorî zivirîna demjimêrê. Kabe 1.743 km dûr e.</p>
-<h3>Gelo telefona min dikare li Qamişlo di dema nimêjê de bang bide?</h3><p>Erê. Mubarly li Qamişlo di her dema nimêjê de bi dengê alarmê bang dide, heta ku telefon bêdeng be jî. Bê înternet û bê hesab dixebite.</p>
-</section>
+<h3>Gelo telefona min dikare li Qamişlo di dema nimêjê de bang bide?</h3><p>Erê. Mubarly li Qamişlo di her dema nimêjê de bi dengê alarmê bang dide, heta ku telefon bêdeng be jî. Bê înternet û bê hesab dixebite.</p></div></section>
+<div class="cta" id="app"><p><strong>Bangê bi dengê alarmê bibihîze, heta ku telefon bêdeng be jî</strong><small>Belaş · bê înternet · 20 ziman · çar mezheb</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=city_ku" rel="noopener"><img src="/img/badges/en.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Di nêzîk de"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Di nêzîk de</small>App Store</span></span></div></div>
 <h2>Bajarên din</h2>
 <ul class="cities"><li><a href="/ku/demen-nimeje/istanbul/">Stenbol</a></li><li><a href="/ku/demen-nimeje/sanliurfa/">Riha</a></li><li><a href="/ku/demen-nimeje/diyarbakir/">Amed</a></li><li><a href="/ku/demen-nimeje/van/">Wan</a></li><li><a href="/ku/demen-nimeje/mardin/">Mêrdîn</a></li><li><a href="/ku/demen-nimeje/batman/">Êlih</a></li><li><a href="/ku/demen-nimeje/hakkari/">Colemêrg</a></li><li><a href="/ku/demen-nimeje/siirt/">Sêrt</a></li><li><a href="/ku/demen-nimeje/sirnak/">Şirnex</a></li><li><a href="/ku/demen-nimeje/bitlis/">Bedlîs</a></li><li><a href="/ku/demen-nimeje/mus/">Mûş</a></li><li><a href="/ku/demen-nimeje/agri/">Agirî</a></li><li><a href="/ku/demen-nimeje/adiyaman/">Semsûr</a></li><li><a href="/ku/demen-nimeje/bingol/">Çewlîg</a></li><li><a href="/ku/demen-nimeje/elazig/">Elezîz</a></li><li><a href="/ku/demen-nimeje/igdir/">Îdir</a></li><li><a href="/ku/demen-nimeje/kars/">Qers</a></li><li><a href="/ku/demen-nimeje/erbil/">Hewlêr</a></li><li><a href="/ku/demen-nimeje/duhok/">Duhok</a></li></ul>
 <script>(function(){try{var d=new Intl.DateTimeFormat('en-CA',{timeZone:"Asia/Damascus",year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());var r=document.querySelector('tr[data-d="'+d+'"]');if(!r)return;
@@ -566,7 +572,10 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/ku/reberen-islami/">Rêberên Îslamî</a><a href="/ku/privacy.html">Siyaseta nepeniyê</a><a href="/ku/terms.html">Şertên bikaranînê</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
+<script>(function(){var ts=[].slice.call(document.querySelectorAll('main .tab'));if(ts.length<2)return;var bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');ts[0].parentNode.insertBefore(bar,ts[0]);document.querySelector('main').classList.add('tabbed');
+var bs=ts.map(function(t,i){var b=document.createElement('button');b.type='button';b.id='tb-'+t.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',t.id);t.setAttribute('role','tabpanel');t.setAttribute('aria-labelledby',b.id);b.textContent=t.getAttribute('data-tab');b.onclick=function(){show(i,true)};b.onkeydown=function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(document.dir==='rtl')k=-k;if(k){var n=(i+k+ts.length)%ts.length;show(n,true);bs[n].focus()}};bar.appendChild(b);return b});
+function show(i,user){ts.forEach(function(t,j){t.hidden=j!==i;bs[j].setAttribute('aria-selected',j===i);bs[j].tabIndex=j===i?0:-1});if(user){history.replaceState(null,'','#'+ts[i].id);bs[i].scrollIntoView({block:'nearest',inline:'center'});if(bar.getBoundingClientRect().top<0||window.scrollY>bar.offsetTop)bar.scrollIntoView()}}
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1)),k=-1;ts.forEach(function(t,j){if(t.id===h||t.querySelector('[id="'+h+'"]'))k=j});return k}var k0=fromHash();show(Math.max(0,k0));if(k0>0)bs[k0].scrollIntoView({block:'nearest',inline:'center'});addEventListener('hashchange',function(){var k=fromHash();if(k>=0)show(k)})})();(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';

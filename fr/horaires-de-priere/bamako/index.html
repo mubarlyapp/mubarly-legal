@@ -45,51 +45,27 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
 .dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
 @media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
-@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+h1,h2,h3{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;letter-spacing:-.01em}
+.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:#EDE6CF;background:radial-gradient(110% 90% at 85% 0,#1a5a43 0,#0B3B2C 45%,#061A13 100%);padding:6px 0 30px;margin-bottom:8px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;pointer-events:none}.hero .wrap{position:relative}
+.hero h1{color:#F3E7C2;font-weight:800;margin:6px 0 10px}.hero .lead{color:#CFC6AA;max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:#BDB292}
+.hero .mini{background:#ffffff0d;border-color:#ffffff24;color:#EDE6CF;backdrop-filter:blur(2px)}.hero .mini small{color:#CFC6AA}.hero a.dl{background:#D4B062;color:#061A13}
+main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:none;width:6px;height:1.1em;border-radius:3px;background:linear-gradient(#D4B062,#76571A)}
+.tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/fr/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
-<main class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/fr/">Mubarly</a> › <a href="/fr/horaires-de-priere/">Horaires de prière</a> › Bamako</nav>
+<section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/fr/">Mubarly</a> › <a href="/fr/horaires-de-priere/">Horaires de prière</a> › Bamako</nav>
 <h1>Horaires de prière à Bamako</h1>
-<p class="lead">Fajr, lever du soleil, dhuhr, asr, maghrib et isha à Bamako pour chaque jour jusqu’à fin 2027, avec le suhoor et l’iftar du Ramadan 2027 et la direction de la qibla.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Entendez l’adhan au volume de l’alarme, même en silencieux</strong><small>Gratuit · hors ligne · 20 langues · les quatre écoles</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Télécharger gratuitement</a></aside>
+<p class="lead">Fajr, lever du soleil, dhuhr, asr, maghrib et isha à Bamako pour chaque jour jusqu’à fin 2027, avec le suhoor et l’iftar du Ramadan 2027 et la direction de la qibla.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Entendez l’adhan au volume de l’alarme, même en silencieux</strong><small>Gratuit · hors ligne · 20 langues · les quatre écoles</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Télécharger gratuitement</a></aside></div></section>
+<main class="wrap">
+
 <section id="today" class="card" hidden aria-live="polite"><p class="d">Aujourd’hui</p><ul><li><b>—</b><span>Fajr</span></li><li><b>—</b><span>Lever du soleil</span></li><li><b>—</b><span>Dhuhr</span></li><li><b>—</b><span>Asr</span></li><li><b>—</b><span>Maghrib</span></li><li><b>—</b><span>Isha</span></li></ul></section>
-<div class="cta"><p><strong>Entendez l’adhan au volume de l’alarme, même en silencieux</strong><small>Gratuit · hors ligne · 20 langues · les quatre écoles</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=city_fr" rel="noopener"><img src="/img/badges/fr.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Bientôt disponible"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Bientôt disponible</small>App Store</span></span></div></div>
-<h2 id="ramadan">Ramadan 2027 à Bamako : heures du suhoor et de l’iftar</h2>
-<p class="note">Le Ramadan 1448 devrait commencer le 8 février 2027. Le début dépend de l’observation du croissant et peut varier d’un jour. <a href="/fr/calendrier-ramadan-2027/">Calendrier du Ramadan 2027 : suhoor et iftar par ville</a></p>
-<div class="scroll"><table><thead><tr><th>Jour</th><th>Date</th><th>Début du jeûne (Fajr)</th><th>Iftar (adhan du Maghrib)</th></tr></thead><tbody>
-<tr data-d="2027-02-08"><td>1</td><td>lundi 8 février 2027</td><td>05:44</td><td>18:36</td></tr>
-<tr data-d="2027-02-09"><td>2</td><td>mardi 9 février 2027</td><td>05:44</td><td>18:36</td></tr>
-<tr data-d="2027-02-10"><td>3</td><td>mercredi 10 février 2027</td><td>05:44</td><td>18:37</td></tr>
-<tr data-d="2027-02-11"><td>4</td><td>jeudi 11 février 2027</td><td>05:43</td><td>18:37</td></tr>
-<tr data-d="2027-02-12"><td>5</td><td>vendredi 12 février 2027</td><td>05:43</td><td>18:37</td></tr>
-<tr data-d="2027-02-13"><td>6</td><td>samedi 13 février 2027</td><td>05:43</td><td>18:38</td></tr>
-<tr data-d="2027-02-14"><td>7</td><td>dimanche 14 février 2027</td><td>05:43</td><td>18:38</td></tr>
-<tr data-d="2027-02-15"><td>8</td><td>lundi 15 février 2027</td><td>05:43</td><td>18:38</td></tr>
-<tr data-d="2027-02-16"><td>9</td><td>mardi 16 février 2027</td><td>05:42</td><td>18:38</td></tr>
-<tr data-d="2027-02-17"><td>10</td><td>mercredi 17 février 2027</td><td>05:42</td><td>18:39</td></tr>
-<tr data-d="2027-02-18"><td>11</td><td>jeudi 18 février 2027</td><td>05:42</td><td>18:39</td></tr>
-<tr data-d="2027-02-19"><td>12</td><td>vendredi 19 février 2027</td><td>05:41</td><td>18:39</td></tr>
-<tr data-d="2027-02-20"><td>13</td><td>samedi 20 février 2027</td><td>05:41</td><td>18:39</td></tr>
-<tr data-d="2027-02-21"><td>14</td><td>dimanche 21 février 2027</td><td>05:41</td><td>18:40</td></tr>
-<tr data-d="2027-02-22"><td>15</td><td>lundi 22 février 2027</td><td>05:40</td><td>18:40</td></tr>
-<tr data-d="2027-02-23"><td>16</td><td>mardi 23 février 2027</td><td>05:40</td><td>18:40</td></tr>
-<tr data-d="2027-02-24"><td>17</td><td>mercredi 24 février 2027</td><td>05:39</td><td>18:40</td></tr>
-<tr data-d="2027-02-25"><td>18</td><td>jeudi 25 février 2027</td><td>05:39</td><td>18:40</td></tr>
-<tr data-d="2027-02-26"><td>19</td><td>vendredi 26 février 2027</td><td>05:39</td><td>18:41</td></tr>
-<tr data-d="2027-02-27"><td>20</td><td>samedi 27 février 2027</td><td>05:38</td><td>18:41</td></tr>
-<tr data-d="2027-02-28"><td>21</td><td>dimanche 28 février 2027</td><td>05:38</td><td>18:41</td></tr>
-<tr data-d="2027-03-01"><td>22</td><td>lundi 1 mars 2027</td><td>05:37</td><td>18:41</td></tr>
-<tr data-d="2027-03-02"><td>23</td><td>mardi 2 mars 2027</td><td>05:37</td><td>18:41</td></tr>
-<tr data-d="2027-03-03"><td>24</td><td>mercredi 3 mars 2027</td><td>05:36</td><td>18:41</td></tr>
-<tr data-d="2027-03-04"><td>25</td><td>jeudi 4 mars 2027</td><td>05:36</td><td>18:41</td></tr>
-<tr data-d="2027-03-05"><td>26</td><td>vendredi 5 mars 2027</td><td>05:35</td><td>18:42</td></tr>
-<tr data-d="2027-03-06"><td>27</td><td>samedi 6 mars 2027</td><td>05:35</td><td>18:42</td></tr>
-<tr data-d="2027-03-07"><td>28</td><td>dimanche 7 mars 2027</td><td>05:34</td><td>18:42</td></tr>
-<tr data-d="2027-03-08"><td>29</td><td>lundi 8 mars 2027</td><td>05:33</td><td>18:42</td></tr>
-</tbody></table></div>
-<h2 id="monthly">Calendrier mensuel des prières à Bamako</h2>
-<details class="m" open><summary>novembre 2026</summary><div class="scroll"><table><thead><tr><th>Date</th><th>Fajr</th><th>Lever du soleil</th><th>Dhuhr</th><th>Asr<small>Standard</small></th><th>Asr<small>Hanafite (Abou Hanîfa)</small></th><th>Maghrib</th><th>Isha</th></tr></thead><tbody>
+<section class="tab" data-tab="Horaires de prière" id="monthly"><h2>Calendrier mensuel des prières à Bamako</h2><details class="m" open><summary>novembre 2026</summary><div class="scroll"><table><thead><tr><th>Date</th><th>Fajr</th><th>Lever du soleil</th><th>Dhuhr</th><th>Asr<small>Standard</small></th><th>Asr<small>Hanafite (Abou Hanîfa)</small></th><th>Maghrib</th><th>Isha</th></tr></thead><tbody>
 <tr data-d="2026-11-01" data-l="dimanche 1 novembre 2026"><td>dim. 1</td><td>05:13</td><td>06:25</td><td>12:17</td><td>15:35</td><td>16:29</td><td>18:06</td><td>19:14</td></tr>
 <tr data-d="2026-11-02" data-l="lundi 2 novembre 2026"><td>lun. 2</td><td>05:13</td><td>06:26</td><td>12:17</td><td>15:35</td><td>16:28</td><td>18:05</td><td>19:14</td></tr>
 <tr data-d="2026-11-03" data-l="mardi 3 novembre 2026"><td>mar. 3</td><td>05:13</td><td>06:26</td><td>12:17</td><td>15:35</td><td>16:28</td><td>18:05</td><td>19:13</td></tr>
@@ -543,15 +519,45 @@ a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-h
 <tr data-d="2027-12-30" data-l="jeudi 30 décembre 2027"><td>jeu. 30</td><td>05:37</td><td>06:53</td><td>12:35</td><td>15:51</td><td>16:40</td><td>18:16</td><td>19:28</td></tr>
 <tr data-d="2027-12-31" data-l="vendredi 31 décembre 2027"><td>ven. 31</td><td>05:37</td><td>06:53</td><td>12:36</td><td>15:51</td><td>16:40</td><td>18:17</td><td>19:28</td></tr>
 </tbody></table></div></details>
-<p class="note">Méthode de calcul : Europe and general. L’asr est donné deux fois : Standard (chaféite, malikite, hanbalite) et Hanafite (Abou Hanîfa). Les débuts des mois hégiriens reposent sur le calcul ; l’annonce officielle de votre pays peut différer d’un jour.</p>
-<h2 id="qibla">Qibla</h2>
-<p>Depuis Bamako, la qibla est à 72,3° du nord géographique, dans le sens des aiguilles d’une montre. La Kaaba est à 5 158 km. <a href="/fr/direction-qibla/">Trouver la qibla depuis ma position →</a></p>
-<section class="faq"><h2>Questions fréquentes</h2>
-<h3>Quand commence le Ramadan 2027 à Bamako ?</h3><p>Le Ramadan 1448 devrait commencer à Bamako le 8 février 2027. Le début exact dépend de l’annonce de l’observation du croissant dans le pays.</p>
+<p class="note">Méthode de calcul : Europe and general. L’asr est donné deux fois : Standard (chaféite, malikite, hanbalite) et Hanafite (Abou Hanîfa). Les débuts des mois hégiriens reposent sur le calcul ; l’annonce officielle de votre pays peut différer d’un jour.</p></section>
+<section class="tab" data-tab="Ramadan" id="ramadan"><h2>Ramadan 2027 à Bamako : heures du suhoor et de l’iftar</h2><p class="note">Le Ramadan 1448 devrait commencer le 8 février 2027. Le début dépend de l’observation du croissant et peut varier d’un jour. <a href="/fr/calendrier-ramadan-2027/">Calendrier du Ramadan 2027 : suhoor et iftar par ville</a></p>
+<div class="scroll"><table><thead><tr><th>Jour</th><th>Date</th><th>Début du jeûne (Fajr)</th><th>Iftar (adhan du Maghrib)</th></tr></thead><tbody>
+<tr data-d="2027-02-08"><td>1</td><td>lundi 8 février 2027</td><td>05:44</td><td>18:36</td></tr>
+<tr data-d="2027-02-09"><td>2</td><td>mardi 9 février 2027</td><td>05:44</td><td>18:36</td></tr>
+<tr data-d="2027-02-10"><td>3</td><td>mercredi 10 février 2027</td><td>05:44</td><td>18:37</td></tr>
+<tr data-d="2027-02-11"><td>4</td><td>jeudi 11 février 2027</td><td>05:43</td><td>18:37</td></tr>
+<tr data-d="2027-02-12"><td>5</td><td>vendredi 12 février 2027</td><td>05:43</td><td>18:37</td></tr>
+<tr data-d="2027-02-13"><td>6</td><td>samedi 13 février 2027</td><td>05:43</td><td>18:38</td></tr>
+<tr data-d="2027-02-14"><td>7</td><td>dimanche 14 février 2027</td><td>05:43</td><td>18:38</td></tr>
+<tr data-d="2027-02-15"><td>8</td><td>lundi 15 février 2027</td><td>05:43</td><td>18:38</td></tr>
+<tr data-d="2027-02-16"><td>9</td><td>mardi 16 février 2027</td><td>05:42</td><td>18:38</td></tr>
+<tr data-d="2027-02-17"><td>10</td><td>mercredi 17 février 2027</td><td>05:42</td><td>18:39</td></tr>
+<tr data-d="2027-02-18"><td>11</td><td>jeudi 18 février 2027</td><td>05:42</td><td>18:39</td></tr>
+<tr data-d="2027-02-19"><td>12</td><td>vendredi 19 février 2027</td><td>05:41</td><td>18:39</td></tr>
+<tr data-d="2027-02-20"><td>13</td><td>samedi 20 février 2027</td><td>05:41</td><td>18:39</td></tr>
+<tr data-d="2027-02-21"><td>14</td><td>dimanche 21 février 2027</td><td>05:41</td><td>18:40</td></tr>
+<tr data-d="2027-02-22"><td>15</td><td>lundi 22 février 2027</td><td>05:40</td><td>18:40</td></tr>
+<tr data-d="2027-02-23"><td>16</td><td>mardi 23 février 2027</td><td>05:40</td><td>18:40</td></tr>
+<tr data-d="2027-02-24"><td>17</td><td>mercredi 24 février 2027</td><td>05:39</td><td>18:40</td></tr>
+<tr data-d="2027-02-25"><td>18</td><td>jeudi 25 février 2027</td><td>05:39</td><td>18:40</td></tr>
+<tr data-d="2027-02-26"><td>19</td><td>vendredi 26 février 2027</td><td>05:39</td><td>18:41</td></tr>
+<tr data-d="2027-02-27"><td>20</td><td>samedi 27 février 2027</td><td>05:38</td><td>18:41</td></tr>
+<tr data-d="2027-02-28"><td>21</td><td>dimanche 28 février 2027</td><td>05:38</td><td>18:41</td></tr>
+<tr data-d="2027-03-01"><td>22</td><td>lundi 1 mars 2027</td><td>05:37</td><td>18:41</td></tr>
+<tr data-d="2027-03-02"><td>23</td><td>mardi 2 mars 2027</td><td>05:37</td><td>18:41</td></tr>
+<tr data-d="2027-03-03"><td>24</td><td>mercredi 3 mars 2027</td><td>05:36</td><td>18:41</td></tr>
+<tr data-d="2027-03-04"><td>25</td><td>jeudi 4 mars 2027</td><td>05:36</td><td>18:41</td></tr>
+<tr data-d="2027-03-05"><td>26</td><td>vendredi 5 mars 2027</td><td>05:35</td><td>18:42</td></tr>
+<tr data-d="2027-03-06"><td>27</td><td>samedi 6 mars 2027</td><td>05:35</td><td>18:42</td></tr>
+<tr data-d="2027-03-07"><td>28</td><td>dimanche 7 mars 2027</td><td>05:34</td><td>18:42</td></tr>
+<tr data-d="2027-03-08"><td>29</td><td>lundi 8 mars 2027</td><td>05:33</td><td>18:42</td></tr>
+</tbody></table></div></section>
+<section class="tab" data-tab="Qibla" id="qibla"><h2>Qibla</h2><p>Depuis Bamako, la qibla est à 72,3° du nord géographique, dans le sens des aiguilles d’une montre. La Kaaba est à 5 158 km. <a href="/fr/direction-qibla/">Trouver la qibla depuis ma position →</a></p></section>
+<section class="tab" data-tab="Questions fréquentes" id="faq"><h2>Questions fréquentes</h2><div class="faq"><h3>Quand commence le Ramadan 2027 à Bamako ?</h3><p>Le Ramadan 1448 devrait commencer à Bamako le 8 février 2027. Le début exact dépend de l’annonce de l’observation du croissant dans le pays.</p>
 <h3>À quelle heure sont le suhoor et l’iftar à Bamako le premier jour du Ramadan ?</h3><p>Le 8 février 2027 à Bamako, le suhoor se termine à 05:44 (fajr) et l’iftar est à 18:36 (maghrib).</p>
 <h3>Quelle est la direction de la qibla à Bamako ?</h3><p>Depuis Bamako, la qibla est à 72,3° du nord géographique, dans le sens des aiguilles d’une montre. La Kaaba est à 5 158 km.</p>
-<h3>Mon téléphone peut-il diffuser l’adhan aux heures de prière à Bamako ?</h3><p>Oui. Mubarly diffuse l’adhan au volume de l’alarme à chaque prière à Bamako, même quand le téléphone est en silencieux. Il fonctionne hors ligne et sans compte.</p>
-</section>
+<h3>Mon téléphone peut-il diffuser l’adhan aux heures de prière à Bamako ?</h3><p>Oui. Mubarly diffuse l’adhan au volume de l’alarme à chaque prière à Bamako, même quand le téléphone est en silencieux. Il fonctionne hors ligne et sans compte.</p></div></section>
+<div class="cta" id="app"><p><strong>Entendez l’adhan au volume de l’alarme, même en silencieux</strong><small>Gratuit · hors ligne · 20 langues · les quatre écoles</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=fr&utm_source=mubarly_site&utm_campaign=city_fr" rel="noopener"><img src="/img/badges/fr.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Bientôt disponible"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Bientôt disponible</small>App Store</span></span></div></div>
 <h2>Autres villes</h2>
 <ul class="cities"><li><a href="/fr/horaires-de-priere/mecca/">La Mecque</a></li><li><a href="/fr/horaires-de-priere/medina/">Médine</a></li><li><a href="/fr/horaires-de-priere/beirut/">Beyrouth</a></li><li><a href="/fr/horaires-de-priere/tunis/">Tunis</a></li><li><a href="/fr/horaires-de-priere/algiers/">Alger</a></li><li><a href="/fr/horaires-de-priere/oran/">Oran</a></li><li><a href="/fr/horaires-de-priere/casablanca/">Casablanca</a></li><li><a href="/fr/horaires-de-priere/rabat/">Rabat</a></li><li><a href="/fr/horaires-de-priere/marrakesh/">Marrakech</a></li><li><a href="/fr/horaires-de-priere/nouakchott/">Nouakchott</a></li><li><a href="/fr/horaires-de-priere/ndjamena/">N’Djaména</a></li><li><a href="/fr/horaires-de-priere/dakar/">Dakar</a></li><li><a href="/fr/horaires-de-priere/abidjan/">Abidjan</a></li><li><a href="/fr/horaires-de-priere/niamey/">Niamey</a></li><li><a href="/fr/horaires-de-priere/conakry/">Conakry</a></li><li><a href="/fr/horaires-de-priere/ouagadougou/">Ouagadougou</a></li><li><a href="/fr/horaires-de-priere/djibouti/">Djibouti</a></li><li><a href="/fr/horaires-de-priere/paris/">Paris</a></li><li><a href="/fr/horaires-de-priere/marseille/">Marseille</a></li><li><a href="/fr/horaires-de-priere/lyon/">Lyon</a></li><li><a href="/fr/horaires-de-priere/toulouse/">Toulouse</a></li><li><a href="/fr/horaires-de-priere/lille/">Lille</a></li><li><a href="/fr/horaires-de-priere/strasbourg/">Strasbourg</a></li><li><a href="/fr/horaires-de-priere/nice/">Nice</a></li><li><a href="/fr/horaires-de-priere/nantes/">Nantes</a></li><li><a href="/fr/horaires-de-priere/bordeaux/">Bordeaux</a></li><li><a href="/fr/horaires-de-priere/brussels/">Bruxelles</a></li><li><a href="/fr/horaires-de-priere/geneva/">Genève</a></li><li><a href="/fr/horaires-de-priere/montreal/">Montréal</a></li><li><a href="/fr/horaires-de-priere/ottawa/">Ottawa</a></li><li><a href="/fr/horaires-de-priere/antwerp/">Anvers</a></li></ul>
 <script>(function(){try{var d=new Intl.DateTimeFormat('en-CA',{timeZone:"Africa/Bamako",year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());var r=document.querySelector('tr[data-d="'+d+'"]');if(!r)return;
@@ -565,7 +571,10 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/fr/guides-islamiques/">Guides islamiques </a><a href="/fr/privacy.html">Politique de confidentialité</a><a href="/fr/terms.html">Conditions d’utilisation</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
+<script>(function(){var ts=[].slice.call(document.querySelectorAll('main .tab'));if(ts.length<2)return;var bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');ts[0].parentNode.insertBefore(bar,ts[0]);document.querySelector('main').classList.add('tabbed');
+var bs=ts.map(function(t,i){var b=document.createElement('button');b.type='button';b.id='tb-'+t.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',t.id);t.setAttribute('role','tabpanel');t.setAttribute('aria-labelledby',b.id);b.textContent=t.getAttribute('data-tab');b.onclick=function(){show(i,true)};b.onkeydown=function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(document.dir==='rtl')k=-k;if(k){var n=(i+k+ts.length)%ts.length;show(n,true);bs[n].focus()}};bar.appendChild(b);return b});
+function show(i,user){ts.forEach(function(t,j){t.hidden=j!==i;bs[j].setAttribute('aria-selected',j===i);bs[j].tabIndex=j===i?0:-1});if(user){history.replaceState(null,'','#'+ts[i].id);bs[i].scrollIntoView({block:'nearest',inline:'center'});if(bar.getBoundingClientRect().top<0||window.scrollY>bar.offsetTop)bar.scrollIntoView()}}
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1)),k=-1;ts.forEach(function(t,j){if(t.id===h||t.querySelector('[id="'+h+'"]'))k=j});return k}var k0=fromHash();show(Math.max(0,k0));if(k0>0)bs[k0].scrollIntoView({block:'nearest',inline:'center'});addEventListener('hashchange',function(){var k=fromHash();if(k>=0)show(k)})})();(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';

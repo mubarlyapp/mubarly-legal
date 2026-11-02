@@ -46,51 +46,27 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
 .dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
 @media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
-@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+h1,h2,h3{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;letter-spacing:-.01em}
+.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:#EDE6CF;background:radial-gradient(110% 90% at 85% 0,#1a5a43 0,#0B3B2C 45%,#061A13 100%);padding:6px 0 30px;margin-bottom:8px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;pointer-events:none}.hero .wrap{position:relative}
+.hero h1{color:#F3E7C2;font-weight:800;margin:6px 0 10px}.hero .lead{color:#CFC6AA;max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:#BDB292}
+.hero .mini{background:#ffffff0d;border-color:#ffffff24;color:#EDE6CF;backdrop-filter:blur(2px)}.hero .mini small{color:#CFC6AA}.hero a.dl{background:#D4B062;color:#061A13}
+main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:none;width:6px;height:1.1em;border-radius:3px;background:linear-gradient(#D4B062,#76571A)}
+.tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/ar/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
-<main class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/ar/">Mubarly</a> › <a href="/ar/mawaqit-al-salah/">مواقيت الصلاة</a> › القامشلي</nav>
+<section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/ar/">Mubarly</a> › <a href="/ar/mawaqit-al-salah/">مواقيت الصلاة</a> › القامشلي</nav>
 <h1>مواقيت الصلاة في القامشلي</h1>
-<p class="lead">الفجر والشروق والظهر والعصر والمغرب والعشاء في القامشلي لكل يوم حتى نهاية 2027، مع أوقات السحور والإفطار في رمضان 2027 واتجاه القبلة.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>اسمع الأذان بصوت المنبه حتى والهاتف صامت</strong><small>مجاني · يعمل دون إنترنت · 20 لغة · المذاهب الأربعة</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=top" rel="noopener">حمّل مجانًا</a></aside>
+<p class="lead">الفجر والشروق والظهر والعصر والمغرب والعشاء في القامشلي لكل يوم حتى نهاية 2027، مع أوقات السحور والإفطار في رمضان 2027 واتجاه القبلة.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>اسمع الأذان بصوت المنبه حتى والهاتف صامت</strong><small>مجاني · يعمل دون إنترنت · 20 لغة · المذاهب الأربعة</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=top" rel="noopener">حمّل مجانًا</a></aside></div></section>
+<main class="wrap">
+
 <section id="today" class="card" hidden aria-live="polite"><p class="d">اليوم</p><ul><li><b>—</b><span>الفجر</span></li><li><b>—</b><span>الشروق</span></li><li><b>—</b><span>الظهر</span></li><li><b>—</b><span>العصر</span></li><li><b>—</b><span>المغرب</span></li><li><b>—</b><span>العشاء</span></li></ul></section>
-<div class="cta"><p><strong>اسمع الأذان بصوت المنبه حتى والهاتف صامت</strong><small>مجاني · يعمل دون إنترنت · 20 لغة · المذاهب الأربعة</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=city_ar" rel="noopener"><img src="/img/badges/ar.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – قريبًا"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>قريبًا</small>App Store</span></span></div></div>
-<h2 id="ramadan">رمضان 2027 في القامشلي: أوقات السحور والإفطار</h2>
-<p class="note">يُتوقع أن يبدأ رمضان 1448 في 8 فبراير 2027. يعتمد بدء الشهر على رؤية الهلال وقد يختلف بيوم. <a href="/ar/imsakiyat-ramadan-2027/">إمساكية رمضان 2027: مواعيد السحور والإفطار حسب المدينة</a></p>
-<div class="scroll"><table><thead><tr><th>اليوم</th><th>التاريخ</th><th>الإمساك (نهاية السحور)</th><th>الإفطار (أذان المغرب)</th></tr></thead><tbody>
-<tr data-d="2027-02-08"><td>1</td><td>الاثنين، 8 فبراير 2027</td><td>05:36</td><td>17:47</td></tr>
-<tr data-d="2027-02-09"><td>2</td><td>الثلاثاء، 9 فبراير 2027</td><td>05:35</td><td>17:48</td></tr>
-<tr data-d="2027-02-10"><td>3</td><td>الأربعاء، 10 فبراير 2027</td><td>05:34</td><td>17:49</td></tr>
-<tr data-d="2027-02-11"><td>4</td><td>الخميس، 11 فبراير 2027</td><td>05:33</td><td>17:50</td></tr>
-<tr data-d="2027-02-12"><td>5</td><td>الجمعة، 12 فبراير 2027</td><td>05:33</td><td>17:51</td></tr>
-<tr data-d="2027-02-13"><td>6</td><td>السبت، 13 فبراير 2027</td><td>05:32</td><td>17:53</td></tr>
-<tr data-d="2027-02-14"><td>7</td><td>الأحد، 14 فبراير 2027</td><td>05:31</td><td>17:54</td></tr>
-<tr data-d="2027-02-15"><td>8</td><td>الاثنين، 15 فبراير 2027</td><td>05:30</td><td>17:55</td></tr>
-<tr data-d="2027-02-16"><td>9</td><td>الثلاثاء، 16 فبراير 2027</td><td>05:29</td><td>17:56</td></tr>
-<tr data-d="2027-02-17"><td>10</td><td>الأربعاء، 17 فبراير 2027</td><td>05:27</td><td>17:57</td></tr>
-<tr data-d="2027-02-18"><td>11</td><td>الخميس، 18 فبراير 2027</td><td>05:26</td><td>17:58</td></tr>
-<tr data-d="2027-02-19"><td>12</td><td>الجمعة، 19 فبراير 2027</td><td>05:25</td><td>17:59</td></tr>
-<tr data-d="2027-02-20"><td>13</td><td>السبت، 20 فبراير 2027</td><td>05:24</td><td>18:00</td></tr>
-<tr data-d="2027-02-21"><td>14</td><td>الأحد، 21 فبراير 2027</td><td>05:23</td><td>18:01</td></tr>
-<tr data-d="2027-02-22"><td>15</td><td>الاثنين، 22 فبراير 2027</td><td>05:22</td><td>18:02</td></tr>
-<tr data-d="2027-02-23"><td>16</td><td>الثلاثاء، 23 فبراير 2027</td><td>05:21</td><td>18:03</td></tr>
-<tr data-d="2027-02-24"><td>17</td><td>الأربعاء، 24 فبراير 2027</td><td>05:19</td><td>18:04</td></tr>
-<tr data-d="2027-02-25"><td>18</td><td>الخميس، 25 فبراير 2027</td><td>05:18</td><td>18:05</td></tr>
-<tr data-d="2027-02-26"><td>19</td><td>الجمعة، 26 فبراير 2027</td><td>05:17</td><td>18:06</td></tr>
-<tr data-d="2027-02-27"><td>20</td><td>السبت، 27 فبراير 2027</td><td>05:16</td><td>18:07</td></tr>
-<tr data-d="2027-02-28"><td>21</td><td>الأحد، 28 فبراير 2027</td><td>05:14</td><td>18:08</td></tr>
-<tr data-d="2027-03-01"><td>22</td><td>الاثنين، 1 مارس 2027</td><td>05:13</td><td>18:09</td></tr>
-<tr data-d="2027-03-02"><td>23</td><td>الثلاثاء، 2 مارس 2027</td><td>05:12</td><td>18:10</td></tr>
-<tr data-d="2027-03-03"><td>24</td><td>الأربعاء، 3 مارس 2027</td><td>05:10</td><td>18:11</td></tr>
-<tr data-d="2027-03-04"><td>25</td><td>الخميس، 4 مارس 2027</td><td>05:09</td><td>18:12</td></tr>
-<tr data-d="2027-03-05"><td>26</td><td>الجمعة، 5 مارس 2027</td><td>05:07</td><td>18:13</td></tr>
-<tr data-d="2027-03-06"><td>27</td><td>السبت، 6 مارس 2027</td><td>05:06</td><td>18:14</td></tr>
-<tr data-d="2027-03-07"><td>28</td><td>الأحد، 7 مارس 2027</td><td>05:05</td><td>18:15</td></tr>
-<tr data-d="2027-03-08"><td>29</td><td>الاثنين، 8 مارس 2027</td><td>05:03</td><td>18:16</td></tr>
-</tbody></table></div>
-<h2 id="monthly">جدول مواقيت الصلاة الشهري في القامشلي</h2>
-<details class="m" open><summary>نوفمبر 2026</summary><div class="scroll"><table><thead><tr><th>التاريخ</th><th>الفجر</th><th>الشروق</th><th>الظهر</th><th>العصر<small>المعتاد</small></th><th>العصر<small>الحنفي (قول أبي حنيفة)</small></th><th>المغرب</th><th>العشاء</th></tr></thead><tbody>
+<section class="tab" data-tab="مواقيت الصلاة" id="monthly"><h2>جدول مواقيت الصلاة الشهري في القامشلي</h2><details class="m" open><summary>نوفمبر 2026</summary><div class="scroll"><table><thead><tr><th>التاريخ</th><th>الفجر</th><th>الشروق</th><th>الظهر</th><th>العصر<small>المعتاد</small></th><th>العصر<small>الحنفي (قول أبي حنيفة)</small></th><th>المغرب</th><th>العشاء</th></tr></thead><tbody>
 <tr data-d="2026-11-01" data-l="الأحد، 1 نوفمبر 2026"><td>الأحد، 1</td><td>05:04</td><td>06:39</td><td>12:00</td><td>14:54</td><td>15:38</td><td>17:18</td><td>18:43</td></tr>
 <tr data-d="2026-11-02" data-l="الاثنين، 2 نوفمبر 2026"><td>الاثنين، 2</td><td>05:04</td><td>06:40</td><td>12:00</td><td>14:53</td><td>15:37</td><td>17:17</td><td>18:42</td></tr>
 <tr data-d="2026-11-03" data-l="الثلاثاء، 3 نوفمبر 2026"><td>الثلاثاء، 3</td><td>05:05</td><td>06:41</td><td>12:00</td><td>14:53</td><td>15:36</td><td>17:16</td><td>18:41</td></tr>
@@ -544,15 +520,45 @@ a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-h
 <tr data-d="2027-12-30" data-l="الخميس، 30 ديسمبر 2027"><td>الخميس، 30</td><td>05:47</td><td>07:28</td><td>12:18</td><td>14:49</td><td>15:28</td><td>17:07</td><td>18:38</td></tr>
 <tr data-d="2027-12-31" data-l="الجمعة، 31 ديسمبر 2027"><td>الجمعة، 31</td><td>05:47</td><td>07:28</td><td>12:19</td><td>14:50</td><td>15:29</td><td>17:08</td><td>18:38</td></tr>
 </tbody></table></div></details>
-<p class="note">طريقة الحساب: مصر. يُعرض العصر مرتين: المعتاد (الشافعي والمالكي والحنبلي) والحنفي (قول أبي حنيفة). بدايات الأشهر الهجرية مبنية على الحساب؛ وقد يختلف الإعلان الرسمي في بلدك بيوم.</p>
-<h2 id="qibla">القبلة</h2>
-<p>اتجاه القبلة من القامشلي هو 184.8° من الشمال الجغرافي باتجاه عقارب الساعة، والمسافة إلى الكعبة 1,743 كم. <a href="/ar/ittijah-al-qibla/">حدد القبلة من موقعي →</a></p>
-<section class="faq"><h2>أسئلة شائعة</h2>
-<h3>متى يبدأ رمضان 2027 في القامشلي؟</h3><p>يُتوقع أن يبدأ رمضان 1448 في القامشلي يوم 8 فبراير 2027. ويعتمد البدء الفعلي على إعلان رؤية الهلال في البلد.</p>
+<p class="note">طريقة الحساب: مصر. يُعرض العصر مرتين: المعتاد (الشافعي والمالكي والحنبلي) والحنفي (قول أبي حنيفة). بدايات الأشهر الهجرية مبنية على الحساب؛ وقد يختلف الإعلان الرسمي في بلدك بيوم.</p></section>
+<section class="tab" data-tab="رمضان" id="ramadan"><h2>رمضان 2027 في القامشلي: أوقات السحور والإفطار</h2><p class="note">يُتوقع أن يبدأ رمضان 1448 في 8 فبراير 2027. يعتمد بدء الشهر على رؤية الهلال وقد يختلف بيوم. <a href="/ar/imsakiyat-ramadan-2027/">إمساكية رمضان 2027: مواعيد السحور والإفطار حسب المدينة</a></p>
+<div class="scroll"><table><thead><tr><th>اليوم</th><th>التاريخ</th><th>الإمساك (نهاية السحور)</th><th>الإفطار (أذان المغرب)</th></tr></thead><tbody>
+<tr data-d="2027-02-08"><td>1</td><td>الاثنين، 8 فبراير 2027</td><td>05:36</td><td>17:47</td></tr>
+<tr data-d="2027-02-09"><td>2</td><td>الثلاثاء، 9 فبراير 2027</td><td>05:35</td><td>17:48</td></tr>
+<tr data-d="2027-02-10"><td>3</td><td>الأربعاء، 10 فبراير 2027</td><td>05:34</td><td>17:49</td></tr>
+<tr data-d="2027-02-11"><td>4</td><td>الخميس، 11 فبراير 2027</td><td>05:33</td><td>17:50</td></tr>
+<tr data-d="2027-02-12"><td>5</td><td>الجمعة، 12 فبراير 2027</td><td>05:33</td><td>17:51</td></tr>
+<tr data-d="2027-02-13"><td>6</td><td>السبت، 13 فبراير 2027</td><td>05:32</td><td>17:53</td></tr>
+<tr data-d="2027-02-14"><td>7</td><td>الأحد، 14 فبراير 2027</td><td>05:31</td><td>17:54</td></tr>
+<tr data-d="2027-02-15"><td>8</td><td>الاثنين، 15 فبراير 2027</td><td>05:30</td><td>17:55</td></tr>
+<tr data-d="2027-02-16"><td>9</td><td>الثلاثاء، 16 فبراير 2027</td><td>05:29</td><td>17:56</td></tr>
+<tr data-d="2027-02-17"><td>10</td><td>الأربعاء، 17 فبراير 2027</td><td>05:27</td><td>17:57</td></tr>
+<tr data-d="2027-02-18"><td>11</td><td>الخميس، 18 فبراير 2027</td><td>05:26</td><td>17:58</td></tr>
+<tr data-d="2027-02-19"><td>12</td><td>الجمعة، 19 فبراير 2027</td><td>05:25</td><td>17:59</td></tr>
+<tr data-d="2027-02-20"><td>13</td><td>السبت، 20 فبراير 2027</td><td>05:24</td><td>18:00</td></tr>
+<tr data-d="2027-02-21"><td>14</td><td>الأحد، 21 فبراير 2027</td><td>05:23</td><td>18:01</td></tr>
+<tr data-d="2027-02-22"><td>15</td><td>الاثنين، 22 فبراير 2027</td><td>05:22</td><td>18:02</td></tr>
+<tr data-d="2027-02-23"><td>16</td><td>الثلاثاء، 23 فبراير 2027</td><td>05:21</td><td>18:03</td></tr>
+<tr data-d="2027-02-24"><td>17</td><td>الأربعاء، 24 فبراير 2027</td><td>05:19</td><td>18:04</td></tr>
+<tr data-d="2027-02-25"><td>18</td><td>الخميس، 25 فبراير 2027</td><td>05:18</td><td>18:05</td></tr>
+<tr data-d="2027-02-26"><td>19</td><td>الجمعة، 26 فبراير 2027</td><td>05:17</td><td>18:06</td></tr>
+<tr data-d="2027-02-27"><td>20</td><td>السبت، 27 فبراير 2027</td><td>05:16</td><td>18:07</td></tr>
+<tr data-d="2027-02-28"><td>21</td><td>الأحد، 28 فبراير 2027</td><td>05:14</td><td>18:08</td></tr>
+<tr data-d="2027-03-01"><td>22</td><td>الاثنين، 1 مارس 2027</td><td>05:13</td><td>18:09</td></tr>
+<tr data-d="2027-03-02"><td>23</td><td>الثلاثاء، 2 مارس 2027</td><td>05:12</td><td>18:10</td></tr>
+<tr data-d="2027-03-03"><td>24</td><td>الأربعاء، 3 مارس 2027</td><td>05:10</td><td>18:11</td></tr>
+<tr data-d="2027-03-04"><td>25</td><td>الخميس، 4 مارس 2027</td><td>05:09</td><td>18:12</td></tr>
+<tr data-d="2027-03-05"><td>26</td><td>الجمعة، 5 مارس 2027</td><td>05:07</td><td>18:13</td></tr>
+<tr data-d="2027-03-06"><td>27</td><td>السبت، 6 مارس 2027</td><td>05:06</td><td>18:14</td></tr>
+<tr data-d="2027-03-07"><td>28</td><td>الأحد، 7 مارس 2027</td><td>05:05</td><td>18:15</td></tr>
+<tr data-d="2027-03-08"><td>29</td><td>الاثنين، 8 مارس 2027</td><td>05:03</td><td>18:16</td></tr>
+</tbody></table></div></section>
+<section class="tab" data-tab="القبلة" id="qibla"><h2>القبلة</h2><p>اتجاه القبلة من القامشلي هو 184.8° من الشمال الجغرافي باتجاه عقارب الساعة، والمسافة إلى الكعبة 1,743 كم. <a href="/ar/ittijah-al-qibla/">حدد القبلة من موقعي →</a></p></section>
+<section class="tab" data-tab="أسئلة شائعة" id="faq"><h2>أسئلة شائعة</h2><div class="faq"><h3>متى يبدأ رمضان 2027 في القامشلي؟</h3><p>يُتوقع أن يبدأ رمضان 1448 في القامشلي يوم 8 فبراير 2027. ويعتمد البدء الفعلي على إعلان رؤية الهلال في البلد.</p>
 <h3>متى السحور والإفطار في القامشلي في أول أيام رمضان؟</h3><p>يوم 8 فبراير 2027 في القامشلي ينتهي السحور الساعة 05:36 (الفجر) والإفطار الساعة 17:47 (المغرب).</p>
 <h3>ما اتجاه القبلة في القامشلي؟</h3><p>اتجاه القبلة من القامشلي هو 184.8° من الشمال الجغرافي باتجاه عقارب الساعة، والمسافة إلى الكعبة 1,743 كم.</p>
-<h3>هل يمكن لهاتفي رفع الأذان في أوقات الصلاة في القامشلي؟</h3><p>نعم. يرفع تطبيق Mubarly الأذان بصوت المنبه عند كل صلاة في القامشلي حتى لو كان الهاتف صامتًا، ويعمل دون إنترنت ودون حساب.</p>
-</section>
+<h3>هل يمكن لهاتفي رفع الأذان في أوقات الصلاة في القامشلي؟</h3><p>نعم. يرفع تطبيق Mubarly الأذان بصوت المنبه عند كل صلاة في القامشلي حتى لو كان الهاتف صامتًا، ويعمل دون إنترنت ودون حساب.</p></div></section>
+<div class="cta" id="app"><p><strong>اسمع الأذان بصوت المنبه حتى والهاتف صامت</strong><small>مجاني · يعمل دون إنترنت · 20 لغة · المذاهب الأربعة</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=city_ar" rel="noopener"><img src="/img/badges/ar.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – قريبًا"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>قريبًا</small>App Store</span></span></div></div>
 <h2>مدن أخرى</h2>
 <ul class="cities"><li><a href="/ar/mawaqit-al-salah/istanbul/">إسطنبول</a></li><li><a href="/ar/mawaqit-al-salah/gaziantep/">غازي عنتاب</a></li><li><a href="/ar/mawaqit-al-salah/sanliurfa/">أورفة</a></li><li><a href="/ar/mawaqit-al-salah/hatay/">أنطاكية</a></li><li><a href="/ar/mawaqit-al-salah/mecca/">مكة المكرمة</a></li><li><a href="/ar/mawaqit-al-salah/medina/">المدينة المنورة</a></li><li><a href="/ar/mawaqit-al-salah/riyadh/">الرياض</a></li><li><a href="/ar/mawaqit-al-salah/jeddah/">جدة</a></li><li><a href="/ar/mawaqit-al-salah/dammam/">الدمام</a></li><li><a href="/ar/mawaqit-al-salah/dubai/">دبي</a></li><li><a href="/ar/mawaqit-al-salah/abu-dhabi/">أبوظبي</a></li><li><a href="/ar/mawaqit-al-salah/sharjah/">الشارقة</a></li><li><a href="/ar/mawaqit-al-salah/doha/">الدوحة</a></li><li><a href="/ar/mawaqit-al-salah/kuwait-city/">مدينة الكويت</a></li><li><a href="/ar/mawaqit-al-salah/manama/">المنامة</a></li><li><a href="/ar/mawaqit-al-salah/muscat/">مسقط</a></li><li><a href="/ar/mawaqit-al-salah/sanaa/">صنعاء</a></li><li><a href="/ar/mawaqit-al-salah/amman/">عمّان</a></li><li><a href="/ar/mawaqit-al-salah/baghdad/">بغداد</a></li><li><a href="/ar/mawaqit-al-salah/basra/">البصرة</a></li><li><a href="/ar/mawaqit-al-salah/mosul/">الموصل</a></li><li><a href="/ar/mawaqit-al-salah/erbil/">أربيل</a></li><li><a href="/ar/mawaqit-al-salah/sulaymaniyah/">السليمانية</a></li><li><a href="/ar/mawaqit-al-salah/kirkuk/">كركوك</a></li><li><a href="/ar/mawaqit-al-salah/duhok/">دهوك</a></li><li><a href="/ar/mawaqit-al-salah/damascus/">دمشق</a></li><li><a href="/ar/mawaqit-al-salah/aleppo/">حلب</a></li><li><a href="/ar/mawaqit-al-salah/beirut/">بيروت</a></li><li><a href="/ar/mawaqit-al-salah/cairo/">القاهرة</a></li><li><a href="/ar/mawaqit-al-salah/alexandria/">الإسكندرية</a></li><li><a href="/ar/mawaqit-al-salah/khartoum/">الخرطوم</a></li><li><a href="/ar/mawaqit-al-salah/tripoli/">طرابلس</a></li><li><a href="/ar/mawaqit-al-salah/tunis/">تونس</a></li><li><a href="/ar/mawaqit-al-salah/algiers/">الجزائر العاصمة</a></li><li><a href="/ar/mawaqit-al-salah/oran/">وهران</a></li><li><a href="/ar/mawaqit-al-salah/casablanca/">الدار البيضاء</a></li><li><a href="/ar/mawaqit-al-salah/rabat/">الرباط</a></li><li><a href="/ar/mawaqit-al-salah/marrakesh/">مراكش</a></li><li><a href="/ar/mawaqit-al-salah/nouakchott/">نواكشوط</a></li><li><a href="/ar/mawaqit-al-salah/ndjamena/">إنجامينا</a></li><li><a href="/ar/mawaqit-al-salah/mogadishu/">مقديشو</a></li><li><a href="/ar/mawaqit-al-salah/djibouti/">جيبوتي</a></li><li><a href="/ar/mawaqit-al-salah/kuala-lumpur/">كوالالمبور</a></li><li><a href="/ar/mawaqit-al-salah/london/">لندن</a></li><li><a href="/ar/mawaqit-al-salah/paris/">باريس</a></li><li><a href="/ar/mawaqit-al-salah/brussels/">بروكسل</a></li><li><a href="/ar/mawaqit-al-salah/toronto/">تورنتو</a></li><li><a href="/ar/mawaqit-al-salah/new-york/">نيويورك</a></li><li><a href="/ar/mawaqit-al-salah/sydney/">سيدني</a></li><li><a href="/ar/mawaqit-al-salah/berlin/">برلين</a></li><li><a href="/ar/mawaqit-al-salah/amsterdam/">أمستردام</a></li><li><a href="/ar/mawaqit-al-salah/stockholm/">ستوكهولم</a></li><li><a href="/ar/mawaqit-al-salah/madrid/">مدريد</a></li></ul>
 <script>(function(){try{var d=new Intl.DateTimeFormat('en-CA',{timeZone:"Asia/Damascus",year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());var r=document.querySelector('tr[data-d="'+d+'"]');if(!r)return;
@@ -566,7 +572,10 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/ar/adlat-islamiya/">أدلة إسلامية</a><a href="/ar/privacy.html">سياسة الخصوصية</a><a href="/ar/terms.html">شروط الاستخدام</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
+<script>(function(){var ts=[].slice.call(document.querySelectorAll('main .tab'));if(ts.length<2)return;var bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');ts[0].parentNode.insertBefore(bar,ts[0]);document.querySelector('main').classList.add('tabbed');
+var bs=ts.map(function(t,i){var b=document.createElement('button');b.type='button';b.id='tb-'+t.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',t.id);t.setAttribute('role','tabpanel');t.setAttribute('aria-labelledby',b.id);b.textContent=t.getAttribute('data-tab');b.onclick=function(){show(i,true)};b.onkeydown=function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(document.dir==='rtl')k=-k;if(k){var n=(i+k+ts.length)%ts.length;show(n,true);bs[n].focus()}};bar.appendChild(b);return b});
+function show(i,user){ts.forEach(function(t,j){t.hidden=j!==i;bs[j].setAttribute('aria-selected',j===i);bs[j].tabIndex=j===i?0:-1});if(user){history.replaceState(null,'','#'+ts[i].id);bs[i].scrollIntoView({block:'nearest',inline:'center'});if(bar.getBoundingClientRect().top<0||window.scrollY>bar.offsetTop)bar.scrollIntoView()}}
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1)),k=-1;ts.forEach(function(t,j){if(t.id===h||t.querySelector('[id="'+h+'"]'))k=j});return k}var k0=fromHash();show(Math.max(0,k0));if(k0>0)bs[k0].scrollIntoView({block:'nearest',inline:'center'});addEventListener('hashchange',function(){var k=fromHash();if(k>=0)show(k)})})();(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';

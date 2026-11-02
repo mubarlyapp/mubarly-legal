@@ -48,51 +48,27 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
 .dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
 @media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
-@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+h1,h2,h3{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;letter-spacing:-.01em}
+.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:#EDE6CF;background:radial-gradient(110% 90% at 85% 0,#1a5a43 0,#0B3B2C 45%,#061A13 100%);padding:6px 0 30px;margin-bottom:8px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;pointer-events:none}.hero .wrap{position:relative}
+.hero h1{color:#F3E7C2;font-weight:800;margin:6px 0 10px}.hero .lead{color:#CFC6AA;max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:#BDB292}
+.hero .mini{background:#ffffff0d;border-color:#ffffff24;color:#EDE6CF;backdrop-filter:blur(2px)}.hero .mini small{color:#CFC6AA}.hero a.dl{background:#D4B062;color:#061A13}
+main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:none;width:6px;height:1.1em;border-radius:3px;background:linear-gradient(#D4B062,#76571A)}
+.tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/hi/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
-<main class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/hi/">Mubarly</a> › <a href="/hi/namaz-ka-samay/">नमाज़ का समय</a> › दिल्ली</nav>
+<section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/hi/">Mubarly</a> › <a href="/hi/namaz-ka-samay/">नमाज़ का समय</a> › दिल्ली</nav>
 <h1>दिल्ली में नमाज़ का समय</h1>
-<p class="lead">दिल्ली में 2027 के अंत तक हर दिन की फ़ज्र, सूर्योदय, ज़ुहर, अस्र, मग़रिब और ईशा, रमज़ान 2027 की सहरी और इफ़्तार और क़िबला की दिशा।</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>फ़ोन साइलेंट हो तब भी अलार्म की आवाज़ में अज़ान सुनें</strong><small>मुफ़्त · बिना इंटरनेट · 20 भाषाएँ · चारों मसलक</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=hi&utm_source=mubarly_site&utm_campaign=top" rel="noopener">मुफ़्त डाउनलोड करें</a></aside>
+<p class="lead">दिल्ली में 2027 के अंत तक हर दिन की फ़ज्र, सूर्योदय, ज़ुहर, अस्र, मग़रिब और ईशा, रमज़ान 2027 की सहरी और इफ़्तार और क़िबला की दिशा।</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>फ़ोन साइलेंट हो तब भी अलार्म की आवाज़ में अज़ान सुनें</strong><small>मुफ़्त · बिना इंटरनेट · 20 भाषाएँ · चारों मसलक</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=hi&utm_source=mubarly_site&utm_campaign=top" rel="noopener">मुफ़्त डाउनलोड करें</a></aside></div></section>
+<main class="wrap">
+
 <section id="today" class="card" hidden aria-live="polite"><p class="d">आज</p><ul><li><b>—</b><span>फ़ज्र</span></li><li><b>—</b><span>सूर्योदय</span></li><li><b>—</b><span>ज़ुहर</span></li><li><b>—</b><span>अस्र</span></li><li><b>—</b><span>मग़रिब</span></li><li><b>—</b><span>इशा</span></li></ul></section>
-<div class="cta"><p><strong>फ़ोन साइलेंट हो तब भी अलार्म की आवाज़ में अज़ान सुनें</strong><small>मुफ़्त · बिना इंटरनेट · 20 भाषाएँ · चारों मसलक</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=hi&utm_source=mubarly_site&utm_campaign=city_hi" rel="noopener"><img src="/img/badges/hi.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – जल्द आ रहा है"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>जल्द आ रहा है</small>App Store</span></span></div></div>
-<h2 id="ramadan">दिल्ली में रमज़ान 2027: सहरी और इफ़्तार का समय</h2>
-<p class="note">रमज़ान 1448 के 9 फ़रवरी 2027 को शुरू होने की उम्मीद है। शुरुआत चाँद दिखने पर निर्भर है और एक दिन का अंतर हो सकता है। <a href="/hi/ramzan-time-table-2027/">रमज़ान 2027 टाइम टेबल: शहर के अनुसार सहरी और इफ़्तार</a></p>
-<div class="scroll"><table><thead><tr><th>दिन</th><th>तारीख़</th><th>सहरी का आख़िरी वक़्त (फ़ज्र)</th><th>इफ़्तार (मग़रिब की अज़ान)</th></tr></thead><tbody>
-<tr data-d="2027-02-09"><td>1</td><td>मंगलवार, 9 फ़रवरी 2027</td><td>05:45</td><td>18:07</td></tr>
-<tr data-d="2027-02-10"><td>2</td><td>बुधवार, 10 फ़रवरी 2027</td><td>05:44</td><td>18:07</td></tr>
-<tr data-d="2027-02-11"><td>3</td><td>गुरुवार, 11 फ़रवरी 2027</td><td>05:43</td><td>18:08</td></tr>
-<tr data-d="2027-02-12"><td>4</td><td>शुक्रवार, 12 फ़रवरी 2027</td><td>05:43</td><td>18:09</td></tr>
-<tr data-d="2027-02-13"><td>5</td><td>शनिवार, 13 फ़रवरी 2027</td><td>05:42</td><td>18:10</td></tr>
-<tr data-d="2027-02-14"><td>6</td><td>रविवार, 14 फ़रवरी 2027</td><td>05:41</td><td>18:10</td></tr>
-<tr data-d="2027-02-15"><td>7</td><td>सोमवार, 15 फ़रवरी 2027</td><td>05:40</td><td>18:11</td></tr>
-<tr data-d="2027-02-16"><td>8</td><td>मंगलवार, 16 फ़रवरी 2027</td><td>05:40</td><td>18:12</td></tr>
-<tr data-d="2027-02-17"><td>9</td><td>बुधवार, 17 फ़रवरी 2027</td><td>05:39</td><td>18:13</td></tr>
-<tr data-d="2027-02-18"><td>10</td><td>गुरुवार, 18 फ़रवरी 2027</td><td>05:38</td><td>18:13</td></tr>
-<tr data-d="2027-02-19"><td>11</td><td>शुक्रवार, 19 फ़रवरी 2027</td><td>05:37</td><td>18:14</td></tr>
-<tr data-d="2027-02-20"><td>12</td><td>शनिवार, 20 फ़रवरी 2027</td><td>05:37</td><td>18:15</td></tr>
-<tr data-d="2027-02-21"><td>13</td><td>रविवार, 21 फ़रवरी 2027</td><td>05:36</td><td>18:15</td></tr>
-<tr data-d="2027-02-22"><td>14</td><td>सोमवार, 22 फ़रवरी 2027</td><td>05:35</td><td>18:16</td></tr>
-<tr data-d="2027-02-23"><td>15</td><td>मंगलवार, 23 फ़रवरी 2027</td><td>05:34</td><td>18:17</td></tr>
-<tr data-d="2027-02-24"><td>16</td><td>बुधवार, 24 फ़रवरी 2027</td><td>05:33</td><td>18:17</td></tr>
-<tr data-d="2027-02-25"><td>17</td><td>गुरुवार, 25 फ़रवरी 2027</td><td>05:32</td><td>18:18</td></tr>
-<tr data-d="2027-02-26"><td>18</td><td>शुक्रवार, 26 फ़रवरी 2027</td><td>05:31</td><td>18:19</td></tr>
-<tr data-d="2027-02-27"><td>19</td><td>शनिवार, 27 फ़रवरी 2027</td><td>05:30</td><td>18:19</td></tr>
-<tr data-d="2027-02-28"><td>20</td><td>रविवार, 28 फ़रवरी 2027</td><td>05:29</td><td>18:20</td></tr>
-<tr data-d="2027-03-01"><td>21</td><td>सोमवार, 1 मार्च 2027</td><td>05:28</td><td>18:21</td></tr>
-<tr data-d="2027-03-02"><td>22</td><td>मंगलवार, 2 मार्च 2027</td><td>05:27</td><td>18:21</td></tr>
-<tr data-d="2027-03-03"><td>23</td><td>बुधवार, 3 मार्च 2027</td><td>05:26</td><td>18:22</td></tr>
-<tr data-d="2027-03-04"><td>24</td><td>गुरुवार, 4 मार्च 2027</td><td>05:25</td><td>18:23</td></tr>
-<tr data-d="2027-03-05"><td>25</td><td>शुक्रवार, 5 मार्च 2027</td><td>05:24</td><td>18:23</td></tr>
-<tr data-d="2027-03-06"><td>26</td><td>शनिवार, 6 मार्च 2027</td><td>05:23</td><td>18:24</td></tr>
-<tr data-d="2027-03-07"><td>27</td><td>रविवार, 7 मार्च 2027</td><td>05:22</td><td>18:25</td></tr>
-<tr data-d="2027-03-08"><td>28</td><td>सोमवार, 8 मार्च 2027</td><td>05:21</td><td>18:25</td></tr>
-<tr data-d="2027-03-09"><td>29</td><td>मंगलवार, 9 मार्च 2027</td><td>05:20</td><td>18:26</td></tr>
-</tbody></table></div>
-<h2 id="monthly">दिल्ली का मासिक नमाज़ टाइम टेबल</h2>
-<details class="m" open><summary>नवंबर 2026</summary><div class="scroll"><table><thead><tr><th>तारीख़</th><th>फ़ज्र</th><th>सूर्योदय</th><th>ज़ुहर</th><th>अस्र<small>हनफ़ी (इमाम अबू हनीफ़ा)</small></th><th>अस्र<small>मानक (एक मिस्ल)</small></th><th>मग़रिब</th><th>इशा</th></tr></thead><tbody>
+<section class="tab" data-tab="नमाज़ का समय" id="monthly"><h2>दिल्ली का मासिक नमाज़ टाइम टेबल</h2><details class="m" open><summary>नवंबर 2026</summary><div class="scroll"><table><thead><tr><th>तारीख़</th><th>फ़ज्र</th><th>सूर्योदय</th><th>ज़ुहर</th><th>अस्र<small>हनफ़ी (इमाम अबू हनीफ़ा)</small></th><th>अस्र<small>मानक (एक मिस्ल)</small></th><th>मग़रिब</th><th>इशा</th></tr></thead><tbody>
 <tr data-d="2026-11-01" data-l="रविवार, 1 नवंबर 2026"><td>रवि 1</td><td>05:13</td><td>06:33</td><td>12:06</td><td>15:59</td><td>15:13</td><td>17:36</td><td>18:56</td></tr>
 <tr data-d="2026-11-02" data-l="सोमवार, 2 नवंबर 2026"><td>सोम 2</td><td>05:14</td><td>06:34</td><td>12:06</td><td>15:58</td><td>15:12</td><td>17:35</td><td>18:55</td></tr>
 <tr data-d="2026-11-03" data-l="मंगलवार, 3 नवंबर 2026"><td>मंगल 3</td><td>05:14</td><td>06:34</td><td>12:06</td><td>15:58</td><td>15:12</td><td>17:35</td><td>18:55</td></tr>
@@ -546,15 +522,45 @@ a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-h
 <tr data-d="2027-12-30" data-l="गुरुवार, 30 दिसंबर 2027"><td>गुरु 30</td><td>05:49</td><td>07:13</td><td>12:24</td><td>15:57</td><td>15:15</td><td>17:34</td><td>18:58</td></tr>
 <tr data-d="2027-12-31" data-l="शुक्रवार, 31 दिसंबर 2027"><td>शुक्र 31</td><td>05:49</td><td>07:13</td><td>12:25</td><td>15:58</td><td>15:16</td><td>17:34</td><td>18:59</td></tr>
 </tbody></table></div></details>
-<p class="note">गणना का तरीक़ा: Pakistan and India। अस्र दो तरह से दिया गया है: मानक (एक मिस्ल) (शाफ़ई, मालिकी, हंबली) और हनफ़ी (इमाम अबू हनीफ़ा)। हिजरी महीनों की शुरुआत हिसाब पर आधारित है; आपके देश की सरकारी घोषणा (चाँद दिखने) में एक दिन का फ़र्क़ हो सकता है।</p>
-<h2 id="qibla">क़िबला</h2>
-<p>दिल्ली से क़िबला भौगोलिक उत्तर से घड़ी की दिशा में 266.6° पर है। काबा 3,835 किमी दूर है। <a href="/hi/qibla-ki-disha/">मेरी लोकेशन से क़िबला ढूँढें →</a></p>
-<section class="faq"><h2>अक्सर पूछे जाने वाले सवाल</h2>
-<h3>दिल्ली में रमज़ान 2027 कब शुरू होगा?</h3><p>दिल्ली में रमज़ान 1448 के 9 फ़रवरी 2027 को शुरू होने की उम्मीद है। सही शुरुआत देश में चाँद दिखने के ऐलान पर निर्भर है।</p>
+<p class="note">गणना का तरीक़ा: Pakistan and India। अस्र दो तरह से दिया गया है: मानक (एक मिस्ल) (शाफ़ई, मालिकी, हंबली) और हनफ़ी (इमाम अबू हनीफ़ा)। हिजरी महीनों की शुरुआत हिसाब पर आधारित है; आपके देश की सरकारी घोषणा (चाँद दिखने) में एक दिन का फ़र्क़ हो सकता है।</p></section>
+<section class="tab" data-tab="रमज़ान" id="ramadan"><h2>दिल्ली में रमज़ान 2027: सहरी और इफ़्तार का समय</h2><p class="note">रमज़ान 1448 के 9 फ़रवरी 2027 को शुरू होने की उम्मीद है। शुरुआत चाँद दिखने पर निर्भर है और एक दिन का अंतर हो सकता है। <a href="/hi/ramzan-time-table-2027/">रमज़ान 2027 टाइम टेबल: शहर के अनुसार सहरी और इफ़्तार</a></p>
+<div class="scroll"><table><thead><tr><th>दिन</th><th>तारीख़</th><th>सहरी का आख़िरी वक़्त (फ़ज्र)</th><th>इफ़्तार (मग़रिब की अज़ान)</th></tr></thead><tbody>
+<tr data-d="2027-02-09"><td>1</td><td>मंगलवार, 9 फ़रवरी 2027</td><td>05:45</td><td>18:07</td></tr>
+<tr data-d="2027-02-10"><td>2</td><td>बुधवार, 10 फ़रवरी 2027</td><td>05:44</td><td>18:07</td></tr>
+<tr data-d="2027-02-11"><td>3</td><td>गुरुवार, 11 फ़रवरी 2027</td><td>05:43</td><td>18:08</td></tr>
+<tr data-d="2027-02-12"><td>4</td><td>शुक्रवार, 12 फ़रवरी 2027</td><td>05:43</td><td>18:09</td></tr>
+<tr data-d="2027-02-13"><td>5</td><td>शनिवार, 13 फ़रवरी 2027</td><td>05:42</td><td>18:10</td></tr>
+<tr data-d="2027-02-14"><td>6</td><td>रविवार, 14 फ़रवरी 2027</td><td>05:41</td><td>18:10</td></tr>
+<tr data-d="2027-02-15"><td>7</td><td>सोमवार, 15 फ़रवरी 2027</td><td>05:40</td><td>18:11</td></tr>
+<tr data-d="2027-02-16"><td>8</td><td>मंगलवार, 16 फ़रवरी 2027</td><td>05:40</td><td>18:12</td></tr>
+<tr data-d="2027-02-17"><td>9</td><td>बुधवार, 17 फ़रवरी 2027</td><td>05:39</td><td>18:13</td></tr>
+<tr data-d="2027-02-18"><td>10</td><td>गुरुवार, 18 फ़रवरी 2027</td><td>05:38</td><td>18:13</td></tr>
+<tr data-d="2027-02-19"><td>11</td><td>शुक्रवार, 19 फ़रवरी 2027</td><td>05:37</td><td>18:14</td></tr>
+<tr data-d="2027-02-20"><td>12</td><td>शनिवार, 20 फ़रवरी 2027</td><td>05:37</td><td>18:15</td></tr>
+<tr data-d="2027-02-21"><td>13</td><td>रविवार, 21 फ़रवरी 2027</td><td>05:36</td><td>18:15</td></tr>
+<tr data-d="2027-02-22"><td>14</td><td>सोमवार, 22 फ़रवरी 2027</td><td>05:35</td><td>18:16</td></tr>
+<tr data-d="2027-02-23"><td>15</td><td>मंगलवार, 23 फ़रवरी 2027</td><td>05:34</td><td>18:17</td></tr>
+<tr data-d="2027-02-24"><td>16</td><td>बुधवार, 24 फ़रवरी 2027</td><td>05:33</td><td>18:17</td></tr>
+<tr data-d="2027-02-25"><td>17</td><td>गुरुवार, 25 फ़रवरी 2027</td><td>05:32</td><td>18:18</td></tr>
+<tr data-d="2027-02-26"><td>18</td><td>शुक्रवार, 26 फ़रवरी 2027</td><td>05:31</td><td>18:19</td></tr>
+<tr data-d="2027-02-27"><td>19</td><td>शनिवार, 27 फ़रवरी 2027</td><td>05:30</td><td>18:19</td></tr>
+<tr data-d="2027-02-28"><td>20</td><td>रविवार, 28 फ़रवरी 2027</td><td>05:29</td><td>18:20</td></tr>
+<tr data-d="2027-03-01"><td>21</td><td>सोमवार, 1 मार्च 2027</td><td>05:28</td><td>18:21</td></tr>
+<tr data-d="2027-03-02"><td>22</td><td>मंगलवार, 2 मार्च 2027</td><td>05:27</td><td>18:21</td></tr>
+<tr data-d="2027-03-03"><td>23</td><td>बुधवार, 3 मार्च 2027</td><td>05:26</td><td>18:22</td></tr>
+<tr data-d="2027-03-04"><td>24</td><td>गुरुवार, 4 मार्च 2027</td><td>05:25</td><td>18:23</td></tr>
+<tr data-d="2027-03-05"><td>25</td><td>शुक्रवार, 5 मार्च 2027</td><td>05:24</td><td>18:23</td></tr>
+<tr data-d="2027-03-06"><td>26</td><td>शनिवार, 6 मार्च 2027</td><td>05:23</td><td>18:24</td></tr>
+<tr data-d="2027-03-07"><td>27</td><td>रविवार, 7 मार्च 2027</td><td>05:22</td><td>18:25</td></tr>
+<tr data-d="2027-03-08"><td>28</td><td>सोमवार, 8 मार्च 2027</td><td>05:21</td><td>18:25</td></tr>
+<tr data-d="2027-03-09"><td>29</td><td>मंगलवार, 9 मार्च 2027</td><td>05:20</td><td>18:26</td></tr>
+</tbody></table></div></section>
+<section class="tab" data-tab="क़िबला" id="qibla"><h2>क़िबला</h2><p>दिल्ली से क़िबला भौगोलिक उत्तर से घड़ी की दिशा में 266.6° पर है। काबा 3,835 किमी दूर है। <a href="/hi/qibla-ki-disha/">मेरी लोकेशन से क़िबला ढूँढें →</a></p></section>
+<section class="tab" data-tab="अक्सर पूछे जाने वाले सवाल" id="faq"><h2>अक्सर पूछे जाने वाले सवाल</h2><div class="faq"><h3>दिल्ली में रमज़ान 2027 कब शुरू होगा?</h3><p>दिल्ली में रमज़ान 1448 के 9 फ़रवरी 2027 को शुरू होने की उम्मीद है। सही शुरुआत देश में चाँद दिखने के ऐलान पर निर्भर है।</p>
 <h3>दिल्ली में रमज़ान के पहले दिन सहरी और इफ़्तार कितने बजे है?</h3><p>9 फ़रवरी 2027 को दिल्ली में सहरी 05:45 पर ख़त्म होती है (फ़ज्र) और इफ़्तार 18:07 पर है (मग़रिब)।</p>
 <h3>दिल्ली में क़िबला किस दिशा में है?</h3><p>दिल्ली से क़िबला भौगोलिक उत्तर से घड़ी की दिशा में 266.6° पर है। काबा 3,835 किमी दूर है।</p>
-<h3>क्या मेरा फ़ोन दिल्ली में नमाज़ के समय अज़ान सुना सकता है?</h3><p>हाँ। Mubarly दिल्ली में हर नमाज़ के समय अलार्म की आवाज़ में अज़ान सुनाता है, फ़ोन साइलेंट हो तब भी। इंटरनेट और अकाउंट के बिना चलता है।</p>
-</section>
+<h3>क्या मेरा फ़ोन दिल्ली में नमाज़ के समय अज़ान सुना सकता है?</h3><p>हाँ। Mubarly दिल्ली में हर नमाज़ के समय अलार्म की आवाज़ में अज़ान सुनाता है, फ़ोन साइलेंट हो तब भी। इंटरनेट और अकाउंट के बिना चलता है।</p></div></section>
+<div class="cta" id="app"><p><strong>फ़ोन साइलेंट हो तब भी अलार्म की आवाज़ में अज़ान सुनें</strong><small>मुफ़्त · बिना इंटरनेट · 20 भाषाएँ · चारों मसलक</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=hi&utm_source=mubarly_site&utm_campaign=city_hi" rel="noopener"><img src="/img/badges/hi.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – जल्द आ रहा है"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>जल्द आ रहा है</small>App Store</span></span></div></div>
 <h2>दूसरे शहर</h2>
 <ul class="cities"><li><a href="/hi/namaz-ka-samay/mecca/">मक्का</a></li><li><a href="/hi/namaz-ka-samay/medina/">मदीना</a></li><li><a href="/hi/namaz-ka-samay/dubai/">दुबई</a></li><li><a href="/hi/namaz-ka-samay/mumbai/">मुंबई</a></li><li><a href="/hi/namaz-ka-samay/hyderabad/">हैदराबाद</a></li><li><a href="/hi/namaz-ka-samay/lucknow/">लखनऊ</a></li><li><a href="/hi/namaz-ka-samay/kolkata/">कोलकाता</a></li><li><a href="/hi/namaz-ka-samay/bengaluru/">बेंगलुरु</a></li><li><a href="/hi/namaz-ka-samay/ahmedabad/">अहमदाबाद</a></li><li><a href="/hi/namaz-ka-samay/srinagar/">श्रीनगर</a></li><li><a href="/hi/namaz-ka-samay/bhopal/">भोपाल</a></li><li><a href="/hi/namaz-ka-samay/chennai/">चेन्नई</a></li><li><a href="/hi/namaz-ka-samay/patna/">पटना</a></li><li><a href="/hi/namaz-ka-samay/aligarh/">अलीगढ़</a></li><li><a href="/hi/namaz-ka-samay/meerut/">मेरठ</a></li><li><a href="/hi/namaz-ka-samay/kanpur/">कानपुर</a></li><li><a href="/hi/namaz-ka-samay/jaipur/">जयपुर</a></li></ul>
 <script>(function(){try{var d=new Intl.DateTimeFormat('en-CA',{timeZone:"Asia/Kolkata",year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());var r=document.querySelector('tr[data-d="'+d+'"]');if(!r)return;
@@ -568,7 +574,10 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/hi/islamic-margdarshan/">इस्लामी मार्गदर्शन</a><a href="/hi/privacy.html">गोपनीयता नीति</a><a href="/hi/terms.html">उपयोग की शर्तें</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
+<script>(function(){var ts=[].slice.call(document.querySelectorAll('main .tab'));if(ts.length<2)return;var bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');ts[0].parentNode.insertBefore(bar,ts[0]);document.querySelector('main').classList.add('tabbed');
+var bs=ts.map(function(t,i){var b=document.createElement('button');b.type='button';b.id='tb-'+t.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',t.id);t.setAttribute('role','tabpanel');t.setAttribute('aria-labelledby',b.id);b.textContent=t.getAttribute('data-tab');b.onclick=function(){show(i,true)};b.onkeydown=function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(document.dir==='rtl')k=-k;if(k){var n=(i+k+ts.length)%ts.length;show(n,true);bs[n].focus()}};bar.appendChild(b);return b});
+function show(i,user){ts.forEach(function(t,j){t.hidden=j!==i;bs[j].setAttribute('aria-selected',j===i);bs[j].tabIndex=j===i?0:-1});if(user){history.replaceState(null,'','#'+ts[i].id);bs[i].scrollIntoView({block:'nearest',inline:'center'});if(bar.getBoundingClientRect().top<0||window.scrollY>bar.offsetTop)bar.scrollIntoView()}}
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1)),k=-1;ts.forEach(function(t,j){if(t.id===h||t.querySelector('[id="'+h+'"]'))k=j});return k}var k0=fromHash();show(Math.max(0,k0));if(k0>0)bs[k0].scrollIntoView({block:'nearest',inline:'center'});addEventListener('hashchange',function(){var k=fromHash();if(k>=0)show(k)})})();(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';

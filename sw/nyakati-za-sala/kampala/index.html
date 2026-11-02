@@ -47,51 +47,27 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
 .dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
 @media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
-@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
+h1,h2,h3{font-family:Jakarta,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif;letter-spacing:-.01em}
+.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:#EDE6CF;background:radial-gradient(110% 90% at 85% 0,#1a5a43 0,#0B3B2C 45%,#061A13 100%);padding:6px 0 30px;margin-bottom:8px}
+.hero:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:96px;opacity:.07;pointer-events:none}.hero .wrap{position:relative}
+.hero h1{color:#F3E7C2;font-weight:800;margin:6px 0 10px}.hero .lead{color:#CFC6AA;max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:#BDB292}
+.hero .mini{background:#ffffff0d;border-color:#ffffff24;color:#EDE6CF;backdrop-filter:blur(2px)}.hero .mini small{color:#CFC6AA}.hero a.dl{background:#D4B062;color:#061A13}
+main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:none;width:6px;height:1.1em;border-radius:3px;background:linear-gradient(#D4B062,#76571A)}
+.tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/sw/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
-<main class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/sw/">Mubarly</a> › <a href="/sw/nyakati-za-sala/">Nyakati za sala</a> › Kampala</nav>
+<section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/sw/">Mubarly</a> › <a href="/sw/nyakati-za-sala/">Nyakati za sala</a> › Kampala</nav>
 <h1>Nyakati za sala Kampala</h1>
-<p class="lead">Alfajiri, macheo, adhuhuri, alasiri, magharibi na isha Kampala kwa kila siku hadi mwisho wa 2027, pamoja na daku na futari za Ramadhani 2027 na mwelekeo wa kibla.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Sikia adhana kwa sauti ya kengele, hata simu ikiwa kimya</strong><small>Bure · bila intaneti · lugha 20 · madhehebu manne</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=sw&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Pakua bure</a></aside>
+<p class="lead">Alfajiri, macheo, adhuhuri, alasiri, magharibi na isha Kampala kwa kila siku hadi mwisho wa 2027, pamoja na daku na futari za Ramadhani 2027 na mwelekeo wa kibla.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Sikia adhana kwa sauti ya kengele, hata simu ikiwa kimya</strong><small>Bure · bila intaneti · lugha 20 · madhehebu manne</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=sw&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Pakua bure</a></aside></div></section>
+<main class="wrap">
+
 <section id="today" class="card" hidden aria-live="polite"><p class="d">Leo</p><ul><li><b>—</b><span>Alfajiri</span></li><li><b>—</b><span>Macheo</span></li><li><b>—</b><span>Adhuhuri</span></li><li><b>—</b><span>Alasiri</span></li><li><b>—</b><span>Magharibi</span></li><li><b>—</b><span>Isha</span></li></ul></section>
-<div class="cta"><p><strong>Sikia adhana kwa sauti ya kengele, hata simu ikiwa kimya</strong><small>Bure · bila intaneti · lugha 20 · madhehebu manne</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=sw&utm_source=mubarly_site&utm_campaign=city_sw" rel="noopener"><img src="/img/badges/sw.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Inakuja hivi karibuni"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Inakuja hivi karibuni</small>App Store</span></span></div></div>
-<h2 id="ramadan">Ramadhani 2027 Kampala: saa za daku na futari</h2>
-<p class="note">Ramadhani ya 1448 inatarajiwa kuanza 8 Februari 2027. Mwanzo hutegemea kuonekana kwa mwezi na unaweza kutofautiana kwa siku moja. <a href="/sw/ratiba-ya-ramadhani-2027/">Ratiba ya Ramadhani 2027: Saa za Daku na Futari kwa Miji</a></p>
-<div class="scroll"><table><thead><tr><th>Siku</th><th>Tarehe</th><th>Mwisho wa daku (Alfajiri)</th><th>Futari (adhana ya magharibi)</th></tr></thead><tbody>
-<tr data-d="2027-02-08"><td>1</td><td>Jumatatu, 8 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-09"><td>2</td><td>Jumanne, 9 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-10"><td>3</td><td>Jumatano, 10 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-11"><td>4</td><td>Alhamisi, 11 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-12"><td>5</td><td>Ijumaa, 12 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-13"><td>6</td><td>Jumamosi, 13 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-14"><td>7</td><td>Jumapili, 14 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-15"><td>8</td><td>Jumatatu, 15 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-16"><td>9</td><td>Jumanne, 16 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-17"><td>10</td><td>Jumatano, 17 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-18"><td>11</td><td>Alhamisi, 18 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-19"><td>12</td><td>Ijumaa, 19 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
-<tr data-d="2027-02-20"><td>13</td><td>Jumamosi, 20 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-21"><td>14</td><td>Jumapili, 21 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-22"><td>15</td><td>Jumatatu, 22 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-23"><td>16</td><td>Jumanne, 23 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-24"><td>17</td><td>Jumatano, 24 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-25"><td>18</td><td>Alhamisi, 25 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-26"><td>19</td><td>Ijumaa, 26 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-27"><td>20</td><td>Jumamosi, 27 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
-<tr data-d="2027-02-28"><td>21</td><td>Jumapili, 28 Februari 2027</td><td>05:50</td><td>19:05</td></tr>
-<tr data-d="2027-03-01"><td>22</td><td>Jumatatu, 1 Machi 2027</td><td>05:50</td><td>19:05</td></tr>
-<tr data-d="2027-03-02"><td>23</td><td>Jumanne, 2 Machi 2027</td><td>05:49</td><td>19:05</td></tr>
-<tr data-d="2027-03-03"><td>24</td><td>Jumatano, 3 Machi 2027</td><td>05:49</td><td>19:05</td></tr>
-<tr data-d="2027-03-04"><td>25</td><td>Alhamisi, 4 Machi 2027</td><td>05:49</td><td>19:05</td></tr>
-<tr data-d="2027-03-05"><td>26</td><td>Ijumaa, 5 Machi 2027</td><td>05:49</td><td>19:04</td></tr>
-<tr data-d="2027-03-06"><td>27</td><td>Jumamosi, 6 Machi 2027</td><td>05:49</td><td>19:04</td></tr>
-<tr data-d="2027-03-07"><td>28</td><td>Jumapili, 7 Machi 2027</td><td>05:49</td><td>19:04</td></tr>
-<tr data-d="2027-03-08"><td>29</td><td>Jumatatu, 8 Machi 2027</td><td>05:48</td><td>19:04</td></tr>
-</tbody></table></div>
-<h2 id="monthly">Ratiba ya sala ya mwezi Kampala</h2>
-<details class="m" open><summary>Novemba 2026</summary><div class="scroll"><table><thead><tr><th>Tarehe</th><th>Alfajiri</th><th>Macheo</th><th>Adhuhuri</th><th>Alasiri<small>Kawaida</small></th><th>Alasiri<small>Hanafi (Abu Hanifa)</small></th><th>Magharibi</th><th>Isha</th></tr></thead><tbody>
+<section class="tab" data-tab="Nyakati za sala" id="monthly"><h2>Ratiba ya sala ya mwezi Kampala</h2><details class="m" open><summary>Novemba 2026</summary><div class="scroll"><table><thead><tr><th>Tarehe</th><th>Alfajiri</th><th>Macheo</th><th>Adhuhuri</th><th>Alasiri<small>Kawaida</small></th><th>Alasiri<small>Hanafi (Abu Hanifa)</small></th><th>Magharibi</th><th>Isha</th></tr></thead><tbody>
 <tr data-d="2026-11-01" data-l="Jumapili, 1 Novemba 2026"><td>Jumapili 1</td><td>05:19</td><td>06:30</td><td>12:34</td><td>15:53</td><td>16:54</td><td>18:36</td><td>19:43</td></tr>
 <tr data-d="2026-11-02" data-l="Jumatatu, 2 Novemba 2026"><td>Jumatatu 2</td><td>05:19</td><td>06:30</td><td>12:34</td><td>15:53</td><td>16:54</td><td>18:36</td><td>19:43</td></tr>
 <tr data-d="2026-11-03" data-l="Jumanne, 3 Novemba 2026"><td>Jumanne 3</td><td>05:19</td><td>06:30</td><td>12:34</td><td>15:54</td><td>16:54</td><td>18:36</td><td>19:43</td></tr>
@@ -545,15 +521,45 @@ a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-h
 <tr data-d="2027-12-30" data-l="Alhamisi, 30 Desemba 2027"><td>Alhamisi 30</td><td>05:34</td><td>06:49</td><td>12:53</td><td>16:18</td><td>17:14</td><td>18:55</td><td>20:06</td></tr>
 <tr data-d="2027-12-31" data-l="Ijumaa, 31 Desemba 2027"><td>Ijumaa 31</td><td>05:34</td><td>06:49</td><td>12:53</td><td>16:18</td><td>17:14</td><td>18:56</td><td>20:06</td></tr>
 </tbody></table></div></details>
-<p class="note">Njia ya kukokotoa: Europe and general. Alasiri imetolewa mara mbili: Kawaida (Shafi'i, Maliki, Hanbali) na Hanafi (Abu Hanifa). Mianzo ya miezi ya Hijria hutegemea hesabu; tangazo rasmi la nchi yako linaweza kutofautiana kwa siku moja.</p>
-<h2 id="qibla">Kibla</h2>
-<p>Kutoka Kampala, kibla iko 18.1° kutoka kaskazini halisi kufuata mzunguko wa saa. Al-Kaaba iko umbali wa km 2,472. <a href="/sw/mwelekeo-wa-kibla/">Tafuta kibla kutoka mahali nilipo →</a></p>
-<section class="faq"><h2>Maswali yanayoulizwa mara kwa mara</h2>
-<h3>Ramadhani 2027 inaanza lini Kampala?</h3><p>Ramadhani ya 1448 inatarajiwa kuanza Kampala tarehe 8 Februari 2027. Mwanzo kamili hutegemea tangazo la kuonekana kwa mwezi nchini.</p>
+<p class="note">Njia ya kukokotoa: Europe and general. Alasiri imetolewa mara mbili: Kawaida (Shafi'i, Maliki, Hanbali) na Hanafi (Abu Hanifa). Mianzo ya miezi ya Hijria hutegemea hesabu; tangazo rasmi la nchi yako linaweza kutofautiana kwa siku moja.</p></section>
+<section class="tab" data-tab="Ramadhani" id="ramadan"><h2>Ramadhani 2027 Kampala: saa za daku na futari</h2><p class="note">Ramadhani ya 1448 inatarajiwa kuanza 8 Februari 2027. Mwanzo hutegemea kuonekana kwa mwezi na unaweza kutofautiana kwa siku moja. <a href="/sw/ratiba-ya-ramadhani-2027/">Ratiba ya Ramadhani 2027: Saa za Daku na Futari kwa Miji</a></p>
+<div class="scroll"><table><thead><tr><th>Siku</th><th>Tarehe</th><th>Mwisho wa daku (Alfajiri)</th><th>Futari (adhana ya magharibi)</th></tr></thead><tbody>
+<tr data-d="2027-02-08"><td>1</td><td>Jumatatu, 8 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-09"><td>2</td><td>Jumanne, 9 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-10"><td>3</td><td>Jumatano, 10 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-11"><td>4</td><td>Alhamisi, 11 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-12"><td>5</td><td>Ijumaa, 12 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-13"><td>6</td><td>Jumamosi, 13 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-14"><td>7</td><td>Jumapili, 14 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-15"><td>8</td><td>Jumatatu, 15 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-16"><td>9</td><td>Jumanne, 16 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-17"><td>10</td><td>Jumatano, 17 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-18"><td>11</td><td>Alhamisi, 18 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-19"><td>12</td><td>Ijumaa, 19 Februari 2027</td><td>05:50</td><td>19:07</td></tr>
+<tr data-d="2027-02-20"><td>13</td><td>Jumamosi, 20 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-21"><td>14</td><td>Jumapili, 21 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-22"><td>15</td><td>Jumatatu, 22 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-23"><td>16</td><td>Jumanne, 23 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-24"><td>17</td><td>Jumatano, 24 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-25"><td>18</td><td>Alhamisi, 25 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-26"><td>19</td><td>Ijumaa, 26 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-27"><td>20</td><td>Jumamosi, 27 Februari 2027</td><td>05:50</td><td>19:06</td></tr>
+<tr data-d="2027-02-28"><td>21</td><td>Jumapili, 28 Februari 2027</td><td>05:50</td><td>19:05</td></tr>
+<tr data-d="2027-03-01"><td>22</td><td>Jumatatu, 1 Machi 2027</td><td>05:50</td><td>19:05</td></tr>
+<tr data-d="2027-03-02"><td>23</td><td>Jumanne, 2 Machi 2027</td><td>05:49</td><td>19:05</td></tr>
+<tr data-d="2027-03-03"><td>24</td><td>Jumatano, 3 Machi 2027</td><td>05:49</td><td>19:05</td></tr>
+<tr data-d="2027-03-04"><td>25</td><td>Alhamisi, 4 Machi 2027</td><td>05:49</td><td>19:05</td></tr>
+<tr data-d="2027-03-05"><td>26</td><td>Ijumaa, 5 Machi 2027</td><td>05:49</td><td>19:04</td></tr>
+<tr data-d="2027-03-06"><td>27</td><td>Jumamosi, 6 Machi 2027</td><td>05:49</td><td>19:04</td></tr>
+<tr data-d="2027-03-07"><td>28</td><td>Jumapili, 7 Machi 2027</td><td>05:49</td><td>19:04</td></tr>
+<tr data-d="2027-03-08"><td>29</td><td>Jumatatu, 8 Machi 2027</td><td>05:48</td><td>19:04</td></tr>
+</tbody></table></div></section>
+<section class="tab" data-tab="Kibla" id="qibla"><h2>Kibla</h2><p>Kutoka Kampala, kibla iko 18.1° kutoka kaskazini halisi kufuata mzunguko wa saa. Al-Kaaba iko umbali wa km 2,472. <a href="/sw/mwelekeo-wa-kibla/">Tafuta kibla kutoka mahali nilipo →</a></p></section>
+<section class="tab" data-tab="Maswali yanayoulizwa mara kwa mara" id="faq"><h2>Maswali yanayoulizwa mara kwa mara</h2><div class="faq"><h3>Ramadhani 2027 inaanza lini Kampala?</h3><p>Ramadhani ya 1448 inatarajiwa kuanza Kampala tarehe 8 Februari 2027. Mwanzo kamili hutegemea tangazo la kuonekana kwa mwezi nchini.</p>
 <h3>Daku na futari ni saa ngapi Kampala siku ya kwanza ya Ramadhani?</h3><p>Tarehe 8 Februari 2027 Kampala, daku inaisha saa 05:50 (alfajiri) na futari ni saa 19:07 (magharibi).</p>
 <h3>Kibla iko upande gani Kampala?</h3><p>Kutoka Kampala, kibla iko 18.1° kutoka kaskazini halisi kufuata mzunguko wa saa. Al-Kaaba iko umbali wa km 2,472.</p>
-<h3>Je, simu yangu inaweza kuadhini kwa wakati Kampala?</h3><p>Ndiyo. Mubarly huadhini kwa sauti ya kengele kila wakati wa sala Kampala, hata simu ikiwa kimya. Inafanya kazi bila intaneti na bila akaunti.</p>
-</section>
+<h3>Je, simu yangu inaweza kuadhini kwa wakati Kampala?</h3><p>Ndiyo. Mubarly huadhini kwa sauti ya kengele kila wakati wa sala Kampala, hata simu ikiwa kimya. Inafanya kazi bila intaneti na bila akaunti.</p></div></section>
+<div class="cta" id="app"><p><strong>Sikia adhana kwa sauti ya kengele, hata simu ikiwa kimya</strong><small>Bure · bila intaneti · lugha 20 · madhehebu manne</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=sw&utm_source=mubarly_site&utm_campaign=city_sw" rel="noopener"><img src="/img/badges/sw.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Inakuja hivi karibuni"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Inakuja hivi karibuni</small>App Store</span></span></div></div>
 <h2>Miji mingine</h2>
 <ul class="cities"><li><a href="/sw/nyakati-za-sala/mecca/">Makka</a></li><li><a href="/sw/nyakati-za-sala/medina/">Madina</a></li><li><a href="/sw/nyakati-za-sala/dar-es-salaam/">Dar es Salaam</a></li><li><a href="/sw/nyakati-za-sala/zanzibar/">Zanzibar</a></li><li><a href="/sw/nyakati-za-sala/dodoma/">Dodoma</a></li><li><a href="/sw/nyakati-za-sala/arusha/">Arusha</a></li><li><a href="/sw/nyakati-za-sala/tanga/">Tanga</a></li><li><a href="/sw/nyakati-za-sala/mwanza/">Mwanza</a></li><li><a href="/sw/nyakati-za-sala/mombasa/">Mombasa</a></li><li><a href="/sw/nyakati-za-sala/nairobi/">Nairobi</a></li><li><a href="/sw/nyakati-za-sala/lamu/">Lamu</a></li></ul>
 <script>(function(){try{var d=new Intl.DateTimeFormat('en-CA',{timeZone:"Africa/Kampala",year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());var r=document.querySelector('tr[data-d="'+d+'"]');if(!r)return;
@@ -567,7 +573,10 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/sw/mwongozo-wa-kiislamu/">Miongozo ya Kiislamu</a><a href="/sw/privacy.html">Sera ya faragha</a><a href="/sw/terms.html">Masharti ya matumizi</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
+<script>(function(){var ts=[].slice.call(document.querySelectorAll('main .tab'));if(ts.length<2)return;var bar=document.createElement('div');bar.className='tabs';bar.setAttribute('role','tablist');ts[0].parentNode.insertBefore(bar,ts[0]);document.querySelector('main').classList.add('tabbed');
+var bs=ts.map(function(t,i){var b=document.createElement('button');b.type='button';b.id='tb-'+t.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',t.id);t.setAttribute('role','tabpanel');t.setAttribute('aria-labelledby',b.id);b.textContent=t.getAttribute('data-tab');b.onclick=function(){show(i,true)};b.onkeydown=function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(document.dir==='rtl')k=-k;if(k){var n=(i+k+ts.length)%ts.length;show(n,true);bs[n].focus()}};bar.appendChild(b);return b});
+function show(i,user){ts.forEach(function(t,j){t.hidden=j!==i;bs[j].setAttribute('aria-selected',j===i);bs[j].tabIndex=j===i?0:-1});if(user){history.replaceState(null,'','#'+ts[i].id);bs[i].scrollIntoView({block:'nearest',inline:'center'});if(bar.getBoundingClientRect().top<0||window.scrollY>bar.offsetTop)bar.scrollIntoView()}}
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1)),k=-1;ts.forEach(function(t,j){if(t.id===h||t.querySelector('[id="'+h+'"]'))k=j});return k}var k0=fromHash();show(Math.max(0,k0));if(k0>0)bs[k0].scrollIntoView({block:'nearest',inline:'center'});addEventListener('hashchange',function(){var k=fromHash();if(k>=0)show(k)})})();(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';
