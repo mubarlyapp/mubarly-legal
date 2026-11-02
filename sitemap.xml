@@ -8,4 +8,8 @@
     <loc>https://mubarly.com/sitemap-cities.xml</loc>
     <lastmod>2026-11-02</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://mubarly.com/sitemap-guides.xml</loc>
+    <lastmod>2026-11-02</lastmod>
+  </sitemap>
 </sitemapindex>
