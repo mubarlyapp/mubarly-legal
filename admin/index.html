@@ -1,8 +1,8 @@
 <!doctype html>
 <!-- The owner's website statistics (2026-11-02), published by landing-pages.mjs at an unlisted address (STATS_PATH).
-     Before sign-in the page shows only the logo and Google's own sign-in button (Google Identity Services, so Google's
-     screen names mubarly.com, not the Supabase host); only mubarly.dev@gmail.com is passed on to Supabase
-     (signInWithIdToken), and site_stats checks that address again on the server. -->
+     Before sign-in the page shows only the logo and an e-mail + password form (the owner chose password over Google,
+     2026-11-02); only mubarly.dev@gmail.com is passed on to Supabase (signInWithPassword), and site_stats checks that
+     address again on the server. -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -24,12 +24,14 @@ h1{font-size:1.6rem;margin:0 0 6px}h2{font-size:1.1rem;margin:28px 0 10px}.muted
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-variant-numeric:tabular-nums;font-size:.92rem}
 th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:first-child,td:first-child{text-align:start;word-break:break-all}th{color:var(--muted);font-weight:600;font-size:.82rem}
 .meter{display:inline-block;height:8px;border-radius:4px;background:var(--bar);vertical-align:middle;margin-inline-end:6px;min-width:2px}
+[hidden]{display:none!important}
 #err{color:#c0392b;font-weight:700}
 #gate{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px}#gate img{width:72px;height:72px;border-radius:18px}#gate p{margin:0;color:var(--muted);min-height:1.5em}
+#gate form{display:flex;flex-direction:column;gap:10px;width:min(300px,100%)}#gate input{font:inherit;padding:11px 14px;border-radius:12px;border:1px solid var(--line,#ccc);background:transparent;color:inherit}#gate button{font:inherit;font-weight:700;padding:11px 14px;border-radius:999px;border:0;background:#111;color:#fff;cursor:pointer}#gate button:disabled{opacity:.6}
 </style>
 </head>
 <body>
-<div id="gate"><img src="/img/icon-192.png" alt="Mubarly" width="72" height="72"><div id="gbtn"></div><p id="gmsg"></p></div>
+<div id="gate"><img src="/img/icon-192.png" alt="Mubarly" width="72" height="72"><form id="login" autocomplete="on"><input id="email" type="email" name="email" autocomplete="username" required aria-label="E-posta" placeholder="E-posta"><input id="pass" type="password" name="password" autocomplete="current-password" required aria-label="Şifre" placeholder="Şifre"><button type="submit">Giriş</button></form><p id="gmsg"></p></div>
 <div id="app" hidden>
 <header>MUBARLY · İSTATİSTİK</header>
 <main>
@@ -51,11 +53,10 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
 <div class="grid2"><div><h2>Aramada görünen sayfalar</h2><div id="search-pages"></div></div><div><h2>Aramaların ülkeleri</h2><div id="search-countries"></div></div></div>
 </main>
 </div>
-<script src="https://accounts.google.com/gsi/client" async></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
 (function(){
-  var OWNER = 'mubarly.dev@gmail.com', CLIENT = '582114667947-i0qo5ip4rg88quq21o2bbdgrhbllgpcf.apps.googleusercontent.com';
+  var OWNER = 'mubarly.dev@gmail.com';
   var sb = supabase.createClient('https://vvrfovaixhhlrpvadgmm.supabase.co', 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', { auth: { persistSession: true, detectSessionInUrl: false } });
   var signedIn = false;
   var region = new Intl.DisplayNames(['tr'], { type: 'region' }), langName = new Intl.DisplayNames(['tr'], { type: 'language' });
@@ -117,39 +118,29 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
     document.getElementById('app').hidden = true; document.getElementById('gate').hidden = false;
     document.getElementById('gmsg').textContent = msg || '';
   }
-  function payload(jwt) {
-    try { return JSON.parse(decodeURIComponent(escape(atob(jwt.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))))); } catch (e) { return {}; }
-  }
   function start(session) {
     signedIn = true;
     document.getElementById('who').innerHTML = esc(session.user.email) + ' · <a href="#" id="out">Çıkış</a>';
     document.getElementById('out').addEventListener('click', function (e) { e.preventDefault(); sb.auth.signOut().then(function () { location.reload(); }); });
     load(30);
   }
-  // Google's own button: the nonce is hashed for Google and given raw to Supabase, which checks the pair.
-  function googleButton() {
-    var raw = crypto.getRandomValues(new Uint32Array(4)).join('-');
-    crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw)).then(function (h) {
-      var hashed = Array.prototype.map.call(new Uint8Array(h), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
-      google.accounts.id.initialize({
-        client_id: CLIENT, nonce: hashed, ux_mode: 'popup', auto_select: false, itp_support: true,
-        callback: function (r) {
-          var p = payload(r.credential);
-          if ((p.email || '').toLowerCase() !== OWNER || !p.email_verified) { showGate('Bu hesapla giriş yapılamaz.'); return; }
-          sb.auth.signInWithIdToken({ provider: 'google', token: r.credential, nonce: raw }).then(function (res) {
-            if (res.error || !res.data.session) { showGate('Giriş yapılamadı.'); return; }
-            start(res.data.session);
-          });
-        },
-      });
-      google.accounts.id.renderButton(document.getElementById('gbtn'), { theme: 'filled_black', size: 'large', shape: 'pill', text: 'signin_with', locale: 'tr' });
+  // E-mail and password: only the owner's address goes on to Supabase.
+  document.getElementById('login').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim().toLowerCase(), btn = e.target.querySelector('button');
+    if (email !== OWNER) { showGate('E-posta veya şifre hatalı.'); return; }
+    btn.disabled = true;
+    sb.auth.signInWithPassword({ email: email, password: document.getElementById('pass').value }).then(function (res) {
+      btn.disabled = false;
+      if (res.error || !res.data.session) { showGate('E-posta veya şifre hatalı.'); return; }
+      document.getElementById('pass').value = '';
+      start(res.data.session);
     });
-  }
+  });
   sb.auth.getSession().then(function (r) {
     var session = r.data && r.data.session;
     if (session && (session.user.email || '').toLowerCase() === OWNER) { start(session); return; }
     if (session) sb.auth.signOut();
-    (function wait() { if (window.google && google.accounts && google.accounts.id) googleButton(); else setTimeout(wait, 100); })();
   });
   setInterval(function () { var on = document.querySelector('#range button.on'); load(on ? +on.dataset.d : 30); }, 60000);
 })();
