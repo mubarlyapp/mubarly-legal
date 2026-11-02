@@ -1,12 +1,14 @@
 <!doctype html>
-<!-- The owner's website statistics (2026-11-02), published as mubarly.com/stats/ by landing-pages.mjs. Only the app's
-     admins see data: sign in with Google, then site_stats checks public.is_admin() (public.admin_member). -->
+<!-- The owner's website statistics (2026-11-02), published by landing-pages.mjs at an unlisted address (STATS_PATH).
+     Before sign-in the page shows only the logo and Google's own sign-in button (Google Identity Services, so Google's
+     screen names mubarly.com, not the Supabase host); only mubarly.dev@gmail.com is passed on to Supabase
+     (signInWithIdToken), and site_stats checks that address again on the server. -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Site istatistikleri · Mubarly</title>
+<title>Mubarly</title>
 <link rel="icon" type="image/png" href="/img/icon-192.png">
 <style>
 :root{color-scheme:light dark;--bg:#F6F1E4;--fg:#0B2F24;--muted:#5D5A4A;--gold:#76571A;--card:#FFFBF2;--line:#E6DCC4;--bar:#0B3B2C}
@@ -23,16 +25,18 @@ table{width:100%;border-collapse:collapse;background:var(--card);border:1px soli
 th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:first-child,td:first-child{text-align:start;word-break:break-all}th{color:var(--muted);font-weight:600;font-size:.82rem}
 .meter{display:inline-block;height:8px;border-radius:4px;background:var(--bar);vertical-align:middle;margin-inline-end:6px;min-width:2px}
 #err{color:#c0392b;font-weight:700}
+#gate{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px}#gate img{width:72px;height:72px;border-radius:18px}#gate p{margin:0;color:var(--muted);min-height:1.5em}
 </style>
 </head>
 <body>
+<div id="gate"><img src="/img/icon-192.png" alt="Mubarly" width="72" height="72"><div id="gbtn"></div><p id="gmsg"></p></div>
+<div id="app" hidden>
 <header>MUBARLY · İSTATİSTİK</header>
 <main>
 <h1>Site istatistikleri</h1>
 <p class="muted">mubarly.com ziyaretleri ve mağaza düğmesi tıklamaları. Çerez yok; bir kişi aynı gün içinde bir kez sayılır.</p>
 <div class="bar-row" id="range"><button data-d="1">Bugün</button><button data-d="7">7 gün</button><button data-d="30" class="on">30 gün</button><button data-d="90">90 gün</button><button data-d="365">1 yıl</button></div>
 <p id="who" class="muted"></p><p id="err"></p>
-<p id="login" hidden><button id="google" style="padding:12px 20px;border-radius:999px;border:0;background:#0B3B2C;color:#F6F1E4;font:inherit;font-weight:700;cursor:pointer">Google ile giriş yap</button></p>
 <section class="card" id="online" style="margin-bottom:14px"></section>
 <section class="cards" id="totals"></section>
 <h2>Günlük</h2><div id="daily"></div>
@@ -46,10 +50,13 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
 <h2>Arama kelimeleri</h2><div id="search-queries"></div>
 <div class="grid2"><div><h2>Aramada görünen sayfalar</h2><div id="search-pages"></div></div><div><h2>Aramaların ülkeleri</h2><div id="search-countries"></div></div></div>
 </main>
+</div>
+<script src="https://accounts.google.com/gsi/client" async></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
 (function(){
-  var sb = supabase.createClient('https://vvrfovaixhhlrpvadgmm.supabase.co', 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
+  var OWNER = 'mubarly.dev@gmail.com', CLIENT = '582114667947-i0qo5ip4rg88quq21o2bbdgrhbllgpcf.apps.googleusercontent.com';
+  var sb = supabase.createClient('https://vvrfovaixhhlrpvadgmm.supabase.co', 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', { auth: { persistSession: true, detectSessionInUrl: false } });
   var signedIn = false;
   var region = new Intl.DisplayNames(['tr'], { type: 'region' }), langName = new Intl.DisplayNames(['tr'], { type: 'language' });
   // Search Console gives ISO 3166 alpha-3 country codes.
@@ -73,6 +80,7 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
       .then(function (r) { if (r.error) throw new Error(r.error.code === '42501' || /denied/.test(r.error.message) ? 'Bu hesabın istatistikleri görme yetkisi yok.' : 'Veri alınamadı: ' + r.error.message); return r.data; })
       .then(function (d) {
         document.getElementById('err').textContent = '';
+        document.getElementById('gate').hidden = true; document.getElementById('app').hidden = false;
         var o = d.online || { visitors: 0, pages: [] };
         document.getElementById('online').innerHTML = '<b style="color:#1a9c4e">● ' + n(o.visitors) + '</b><span>şu an sitede (son 5 dakika)</span>' + (o.pages.length ? '<p class="muted" style="margin:8px 0 0">' + o.pages.map(function (p) { return esc(decodeURIComponent(p.path)) + ' (' + p.visitors + ')'; }).join(' · ') + '</p>' : '');
         document.getElementById('cities').innerHTML = table(d.cities, [['place', 'Şehir / bölge'], ['country', 'Ülke', function (v) { try { return v === '?' ? 'Bilinmiyor' : region.of(v); } catch (e) { return v; } }], ['visitors', 'Ziyaretçi'], ['clicks', 'Mağaza tıklaması']], 'visitors');
@@ -92,23 +100,50 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
         document.getElementById('search-pages').innerHTML = table(g.pages, [['page', 'Sayfa', function (v) { try { return decodeURIComponent(v.replace('https://mubarly.com', '')) || '/'; } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Sıra']], 'impressions');
         document.getElementById('search-countries').innerHTML = table(g.countries, [['country', 'Ülke', function (v) { try { return region.of(v.length === 3 ? A3[v.toUpperCase()] || v : v); } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama']], 'impressions');
       })
-      .catch(function (e) { document.getElementById('err').textContent = e.message; });
+      .catch(function () { sb.auth.signOut().then(showGate); });
   }
   document.getElementById('range').addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
     document.querySelectorAll('#range button').forEach(function (x) { x.classList.toggle('on', x === b); });
     load(+b.dataset.d);
   });
-  document.getElementById('google').addEventListener('click', function () {
-    sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.origin + '/stats/' } });
-  });
-  sb.auth.getSession().then(function (r) {
-    var s = r.data && r.data.session;
-    if (!s) { document.getElementById('login').hidden = false; return; }
+  function showGate(msg) {
+    document.getElementById('app').hidden = true; document.getElementById('gate').hidden = false;
+    document.getElementById('gmsg').textContent = msg || '';
+  }
+  function payload(jwt) {
+    try { return JSON.parse(decodeURIComponent(escape(atob(jwt.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))))); } catch (e) { return {}; }
+  }
+  function start(session) {
     signedIn = true;
-    document.getElementById('who').innerHTML = esc(s.user.email) + ' · <a href="#" id="out">Çıkış</a>';
-    document.getElementById('out').addEventListener('click', function (e) { e.preventDefault(); sb.auth.signOut().then(function () { location.replace('/stats/'); }); });
+    document.getElementById('who').innerHTML = esc(session.user.email) + ' · <a href="#" id="out">Çıkış</a>';
+    document.getElementById('out').addEventListener('click', function (e) { e.preventDefault(); sb.auth.signOut().then(function () { location.reload(); }); });
     load(30);
+  }
+  // Google's own button: the nonce is hashed for Google and given raw to Supabase, which checks the pair.
+  function googleButton() {
+    var raw = crypto.getRandomValues(new Uint32Array(4)).join('-');
+    crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw)).then(function (h) {
+      var hashed = Array.prototype.map.call(new Uint8Array(h), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
+      google.accounts.id.initialize({
+        client_id: CLIENT, nonce: hashed, ux_mode: 'popup', auto_select: false, itp_support: true,
+        callback: function (r) {
+          var p = payload(r.credential);
+          if ((p.email || '').toLowerCase() !== OWNER || !p.email_verified) { showGate('Bu hesapla giriş yapılamaz.'); return; }
+          sb.auth.signInWithIdToken({ provider: 'google', token: r.credential, nonce: raw }).then(function (res) {
+            if (res.error || !res.data.session) { showGate('Giriş yapılamadı.'); return; }
+            start(res.data.session);
+          });
+        },
+      });
+      google.accounts.id.renderButton(document.getElementById('gbtn'), { theme: 'filled_black', size: 'large', shape: 'pill', text: 'signin_with', locale: 'tr' });
+    });
+  }
+  sb.auth.getSession().then(function (r) {
+    var session = r.data && r.data.session;
+    if (session && (session.user.email || '').toLowerCase() === OWNER) { start(session); return; }
+    if (session) sb.auth.signOut();
+    (function wait() { if (window.google && google.accounts && google.accounts.id) googleButton(); else setTimeout(wait, 100); })();
   });
   setInterval(function () { var on = document.querySelector('#range button.on'); load(on ? +on.dataset.d : 30); }, 60000);
 })();
