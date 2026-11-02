@@ -36,6 +36,26 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/ankara/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/izmir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/izmir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/izmir/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/bursa/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bursa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bursa/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/antalya/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/antalya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/antalya/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/konya/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/konya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/konya/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/mecca/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/mecca/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/mecca/"/>
@@ -145,6 +165,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/baghdad/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/erbil/</loc>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/katakani-nwezh/erbil/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/erbil/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/erbil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/erbil/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/damascus/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/damascus/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/damascus/"/>
@@ -161,9 +188,37 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/cairo/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/alexandria/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/alexandria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/alexandria/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/khartoum/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/khartoum/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/khartoum/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/tunis/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/tunis/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/tunis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tunis/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/algiers/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/algiers/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/algiers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/algiers/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/casablanca/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/casablanca/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/dakar/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/dakar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dakar/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/kano/</loc>
@@ -220,16 +275,49 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tehran/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/mashhad/</loc>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/mashhad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/mashhad/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/kabul/</loc>
     <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/kabul/"/>
     <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/kabul/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kabul/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/dushanbe/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/dushanbe/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/dushanbe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dushanbe/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/tashkent/</loc>
     <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/namoz-vaqtlari/tashkent/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/tashkent/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tashkent/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/samarkand/</loc>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/namoz-vaqtlari/samarkand/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/samarkand/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/samarkand/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/bishkek/</loc>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/namaz-ubaktysy/bishkek/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/bishkek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bishkek/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/almaty/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/almaty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/almaty/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/astana/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/astana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/astana/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/baku/</loc>
@@ -240,6 +328,11 @@
     <loc>https://mubarly.com/prayer-times/moscow/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/moscow/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/moscow/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/kazan/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/kazan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kazan/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/karachi/</loc>
@@ -256,6 +349,36 @@
     <loc>https://mubarly.com/prayer-times/islamabad/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/islamabad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/islamabad/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/rawalpindi/</loc>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/rawalpindi/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/rawalpindi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/rawalpindi/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/faisalabad/</loc>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/faisalabad/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/faisalabad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/faisalabad/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/multan/</loc>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/multan/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/multan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/multan/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/peshawar/</loc>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/peshawar/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/peshawar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/peshawar/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/quetta/</loc>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/quetta/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/quetta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/quetta/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/delhi/</loc>
@@ -276,6 +399,34 @@
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/hyderabad/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/lucknow/</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/lucknow/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/lucknow/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/lucknow/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/kolkata/</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/kolkata/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/kolkata/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kolkata/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/bengaluru/</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/bengaluru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bengaluru/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/srinagar/</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/srinagar/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/srinagar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/srinagar/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/chennai/</loc>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/chennai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/chennai/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/dhaka/</loc>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/dhaka/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dhaka/"/>
@@ -286,14 +437,35 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/chittagong/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/sylhet/</loc>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/sylhet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sylhet/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/jakarta/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/jakarta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/jakarta/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/prayer-times/surabaya/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/surabaya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/surabaya/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/bandung/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/bandung/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bandung/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/medan/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/medan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/medan/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/prayer-times/kuala-lumpur/</loc>
     <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/waktu-solat/kuala-lumpur/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kuala-lumpur/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/kuala-lumpur/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/singapore/</loc>
@@ -303,18 +475,25 @@
   <url>
     <loc>https://mubarly.com/prayer-times/london/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/london/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/london/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/london/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/london/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/london/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/birmingham/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/birmingham/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/birmingham/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/manchester/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/manchester/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/manchester/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/bradford/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bradford/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/bradford/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/leicester/</loc>
@@ -324,11 +503,15 @@
     <loc>https://mubarly.com/prayer-times/paris/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/paris/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/paris/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/paris/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/paris/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/brussels/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/brussels/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/brussels/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/montreal/</loc>
@@ -338,10 +521,15 @@
   <url>
     <loc>https://mubarly.com/prayer-times/toronto/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/toronto/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/toronto/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/toronto/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/new-york/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/new-york/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/chicago/</loc>
@@ -362,10 +550,340 @@
   <url>
     <loc>https://mubarly.com/prayer-times/sydney/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sydney/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/sydney/"/>
   </url>
   <url>
     <loc>https://mubarly.com/prayer-times/melbourne/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/melbourne/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/leeds/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/leeds/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/sheffield/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sheffield/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/luton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/luton/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/blackburn/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/blackburn/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/liverpool/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/liverpool/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/glasgow/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/glasgow/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/cardiff/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/cardiff/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/oldham/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/oldham/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/slough/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/slough/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/dublin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dublin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/dallas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dallas/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/philadelphia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/philadelphia/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/detroit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/detroit/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/atlanta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/atlanta/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/washington-dc/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/washington-dc/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/minneapolis/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/minneapolis/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/paterson/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/paterson/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/jersey-city/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/jersey-city/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/orlando/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/orlando/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/phoenix/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/phoenix/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/seattle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/seattle/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/boston/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/boston/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/san-francisco/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/san-francisco/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/columbus/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/columbus/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/austin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/austin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/san-diego/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/san-diego/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/mississauga/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/mississauga/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/ottawa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/ottawa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/ottawa/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/calgary/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/calgary/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/edmonton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/edmonton/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/vancouver/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/vancouver/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/winnipeg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/winnipeg/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/brisbane/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/brisbane/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/perth/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/perth/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/adelaide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/adelaide/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/auckland/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/auckland/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/berlin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/berlin/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/berlin/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/berlin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/hamburg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/hamburg/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/hamburg/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/munich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/munich/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/munich/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/frankfurt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/frankfurt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/frankfurt/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/cologne/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/cologne/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/cologne/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/stuttgart/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/stuttgart/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/stuttgart/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/dusseldorf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dusseldorf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/dusseldorf/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/amsterdam/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/amsterdam/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/amsterdam/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/rotterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/rotterdam/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/rotterdam/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/the-hague/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/the-hague/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/the-hague/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/antwerp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/antwerp/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/vienna/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/vienna/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/vienna/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/zurich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/zurich/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/zurich/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/stockholm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/stockholm/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/stockholm/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/stockholm/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/malmo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/malmo/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/oslo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/oslo/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/copenhagen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/copenhagen/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/rome/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/rome/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/milan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/milan/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/madrid/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/madrid/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/madrid/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/barcelona/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/barcelona/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/sarajevo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sarajevo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/sarajevo/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/tirana/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tirana/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/pristina/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/pristina/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/skopje/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/skopje/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/skopje/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/addis-ababa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/addis-ababa/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/accra/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/accra/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/ibadan/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/ibadan/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/colombo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/colombo/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/male/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/male/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/bangkok/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bangkok/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/manila/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/manila/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/hong-kong/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/hong-kong/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/tokyo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tokyo/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/prayer-times/seoul/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/seoul/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ramadan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/</loc>
@@ -405,18 +923,22 @@
   <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/izmir/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/izmir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/izmir/"/>
   </url>
   <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/bursa/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bursa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bursa/"/>
   </url>
   <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/antalya/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/antalya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/antalya/"/>
   </url>
   <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/konya/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/konya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/konya/"/>
   </url>
   <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/adana/</loc>
@@ -533,6 +1055,211 @@
     <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/agri/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/adiyaman/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/adiyaman/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/adiyaman/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/afyonkarahisar/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/afyonkarahisar/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/aksaray/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/aksaray/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/amasya/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/amasya/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/ardahan/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/ardahan/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/artvin/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/artvin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/aydin/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/aydin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/balikesir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/balikesir/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/bartin/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bartin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/bayburt/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bayburt/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/bilecik/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bilecik/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/bingol/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bingol/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/bingol/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/bolu/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bolu/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/burdur/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/burdur/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/canakkale/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/canakkale/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/cankiri/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/cankiri/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/corum/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/corum/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/duzce/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/duzce/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/edirne/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/edirne/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/elazig/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/elazig/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/elazig/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/erzincan/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/erzincan/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/giresun/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/giresun/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/gumushane/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/gumushane/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/igdir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/igdir/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/igdir/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/isparta/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/isparta/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kahramanmaras/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kahramanmaras/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/karabuk/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/karabuk/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/karaman/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/karaman/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kars/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kars/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/kars/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kastamonu/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kastamonu/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kirikkale/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kirikkale/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kirklareli/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kirklareli/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kirsehir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kirsehir/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kilis/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kilis/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/kutahya/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kutahya/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/manisa/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/manisa/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/mugla/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/mugla/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/nevsehir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/nevsehir/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/nigde/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/nigde/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/ordu/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/ordu/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/osmaniye/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/osmaniye/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/rize/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/rize/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/sinop/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/sinop/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/tekirdag/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/tekirdag/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/tokat/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/tokat/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/tunceli/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/tunceli/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/usak/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/usak/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/yalova/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/yalova/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/yozgat/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/yozgat/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/zonguldak/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/zonguldak/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/tr/namaz-vakitleri/mecca/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/mecca/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/mecca/"/>
@@ -569,6 +1296,139 @@
     <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/waqtiyada-salaadda/medina/"/>
     <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/namoz-vaqtlari/medina/"/>
     <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/namaz-ubaktysy/medina/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/london/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/london/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/london/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/london/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/london/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/london/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/paris/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/paris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/paris/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/paris/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/paris/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/brussels/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/brussels/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/berlin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/berlin/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/berlin/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/berlin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/hamburg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/hamburg/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/hamburg/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/munich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/munich/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/munich/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/frankfurt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/frankfurt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/frankfurt/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/cologne/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/cologne/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/cologne/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/duisburg/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/duisburg/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/stuttgart/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/stuttgart/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/stuttgart/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/dusseldorf/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dusseldorf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/dusseldorf/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/amsterdam/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/amsterdam/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/amsterdam/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/rotterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/rotterdam/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/rotterdam/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/the-hague/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/the-hague/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/the-hague/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/antwerp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/antwerp/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/vienna/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/vienna/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/vienna/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/zurich/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/zurich/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/zurich/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/stockholm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/stockholm/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/stockholm/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/stockholm/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/sarajevo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sarajevo/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/sarajevo/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/namaz-vakitleri/skopje/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/skopje/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/skopje/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/tr/ramazan-imsakiyesi-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/</loc>
@@ -742,6 +1602,7 @@
     <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/katakani-nwezh/erbil/"/>
     <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/erbil/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/erbil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/erbil/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/sulaymaniyah/</loc>
@@ -786,6 +1647,7 @@
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/alexandria/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/alexandria/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/alexandria/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/khartoum/</loc>
@@ -800,11 +1662,13 @@
     <loc>https://mubarly.com/ar/mawaqit-al-salah/tunis/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/tunis/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/tunis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tunis/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/algiers/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/algiers/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/algiers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/algiers/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/oran/</loc>
@@ -815,6 +1679,7 @@
     <loc>https://mubarly.com/ar/mawaqit-al-salah/casablanca/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/casablanca/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/casablanca/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ar/mawaqit-al-salah/rabat/</loc>
@@ -847,6 +1712,98 @@
     <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/waqtiyada-salaadda/djibouti/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/djibouti/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/djibouti/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/kuala-lumpur/</loc>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/waktu-solat/kuala-lumpur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kuala-lumpur/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/kuala-lumpur/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/london/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/london/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/london/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/london/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/london/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/london/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/paris/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/paris/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/paris/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/paris/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/paris/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/brussels/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/brussels/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/toronto/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/toronto/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/toronto/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/toronto/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/new-york/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/new-york/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/sydney/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sydney/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/sydney/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/berlin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/berlin/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/berlin/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/berlin/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/amsterdam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/amsterdam/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/amsterdam/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/amsterdam/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/stockholm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/stockholm/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/stockholm/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/stockholm/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/mawaqit-al-salah/madrid/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/madrid/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/madrid/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ar/imsakiyat-ramadan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/id/jadwal-sholat/</loc>
@@ -917,14 +1874,17 @@
   <url>
     <loc>https://mubarly.com/id/jadwal-sholat/surabaya/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/surabaya/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/surabaya/"/>
   </url>
   <url>
     <loc>https://mubarly.com/id/jadwal-sholat/bandung/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/bandung/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bandung/"/>
   </url>
   <url>
     <loc>https://mubarly.com/id/jadwal-sholat/medan/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/medan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/medan/"/>
   </url>
   <url>
     <loc>https://mubarly.com/id/jadwal-sholat/semarang/</loc>
@@ -989,6 +1949,29 @@
   <url>
     <loc>https://mubarly.com/id/jadwal-sholat/surakarta/</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-sholat/surakarta/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/id/jadwal-imsakiyah-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/</loc>
@@ -1112,26 +2095,31 @@
     <loc>https://mubarly.com/ur/namaz-ke-auqat/rawalpindi/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/rawalpindi/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/rawalpindi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/rawalpindi/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/faisalabad/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/faisalabad/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/faisalabad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/faisalabad/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/multan/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/multan/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/multan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/multan/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/peshawar/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/peshawar/"/>
     <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/peshawar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/peshawar/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/quetta/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/quetta/"/>
     <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/quetta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/quetta/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/hyderabad-sindh/</loc>
@@ -1179,11 +2167,72 @@
     <loc>https://mubarly.com/ur/namaz-ke-auqat/lucknow/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/lucknow/"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/lucknow/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/lucknow/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ur/namaz-ke-auqat/srinagar/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/srinagar/"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/srinagar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/srinagar/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/namaz-ke-auqat/london/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/london/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/london/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/london/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/london/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/london/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/namaz-ke-auqat/birmingham/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/birmingham/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/birmingham/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/namaz-ke-auqat/manchester/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/manchester/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/manchester/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/namaz-ke-auqat/bradford/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bradford/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/bradford/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/namaz-ke-auqat/toronto/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/toronto/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/toronto/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/toronto/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/namaz-ke-auqat/new-york/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/new-york/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ur/ramzan-timetable-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/</loc>
@@ -1256,11 +2305,13 @@
     <loc>https://mubarly.com/fr/horaires-de-priere/tunis/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/tunis/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/tunis/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/tunis/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/algiers/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/algiers/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/algiers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/algiers/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/oran/</loc>
@@ -1271,6 +2322,7 @@
     <loc>https://mubarly.com/fr/horaires-de-priere/casablanca/</loc>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/casablanca/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/casablanca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/casablanca/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/rabat/</loc>
@@ -1295,6 +2347,7 @@
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/dakar/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/dakar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dakar/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/abidjan/</loc>
@@ -1327,6 +2380,8 @@
     <loc>https://mubarly.com/fr/horaires-de-priere/paris/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/paris/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/paris/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/paris/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/paris/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/marseille/</loc>
@@ -1364,6 +2419,8 @@
     <loc>https://mubarly.com/fr/horaires-de-priere/brussels/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/brussels/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/brussels/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/brussels/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fr/horaires-de-priere/geneva/</loc>
@@ -1373,6 +2430,40 @@
     <loc>https://mubarly.com/fr/horaires-de-priere/montreal/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/montreal/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/montreal/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/fr/horaires-de-priere/ottawa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/ottawa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/ottawa/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/fr/horaires-de-priere/antwerp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/horaires-de-priere/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/antwerp/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/fr/calendrier-ramadan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/</loc>
@@ -1448,6 +2539,7 @@
     <loc>https://mubarly.com/ru/vremya-namaza/dushanbe/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/dushanbe/"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/dushanbe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dushanbe/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/tashkent/</loc>
@@ -1459,6 +2551,7 @@
     <loc>https://mubarly.com/ru/vremya-namaza/samarkand/</loc>
     <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/namoz-vaqtlari/samarkand/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/samarkand/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/samarkand/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/bukhara/</loc>
@@ -1469,6 +2562,7 @@
     <loc>https://mubarly.com/ru/vremya-namaza/bishkek/</loc>
     <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/namaz-ubaktysy/bishkek/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/bishkek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bishkek/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/osh/</loc>
@@ -1478,10 +2572,12 @@
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/almaty/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/almaty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/almaty/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/astana/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/astana/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/astana/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/shymkent/</loc>
@@ -1504,6 +2600,7 @@
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/kazan/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/kazan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kazan/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/ufa/</loc>
@@ -1524,6 +2621,29 @@
   <url>
     <loc>https://mubarly.com/ru/vremya-namaza/derbent/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/derbent/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ru/raspisanie-ramadana-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/bn/namazer-shomoy/</loc>
@@ -1613,6 +2733,7 @@
     <loc>https://mubarly.com/bn/namazer-shomoy/kolkata/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/kolkata/"/>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/kolkata/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kolkata/"/>
   </url>
   <url>
     <loc>https://mubarly.com/bn/namazer-shomoy/dhaka/</loc>
@@ -1627,6 +2748,7 @@
   <url>
     <loc>https://mubarly.com/bn/namazer-shomoy/sylhet/</loc>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/sylhet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/sylhet/"/>
   </url>
   <url>
     <loc>https://mubarly.com/bn/namazer-shomoy/rajshahi/</loc>
@@ -1659,6 +2781,44 @@
   <url>
     <loc>https://mubarly.com/bn/namazer-shomoy/narayanganj/</loc>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/narayanganj/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/bn/namazer-shomoy/london/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/london/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/london/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/london/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/london/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/london/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/bn/namazer-shomoy/new-york/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/new-york/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/new-york/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/bn/romjaner-shomoysuchi-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fa/oghat-e-namaz/</loc>
@@ -1729,6 +2889,7 @@
   <url>
     <loc>https://mubarly.com/fa/oghat-e-namaz/mashhad/</loc>
     <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/mashhad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/mashhad/"/>
   </url>
   <url>
     <loc>https://mubarly.com/fa/oghat-e-namaz/isfahan/</loc>
@@ -1796,6 +2957,30 @@
     <loc>https://mubarly.com/fa/oghat-e-namaz/dushanbe/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/dushanbe/"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/dushanbe/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/dushanbe/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/fa/jadval-ramazan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ms/waktu-solat/</loc>
@@ -1862,6 +3047,7 @@
     <loc>https://mubarly.com/ms/waktu-solat/kuala-lumpur/</loc>
     <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/waktu-solat/kuala-lumpur/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kuala-lumpur/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/kuala-lumpur/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ms/waktu-solat/shah-alam/</loc>
@@ -1923,6 +3109,29 @@
     <loc>https://mubarly.com/ms/waktu-solat/singapore/</loc>
     <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/waktu-solat/singapore/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/singapore/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ms/jadual-imsakiah-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/sw/nyakati-za-sala/</loc>
@@ -2028,6 +3237,29 @@
     <loc>https://mubarly.com/sw/nyakati-za-sala/kampala/</loc>
     <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/nyakati-za-sala/kampala/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kampala/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/sw/ratiba-ya-ramadhani-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ha/lokutan-sallah/</loc>
@@ -2147,6 +3379,29 @@
     <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/lokutan-sallah/zinder/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/ha/jadawalin-ramadan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/uz/namoz-vaqtlari/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/"/>
@@ -2217,6 +3472,7 @@
     <loc>https://mubarly.com/uz/namoz-vaqtlari/samarkand/</loc>
     <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/namoz-vaqtlari/samarkand/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/samarkand/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/samarkand/"/>
   </url>
   <url>
     <loc>https://mubarly.com/uz/namoz-vaqtlari/bukhara/</loc>
@@ -2258,6 +3514,29 @@
   <url>
     <loc>https://mubarly.com/uz/namoz-vaqtlari/urgench/</loc>
     <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/namoz-vaqtlari/urgench/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/uz/ramazon-taqvimi-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ky/namaz-ubaktysy/</loc>
@@ -2324,6 +3603,7 @@
     <loc>https://mubarly.com/ky/namaz-ubaktysy/bishkek/</loc>
     <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/namaz-ubaktysy/bishkek/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/vremya-namaza/bishkek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bishkek/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ky/namaz-ubaktysy/osh/</loc>
@@ -2361,6 +3641,29 @@
   <url>
     <loc>https://mubarly.com/ky/namaz-ubaktysy/kara-balta/</loc>
     <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/namaz-ubaktysy/kara-balta/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ky/ramazan-zhadybaly-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/so/waqtiyada-salaadda/</loc>
@@ -2474,6 +3777,29 @@
     <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/waqtiyada-salaadda/jijiga/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/so/jadwalka-ramadaan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/ckb/katakani-nwezh/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/"/>
@@ -2501,6 +3827,7 @@
     <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/katakani-nwezh/erbil/"/>
     <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/erbil/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/erbil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/erbil/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ckb/katakani-nwezh/sulaymaniyah/</loc>
@@ -2533,6 +3860,29 @@
     <loc>https://mubarly.com/ckb/katakani-nwezh/mahabad/</loc>
     <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/katakani-nwezh/mahabad/"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/oghat-e-namaz/mahabad/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ckb/xshtay-ramazan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/</loc>
@@ -2626,15 +3976,18 @@
     <loc>https://mubarly.com/hi/namaz-ka-samay/lucknow/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/lucknow/"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/lucknow/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/lucknow/"/>
   </url>
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/kolkata/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/kolkata/"/>
     <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/namazer-shomoy/kolkata/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/kolkata/"/>
   </url>
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/bengaluru/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/bengaluru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/bengaluru/"/>
   </url>
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/ahmedabad/</loc>
@@ -2644,6 +3997,7 @@
     <loc>https://mubarly.com/hi/namaz-ka-samay/srinagar/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/srinagar/"/>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/srinagar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/srinagar/"/>
   </url>
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/bhopal/</loc>
@@ -2652,6 +4006,7 @@
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/chennai/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/chennai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/chennai/"/>
   </url>
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/patna/</loc>
@@ -2672,6 +4027,29 @@
   <url>
     <loc>https://mubarly.com/hi/namaz-ka-samay/jaipur/</loc>
     <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/namaz-ka-samay/jaipur/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/hi/ramzan-time-table-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ps/da-lmonz-wakhtuna/</loc>
@@ -2740,11 +4118,36 @@
     <loc>https://mubarly.com/ps/da-lmonz-wakhtuna/peshawar/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/peshawar/"/>
     <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/peshawar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/peshawar/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ps/da-lmonz-wakhtuna/quetta/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/quetta/"/>
     <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-lmonz-wakhtuna/quetta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/quetta/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ps/da-rozhe-mahalwesh-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ku/demen-nimeje/</loc>
@@ -2833,10 +4236,36 @@
     <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/agri/"/>
   </url>
   <url>
+    <loc>https://mubarly.com/ku/demen-nimeje/adiyaman/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/adiyaman/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/adiyaman/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ku/demen-nimeje/bingol/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/bingol/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/bingol/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ku/demen-nimeje/elazig/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/elazig/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/elazig/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ku/demen-nimeje/igdir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/igdir/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/igdir/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ku/demen-nimeje/kars/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/namaz-vakitleri/kars/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/kars/"/>
+  </url>
+  <url>
     <loc>https://mubarly.com/ku/demen-nimeje/erbil/</loc>
     <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/katakani-nwezh/erbil/"/>
     <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/erbil/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/erbil/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/erbil/"/>
   </url>
   <url>
     <loc>https://mubarly.com/ku/demen-nimeje/duhok/</loc>
@@ -2847,6 +4276,29 @@
     <loc>https://mubarly.com/ku/demen-nimeje/qamishli/</loc>
     <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/demen-nimeje/qamishli/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/mawaqit-al-salah/qamishli/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/ku/remezan-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
   <url>
     <loc>https://mubarly.com/pa/namaz-de-vele/</loc>
@@ -2881,16 +4333,19 @@
     <loc>https://mubarly.com/pa/namaz-de-vele/rawalpindi/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/rawalpindi/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/rawalpindi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/rawalpindi/"/>
   </url>
   <url>
     <loc>https://mubarly.com/pa/namaz-de-vele/faisalabad/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/faisalabad/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/faisalabad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/faisalabad/"/>
   </url>
   <url>
     <loc>https://mubarly.com/pa/namaz-de-vele/multan/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/multan/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/multan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/prayer-times/multan/"/>
   </url>
   <url>
     <loc>https://mubarly.com/pa/namaz-de-vele/gujranwala/</loc>
@@ -2911,5 +4366,28 @@
     <loc>https://mubarly.com/pa/namaz-de-vele/sargodha/</loc>
     <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/namaz-ke-auqat/sargodha/"/>
     <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/namaz-de-vele/sargodha/"/>
+  </url>
+  <url>
+    <loc>https://mubarly.com/pa/ramzan-time-table-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mubarly.com/ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mubarly.com/tr/ramazan-imsakiyesi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mubarly.com/ar/imsakiyat-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mubarly.com/id/jadwal-imsakiyah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://mubarly.com/ur/ramzan-timetable-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mubarly.com/fr/calendrier-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mubarly.com/ru/raspisanie-ramadana-2027/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://mubarly.com/bn/romjaner-shomoysuchi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://mubarly.com/fa/jadval-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://mubarly.com/ms/jadual-imsakiah-2027/"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://mubarly.com/sw/ratiba-ya-ramadhani-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ha" href="https://mubarly.com/ha/jadawalin-ramadan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://mubarly.com/uz/ramazon-taqvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ky" href="https://mubarly.com/ky/ramazan-zhadybaly-2027/"/>
+    <xhtml:link rel="alternate" hreflang="so" href="https://mubarly.com/so/jadwalka-ramadaan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Arab" href="https://mubarly.com/ckb/xshtay-ramazan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mubarly.com/hi/ramzan-time-table-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ps" href="https://mubarly.com/ps/da-rozhe-mahalwesh-2027/"/>
+    <xhtml:link rel="alternate" hreflang="ku-Latn" href="https://mubarly.com/ku/remezan-2027/"/>
+    <xhtml:link rel="alternate" hreflang="pa-Arab" href="https://mubarly.com/pa/ramzan-time-table-2027/"/>
   </url>
 </urlset>

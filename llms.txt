@@ -32,14 +32,14 @@ Maliki, Hanbali), needs no account, and its worship screens carry no ads.
 - [پنجابی](https://mubarly.com/pa/)
 
 ## Prayer times by city
-- [Prayer times by city](https://mubarly.com/prayer-times/) (en, 62 cities)
-- [Şehirlere göre namaz vakitleri](https://mubarly.com/tr/namaz-vakitleri/) (tr, 33 cities)
-- [مواقيت الصلاة حسب المدينة](https://mubarly.com/ar/mawaqit-al-salah/) (ar, 43 cities)
+- [Prayer times by city](https://mubarly.com/prayer-times/) (en, 164 cities)
+- [Şehirlere göre namaz vakitleri](https://mubarly.com/tr/namaz-vakitleri/) (tr, 103 cities)
+- [مواقيت الصلاة حسب المدينة](https://mubarly.com/ar/mawaqit-al-salah/) (ar, 54 cities)
 - [Jadwal sholat per kota](https://mubarly.com/id/jadwal-sholat/) (id, 22 cities)
-- [شہر کے لحاظ سے نماز کے اوقات](https://mubarly.com/ur/namaz-ke-auqat/) (ur, 26 cities)
-- [Horaires de prière par ville](https://mubarly.com/fr/horaires-de-priere/) (fr, 30 cities)
+- [شہر کے لحاظ سے نماز کے اوقات](https://mubarly.com/ur/namaz-ke-auqat/) (ur, 32 cities)
+- [Horaires de prière par ville](https://mubarly.com/fr/horaires-de-priere/) (fr, 32 cities)
 - [Время намаза по городам](https://mubarly.com/ru/vremya-namaza/) (ru, 21 cities)
-- [শহর অনুযায়ী নামাজের সময়](https://mubarly.com/bn/namazer-shomoy/) (bn, 17 cities)
+- [শহর অনুযায়ী নামাজের সময়](https://mubarly.com/bn/namazer-shomoy/) (bn, 19 cities)
 - [اوقات نماز بر اساس شهر](https://mubarly.com/fa/oghat-e-namaz/) (fa, 18 cities)
 - [Waktu solat mengikut bandar](https://mubarly.com/ms/waktu-solat/) (ms, 18 cities)
 - [Nyakati za sala kwa miji](https://mubarly.com/sw/nyakati-za-sala/) (sw, 12 cities)
@@ -50,8 +50,37 @@ Maliki, Hanbali), needs no account, and its worship screens carry no ads.
 - [کاتەکانی نوێژ بەپێی شار](https://mubarly.com/ckb/katakani-nwezh/) (ckb, 8 cities)
 - [शहर के अनुसार नमाज़ का समय](https://mubarly.com/hi/namaz-ka-samay/) (hi, 18 cities)
 - [د ښار له مخې د لمانځه وختونه](https://mubarly.com/ps/da-lmonz-wakhtuna/) (ps, 10 cities)
-- [Demên nimêjê li gorî bajaran](https://mubarly.com/ku/demen-nimeje/) (ku, 15 cities)
+- [Demên nimêjê li gorî bajaran](https://mubarly.com/ku/demen-nimeje/) (ku, 20 cities)
 - [شہر دے حساب نال نماز دے ویلے](https://mubarly.com/pa/namaz-de-vele/) (pa, 8 cities)
+
+## Ramadan 2027 timetables
+- [Ramadan 2027 Timetable: Suhoor and Iftar Times by City](https://mubarly.com/ramadan-2027/) (en)
+- [Ramazan İmsakiyesi 2027: Şehirlere Göre Sahur ve İftar Vakitleri](https://mubarly.com/tr/ramazan-imsakiyesi-2027/) (tr)
+- [إمساكية رمضان 2027: مواعيد السحور والإفطار حسب المدينة](https://mubarly.com/ar/imsakiyat-ramadan-2027/) (ar)
+- [Jadwal Imsakiyah Ramadhan 2027: Waktu Sahur dan Berbuka per Kota](https://mubarly.com/id/jadwal-imsakiyah-2027/) (id)
+- [رمضان 2027 کا نظام الاوقات: شہر کے لحاظ سے سحری و افطار](https://mubarly.com/ur/ramzan-timetable-2027/) (ur)
+- [Calendrier du Ramadan 2027 : suhoor et iftar par ville](https://mubarly.com/fr/calendrier-ramadan-2027/) (fr)
+- [Расписание Рамадана 2027: время сухура и ифтара по городам](https://mubarly.com/ru/raspisanie-ramadana-2027/) (ru)
+- [রমজান ২০২৭ সময়সূচি: শহর অনুযায়ী সেহরি ও ইফতারের সময়](https://mubarly.com/bn/romjaner-shomoysuchi-2027/) (bn)
+- [جدول رمضان ۲۰۲۷: زمان سحری و افطار به تفکیک شهر](https://mubarly.com/fa/jadval-ramazan-2027/) (fa)
+- [Jadual Imsakiah Ramadan 2027: Waktu Sahur dan Berbuka Mengikut Bandar](https://mubarly.com/ms/jadual-imsakiah-2027/) (ms)
+- [Ratiba ya Ramadhani 2027: Saa za Daku na Futari kwa Miji](https://mubarly.com/sw/ratiba-ya-ramadhani-2027/) (sw)
+- [Jadawalin Ramadan 2027: Lokacin Sahur da Buɗa Baki a Birane](https://mubarly.com/ha/jadawalin-ramadan-2027/) (ha)
+- [Ramazon taqvimi 2027: shaharlar bo‘yicha saharlik va iftorlik](https://mubarly.com/uz/ramazon-taqvimi-2027/) (uz)
+- [Рамазан 2027 жадыбалы: шаарлар боюнча сахар жана ифтар](https://mubarly.com/ky/ramazan-zhadybaly-2027/) (ky)
+- [Jadwalka Ramadaan 2027: Waqtiga Suxuurka iyo Afurka Magaalo kasta](https://mubarly.com/so/jadwalka-ramadaan-2027/) (so)
+- [خشتەی ڕەمەزانی ٢٠٢٧: کاتی پارشێو و بەربانگ بەپێی شار](https://mubarly.com/ckb/xshtay-ramazan-2027/) (ckb)
+- [रमज़ान 2027 टाइम टेबल: शहर के अनुसार सहरी और इफ़्तार](https://mubarly.com/hi/ramzan-time-table-2027/) (hi)
+- [د ۲۰۲۷ روژې مهالویش: د ښار له مخې پیشمنی او افطار](https://mubarly.com/ps/da-rozhe-mahalwesh-2027/) (ps)
+- [Bernameya Remezanê 2027: Demên Paşîv û Fitarê li gorî Bajaran](https://mubarly.com/ku/remezan-2027/) (ku)
+- [رمضان 2027 دا ٹائم ٹیبل: شہر دے حساب نال سحری تے افطار](https://mubarly.com/pa/ramzan-time-table-2027/) (pa)
+
+## FAQ
+- Is Mubarly free? Yes. Prayer times, the adhan, the Qibla compass, the Quran, duas and dhikr are free, and the worship screens never show ads. An optional Premium removes all ads and adds extra features.
+- Does the adhan play when my phone is on silent? Yes. Mubarly plays the adhan at alarm volume at each prayer time, even on silent and in Do Not Disturb, and you can stop it from the notification.
+- How are the prayer times calculated? On your phone, for your exact location, with the calculation method used in your country. You can change the method and the Asr rule (Hanafi or the other schools) in the settings.
+- Which madhab does Mubarly follow? All four: Hanafi, Shafi'i, Maliki and Hanbali. Asr, fasting, qada and the other rules follow the school you choose.
+- Does it work offline and without an account? Yes. Prayer times, the adhan and the Quran text work without internet, and no account is needed.
 
 ## Features
 - Namaz times anywhere in the world, calculated on your phone with 14 calculation methods
