@@ -1,6 +1,6 @@
 <!doctype html>
-<!-- The owner's website statistics (2026-11-02), published as mubarly.com/stats/ by landing-pages.mjs. Open it as
-     https://mubarly.com/stats/#<stats_key>; the key (public.site_secret) never leaves the address bar's fragment. -->
+<!-- The owner's website statistics (2026-11-02), published as mubarly.com/stats/ by landing-pages.mjs. Only the app's
+     admins see data: sign in with Google, then site_stats checks public.is_admin() (public.admin_member). -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -31,7 +31,8 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
 <h1>Site istatistikleri</h1>
 <p class="muted">mubarly.com ziyaretleri ve mağaza düğmesi tıklamaları. Çerez yok; bir kişi aynı gün içinde bir kez sayılır.</p>
 <div class="bar-row" id="range"><button data-d="1">Bugün</button><button data-d="7">7 gün</button><button data-d="30" class="on">30 gün</button><button data-d="90">90 gün</button><button data-d="365">1 yıl</button></div>
-<p id="err"></p>
+<p id="who" class="muted"></p><p id="err"></p>
+<p id="login" hidden><button id="google" style="padding:12px 20px;border-radius:999px;border:0;background:#0B3B2C;color:#F6F1E4;font:inherit;font-weight:700;cursor:pointer">Google ile giriş yap</button></p>
 <section class="card" id="online" style="margin-bottom:14px"></section>
 <section class="cards" id="totals"></section>
 <h2>Günlük</h2><div id="daily"></div>
@@ -40,9 +41,11 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
 <div class="grid2"><div><h2>Dil</h2><div id="langs"></div></div><div><h2>Nereden geldiler</h2><div id="referrers"></div></div></div>
 <h2>Sayfalar</h2><div id="pages"></div>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
 (function(){
-  var KEY = location.hash.slice(1), URL = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/site_stats', API = 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc';
+  var sb = supabase.createClient('https://vvrfovaixhhlrpvadgmm.supabase.co', 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
+  var signedIn = false;
   var region = new Intl.DisplayNames(['tr'], { type: 'region' }), langName = new Intl.DisplayNames(['tr'], { type: 'language' });
   var DEVICE = { android: 'Android', huawei: 'Huawei / Honor', ios: 'iPhone / iPad', desktop: 'Bilgisayar', other: 'Diğer' };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
@@ -58,11 +61,11 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
     }).join('') + '</tbody></table>';
   }
   function load(days) {
-    document.getElementById('err').textContent = KEY ? '' : 'Adresin sonunda anahtar yok (#...).';
-    if (!KEY) return;
-    fetch(URL, { method: 'POST', headers: { apikey: API, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_key: KEY, p_days: days }) })
-      .then(function (r) { if (!r.ok) throw new Error(r.status === 400 || r.status === 401 ? 'Anahtar geçersiz.' : 'Veri alınamadı (' + r.status + ').'); return r.json(); })
+    if (!signedIn) return;
+    sb.rpc('site_stats', { p_days: days })
+      .then(function (r) { if (r.error) throw new Error(r.error.code === '42501' || /denied/.test(r.error.message) ? 'Bu hesabın istatistikleri görme yetkisi yok.' : 'Veri alınamadı: ' + r.error.message); return r.data; })
       .then(function (d) {
+        document.getElementById('err').textContent = '';
         var o = d.online || { visitors: 0, pages: [] };
         document.getElementById('online').innerHTML = '<b style="color:#1a9c4e">● ' + n(o.visitors) + '</b><span>şu an sitede (son 5 dakika)</span>' + (o.pages.length ? '<p class="muted" style="margin:8px 0 0">' + o.pages.map(function (p) { return esc(decodeURIComponent(p.path)) + ' (' + p.visitors + ')'; }).join(' · ') + '</p>' : '');
         document.getElementById('cities').innerHTML = table(d.cities, [['place', 'Şehir / bölge'], ['country', 'Ülke', function (v) { try { return v === '?' ? 'Bilinmiyor' : region.of(v); } catch (e) { return v; } }], ['visitors', 'Ziyaretçi'], ['clicks', 'Mağaza tıklaması']], 'visitors');
@@ -83,7 +86,17 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
     document.querySelectorAll('#range button').forEach(function (x) { x.classList.toggle('on', x === b); });
     load(+b.dataset.d);
   });
-  load(30);
+  document.getElementById('google').addEventListener('click', function () {
+    sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.origin + '/stats/' } });
+  });
+  sb.auth.getSession().then(function (r) {
+    var s = r.data && r.data.session;
+    if (!s) { document.getElementById('login').hidden = false; return; }
+    signedIn = true;
+    document.getElementById('who').innerHTML = esc(s.user.email) + ' · <a href="#" id="out">Çıkış</a>';
+    document.getElementById('out').addEventListener('click', function (e) { e.preventDefault(); sb.auth.signOut().then(function () { location.replace('/stats/'); }); });
+    load(30);
+  });
   setInterval(function () { var on = document.querySelector('#range button.on'); load(on ? +on.dataset.d : 30); }, 60000);
 })();
 </script>
