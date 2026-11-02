@@ -559,5 +559,36 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
 <nav><a href="/privacy.html">Kebijakan privasi</a><a href="/terms.html">Ketentuan penggunaan</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
+<script>(function () {
+  try {
+    if (/bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
+    var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';
+    var send = function (body) {
+      try {
+        fetch(url, { method: 'POST', keepalive: true, headers: { apikey: 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).catch(function () {});
+      } catch (e) {}
+    };
+    var ref = '';
+    try {
+      var r = document.referrer && new URL(document.referrer);
+      if (r && r.host !== location.host) ref = r.host.replace(/^www\./, '');
+    } catch (e) {}
+    var lang = document.documentElement.lang;
+    var tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    send({ p_kind: 'view', p_path: location.pathname, p_lang: lang, p_referrer: ref, p_tz: tz });
+    setInterval(function () {
+      if (document.visibilityState === 'visible') send({ p_kind: 'ping', p_path: location.pathname, p_lang: lang, p_tz: tz });
+    }, 60000);
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('.stores a, .stores .soon');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      var store = /appgallery/.test(href) ? 'appgallery' : /play\.google/.test(href) ? 'play' : a.classList.contains('soon') ? 'appstore' : null;
+      if (store) send({ p_kind: 'store', p_path: location.pathname, p_lang: lang, p_store: store, p_tz: tz });
+    }, true);
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>

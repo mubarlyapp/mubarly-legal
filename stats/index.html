@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- The owner's website statistics (2026-11-02), published as mubarly.com/stats/ by landing-pages.mjs. Open it as
+     https://mubarly.com/stats/#<stats_key>; the key (public.site_secret) never leaves the address bar's fragment. -->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Site istatistikleri · Mubarly</title>
+<link rel="icon" type="image/png" href="/img/icon-192.png">
+<style>
+:root{color-scheme:light dark;--bg:#F6F1E4;--fg:#0B2F24;--muted:#5D5A4A;--gold:#76571A;--card:#FFFBF2;--line:#E6DCC4;--bar:#0B3B2C}
+@media (prefers-color-scheme:dark){:root{--bg:#071C15;--fg:#EEE7D2;--muted:#B9AF92;--gold:#D4B062;--card:#0D2A20;--line:#1B3F31;--bar:#D4B062}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:#0B3B2C;color:#D4B062;padding:14px 16px;font-weight:800;letter-spacing:.18em}main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.6rem;margin:0 0 6px}h2{font-size:1.1rem;margin:28px 0 10px}.muted{color:var(--muted)}
+.bar-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.bar-row button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;font:inherit}
+.bar-row button.on{background:var(--bar);color:var(--bg);border-color:var(--bar)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.card b{display:block;font-size:1.8rem;line-height:1.1}.card span{color:var(--muted);font-size:.9rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-variant-numeric:tabular-nums;font-size:.92rem}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:first-child,td:first-child{text-align:start;word-break:break-all}th{color:var(--muted);font-weight:600;font-size:.82rem}
+.meter{display:inline-block;height:8px;border-radius:4px;background:var(--bar);vertical-align:middle;margin-inline-end:6px;min-width:2px}
+#err{color:#c0392b;font-weight:700}
+</style>
+</head>
+<body>
+<header>MUBARLY · İSTATİSTİK</header>
+<main>
+<h1>Site istatistikleri</h1>
+<p class="muted">mubarly.com ziyaretleri ve mağaza düğmesi tıklamaları. Çerez yok; bir kişi aynı gün içinde bir kez sayılır.</p>
+<div class="bar-row" id="range"><button data-d="1">Bugün</button><button data-d="7">7 gün</button><button data-d="30" class="on">30 gün</button><button data-d="90">90 gün</button><button data-d="365">1 yıl</button></div>
+<p id="err"></p>
+<section class="card" id="online" style="margin-bottom:14px"></section>
+<section class="cards" id="totals"></section>
+<h2>Günlük</h2><div id="daily"></div>
+<div class="grid2"><div><h2>Mağaza tıklamaları · cihaza göre</h2><div id="devices"></div></div><div><h2>Ülkeler</h2><div id="countries"></div></div></div>
+<h2>Şehirler</h2><div id="cities"></div>
+<div class="grid2"><div><h2>Dil</h2><div id="langs"></div></div><div><h2>Nereden geldiler</h2><div id="referrers"></div></div></div>
+<h2>Sayfalar</h2><div id="pages"></div>
+</main>
+<script>
+(function(){
+  var KEY = location.hash.slice(1), URL = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/site_stats', API = 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc';
+  var region = new Intl.DisplayNames(['tr'], { type: 'region' }), langName = new Intl.DisplayNames(['tr'], { type: 'language' });
+  var DEVICE = { android: 'Android', huawei: 'Huawei / Honor', ios: 'iPhone / iPad', desktop: 'Bilgisayar', other: 'Diğer' };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var n = function (x) { return (x || 0).toLocaleString('tr-TR'); };
+  function table(rows, cols, meterCol) {
+    if (!rows.length) return '<p class="muted">Henüz veri yok.</p>';
+    var max = Math.max.apply(null, rows.map(function (r) { return r[meterCol] || 0; }).concat([1]));
+    return '<table><thead><tr>' + cols.map(function (c) { return '<th>' + c[1] + '</th>'; }).join('') + '</tr></thead><tbody>' + rows.map(function (r) {
+      return '<tr>' + cols.map(function (c, i) {
+        var v = c[2] ? c[2](r[c[0]]) : r[c[0]];
+        return '<td>' + (c[0] === meterCol ? '<span class="meter" style="width:' + Math.round(60 * (r[c[0]] || 0) / max) + 'px"></span>' : '') + (typeof v === 'number' ? n(v) : esc(v == null ? '—' : v)) + '</td>';
+      }).join('') + '</tr>';
+    }).join('') + '</tbody></table>';
+  }
+  function load(days) {
+    document.getElementById('err').textContent = KEY ? '' : 'Adresin sonunda anahtar yok (#...).';
+    if (!KEY) return;
+    fetch(URL, { method: 'POST', headers: { apikey: API, 'Content-Type': 'application/json' }, body: JSON.stringify({ p_key: KEY, p_days: days }) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status === 400 || r.status === 401 ? 'Anahtar geçersiz.' : 'Veri alınamadı (' + r.status + ').'); return r.json(); })
+      .then(function (d) {
+        var o = d.online || { visitors: 0, pages: [] };
+        document.getElementById('online').innerHTML = '<b style="color:#1a9c4e">● ' + n(o.visitors) + '</b><span>şu an sitede (son 5 dakika)</span>' + (o.pages.length ? '<p class="muted" style="margin:8px 0 0">' + o.pages.map(function (p) { return esc(decodeURIComponent(p.path)) + ' (' + p.visitors + ')'; }).join(' · ') + '</p>' : '');
+        document.getElementById('cities').innerHTML = table(d.cities, [['place', 'Şehir / bölge'], ['country', 'Ülke', function (v) { try { return v === '?' ? 'Bilinmiyor' : region.of(v); } catch (e) { return v; } }], ['visitors', 'Ziyaretçi'], ['clicks', 'Mağaza tıklaması']], 'visitors');
+        var t = d.totals;
+        document.getElementById('totals').innerHTML = [['Ziyaretçi', t.visitors], ['Sayfa görüntüleme', t.views], ['Google Play tıklaması', t.play], ['AppGallery tıklaması', t.appgallery], ['App Store (yakında) tıklaması', t.appstore]]
+          .map(function (c) { return '<div class="card"><b>' + n(c[1]) + '</b><span>' + c[0] + '</span></div>'; }).join('');
+        document.getElementById('daily').innerHTML = table(d.daily, [['day', 'Gün'], ['visitors', 'Ziyaretçi'], ['views', 'Görüntüleme'], ['play', 'Play'], ['appgallery', 'AppGallery'], ['appstore', 'App Store']], 'visitors');
+        document.getElementById('devices').innerHTML = table(d.devices, [['device', 'Cihaz', function (v) { return DEVICE[v] || v; }], ['visitors', 'Ziyaretçi'], ['play', 'Play'], ['appgallery', 'AppGallery'], ['appstore', 'App Store']], 'visitors');
+        document.getElementById('countries').innerHTML = table(d.countries, [['country', 'Ülke', function (v) { try { return v === '?' ? 'Bilinmiyor' : region.of(v); } catch (e) { return v; } }], ['visitors', 'Ziyaretçi'], ['clicks', 'Mağaza tıklaması']], 'visitors');
+        document.getElementById('langs').innerHTML = table(d.langs, [['lang', 'Sayfa dili', function (v) { try { return v === '?' ? 'Bilinmiyor' : langName.of(v); } catch (e) { return v; } }], ['views', 'Görüntüleme']], 'views');
+        document.getElementById('referrers').innerHTML = table(d.referrers, [['referrer', 'Kaynak'], ['views', 'Görüntüleme']], 'views');
+        document.getElementById('pages').innerHTML = table(d.pages, [['path', 'Sayfa', decodeURIComponent], ['views', 'Görüntüleme'], ['clicks', 'Mağaza tıklaması']], 'views');
+      })
+      .catch(function (e) { document.getElementById('err').textContent = e.message; });
+  }
+  document.getElementById('range').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    document.querySelectorAll('#range button').forEach(function (x) { x.classList.toggle('on', x === b); });
+    load(+b.dataset.d);
+  });
+  load(30);
+  setInterval(function () { var on = document.querySelector('#range button.on'); load(on ? +on.dataset.d : 30); }, 60000);
+})();
+</script>
+</body>
+</html>
