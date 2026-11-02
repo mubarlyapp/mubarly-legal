@@ -1,0 +1,108 @@
+# Mubarly — full description
+
+> Azan alarm even on silent, namaz times, Qibla, Quran offline, duas and tasbih
+
+Website: https://mubarly.com/ · Google Play: https://play.google.com/store/apps/details?id=app.mubarly · Huawei AppGallery: https://appgallery.huawei.com/app/C119470731 · Contact: support@mubarly.com
+Platforms: Android (Google Play, Huawei AppGallery); iOS coming soon. Price: free; optional Premium removes ads and adds extras.
+Languages (20): English, Türkçe, العربية, Bahasa Indonesia, اردو, Français, Русский, বাংলা, فارسی, Bahasa Melayu, Kiswahili, Hausa, Oʻzbekcha, Кыргызча, Soomaali, کوردی, हिन्दी, پښتو, Kurmancî, پنجابی.
+Schools of law: Hanafi, Shafi'i, Maliki, Hanbali. Account: not required. Works offline: prayer times, adhan, Quran text.
+
+## What the app does
+Mubarly is a Muslim prayer app with accurate prayer times and an azan alarm that can ring even when your phone is on silent. Find the Qibla direction, read and listen to the Quran with English translation, and keep duas, dhikr and Ramadan times in one place. Made for Muslims of all four schools, it needs no account, and prayer times and alerts work offline.
+
+Prayer times and azan alarm
+• Namaz times anywhere in the world, calculated on your phone with 14 calculation methods
+• The azan can ring at alarm volume even on silent or in Do Not Disturb, so it also works as a Fajr alarm; you choose per prayer
+• Adhan (athan) sound: the opening takbirs in Makkah, Madinah or Balkan style, or a soft tone
+• Reminders before each salah
+• A guided setup turns on what the adhan needs and warns you if it could be late or muted
+• Prayer times widgets for your home screen with a live countdown
+• 30-day timetable as PDF, Hanafi or Shafi'i Asr and high-latitude rules
+• Islamic calendar with hijri dates, holy days and blessed nights
+
+Ramadan (Ramzan): sehri and iftar times
+• Suhoor alarm at alarm volume, even on silent, repeating until you tap "I'm awake"
+• Iftar alert and a live countdown to the end of sehri and to iftar
+• Ramadan 2027: fasting rules for your school and a fasting and tarawih record
+
+Qibla compass
+• Corrected for magnetic declination, works flat or upright
+• No compass? Find the direction by the sun or on the mosque map
+
+Quran
+• The Arabic text is built in: read it offline in Uthmani or simple script or as 604 mushaf pages
+• English translations with footnotes (Saheeh International, Pickthall), word-by-word meanings and tafsir (online)
+• Listen to 9 reciters, such as Mishary Alafasy and Abdul Basit
+• Download Surah Yaseen, Al-Kahf, Ar-Rahman, Al-Waqiah, Al-Mulk, Juz 'Amma or all 114 surahs to listen offline
+• Bookmarks, notes, Alif Ba lessons for beginners and Islamic radio
+
+Azkar, dhikr and the 99 Names
+• Morning and evening azkar and duas for daily life, each with its source
+• Dhikr and tasbih counter like a digital tasbeeh, with targets and the tasbihat after salah
+• 99 Names of Allah (Asmaul Husna) with their meanings
+• Hadith library with grades and explanations, and Forty Hadith
+
+Learn salah, Hajj and Umrah
+• Prayer guide: learn salah step by step and how to pray by your school
+• Hajj and Umrah guide: rites step by step, day by day, with duas, a tawaf and sa'y counter and a packing list
+• Stories of the prophets and key events of Islamic history
+
+Salah tracker and qaza
+• Mark each prayer on time, late or in congregation, keep your streak
+• Qaza namaz calculator and tracker for missed prayers and fasts
+• Women can mark menstruation days without losing their streak
+
+Mosques, zakat and more
+• Mosque finder: 300,000+ mosques worldwide with walking directions, and your masjid's iqamah times
+• Zakat calculator for gold, silver and cash with live gram prices in your currency
+• Family Mode, Khatm circles and a moderated dua community
+
+For every Muslim
+• Asr, fasting, qada, zakat, travel and menstruation rules, the prayer guide and the Hajj guide follow your school: Hanafi, Shafi'i, Maliki or Hanbali
+• Content comes with its sources; for your own situation, ask a scholar
+
+Easy to use, in your language
+• Simple Mode with large text, high contrast and color-blind friendly colors
+• 20 languages, including English, Urdu, Bengali, Hindi and Arabic
+
+Every worship section is free, with no full-screen ads unless you choose to watch one and never an ad on the Quran, azan, Qibla, dhikr counter or dua screens. Premium removes all ads and adds Memorisation Mode, Sleep & Reflection (sleep sounds, bedtime tasbihat, breathing exercise) and extra compass and counter themes; a short video unlocks all of Premium for several hours.
+
+Privacy: no background location, no camera or microphone. Prayer times and the Qibla are calculated on your phone, and Mubarly does not sell your data.
+
+## Frequently asked questions
+### Is Mubarly free?
+Yes. Prayer times, the adhan, the Qibla compass, the Quran, duas and dhikr are free, and the worship screens never show ads. An optional Premium removes all ads and adds extra features.
+
+### Does the adhan play when my phone is on silent?
+Yes. Mubarly plays the adhan at alarm volume at each prayer time, even on silent and in Do Not Disturb, and you can stop it from the notification.
+
+### How are the prayer times calculated?
+On your phone, for your exact location, with the calculation method used in your country. You can change the method and the Asr rule (Hanafi or the other schools) in the settings.
+
+### Which madhab does Mubarly follow?
+All four: Hanafi, Shafi'i, Maliki and Hanbali. Asr, fasting, qada and the other rules follow the school you choose.
+
+### Does it work offline and without an account?
+Yes. Prayer times, the adhan and the Quran text work without internet, and no account is needed.
+
+## Pages on mubarly.com
+- en: [Prayer times by city](https://mubarly.com/prayer-times/) · [Ramadan 2027 Timetable: Suhoor and Iftar Times by City](https://mubarly.com/ramadan-2027/) · [Qibla Direction from Your Location: Online Qibla Finder](https://mubarly.com/qibla-direction/) · [Islamic Calendar 2027: Holy Days and Islamic Holidays](https://mubarly.com/islamic-calendar-2027/)
+- tr: [Şehirlere göre namaz vakitleri](https://mubarly.com/tr/namaz-vakitleri/) · [Ramazan İmsakiyesi 2027: Şehirlere Göre Sahur ve İftar Vakitleri](https://mubarly.com/tr/ramazan-imsakiyesi-2027/) · [Kıble Yönü Bulma: Bulunduğunuz Yerden Kıble Pusulası](https://mubarly.com/tr/kible-yonu/) · [2027 Dini Günler Takvimi: Kandiller, Ramazan ve Bayramlar](https://mubarly.com/tr/dini-gunler-2027/)
+- ar: [مواقيت الصلاة حسب المدينة](https://mubarly.com/ar/mawaqit-al-salah/) · [إمساكية رمضان 2027: مواعيد السحور والإفطار حسب المدينة](https://mubarly.com/ar/imsakiyat-ramadan-2027/) · [اتجاه القبلة من موقعك: البوصلة الإلكترونية لتحديد القبلة](https://mubarly.com/ar/ittijah-al-qibla/) · [التقويم الإسلامي 2027: المناسبات والأعياد الإسلامية](https://mubarly.com/ar/al-taqwim-al-islami-2027/)
+- id: [Jadwal sholat per kota](https://mubarly.com/id/jadwal-sholat/) · [Jadwal Imsakiyah Ramadhan 2027: Waktu Sahur dan Berbuka per Kota](https://mubarly.com/id/jadwal-imsakiyah-2027/) · [Arah Kiblat dari Lokasi Anda: Kompas Kiblat Online](https://mubarly.com/id/arah-kiblat/) · [Kalender Islam 2027: Hari Besar dan Libur Islam](https://mubarly.com/id/kalender-islam-2027/)
+- ur: [شہر کے لحاظ سے نماز کے اوقات](https://mubarly.com/ur/namaz-ke-auqat/) · [رمضان 2027 کا نظام الاوقات: شہر کے لحاظ سے سحری و افطار](https://mubarly.com/ur/ramzan-timetable-2027/) · [آپ کے مقام سے قبلہ رخ: آن لائن قبلہ نما](https://mubarly.com/ur/qibla-ka-rukh/) · [اسلامی کیلنڈر 2027: اسلامی تہوار اور مقدس ایام](https://mubarly.com/ur/islami-calendar-2027/)
+- fr: [Horaires de prière par ville](https://mubarly.com/fr/horaires-de-priere/) · [Calendrier du Ramadan 2027 : suhoor et iftar par ville](https://mubarly.com/fr/calendrier-ramadan-2027/) · [Direction de la Qibla depuis votre position : boussole Qibla en ligne](https://mubarly.com/fr/direction-qibla/) · [Calendrier musulman 2027 : fêtes et jours saints de l’islam](https://mubarly.com/fr/calendrier-musulman-2027/)
+- ru: [Время намаза по городам](https://mubarly.com/ru/vremya-namaza/) · [Расписание Рамадана 2027: время сухура и ифтара по городам](https://mubarly.com/ru/raspisanie-ramadana-2027/) · [Направление киблы от вашего местоположения: онлайн-компас киблы](https://mubarly.com/ru/napravlenie-kibly/) · [Исламский календарь 2027: праздники и памятные даты](https://mubarly.com/ru/islamskiy-kalendar-2027/)
+- bn: [শহর অনুযায়ী নামাজের সময়](https://mubarly.com/bn/namazer-shomoy/) · [রমজান ২০২৭ সময়সূচি: শহর অনুযায়ী সেহরি ও ইফতারের সময়](https://mubarly.com/bn/romjaner-shomoysuchi-2027/) · [আপনার অবস্থান থেকে কিবলার দিক: অনলাইন কিবলা কম্পাস](https://mubarly.com/bn/kiblar-dik/) · [ইসলামি ক্যালেন্ডার ২০২৭: ইসলামি উৎসব ও পবিত্র দিন](https://mubarly.com/bn/islami-calendar-2027/)
+- fa: [اوقات نماز بر اساس شهر](https://mubarly.com/fa/oghat-e-namaz/) · [جدول رمضان ۲۰۲۷: زمان سحری و افطار به تفکیک شهر](https://mubarly.com/fa/jadval-ramazan-2027/) · [جهت قبله از موقعیت شما: قبله‌نمای آنلاین](https://mubarly.com/fa/jahat-qible/) · [تقویم اسلامی ۲۰۲۷: مناسبت‌ها و اعیاد اسلامی](https://mubarly.com/fa/taqvim-eslami-2027/)
+- ms: [Waktu solat mengikut bandar](https://mubarly.com/ms/waktu-solat/) · [Jadual Imsakiah Ramadan 2027: Waktu Sahur dan Berbuka Mengikut Bandar](https://mubarly.com/ms/jadual-imsakiah-2027/) · [Arah Kiblat dari Lokasi Anda: Kompas Kiblat Dalam Talian](https://mubarly.com/ms/arah-kiblat/) · [Kalendar Islam 2027: Hari Kebesaran dan Cuti Islam](https://mubarly.com/ms/kalendar-islam-2027/)
+- sw: [Nyakati za sala kwa miji](https://mubarly.com/sw/nyakati-za-sala/) · [Ratiba ya Ramadhani 2027: Saa za Daku na Futari kwa Miji](https://mubarly.com/sw/ratiba-ya-ramadhani-2027/) · [Mwelekeo wa Kibla Kutoka Ulipo: Dira ya Kibla Mtandaoni](https://mubarly.com/sw/mwelekeo-wa-kibla/) · [Kalenda ya Kiislamu 2027: Sikukuu na Siku Tukufu](https://mubarly.com/sw/kalenda-ya-kiislamu-2027/)
+- ha: [Lokutan sallah bisa birni](https://mubarly.com/ha/lokutan-sallah/) · [Jadawalin Ramadan 2027: Lokacin Sahur da Buɗa Baki a Birane](https://mubarly.com/ha/jadawalin-ramadan-2027/) · [Alƙibla Daga Inda Kake: Kamfas na Alƙibla a Intanet](https://mubarly.com/ha/alkiblar-sallah/) · [Kalandar Musulunci 2027: Bukukuwa da Ranaku Masu Albarka](https://mubarly.com/ha/kalandar-musulunci-2027/)
+- uz: [Shaharlar bo‘yicha namoz vaqtlari](https://mubarly.com/uz/namoz-vaqtlari/) · [Ramazon taqvimi 2027: shaharlar bo‘yicha saharlik va iftorlik](https://mubarly.com/uz/ramazon-taqvimi-2027/) · [Joylashuvingizdan qibla yo‘nalishi: onlayn qibla kompasi](https://mubarly.com/uz/qibla-yonalishi/) · [Islomiy taqvim 2027: muborak kunlar va bayramlar](https://mubarly.com/uz/islomiy-taqvim-2027/)
+- ky: [Шаарлар боюнча намаз убактысы](https://mubarly.com/ky/namaz-ubaktysy/) · [Рамазан 2027 жадыбалы: шаарлар боюнча сахар жана ифтар](https://mubarly.com/ky/ramazan-zhadybaly-2027/) · [Жайгашкан жериңизден кыбыла багыты: онлайн кыбыла компасы](https://mubarly.com/ky/kybyla-bagyty/) · [Ислам календары 2027: ыйык күндөр жана майрамдар](https://mubarly.com/ky/islam-kalendary-2027/)
+- so: [Waqtiyada salaadda magaalo ahaan](https://mubarly.com/so/waqtiyada-salaadda/) · [Jadwalka Ramadaan 2027: Waqtiga Suxuurka iyo Afurka Magaalo kasta](https://mubarly.com/so/jadwalka-ramadaan-2027/) · [Jihada Qiblada Meesha aad Joogto: Jiheeyaha Qiblada Online](https://mubarly.com/so/jihada-qiblada/) · [Kalandarka Islaamka 2027: Ciidaha iyo Maalmaha Barakaysan](https://mubarly.com/so/kalandarka-islaamka-2027/)
+- ckb: [کاتەکانی نوێژ بەپێی شار](https://mubarly.com/ckb/katakani-nwezh/) · [خشتەی ڕەمەزانی ٢٠٢٧: کاتی پارشێو و بەربانگ بەپێی شار](https://mubarly.com/ckb/xshtay-ramazan-2027/) · [ئاراستەی قیبلە لە شوێنەکەتەوە: قیبلەنمای ئۆنلاین](https://mubarly.com/ckb/arastey-qible/) · [ساڵنامەی ئیسلامی ٢٠٢٧: جەژن و ڕۆژە پیرۆزەکان](https://mubarly.com/ckb/salnamey-islami-2027/)
+- hi: [शहर के अनुसार नमाज़ का समय](https://mubarly.com/hi/namaz-ka-samay/) · [रमज़ान 2027 टाइम टेबल: शहर के अनुसार सहरी और इफ़्तार](https://mubarly.com/hi/ramzan-time-table-2027/) · [आपकी जगह से क़िबला की दिशा: ऑनलाइन क़िबला कंपास](https://mubarly.com/hi/qibla-ki-disha/) · [इस्लामी कैलेंडर 2027: इस्लामी त्योहार और पाक दिन](https://mubarly.com/hi/islamic-calendar-2027/)
+- ps: [د ښار له مخې د لمانځه وختونه](https://mubarly.com/ps/da-lmonz-wakhtuna/) · [د ۲۰۲۷ روژې مهالویش: د ښار له مخې پیشمنی او افطار](https://mubarly.com/ps/da-rozhe-mahalwesh-2027/) · [ستاسو له ځایه د قبلې لوری: آنلاین قبله نما](https://mubarly.com/ps/da-qible-lori/) · [اسلامي جنتري ۲۰۲۷: اخترونه او مبارکې ورځې](https://mubarly.com/ps/islami-jantary-2027/)
+- ku: [Demên nimêjê li gorî bajaran](https://mubarly.com/ku/demen-nimeje/) · [Bernameya Remezanê 2027: Demên Paşîv û Fitarê li gorî Bajaran](https://mubarly.com/ku/remezan-2027/) · [Aliyê Qibleyê ji Cihê Te: Qiblenimaya Serhêl](https://mubarly.com/ku/aliye-qible/) · [Salnameya Îslamî 2027: Cejn û Rojên Pîroz](https://mubarly.com/ku/salnameya-islami-2027/)
+- pa: [شہر دے حساب نال نماز دے ویلے](https://mubarly.com/pa/namaz-de-vele/) · [رمضان 2027 دا ٹائم ٹیبل: شہر دے حساب نال سحری تے افطار](https://mubarly.com/pa/ramzan-time-table-2027/) · [تہاڈی تھاں توں قبلے دی سمت: آن لائن قبلہ نما](https://mubarly.com/pa/qible-di-simt/) · [اسلامی کیلنڈر 2027: اسلامی تہوار تے پاک دن](https://mubarly.com/pa/islami-calendar-2027/)

@@ -170,6 +170,9 @@ Maliki, Hanbali), needs no account, and its worship screens carry no ads.
 - [Facebook](https://www.facebook.com/mubarlyapp)
 - [X](https://x.com/mubarlyapp)
 
+## More
+- [Full description for AI assistants](https://mubarly.com/llms-full.txt)
+
 ## Policies
 - [Privacy policy](https://mubarly.com/privacy.html)
 - [Terms of use](https://mubarly.com/terms.html)
