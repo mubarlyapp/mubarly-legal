@@ -41,14 +41,18 @@ details.m{margin:8px 0}details.m summary{cursor:pointer;font-weight:700;padding:
 .note{color:var(--muted);font-size:.9rem}.note a{text-decoration:underline}.faq h3{font-size:1.02rem;margin:18px 0 4px}.faq p{margin:0}
 ul.cities{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}ul.cities a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none;color:var(--fg)}
 footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:.92rem}footer nav{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px}
-@media (max-width:560px){#today ul{grid-template-columns:repeat(3,1fr)}}</style>
+@media (max-width:560px){#today ul{grid-template-columns:repeat(3,1fr)}}.mini{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 14px;margin:6px 0 22px}.mini img{border-radius:12px;flex:none}.mini p{margin:0;flex:1;line-height:1.35}.mini strong{display:block;font-size:.98rem}.mini small{color:var(--muted);font-size:.82rem}
+a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
+.dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
+@media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/tr/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
 <main class="wrap">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/tr/">Mubarly</a> › <a href="/tr/namaz-vakitleri/">Namaz vakitleri</a> › Çanakkale</nav>
 <h1>Çanakkale namaz vakitleri</h1>
-<p class="lead">Çanakkale için 2027 sonuna kadar her günün imsak, güneş, öğle, ikindi, akşam ve yatsı vakitleri; Ramazan 2027 sahur ve iftar saatleri ve kıble yönü.</p>
+<p class="lead">Çanakkale için 2027 sonuna kadar her günün imsak, güneş, öğle, ikindi, akşam ve yatsı vakitleri; Ramazan 2027 sahur ve iftar saatleri ve kıble yönü.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Ezanı telefon sessizdeyken bile alarm gibi duyun</strong><small>Ücretsiz · internetsiz çalışır · 20 dil · dört mezhep</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=top" rel="noopener">Ücretsiz indir</a></aside>
 <section id="today" class="card" hidden aria-live="polite"><p class="d">Bugün</p><ul><li><b>—</b><span>İmsak</span></li><li><b>—</b><span>Güneş</span></li><li><b>—</b><span>Öğle</span></li><li><b>—</b><span>İkindi</span></li><li><b>—</b><span>Akşam</span></li><li><b>—</b><span>Yatsı</span></li></ul></section>
 <div class="cta"><p><strong>Ezanı telefon sessizdeyken bile alarm gibi duyun</strong><small>Ücretsiz · internetsiz çalışır · 20 dil · dört mezhep</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=city_tr" rel="noopener"><img src="/img/badges/tr.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Yakında"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Yakında</small>App Store</span></span></div></div>
 <h2 id="ramadan">Çanakkale Ramazan 2027 imsakiyesi: sahur ve iftar</h2>
@@ -554,13 +558,14 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 var c=r.querySelectorAll('td'),o=document.querySelectorAll('#today b');[1,2,3,4,6,7].forEach(function(k,i){o[i].textContent=c[k].textContent});document.querySelector('#today .d').textContent="Bugün"+' · '+r.getAttribute('data-l');document.getElementById('today').hidden=false;
 document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className='now'});var m=r.closest('details');if(m){document.querySelectorAll('details.m').forEach(function(x){x.open=false});m.open=true}}catch(e){}})();(function(){if(!/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))return;document.querySelectorAll('.stores').forEach(function(s){var a=s.querySelector('a[href*="appgallery"]');if(a)s.insertBefore(a,s.firstChild)})})();</script>
 </main>
+<a class="dlbar" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=tr&utm_source=mubarly_site&utm_campaign=bar" rel="noopener">Ücretsiz indir</a>
 <footer class="wrap">
 <nav aria-label="Languages"><a href="/tr/namaz-vakitleri/canakkale/" hreflang="tr">Türkçe</a></nav>
 <nav aria-label="Social"><a href="https://www.instagram.com/mubarly" rel="me noopener">Instagram</a><a href="https://www.tiktok.com/@mubarly" rel="me noopener">TikTok</a><a href="https://www.youtube.com/@mubarly" rel="me noopener">YouTube</a><a href="https://www.facebook.com/mubarlyapp" rel="me noopener">Facebook</a><a href="https://x.com/mubarlyapp" rel="me noopener">X</a></nav>
 <nav><a href="/tr/dini-rehberler/">Dini Rehberler</a><a href="/privacy.html">Gizlilik politikası</a><a href="/terms.html">Kullanım şartları</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function () {
+<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';
@@ -591,7 +596,7 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
     };
     ['pointerdown', 'touchstart', 'keydown', 'wheel'].forEach(function (t) { addEventListener(t, gesture, { passive: true, capture: true }); });
     document.addEventListener('click', function (e) {
-      var a = e.target.closest && e.target.closest('.stores a, .stores .soon');
+      var a = e.target.closest && e.target.closest('.stores a, .stores .soon, a.dl, a.dlbar');
       if (!a) return;
       var href = a.getAttribute('href') || '';
       var store = /appgallery/.test(href) ? 'appgallery' : /play\.google/.test(href) ? 'play' : a.classList.contains('soon') ? 'appstore' : null;

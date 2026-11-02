@@ -263,7 +263,7 @@ var o=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersec
     };
     ['pointerdown', 'touchstart', 'keydown', 'wheel'].forEach(function (t) { addEventListener(t, gesture, { passive: true, capture: true }); });
     document.addEventListener('click', function (e) {
-      var a = e.target.closest && e.target.closest('.stores a, .stores .soon');
+      var a = e.target.closest && e.target.closest('.stores a, .stores .soon, a.dl, a.dlbar');
       if (!a) return;
       var href = a.getAttribute('href') || '';
       var store = /appgallery/.test(href) ? 'appgallery' : /play\.google/.test(href) ? 'play' : a.classList.contains('soon') ? 'appstore' : null;

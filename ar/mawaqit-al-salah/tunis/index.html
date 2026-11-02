@@ -44,14 +44,18 @@ details.m{margin:8px 0}details.m summary{cursor:pointer;font-weight:700;padding:
 .note{color:var(--muted);font-size:.9rem}.note a{text-decoration:underline}.faq h3{font-size:1.02rem;margin:18px 0 4px}.faq p{margin:0}
 ul.cities{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}ul.cities a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none;color:var(--fg)}
 footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:.92rem}footer nav{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px}
-@media (max-width:560px){#today ul{grid-template-columns:repeat(3,1fr)}}</style>
+@media (max-width:560px){#today ul{grid-template-columns:repeat(3,1fr)}}.mini{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 14px;margin:6px 0 22px}.mini img{border-radius:12px;flex:none}.mini p{margin:0;flex:1;line-height:1.35}.mini strong{display:block;font-size:.98rem}.mini small{color:var(--muted);font-size:.82rem}
+a.dl,a.dlbar{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:999px;background:#0B3B2C;color:#F6F1E4;font-weight:700;text-decoration:none;white-space:nowrap}
+.dlbar{position:fixed;inset-inline:12px;bottom:12px;z-index:9;box-shadow:0 8px 24px #0004;transform:translateY(150%);transition:transform .25s}.dlbar.on{transform:none}
+@media (prefers-color-scheme:dark){a.dl,a.dlbar{background:#D4B062;color:#061A13}}
+@media (min-width:761px){.dlbar{display:none}}@media (max-width:760px){body{padding-bottom:72px}}@media (max-width:480px){.mini{flex-wrap:wrap}.mini a.dl{flex:1 1 100%}}</style>
 </head>
 <body>
 <header class="top"><div class="wrap"><a href="/ar/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div></header>
 <main class="wrap">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/ar/">Mubarly</a> › <a href="/ar/mawaqit-al-salah/">مواقيت الصلاة</a> › تونس</nav>
 <h1>مواقيت الصلاة في تونس</h1>
-<p class="lead">الفجر والشروق والظهر والعصر والمغرب والعشاء في تونس لكل يوم حتى نهاية 2027، مع أوقات السحور والإفطار في رمضان 2027 واتجاه القبلة.</p>
+<p class="lead">الفجر والشروق والظهر والعصر والمغرب والعشاء في تونس لكل يوم حتى نهاية 2027، مع أوقات السحور والإفطار في رمضان 2027 واتجاه القبلة.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>اسمع الأذان بصوت المنبه حتى والهاتف صامت</strong><small>مجاني · يعمل دون إنترنت · 20 لغة · المذاهب الأربعة</small></p><a class="dl" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=top" rel="noopener">حمّل مجانًا</a></aside>
 <section id="today" class="card" hidden aria-live="polite"><p class="d">اليوم</p><ul><li><b>—</b><span>الفجر</span></li><li><b>—</b><span>الشروق</span></li><li><b>—</b><span>الظهر</span></li><li><b>—</b><span>العصر</span></li><li><b>—</b><span>المغرب</span></li><li><b>—</b><span>العشاء</span></li></ul></section>
 <div class="cta"><p><strong>اسمع الأذان بصوت المنبه حتى والهاتف صامت</strong><small>مجاني · يعمل دون إنترنت · 20 لغة · المذاهب الأربعة</small></p><div class="stores"><a class="badge" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=city_ar" rel="noopener"><img src="/img/badges/ar.png" alt="Google Play" width="180" height="54" loading="lazy"></a><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – قريبًا"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>قريبًا</small>App Store</span></span></div></div>
 <h2 id="ramadan">رمضان 2027 في تونس: أوقات السحور والإفطار</h2>
@@ -557,13 +561,14 @@ footer{margin-top:40px;padding:24px 0 40px;border-top:1px solid var(--line);font
 var c=r.querySelectorAll('td'),o=document.querySelectorAll('#today b');[1,2,3,4,6,7].forEach(function(k,i){o[i].textContent=c[k].textContent});document.querySelector('#today .d').textContent="اليوم"+' · '+r.getAttribute('data-l');document.getElementById('today').hidden=false;
 document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className='now'});var m=r.closest('details');if(m){document.querySelectorAll('details.m').forEach(function(x){x.open=false});m.open=true}}catch(e){}})();(function(){if(!/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))return;document.querySelectorAll('.stores').forEach(function(s){var a=s.querySelector('a[href*="appgallery"]');if(a)s.insertBefore(a,s.firstChild)})})();</script>
 </main>
+<a class="dlbar" href="https://play.google.com/store/apps/details?id=app.mubarly&hl=ar&utm_source=mubarly_site&utm_campaign=bar" rel="noopener">حمّل مجانًا</a>
 <footer class="wrap">
 <nav aria-label="Languages"><a href="/ar/mawaqit-al-salah/tunis/" hreflang="ar">العربية</a><a href="/fr/horaires-de-priere/tunis/" hreflang="fr">Français</a><a href="/prayer-times/tunis/" hreflang="en">English</a></nav>
 <nav aria-label="Social"><a href="https://www.instagram.com/mubarly" rel="me noopener">Instagram</a><a href="https://www.tiktok.com/@mubarly" rel="me noopener">TikTok</a><a href="https://www.youtube.com/@mubarly" rel="me noopener">YouTube</a><a href="https://www.facebook.com/mubarlyapp" rel="me noopener">Facebook</a><a href="https://x.com/mubarlyapp" rel="me noopener">X</a></nav>
 <nav><a href="/ar/adlat-islamiya/">أدلة إسلامية</a><a href="/ar/privacy.html">سياسة الخصوصية</a><a href="/ar/terms.html">شروط الاستخدام</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>
 <p class="note">© Mubarly · Google Play and the Google Play logo are trademarks of Google LLC. HUAWEI and AppGallery are trademarks of Huawei Technologies Co., Ltd.; AppGallery badge via <a href="https://commons.wikimedia.org/wiki/File:Huawei_AppGallery_Badge_Black_EN.svg" rel="noopener">Wikimedia Commons</a> (CC BY 4.0).</p>
 </footer>
-<script>(function () {
+<script>(function(){var b=document.querySelector('.dlbar');if(!b)return;var big=document.querySelector('.cta'),seen=false;if(big&&'IntersectionObserver'in window)new IntersectionObserver(function(e){seen=e[0].isIntersecting;f()}).observe(big);function f(){b.classList.toggle('on',window.scrollY>520&&!seen)}addEventListener('scroll',f,{passive:true});if(/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))document.querySelectorAll('a.dl,a.dlbar').forEach(function(a){a.href='https://appgallery.huawei.com/app/C119470731'})})();(function () {
   try {
     if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';
@@ -594,7 +599,7 @@ document.querySelectorAll('tr[data-d="'+d+'"]').forEach(function(x){x.className=
     };
     ['pointerdown', 'touchstart', 'keydown', 'wheel'].forEach(function (t) { addEventListener(t, gesture, { passive: true, capture: true }); });
     document.addEventListener('click', function (e) {
-      var a = e.target.closest && e.target.closest('.stores a, .stores .soon');
+      var a = e.target.closest && e.target.closest('.stores a, .stores .soon, a.dl, a.dlbar');
       if (!a) return;
       var href = a.getAttribute('href') || '';
       var store = /appgallery/.test(href) ? 'appgallery' : /play\.google/.test(href) ? 'play' : a.classList.contains('soon') ? 'appstore' : null;
