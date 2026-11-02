@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.mubarly",
+      "sha256_cert_fingerprints": [
+        "01:25:AD:1E:5D:93:59:0F:B9:4E:CE:92:FC:73:C7:E2:31:32:0A:5E:43:A6:0B:70:CC:8E:30:EB:F8:AC:61:D1",
+        "AA:D7:DD:31:AB:4D:FB:3A:35:C1:6A:AF:0E:2C:8B:FE:FE:3E:50:5C:DE:F9:44:AA:A8:A4:04:91:D1:A3:C5:F1"
+      ]
+    }
+  }
+]
