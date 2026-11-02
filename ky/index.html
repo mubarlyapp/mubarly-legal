@@ -225,7 +225,7 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 16px;margin:40px 0 0;padding-top:2
 <script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-lang]');if(a)try{localStorage.setItem('lang',a.getAttribute('data-lang'))}catch(x){}});(function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){e.forEach(function(x){x.classList.add('in')});return}
 var o=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});e.forEach(function(x){o.observe(x)})})();(function(){if(!/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))return;document.querySelectorAll('.stores').forEach(function(s){var a=s.querySelector('a[href*="appgallery"]');if(a)s.insertBefore(a,s.firstChild)})})();(function () {
   try {
-    if (/bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
+    if (navigator.webdriver || /bot|crawl|spider|slurp|lighthouse|headless/i.test(navigator.userAgent)) return;
     var url = 'https://vvrfovaixhhlrpvadgmm.supabase.co/rest/v1/rpc/log_site_event';
     var send = function (body) {
       try {
@@ -241,9 +241,18 @@ var o=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersec
     var tz = '';
     try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
     send({ p_kind: 'view', p_path: location.pathname, p_lang: lang, p_referrer: ref, p_tz: tz });
-    setInterval(function () {
-      if (document.visibilityState === 'visible') send({ p_kind: 'ping', p_path: location.pathname, p_lang: lang, p_tz: tz });
-    }, 60000);
+    // A person touches, clicks, types or scrolls by hand; crawlers that run the page never do. The first such gesture
+    // marks the visit as human ('act'), and only then the minute pings for 'online now' start.
+    var human = false;
+    var gesture = function (e) {
+      if (human || !e.isTrusted) return;
+      human = true;
+      send({ p_kind: 'act', p_path: location.pathname, p_lang: lang, p_tz: tz });
+      setInterval(function () {
+        if (document.visibilityState === 'visible') send({ p_kind: 'ping', p_path: location.pathname, p_lang: lang, p_tz: tz });
+      }, 60000);
+    };
+    ['pointerdown', 'touchstart', 'keydown', 'wheel'].forEach(function (t) { addEventListener(t, gesture, { passive: true, capture: true }); });
     document.addEventListener('click', function (e) {
       var a = e.target.closest && e.target.closest('.stores a, .stores .soon');
       if (!a) return;
