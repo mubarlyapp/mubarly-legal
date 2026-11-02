@@ -214,6 +214,6 @@ nav.langs{display:flex;flex-wrap:wrap;gap:6px 16px;margin:40px 0 0;padding-top:2
 </div>
 </footer>
 <script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-lang]');if(a)try{localStorage.setItem('lang',a.getAttribute('data-lang'))}catch(x){}});(function(){var e=document.querySelectorAll('.reveal');if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){e.forEach(function(x){x.classList.add('in')});return}
-var o=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});e.forEach(function(x){o.observe(x)})})();</script>
+var o=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});e.forEach(function(x){o.observe(x)})})();(function(){if(!/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))return;document.querySelectorAll('.stores').forEach(function(s){var a=s.querySelector('a[href*="appgallery"]');if(a)s.insertBefore(a,s.firstChild)})})();</script>
 </body>
 </html>
