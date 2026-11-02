@@ -100,7 +100,13 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
         document.getElementById('search-pages').innerHTML = table(g.pages, [['page', 'Sayfa', function (v) { try { return decodeURIComponent(v.replace('https://mubarly.com', '')) || '/'; } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Sıra']], 'impressions');
         document.getElementById('search-countries').innerHTML = table(g.countries, [['country', 'Ülke', function (v) { try { return region.of(v.length === 3 ? A3[v.toUpperCase()] || v : v); } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama']], 'impressions');
       })
-      .catch(function () { sb.auth.signOut().then(showGate); });
+      // Only a refused account is signed out; any other failure stays on the page with its message (2026-11-02: a
+      // server error used to look like a failed sign-in).
+      .catch(function (e) {
+        if (/yetkisi yok/.test(e.message)) { sb.auth.signOut().then(function () { showGate(e.message); }); return; }
+        document.getElementById('app').hidden = false; document.getElementById('gate').hidden = true;
+        document.getElementById('err').textContent = e.message;
+      });
   }
   document.getElementById('range').addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
