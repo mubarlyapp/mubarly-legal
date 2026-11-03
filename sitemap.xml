@@ -20,4 +20,8 @@
     <loc>https://mubarly.com/sitemap-info.xml</loc>
     <lastmod>2026-11-03</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://mubarly.com/sitemap-blog.xml</loc>
+    <lastmod>2026-11-03</lastmod>
+  </sitemap>
 </sitemapindex>
