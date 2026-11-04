@@ -1,8 +1,10 @@
 <!doctype html>
-<!-- The owner's website statistics (2026-11-02), published by landing-pages.mjs at an unlisted address (STATS_PATH).
+<!-- The owner's website statistics, published by landing-pages.mjs at an unlisted address (STATS_PATH).
      Before sign-in the page shows only the logo and an e-mail + password form (the owner chose password over Google,
      2026-11-02); only mubarly.dev@gmail.com is passed on to Supabase (signInWithPassword), and site_stats checks that
-     address again on the server. -->
+     address again on the server. v2 (2026-11-04, the owner: "clearer, tidier, more detail"): tabs (summary, visits,
+     pages, stores, Google), people and bots apart, a stream of the people's visits and every store click
+     (supabase/migrations/20261104120000_site_stats_v2.sql). -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -11,46 +13,104 @@
 <title>Mubarly</title>
 <link rel="icon" type="image/png" href="/img/icon-192.png">
 <style>
-:root{color-scheme:light dark;--bg:#F6F1E4;--fg:#0B2F24;--muted:#5D5A4A;--gold:#76571A;--card:#FFFBF2;--line:#E6DCC4;--bar:#0B3B2C}
-@media (prefers-color-scheme:dark){:root{--bg:#071C15;--fg:#EEE7D2;--muted:#B9AF92;--gold:#D4B062;--card:#0D2A20;--line:#1B3F31;--bar:#D4B062}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{background:#0B3B2C;color:#D4B062;padding:14px 16px;font-weight:800;letter-spacing:.18em}main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
-h1{font-size:1.6rem;margin:0 0 6px}h2{font-size:1.1rem;margin:28px 0 10px}.muted{color:var(--muted)}
-.bar-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.bar-row button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;font:inherit}
-.bar-row button.on{background:var(--bar);color:var(--bg);border-color:var(--bar)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
-.card b{display:block;font-size:1.8rem;line-height:1.1}.card span{color:var(--muted);font-size:.9rem}
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-variant-numeric:tabular-nums;font-size:.92rem}
-th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:first-child,td:first-child{text-align:start;word-break:break-all}th{color:var(--muted);font-weight:600;font-size:.82rem}
-.meter{display:inline-block;height:8px;border-radius:4px;background:var(--bar);vertical-align:middle;margin-inline-end:6px;min-width:2px}
-[hidden]{display:none!important}
+:root{color-scheme:light dark;--bg:#F4EFE2;--fg:#0B2F24;--muted:#6A6553;--gold:#8A6A22;--card:#FFFCF5;--line:#E6DCC4;--green:#0B3B2C;--ok:#1a9c4e;--bot:#B9B3A2}
+@media (prefers-color-scheme:dark){:root{--bg:#071C15;--fg:#EEE7D2;--muted:#B9AF92;--gold:#D4B062;--card:#0D2A20;--line:#1B3F31;--green:#D4B062;--ok:#3ccf7a;--bot:#4b5a52}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--gold)}[hidden]{display:none!important}
+.top{position:sticky;top:0;z-index:5;background:#0B3B2C;color:#EDE6CF;box-shadow:0 2px 12px #0003}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.14em;color:#D4B062;margin-inline-end:auto}.brand img{width:30px;height:30px;border-radius:8px}
+.range{display:flex;gap:4px;background:#ffffff12;padding:4px;border-radius:999px}.range button{border:0;background:none;color:#CFC6AA;font:600 .85rem/1 inherit;font-family:inherit;padding:8px 12px;border-radius:999px;cursor:pointer}.range button.on{background:#D4B062;color:#061A13}
+.who{font-size:.85rem;color:#CFC6AA}.who a{color:#D4B062}
+.tabs{max-width:1180px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:0;background:none;color:#CFC6AA;font:600 .92rem/1 inherit;font-family:inherit;padding:12px 14px;border-bottom:3px solid transparent;cursor:pointer}.tabs button[aria-selected=true]{color:#F3E7C2;border-bottom-color:#D4B062}
+main{max-width:1180px;margin:0 auto;padding:18px 16px 60px}
+h2{font-size:1.05rem;margin:26px 0 4px}.hint{color:var(--muted);font-size:.85rem;margin:0 0 10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}.kpi b{display:block;font-size:1.9rem;line-height:1.1;font-variant-numeric:tabular-nums}.kpi .t{font-weight:700;font-size:.9rem;margin-top:2px}.kpi .h{color:var(--muted);font-size:.78rem;margin-top:4px;line-height:1.35}
+.kpi.live b{color:var(--ok)}.kpi.dim b{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;overflow:hidden}
+.box h3{font-size:.95rem;margin:0 0 2px}.box .hint{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.88rem}
+th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:end;vertical-align:top}th{color:var(--muted);font-weight:600;font-size:.76rem;text-transform:uppercase;letter-spacing:.04em}
+th:first-child,td:first-child{text-align:start}td.l,th.l{text-align:start}tr:last-child td{border-bottom:0}
+.scroll{overflow-x:auto}
+.meter{display:inline-block;height:7px;border-radius:4px;background:var(--green);vertical-align:middle;margin-inline-end:6px;min-width:2px;opacity:.85}
+.days{display:grid;gap:6px}.day{display:grid;grid-template-columns:86px 1fr 128px;align-items:center;gap:10px;font-size:.85rem;font-variant-numeric:tabular-nums}
+.stack{display:flex;height:16px;border-radius:6px;overflow:hidden;background:var(--line)}.stack i{display:block;height:100%}.stack .p{background:var(--ok)}.stack .b{background:var(--bot)}
+.legend{display:flex;gap:16px;font-size:.8rem;color:var(--muted);margin:6px 0 10px}.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px;background:var(--ok)}.legend span.b:before{background:var(--bot)}
+.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.74rem;font-weight:700;margin:1px 2px;white-space:nowrap}.tag.play{background:#e7f6ec;color:#11683a}.tag.appgallery{background:#fde8e8;color:#b3261e}.tag.appstore{background:#e8eef8;color:#1d4f91}.tag.google{background:#fff4d6;color:#8a5a00}.tag.direct{background:var(--line);color:var(--muted)}
+@media (prefers-color-scheme:dark){.tag.play{background:#11402a;color:#8be0ac}.tag.appgallery{background:#4a1d1d;color:#f3a6a0}.tag.appstore{background:#1d2c45;color:#a9c4ee}.tag.google{background:#3f3415;color:#f0cf7a}}
+.page{word-break:break-all}.muted{color:var(--muted)}.empty{color:var(--muted);font-size:.88rem;padding:6px 0}
 #err{color:#c0392b;font-weight:700}
 #gate{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px}#gate img{width:72px;height:72px;border-radius:18px}#gate p{margin:0;color:var(--muted);min-height:1.5em}
 #gate form{display:flex;flex-direction:column;gap:10px;width:min(300px,100%)}#gate input{font:inherit;padding:11px 14px;border-radius:12px;border:1px solid var(--line,#ccc);background:transparent;color:inherit}#gate button{font:inherit;font-weight:700;padding:11px 14px;border-radius:999px;border:0;background:#111;color:#fff;cursor:pointer}#gate button:disabled{opacity:.6}
+@media (max-width:640px){.day{grid-template-columns:62px 1fr 112px;font-size:.8rem}.kpi b{font-size:1.6rem}}
 </style>
 </head>
 <body>
 <div id="gate"><img src="/img/icon-192.png" alt="Mubarly" width="72" height="72"><form id="login" autocomplete="on"><input id="email" type="email" name="email" autocomplete="username" required aria-label="E-posta" placeholder="E-posta"><input id="pass" type="password" name="password" autocomplete="current-password" required aria-label="Şifre" placeholder="Şifre"><button type="submit">Giriş</button></form><p id="gmsg"></p></div>
 <div id="app" hidden>
-<header>MUBARLY · İSTATİSTİK</header>
+<div class="top">
+  <div class="in">
+    <div class="brand"><img src="/img/icon-192.png" alt="">MUBARLY · PANEL</div>
+    <div class="range" id="range"><button data-d="1">Bugün</button><button data-d="7">7 gün</button><button data-d="30" class="on">30 gün</button><button data-d="90">90 gün</button><button data-d="365">1 yıl</button></div>
+    <div class="who" id="who"></div>
+  </div>
+  <nav class="tabs" role="tablist"><button data-tab="sum" aria-selected="true">Özet</button><button data-tab="visits">Ziyaretler</button><button data-tab="pages">Sayfalar</button><button data-tab="stores">Mağaza</button><button data-tab="google">Google araması</button></nav>
+</div>
 <main>
-<h1>Site istatistikleri</h1>
-<p class="muted">mubarly.com ziyaretleri ve mağaza düğmesi tıklamaları. Çerez yok; bir kişi aynı gün içinde bir kez sayılır.</p>
-<div class="bar-row" id="range"><button data-d="1">Bugün</button><button data-d="7">7 gün</button><button data-d="30" class="on">30 gün</button><button data-d="90">90 gün</button><button data-d="365">1 yıl</button></div>
-<p id="who" class="muted"></p><p id="err"></p>
-<section class="card" id="online" style="margin-bottom:14px"></section>
-<section class="cards" id="totals"></section>
-<h2>Günlük</h2><div id="daily"></div>
-<div class="grid2"><div><h2>Mağaza tıklamaları · cihaza göre</h2><div id="devices"></div></div><div><h2>Ülkeler</h2><div id="countries"></div></div></div>
-<h2>Şehirler</h2><div id="cities"></div>
-<div class="grid2"><div><h2>Dil</h2><div id="langs"></div></div><div><h2>Nereden geldiler</h2><div id="referrers"></div></div></div>
-<h2>Sayfalar</h2><div id="pages"></div>
-<h2>Google aramaları</h2>
-<p class="muted" id="search-note">Google'da hangi kelimelerle arandığınız (Search Console). Google veriyi 2–3 gün geç verir.</p>
-<section class="cards" id="search-totals"></section>
-<h2>Arama kelimeleri</h2><div id="search-queries"></div>
-<div class="grid2"><div><h2>Aramada görünen sayfalar</h2><div id="search-pages"></div></div><div><h2>Aramaların ülkeleri</h2><div id="search-countries"></div></div></div>
+<p id="err"></p>
+
+<section data-panel="sum">
+  <div class="kpis" id="kpis"></div>
+  <h2>Günlük ziyaret</h2><p class="hint">Her gün kaç gerçek kişi ve kaç bot geldi. Botlar Google, Bing ve yapay zekâ tarayıcılarıdır; sayfaları dizine eklemek için gelirler.</p>
+  <div class="legend"><span>Gerçek kişi</span><span class="b">Bot</span></div>
+  <div class="box"><div class="days" id="days"></div></div>
+  <div class="grid" style="margin-top:16px">
+    <div class="box"><h3>Ülkeler</h3><p class="hint">Gerçek kişilerin geldiği ülkeler.</p><div id="sum-countries"></div></div>
+    <div class="box"><h3>Nereden geldiler</h3><p class="hint">Bağlantıya tıklayıp geldikleri site; "Doğrudan" = adresi yazarak ya da bir uygulamadan.</p><div id="sum-refs"></div></div>
+    <div class="box"><h3>İlk açılan sayfalar</h3><p class="hint">Ziyaretçilerin siteye girdiği ilk sayfa.</p><div id="sum-landing"></div></div>
+  </div>
+</section>
+
+<section data-panel="visits" hidden>
+  <h2>Son ziyaretler</h2><p class="hint">Her satır bir kişinin o günkü ziyareti (en yeni üstte, en fazla 60). Botlar bu listede yok.</p>
+  <div class="box scroll"><div id="recent"></div></div>
+  <div class="grid" style="margin-top:16px">
+    <div class="box"><h3>Ülkeler</h3><div id="countries"></div></div>
+    <div class="box"><h3>Şehir / saat dilimi</h3><p class="hint">Tarayıcının saat diliminden; şehir için yaklaşık bilgi.</p><div id="places"></div></div>
+    <div class="box"><h3>Sayfa dili</h3><div id="langs"></div></div>
+    <div class="box"><h3>Cihaz</h3><div id="devices"></div></div>
+  </div>
+</section>
+
+<section data-panel="pages" hidden>
+  <h2>En çok okunan sayfalar</h2><p class="hint">Gerçek kişilerin baktığı sayfalar: görüntüleme, kaç farklı kişi ve o sayfadan mağaza tıklaması.</p>
+  <div class="box scroll"><div id="pages"></div></div>
+  <div class="grid" style="margin-top:16px">
+    <div class="box"><h3>İlk açılan sayfalar</h3><div id="landing"></div></div>
+    <div class="box"><h3>Botların taradığı sayfalar</h3><p class="hint">Arama motorlarının en çok okuduğu sayfalar (dizine ekleme).</p><div id="botpages"></div></div>
+  </div>
+</section>
+
+<section data-panel="stores" hidden>
+  <div class="kpis" id="store-kpis"></div>
+  <h2>Tüm mağaza tıklamaları</h2><p class="hint">Mağaza düğmelerine her tıklama (en yeni üstte). "Play (yakında)" Play herkese açılana kadar soluk rozete yapılan tıklamadır.</p>
+  <div class="box scroll"><div id="clicks"></div></div>
+</section>
+
+<section data-panel="google" hidden>
+  <p class="hint" id="search-note"></p>
+  <div class="kpis" id="search-kpis"></div>
+  <h2>Aranan kelimeler</h2><p class="hint">Gösterim: Google sonuçlarında kaç kez göründün. Tıklama: kaç kişi tıkladı. Sıra: ortalama konum (1 = en üst; 10'un altı ilk sayfadır).</p>
+  <div class="box scroll"><div id="queries"></div></div>
+  <div class="grid" style="margin-top:16px">
+    <div class="box"><h3>Aramada görünen sayfalar</h3><div id="spages"></div></div>
+    <div class="box"><h3>Aramaların ülkeleri</h3><div id="scountries"></div></div>
+  </div>
+</section>
 </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
@@ -58,82 +118,110 @@ th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:end}th:fir
 (function(){
   var OWNER = 'mubarly.dev@gmail.com';
   var sb = supabase.createClient('https://vvrfovaixhhlrpvadgmm.supabase.co', 'sb_publishable_1-MNbm3N5RRZHG1VzCU38A_wU4YH-Pc', { auth: { persistSession: true, detectSessionInUrl: false } });
-  var signedIn = false;
+  var signedIn = false, $ = function (id) { return document.getElementById(id); };
   var region = new Intl.DisplayNames(['tr'], { type: 'region' }), langName = new Intl.DisplayNames(['tr'], { type: 'language' });
   // Search Console gives ISO 3166 alpha-3 country codes.
   var A3 = {TUR: 'TR',USA: 'US',GBR: 'GB',DEU: 'DE',FRA: 'FR',NLD: 'NL',BEL: 'BE',AUT: 'AT',CHE: 'CH',SWE: 'SE',NOR: 'NO',DNK: 'DK',FIN: 'FI',ITA: 'IT',ESP: 'ES',PRT: 'PT',IRL: 'IE',POL: 'PL',RUS: 'RU',UKR: 'UA',AZE: 'AZ',KAZ: 'KZ',UZB: 'UZ',KGZ: 'KG',TJK: 'TJ',TKM: 'TM',AFG: 'AF',PAK: 'PK',IND: 'IN',BGD: 'BD',LKA: 'LK',MDV: 'MV',NPL: 'NP',IRN: 'IR',IRQ: 'IQ',SYR: 'SY',LBN: 'LB',JOR: 'JO',PSE: 'PS',ISR: 'IL',SAU: 'SA',ARE: 'AE',QAT: 'QA',KWT: 'KW',BHR: 'BH',OMN: 'OM',YEM: 'YE',EGY: 'EG',LBY: 'LY',TUN: 'TN',DZA: 'DZ',MAR: 'MA',MRT: 'MR',SDN: 'SD',SOM: 'SO',DJI: 'DJ',ETH: 'ET',KEN: 'KE',TZA: 'TZ',UGA: 'UG',NGA: 'NG',NER: 'NE',SEN: 'SN',MLI: 'ML',GIN: 'GN',CIV: 'CI',GHA: 'GH',BFA: 'BF',TCD: 'TD',CMR: 'CM',ZAF: 'ZA',IDN: 'ID',MYS: 'MY',SGP: 'SG',BRN: 'BN',THA: 'TH',PHL: 'PH',CHN: 'CN',HKG: 'HK',JPN: 'JP',KOR: 'KR',AUS: 'AU',NZL: 'NZ',CAN: 'CA',MEX: 'MX',BRA: 'BR',ARG: 'AR',BIH: 'BA',ALB: 'AL',XKX: 'XK',MKD: 'MK',SRB: 'RS',BGR: 'BG',GRC: 'GR',ROU: 'RO',HUN: 'HU',CZE: 'CZ',CYP: 'CY',GEO: 'GE',ARM: 'AM'};
   var DEVICE = { android: 'Android', huawei: 'Huawei / Honor', ios: 'iPhone / iPad', desktop: 'Bilgisayar', other: 'Diğer' };
+  var STORE = { play: 'Google Play', appgallery: 'AppGallery', appstore: 'App Store (yakında)' };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var n = function (x) { return (x || 0).toLocaleString('tr-TR'); };
+  var pct = function (a, b) { return b ? Math.round(100 * a / b) + '%' : '—'; };
+  var flag = function (cc) { return cc && /^[A-Z]{2}$/.test(cc) ? String.fromCodePoint.apply(null, cc.split('').map(function (c) { return 127397 + c.charCodeAt(0); })) + ' ' : ''; };
+  var country = function (cc) { if (!cc || cc === '?') return 'Bilinmiyor'; try { return flag(cc) + region.of(cc); } catch (e) { return cc; } };
+  var place = function (tz) { return !tz || tz === '?' ? '—' : tz.split('/').pop().replace(/_/g, ' '); };
+  var lang = function (l) { if (!l || l === '?') return '—'; try { return langName.of(l); } catch (e) { return l; } };
+  var page = function (p) { var d; try { d = decodeURIComponent(p); } catch (e) { d = p; } return '<a class="page" href="https://mubarly.com' + esc(p) + '" target="_blank" rel="noopener">' + esc(d || '/') + '</a>'; };
+  var ref = function (r) { return !r ? '<span class="tag direct">Doğrudan</span>' : /^google\./.test(r) ? '<span class="tag google">Google</span>' : esc(r); };
+  var stores = function (s) { return s ? s.split(',').map(function (x) { return '<span class="tag ' + esc(x) + '">' + esc(STORE[x] || x) + '</span>'; }).join('') : '<span class="muted">—</span>'; };
+  var ago = function (iso) {
+    var m = Math.round((Date.now() - new Date(iso)) / 60000);
+    var rel = m < 1 ? 'şimdi' : m < 60 ? m + ' dk önce' : m < 1440 ? Math.round(m / 60) + ' sa önce' : Math.round(m / 1440) + ' gün önce';
+    return '<span title="' + esc(new Date(iso).toLocaleString('tr-TR')) + '">' + rel + '</span>';
+  };
+  var kpi = function (v, t, h, cls) { return '<div class="kpi' + (cls ? ' ' + cls : '') + '"><b>' + v + '</b><div class="t">' + t + '</div>' + (h ? '<div class="h">' + h + '</div>' : '') + '</div>'; };
   function table(rows, cols, meterCol) {
-    if (!rows.length) return '<p class="muted">Henüz veri yok.</p>';
+    if (!rows || !rows.length) return '<p class="empty">Henüz veri yok.</p>';
     var max = Math.max.apply(null, rows.map(function (r) { return r[meterCol] || 0; }).concat([1]));
-    return '<table><thead><tr>' + cols.map(function (c) { return '<th>' + c[1] + '</th>'; }).join('') + '</tr></thead><tbody>' + rows.map(function (r) {
-      return '<tr>' + cols.map(function (c, i) {
-        var v = c[2] ? c[2](r[c[0]]) : r[c[0]];
-        return '<td>' + (c[0] === meterCol ? '<span class="meter" style="width:' + Math.round(60 * (r[c[0]] || 0) / max) + 'px"></span>' : '') + (typeof v === 'number' ? n(v) : esc(v == null ? '—' : v)) + '</td>';
+    return '<table><thead><tr>' + cols.map(function (c, i) { return '<th' + (c[3] ? ' class="l"' : '') + '>' + c[1] + '</th>'; }).join('') + '</tr></thead><tbody>' + rows.map(function (r) {
+      return '<tr>' + cols.map(function (c) {
+        var raw = r[c[0]], v = c[2] ? c[2](raw, r) : (typeof raw === 'number' ? n(raw) : esc(raw == null ? '—' : raw));
+        return '<td' + (c[3] ? ' class="l"' : '') + '>' + (c[0] === meterCol ? '<span class="meter" style="width:' + Math.round(54 * (raw || 0) / max) + 'px"></span>' : '') + v + '</td>';
       }).join('') + '</tr>';
     }).join('') + '</tbody></table>';
+  }
+  function render(d) {
+    var t = d.totals, o = d.online || { people: 0, pages: [] };
+    $('kpis').innerHTML =
+      kpi('● ' + n(o.people), 'Şu an sitede', 'Son 5 dakikada sayfada işlem yapan kişi' + (o.pages.length ? ': ' + o.pages.map(function (p) { return esc(decodeURIComponent(p.path)); }).join(', ') : ''), 'live') +
+      kpi(n(t.people), 'Gerçek kişi', 'Sayfada dokunan, kaydıran ya da tıklayan; aynı gün tekrar gelen bir kez sayılır') +
+      kpi(n(t.people_views), 'Sayfa görüntüleme', 'Kişi başı ' + (t.people ? (t.people_views / t.people).toFixed(1) : '0') + ' sayfa') +
+      kpi(n(t.clickers), 'Mağazaya tıklayan kişi', 'Ziyaretçilerin ' + pct(t.clickers, t.people) + "'i bir mağaza düğmesine tıkladı") +
+      kpi(n(t.from_google), "Google'dan gelen kişi", 'Google aramasından tıklayıp gelenler') +
+      kpi(n(t.bots), 'Bot ziyareti', n(t.bot_views) + ' sayfa okudular (arama motorları, yapay zekâ)', 'dim');
+    var maxDay = Math.max.apply(null, d.daily.map(function (x) { return x.people + x.bots; }).concat([1]));
+    $('days').innerHTML = d.daily.length ? d.daily.map(function (x) {
+      return '<div class="day"><span>' + new Date(x.day + 'T12:00:00').toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', weekday: 'short' }) + '</span><div class="stack"><i class="p" style="width:' + (100 * x.people / maxDay) + '%"></i><i class="b" style="width:' + (100 * x.bots / maxDay) + '%"></i></div><span><b>' + n(x.people) + '</b> kişi · ' + n(x.bots) + ' bot</span></div>';
+    }).join('') : '<p class="empty">Henüz veri yok.</p>';
+    $('sum-countries').innerHTML = table(d.countries.slice(0, 8), [['country', 'Ülke', country, 1], ['people', 'Kişi']], 'people');
+    $('sum-refs').innerHTML = table(d.referrers.slice(0, 8), [['referrer', 'Kaynak', ref, 1], ['people', 'Kişi']], 'people');
+    $('sum-landing').innerHTML = table(d.landing.slice(0, 8), [['path', 'Sayfa', page, 1], ['people', 'Kişi']], 'people');
+    $('recent').innerHTML = table(d.recent, [['first_at', 'Ne zaman', ago, 1], ['country', 'Nereden', function (v, r) { return country(v) + '<br><span class="muted">' + esc(place(r.tz)) + '</span>'; }, 1], ['device', 'Cihaz', function (v) { return esc(DEVICE[v] || v || '—'); }, 1], ['lang', 'Dil', lang, 1], ['referrer', 'Geldiği yer', ref, 1], ['landing', 'İlk sayfa', function (v) { return v ? page(v) : '—'; }, 1], ['views', 'Sayfa'], ['stores', 'Mağaza', stores, 1]]);
+    $('countries').innerHTML = table(d.countries, [['country', 'Ülke', country, 1], ['people', 'Kişi'], ['clickers', 'Mağazaya tıklayan']], 'people');
+    $('places').innerHTML = table(d.places, [['tz', 'Yer', function (v, r) { return esc(place(v)) + ' <span class="muted">' + esc(r.country || '') + '</span>'; }, 1], ['people', 'Kişi']], 'people');
+    $('langs').innerHTML = table(d.langs, [['lang', 'Dil', lang, 1], ['people', 'Kişi']], 'people');
+    $('devices').innerHTML = table(d.devices, [['device', 'Cihaz', function (v) { return esc(DEVICE[v] || v); }, 1], ['people', 'Kişi'], ['clickers', 'Mağazaya tıklayan']], 'people');
+    $('pages').innerHTML = table(d.pages, [['path', 'Sayfa', page, 1], ['views', 'Görüntüleme'], ['people', 'Kişi'], ['clicks', 'Mağaza tık.']], 'views');
+    $('landing').innerHTML = table(d.landing, [['path', 'Sayfa', page, 1], ['people', 'Kişi']], 'people');
+    $('botpages').innerHTML = table(d.bot_pages, [['path', 'Sayfa', page, 1], ['views', 'Okuma']], 'views');
+    $('store-kpis').innerHTML = kpi(n(t.play), 'Google Play', 'Play rozetine tıklama') + kpi(n(t.appgallery), 'AppGallery', 'Huawei rozetine tıklama') + kpi(n(t.appstore), 'App Store (yakında)', 'iPhone sürümünü bekleyenler') + kpi(pct(t.clickers, t.people), 'Dönüşüm', 'Gerçek ziyaretçilerin mağazaya tıklama oranı');
+    $('clicks').innerHTML = table(d.clicks, [['at', 'Ne zaman', ago, 1], ['store', 'Mağaza', function (v) { return stores(v); }, 1], ['path', 'Hangi sayfadan', page, 1], ['country', 'Nereden', function (v, r) { return country(v) + ' <span class="muted">' + esc(place(r.tz)) + '</span>'; }, 1], ['device', 'Cihaz', function (v) { return esc(DEVICE[v] || v || '—'); }, 1]]);
+    var g = d.search || { totals: {}, queries: [], pages: [], countries: [] };
+    $('search-note').textContent = "Google'da hangi kelimelerle arandığın (Search Console). Google veriyi 2–3 gün geç verir." + (g.updated ? ' Son veri günü: ' + g.updated + '.' : ' Henüz veri yok: site yeni, Google sayfaları dizine alıyor.');
+    $('search-kpis').innerHTML = kpi(n(g.totals.impressions), "Google'da gösterim", 'Arama sonuçlarında görünme sayısı') + kpi(n(g.totals.clicks), "Google'dan tıklama", 'Sonuçtan siteye tıklayan') + kpi(pct(g.totals.clicks, g.totals.impressions), 'Tıklama oranı', 'Gösterimlerin kaçı tıklamaya döndü');
+    $('queries').innerHTML = table(g.queries, [['query', 'Aranan kelime', null, 1], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Sıra']], 'impressions');
+    $('spages').innerHTML = table(g.pages, [['page', 'Sayfa', function (v) { return page(v.replace('https://mubarly.com', '') || '/'); }, 1], ['impressions', 'Gösterim'], ['clicks', 'Tık.'], ['position', 'Sıra']], 'impressions');
+    $('scountries').innerHTML = table(g.countries, [['country', 'Ülke', function (v) { return country(v.length === 3 ? A3[v.toUpperCase()] || v : v); }, 1], ['impressions', 'Gösterim'], ['clicks', 'Tıklama']], 'impressions');
   }
   function load(days) {
     if (!signedIn) return;
     sb.rpc('site_stats', { p_days: days })
       .then(function (r) { if (r.error) throw new Error(r.error.code === '42501' || /denied/.test(r.error.message) ? 'Bu hesabın istatistikleri görme yetkisi yok.' : 'Veri alınamadı: ' + r.error.message); return r.data; })
-      .then(function (d) {
-        document.getElementById('err').textContent = '';
-        document.getElementById('gate').hidden = true; document.getElementById('app').hidden = false;
-        var o = d.online || { visitors: 0, pages: [] };
-        document.getElementById('online').innerHTML = '<b style="color:#1a9c4e">● ' + n(o.visitors) + '</b><span>şu an sitede (son 5 dakika, gerçek ziyaretçiler)</span>' + (o.pages.length ? '<p class="muted" style="margin:8px 0 0">' + o.pages.map(function (p) { return esc(decodeURIComponent(p.path)) + ' (' + p.visitors + ')'; }).join(' · ') + '</p>' : '');
-        document.getElementById('cities').innerHTML = table(d.cities, [['place', 'Şehir / bölge'], ['country', 'Ülke', function (v) { try { return v === '?' ? 'Bilinmiyor' : region.of(v); } catch (e) { return v; } }], ['visitors', 'Ziyaretçi'], ['clicks', 'Mağaza tıklaması']], 'visitors');
-        var t = d.totals;
-        document.getElementById('totals').innerHTML = [['Gerçek ziyaretçi', t.humans], ['Tüm ziyaret (botlar dahil)', t.visitors], ['Sayfa görüntüleme', t.views], ['Google Play tıklaması', t.play], ['AppGallery tıklaması', t.appgallery], ['App Store (yakında) tıklaması', t.appstore]]
-          .map(function (c) { return '<div class="card"><b>' + n(c[1]) + '</b><span>' + c[0] + '</span></div>'; }).join('');
-        document.getElementById('daily').innerHTML = table(d.daily, [['day', 'Gün'], ['humans', 'Gerçek'], ['visitors', 'Tümü'], ['views', 'Görüntüleme'], ['play', 'Play'], ['appgallery', 'AppGallery'], ['appstore', 'App Store']], 'visitors');
-        document.getElementById('devices').innerHTML = table(d.devices, [['device', 'Cihaz', function (v) { return DEVICE[v] || v; }], ['visitors', 'Ziyaretçi'], ['play', 'Play'], ['appgallery', 'AppGallery'], ['appstore', 'App Store']], 'visitors');
-        document.getElementById('countries').innerHTML = table(d.countries, [['country', 'Ülke', function (v) { try { return v === '?' ? 'Bilinmiyor' : region.of(v); } catch (e) { return v; } }], ['visitors', 'Ziyaretçi'], ['clicks', 'Mağaza tıklaması']], 'visitors');
-        document.getElementById('langs').innerHTML = table(d.langs, [['lang', 'Sayfa dili', function (v) { try { return v === '?' ? 'Bilinmiyor' : langName.of(v); } catch (e) { return v; } }], ['views', 'Görüntüleme']], 'views');
-        document.getElementById('referrers').innerHTML = table(d.referrers, [['referrer', 'Kaynak'], ['views', 'Görüntüleme']], 'views');
-        document.getElementById('pages').innerHTML = table(d.pages, [['path', 'Sayfa', decodeURIComponent], ['views', 'Görüntüleme'], ['clicks', 'Mağaza tıklaması']], 'views');
-        var g = d.search || { totals: {}, queries: [], pages: [], countries: [] };
-        document.getElementById('search-note').textContent = "Google'da hangi kelimelerle arandığınız (Search Console). Google veriyi 2–3 gün geç verir." + (g.updated ? ' Son veri günü: ' + g.updated + '.' : ' Henüz veri yok: site yeni, Google sayfaları dizine alıyor.');
-        document.getElementById('search-totals').innerHTML = [['Google\'da gösterim', g.totals.impressions], ['Google\'dan tıklama', g.totals.clicks]].map(function (c) { return '<div class="card"><b>' + n(c[1]) + '</b><span>' + c[0] + '</span></div>'; }).join('');
-        document.getElementById('search-queries').innerHTML = table(g.queries, [['query', 'Aranan kelime'], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Ortalama sıra']], 'impressions');
-        document.getElementById('search-pages').innerHTML = table(g.pages, [['page', 'Sayfa', function (v) { try { return decodeURIComponent(v.replace('https://mubarly.com', '')) || '/'; } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama'], ['position', 'Sıra']], 'impressions');
-        document.getElementById('search-countries').innerHTML = table(g.countries, [['country', 'Ülke', function (v) { try { return region.of(v.length === 3 ? A3[v.toUpperCase()] || v : v); } catch (e) { return v; } }], ['impressions', 'Gösterim'], ['clicks', 'Tıklama']], 'impressions');
-      })
-      // Only a refused account is signed out; any other failure stays on the page with its message (2026-11-02: a
-      // server error used to look like a failed sign-in).
+      .then(function (d) { $('err').textContent = ''; $('gate').hidden = true; $('app').hidden = false; render(d); })
+      // Only a refused account is signed out; any other failure stays on the page with its message.
       .catch(function (e) {
         if (/yetkisi yok/.test(e.message)) { sb.auth.signOut().then(function () { showGate(e.message); }); return; }
-        document.getElementById('app').hidden = false; document.getElementById('gate').hidden = true;
-        document.getElementById('err').textContent = e.message;
+        $('app').hidden = false; $('gate').hidden = true; $('err').textContent = e.message;
       });
   }
-  document.getElementById('range').addEventListener('click', function (e) {
+  $('range').addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return;
     document.querySelectorAll('#range button').forEach(function (x) { x.classList.toggle('on', x === b); });
     load(+b.dataset.d);
   });
-  function showGate(msg) {
-    document.getElementById('app').hidden = true; document.getElementById('gate').hidden = false;
-    document.getElementById('gmsg').textContent = msg || '';
-  }
+  document.querySelector('.tabs').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    document.querySelectorAll('.tabs button').forEach(function (x) { x.setAttribute('aria-selected', x === b); });
+    document.querySelectorAll('[data-panel]').forEach(function (p) { p.hidden = p.getAttribute('data-panel') !== b.dataset.tab; });
+    window.scrollTo(0, 0);
+  });
+  function showGate(msg) { $('app').hidden = true; $('gate').hidden = false; $('gmsg').textContent = msg || ''; }
   function start(session) {
     signedIn = true;
-    document.getElementById('who').innerHTML = esc(session.user.email) + ' · <a href="#" id="out">Çıkış</a>';
-    document.getElementById('out').addEventListener('click', function (e) { e.preventDefault(); sb.auth.signOut().then(function () { location.reload(); }); });
+    $('who').innerHTML = esc(session.user.email) + ' · <a href="#" id="out">Çıkış</a>';
+    $('out').addEventListener('click', function (e) { e.preventDefault(); sb.auth.signOut().then(function () { location.reload(); }); });
     load(30);
   }
   // E-mail and password: only the owner's address goes on to Supabase.
-  document.getElementById('login').addEventListener('submit', function (e) {
+  $('login').addEventListener('submit', function (e) {
     e.preventDefault();
-    var email = document.getElementById('email').value.trim().toLowerCase(), btn = e.target.querySelector('button');
+    var email = $('email').value.trim().toLowerCase(), btn = e.target.querySelector('button');
     if (email !== OWNER) { showGate('E-posta veya şifre hatalı.'); return; }
     btn.disabled = true;
-    sb.auth.signInWithPassword({ email: email, password: document.getElementById('pass').value }).then(function (res) {
+    sb.auth.signInWithPassword({ email: email, password: $('pass').value }).then(function (res) {
       btn.disabled = false;
       if (res.error || !res.data.session) { showGate('E-posta veya şifre hatalı.'); return; }
-      document.getElementById('pass').value = '';
+      $('pass').value = '';
       start(res.data.session);
     });
   });
