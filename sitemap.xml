@@ -28,4 +28,12 @@
     <loc>https://mubarly.com/sitemap-tools.xml</loc>
     <lastmod>2026-11-16</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://mubarly.com/sitemap-ramadan.xml</loc>
+    <lastmod>2026-11-16</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://mubarly.com/sitemap-eid.xml</loc>
+    <lastmod>2026-11-16</lastmod>
+  </sitemap>
 </sitemapindex>

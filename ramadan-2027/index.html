@@ -35,7 +35,8 @@
 <meta property="og:url" content="https://mubarly.com/ramadan-2027/">
 <meta property="og:image" content="https://mubarly.com/img/og-en.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0B3B2C">
+<meta name="theme-color" content="#F4EEDF">
+<meta name="google-adsense-account" content="ca-pub-9614154773772876">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
 <link rel="stylesheet" href="/fonts/fonts.css">
@@ -45,8 +46,8 @@
 @media (prefers-color-scheme:dark){:root{--bg:#061A13;--fg:#EDE6CF;--muted:#BDB292;--gold:#D4B062;--card:#0b2a1f;--line:#173d2f;--now:#2b4a2f}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",sans-serif}
 a{color:var(--gold)}.wrap{max-width:900px;margin:0 auto;padding:0 16px}
-.top{background:var(--bg);color:var(--fg);border-bottom:1px solid var(--line)}.top .wrap{display:flex;align-items:center;gap:10px;padding-top:12px;padding-bottom:12px}
-.top a{color:var(--fg);text-decoration:none;font-weight:800;letter-spacing:.18em;display:flex;align-items:center;gap:10px}@media (prefers-color-scheme:dark){.top a{color:#D4B062}}.top img{width:32px;height:32px;border-radius:9px}
+.top{background:var(--bg);color:var(--fg)}.top .wrap{display:flex;align-items:center;gap:10px;padding-top:8px;padding-bottom:4px}
+.top .brand{color:var(--fg);text-decoration:none;font-weight:800;letter-spacing:.18em;display:flex;align-items:center;gap:10px;min-height:44px}@media (prefers-color-scheme:dark){.top .brand{color:#D4B062}}.top img{width:32px;height:32px;border-radius:9px}
 nav.crumbs{font-size:.88rem;color:var(--muted);margin:16px 0 4px}nav.crumbs a{color:var(--muted)}
 h1{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;margin:4px 0 10px}h2{font-size:1.25rem;margin:36px 0 12px}
 .lead{color:var(--muted);margin:0 0 18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
@@ -72,8 +73,7 @@ a.dl{display:inline-flex;align-items:center;justify-content:center;min-height:38
 @media (max-width:480px){.mini{flex-wrap:wrap}.mini p{flex:1 1 calc(100% - 52px)}.mini a.dl{margin-inline-start:48px}}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-800.woff2) format("woff2");font-weight:800;font-display:swap}@font-face{font-family:Jakarta;src:url(/fonts/jakarta-600.woff2) format("woff2");font-weight:600;font-display:swap}
 h1,h2,h3{font-family:"Playfair Display",Georgia,"Noto Naskh Arabic",serif;font-weight:700;letter-spacing:-.005em}
 body:before{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23D4B062%22%20stroke-width%3D%221%22%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2228%22%20width%3D%2240%22%20height%3D%2240%22%20transform%3D%22rotate(45%2048%2048)%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2248%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M0%200L28%2028M96%200L68%2028M0%2096L28%2068M96%2096L68%2068%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:110px;opacity:.05;pointer-events:none;z-index:-1}
-.top .sitenav{background:var(--card);border-color:var(--line);box-shadow:none}.top .sitenav a{color:var(--muted)}.top .sitenav a i{background:var(--bg);color:var(--gold)}.top .sitenav a:hover{background:var(--bg);color:var(--fg)}.top .sitenav a[aria-current]{background:var(--bg);color:var(--fg)}
-.top{position:relative;z-index:2}.hero{position:relative;overflow:hidden;color:var(--fg);background:transparent;padding:6px 0 18px;margin-bottom:4px}
+.top{position:relative;z-index:5}.hero{position:relative;color:var(--fg);background:transparent;padding:2px 0 8px;margin-bottom:0}
 .hero .wrap{position:relative}
 .hero h1{color:var(--fg);font-weight:700;margin:6px 0 10px}.hero .lead{color:var(--muted);max-width:46em}.hero nav.crumbs,.hero nav.crumbs a{color:var(--muted)}
 .hero .mini{background:var(--card);border-color:var(--line);color:var(--fg)}.hero .mini small{color:var(--muted)}
@@ -81,199 +81,243 @@ main h2{display:flex;align-items:center;gap:10px}main h2:before{content:"";flex:
 .tabs{position:sticky;top:0;z-index:3;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:18px -16px 8px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}.tabs::-webkit-scrollbar{display:none}
 .tabs button{flex:none;font:600 .92rem/1 Jakarta,system-ui,sans-serif;padding:11px 16px;min-height:42px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
 .tabs button[aria-selected=true]{background:#0B3B2C;border-color:#0B3B2C;color:#F3E7C2}.tabbed .tab>h2:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}
-.sitenav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:6px;margin-block:0 10px;border-radius:22px;background:linear-gradient(180deg,#ffffff14,#ffffff06);border:1px solid #ffffff1f;box-shadow:inset 0 1px 0 #ffffff14}
+@media (prefers-color-scheme:dark){.tabs button[aria-selected=true]{background:#D4B062;border-color:#D4B062;color:#061A13}}.navwrap{margin-top:10px}
+.sitenav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:6px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
 .sitenav::-webkit-scrollbar{display:none}
-.sitenav a,.top .sitenav a{position:relative;flex:1 0 auto;letter-spacing:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:8px 10px;border-radius:16px;color:#CFC6AA;text-decoration:none;font:600 .88rem/1.15 Jakarta,system-ui,sans-serif;white-space:nowrap;transition:background .2s,color .2s}
-.sitenav a i{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#ffffff10;color:#D4B062;flex:none;transition:background .2s,color .2s,box-shadow .2s}
+.sitenav a{position:relative;flex:1 0 auto;display:flex;align-items:center;justify-content:center;gap:7px;padding:8px 10px;border-radius:16px;color:var(--muted);text-decoration:none;font:600 .88rem/1.15 "Plus Jakarta Sans",system-ui,sans-serif;letter-spacing:0;white-space:nowrap;transition:background .2s,color .2s}
+.sitenav a i{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--bg);color:var(--gold);flex:none}
 .sitenav a i svg{width:18px;height:18px}
-.sitenav a:hover{background:#ffffff0f;color:#F3E7C2}
-.sitenav a[aria-current]{background:linear-gradient(135deg,#ffffff1c,#ffffff08);color:#F3E7C2}
-.sitenav a[aria-current] i{background:linear-gradient(135deg,#F1D58A,#B8913F);color:#061A13;box-shadow:0 6px 18px -4px #D4B062aa}
-.sitenav a[aria-current]:after{content:"";position:absolute;bottom:3px;left:50%;width:18px;height:3px;margin-left:-9px;border-radius:2px;background:#D4B062}
-@media (max-width:760px){.sitenav{gap:2px;padding:4px;overflow:visible}.sitenav a:first-child{display:none}.sitenav a,.top .sitenav a{flex:1 1 0;min-width:0;flex-direction:column;gap:5px;padding:7px 2px 9px;font-size:.64rem;white-space:normal;text-align:center;hyphens:auto}.sitenav a span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:100%;line-height:1.2}.sitenav a i{width:34px;height:34px;border-radius:12px}.sitenav a i svg{width:19px;height:19px}.sitenav a[aria-current]:after{bottom:2px}}
-.withshot .wrap{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:40px;align-items:center}.heroshot{margin:0;position:relative}.heroshot:before{content:"";position:absolute;inset:6% -8%;border-radius:40px;background:linear-gradient(140deg,#D4B062,#0B3B2C);opacity:.3;transform:rotate(-6deg)}.heroshot img{position:relative;display:block;width:250px;height:auto;border-radius:28px;box-shadow:0 30px 60px -24px #000c}
-.card.sum h2{margin-top:0}.mobshot{display:none}@media (max-width:860px){.withshot .wrap{display:block}.heroshot{display:none}.mobshot{display:block;margin:30px auto 8px;text-align:center}.mobshot img{width:min(230px,68vw);height:auto;border-radius:24px;box-shadow:0 24px 48px -22px #0b3b2c88}}</style>
+.sitenav a:hover{background:var(--bg);color:var(--fg)}
+.sitenav a[aria-current]{background:var(--bg);color:var(--fg)}
+.sitenav a[aria-current] i{background:linear-gradient(135deg,#F1D58A,#B8913F);color:#061A13}
+.sitenav a.m{display:none}
+@media (max-width:760px){body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}.navwrap{margin:0;padding:0}
+.sitenav{position:fixed;inset-inline:0;bottom:0;z-index:30;gap:0;padding:5px 4px calc(5px + env(safe-area-inset-bottom));border-radius:20px 20px 0 0;border-width:1px 0 0;box-shadow:0 -12px 30px -18px #0b3b2c66;overflow:visible}
+.sitenav a{flex:1 1 0;min-width:0;min-height:58px;flex-direction:column;gap:3px;padding:5px 2px;font-size:11.5px;white-space:normal;text-align:center}
+.sitenav a.d{display:none}.sitenav a.m{display:flex}
+.sitenav a span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:100%;line-height:1.15}
+.sitenav a i{width:30px;height:30px;background:transparent}.sitenav a i svg{width:21px;height:21px}
+.sitenav a[aria-current] i{background:linear-gradient(135deg,#F1D58A,#B8913F)}}
+.allmenu{margin:0 0 20px}.allmenu h2{font-size:1.2rem;margin:0 0 12px}.allmenu h3{font-size:1rem;margin:20px 0 10px}.allmenu h3 a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none}
+.tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.tiles a{display:flex;align-items:center;gap:10px;min-height:52px;height:100%;padding:8px 12px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--fg);text-decoration:none;font-weight:600;font-size:.9rem;line-height:1.25}
+.tiles a:hover{border-color:#D4B062}.tiles i{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#F1D58A,#B8913F);color:#061A13}.tiles i svg{width:18px;height:18px}
+.tiles.txt a{min-height:44px;font-weight:500}
+@media (max-width:560px){.tiles{grid-template-columns:1fr 1fr}}
+.lang-menu{position:relative;margin-inline-start:auto;color:var(--fg);font-size:.9rem}
+.lang-menu summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;min-height:42px;padding:0 13px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.lang-menu summary::-webkit-details-marker{display:none}
+.lang-menu nav{position:absolute;inset-inline-end:0;top:calc(100% + 8px);z-index:40;width:min(480px,calc(100vw - 32px));display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:2px;margin:0;padding:10px;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 30px 60px -20px #0007}
+.lang-menu nav a,.lang-menu nav strong{display:block;padding:10px;border-radius:10px;color:var(--fg);text-decoration:none;font-weight:500;letter-spacing:0}
+.lang-menu nav a:hover{background:var(--bg)}.lang-menu nav strong{color:var(--gold)}
+@media (max-width:520px){.lang-menu summary span{display:none}}
+.card.sum h2{margin-top:0}.mobshot{display:block;margin:30px auto 8px;text-align:center}.mobshot img{width:min(230px,68vw);height:auto;border-radius:24px;box-shadow:0 24px 48px -22px #0b3b2c88}</style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a href="/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a></div>
-<div class="wrap"><nav class="sitenav" aria-label="Menu"><a href="/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V11a8 8 0 0 1 16 0v10"/><path d="M12 3V1.5"/><path d="M2 21h20"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></i><span>Mubarly</span></a><a href="/prayer-times/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></i><span>Prayer times</span></a><a href="/islamic-guides/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></i><span>Islamic Guides</span></a><a href="/blog/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2z"/><path d="M18 8h2v10a2 2 0 0 1-2 2"/><path d="M8 8h6M8 12h6M8 16h4"/></svg></i><span>Blog</span></a><a href="/ramadan-2027/" aria-current="page"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/><path d="M17 3l.6 1.6L19.2 5l-1.6.6L17 7.2l-.6-1.6L14.8 5l1.6-.4z"/></svg></i><span>Ramadan</span></a><a href="/qibla-direction/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></i><span>Qibla</span></a><a href="/islamic-calendar-2027/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M12 13.5l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z"/></svg></i><span>Calendar</span></a></nav></div></header>
-<section class="hero withshot"><div class="wrap"><div><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Mubarly</a> › <a href="/prayer-times/">Prayer times</a> › Ramadan 2027 Timetable: Suhoor and Iftar Times by City</nav>
-<h1>Ramadan 2027 Timetable: Suhoor and Iftar Times by City</h1>
-<p class="lead">The expected start of Ramadan 1448 (2027), the first day's suhoor and iftar times and the full timetable for each city.</p><aside class="mini"><img src="/img/icon-192.png" alt="" width="48" height="48"><p><strong>Hear the adhan at alarm volume, even on silent<span class="os">Android</span></strong><small>Free · works offline · 20 languages · all four madhabs</small></p><a class="dl" href="#app">Free download</a></aside></div><figure class="heroshot"><img src="/img/screens/en/05-360.webp" srcset="/img/screens/en/05-360.webp 360w, /img/screens/en/05-720.webp 720w" sizes="250px" width="360" height="640" alt="Ramadan sehri &amp; iftar times – Sehri alarm and a live iftar countdown" loading="lazy" decoding="async"></figure></div></section>
+<header class="top"><div class="wrap"><a class="brand" href="/"><img src="/img/icon-192.png" alt="" width="32" height="32">MUBARLY</a><details class="lang-menu"><summary aria-label="Language"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><span>English</span></summary><nav aria-label="Languages"><strong>English</strong><a href="/tr/ramazan-imsakiyesi-2027/" hreflang="tr" lang="tr">Türkçe</a><a href="/ar/imsakiyat-ramadan-2027/" hreflang="ar" lang="ar">العربية</a><a href="/id/jadwal-imsakiyah-2027/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/ur/ramzan-timetable-2027/" hreflang="ur" lang="ur">اردو</a><a href="/fr/calendrier-ramadan-2027/" hreflang="fr" lang="fr">Français</a><a href="/ru/raspisanie-ramadana-2027/" hreflang="ru" lang="ru">Русский</a><a href="/bn/romjaner-shomoysuchi-2027/" hreflang="bn" lang="bn">বাংলা</a><a href="/fa/jadval-ramazan-2027/" hreflang="fa" lang="fa">فارسی</a><a href="/ms/jadual-imsakiah-2027/" hreflang="ms" lang="ms">Bahasa Melayu</a><a href="/sw/ratiba-ya-ramadhani-2027/" hreflang="sw" lang="sw">Kiswahili</a><a href="/ha/jadawalin-ramadan-2027/" hreflang="ha" lang="ha">Hausa</a><a href="/uz/ramazon-taqvimi-2027/" hreflang="uz" lang="uz">Oʻzbekcha</a><a href="/ky/ramazan-zhadybaly-2027/" hreflang="ky" lang="ky">Кыргызча</a><a href="/so/jadwalka-ramadaan-2027/" hreflang="so" lang="so">Soomaali</a><a href="/ckb/xshtay-ramazan-2027/" hreflang="ku-Arab" lang="ku-Arab">کوردی</a><a href="/hi/ramzan-time-table-2027/" hreflang="hi" lang="hi">हिन्दी</a><a href="/ps/da-rozhe-mahalwesh-2027/" hreflang="ps" lang="ps">پښتو</a><a href="/ku/remezan-2027/" hreflang="ku-Latn" lang="ku-Latn">Kurmancî</a><a href="/pa/ramzan-time-table-2027/" hreflang="pa-Arab" lang="pa-Arab">پنجابی</a></nav></details></div></header>
+<div class="wrap navwrap"><nav class="sitenav" aria-label="Menu"><a href="/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V11a8 8 0 0 1 16 0v10"/><path d="M12 3V1.5"/><path d="M2 21h20"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></i><span>Home</span></a><a href="/prayer-times/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></i><span>Prayer times</span></a><a href="/islamic-guides/" class="d"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></i><span>Islamic Guides</span></a><a href="/blog/" class="d"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2z"/><path d="M18 8h2v10a2 2 0 0 1-2 2"/><path d="M8 8h6M8 12h6M8 16h4"/></svg></i><span>Blog</span></a><a href="/ramadan-2027/" aria-current="page"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/><path d="M17 3l.6 1.6L19.2 5l-1.6.6L17 7.2l-.6-1.6L14.8 5l1.6-.4z"/></svg></i><span>Ramadan</span></a><a href="/qibla-direction/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></i><span>Qibla</span></a><a href="/islamic-calendar-2027/" class="d"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M12 13.5l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z"/></svg></i><span>Calendar</span></a><a href="#menu" class="m"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.8"/></svg></i><span>Explore</span></a></nav></div>
+<style>#today li,.now3 li{padding:8px 4px;border-radius:12px}#today li.next{background:#0B3B2C;color:#F4EEDF}#today li.next span{color:#D4B062}#today li.past b{color:var(--muted)}
+.cd{margin:10px 0 0;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;min-height:1.6em}
+@media (prefers-color-scheme:dark){#today li.next{background:#D4B062;color:#061A13}#today li.next span{color:#061A13}}
+#today,.now3{margin:4px 0 14px}.now3 .d{font-weight:700;margin:0 0 10px}.now3 ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.now3 li{text-align:center}.now3 b{display:block;font-size:1.35rem;font-variant-numeric:tabular-nums}.now3 span{font-size:.85rem;color:var(--muted)}
+.eids{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 14px}.eids .card{text-align:center}.eids .d{margin:0;font-weight:700}.eids b{display:block;font:700 2.4rem/1.2 "Plus Jakarta Sans",system-ui,sans-serif;font-variant-numeric:tabular-nums;margin:6px 0 2px}.eids span{color:var(--muted);font-size:.88rem}
+@media (max-width:560px){.eids{grid-template-columns:1fr}}
+.find{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}.find input{flex:1 1 220px;min-width:0;min-height:46px;font:inherit;padding:0 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--fg)}.find .qbtn{min-height:46px}#cres:empty{display:none}#cres{margin-bottom:14px}
+.facts{padding-inline-start:1.2em}.facts li{margin:.4em 0}.dua{margin:10px 0}.dua h3{margin:0 0 4px;font-size:1.02rem}.dua .ar{font:400 1.5rem/1.9 Amiri,"Noto Naskh Arabic",serif;margin:4px 0}.dua small{color:var(--muted)}
+.now3 b.sm{font-size:1.05rem;line-height:1.75}table.tight td small{white-space:normal}table.eidt td b{display:block;font-size:1.05rem}table.eidt td small{color:var(--muted)}table.eidt th{white-space:normal}
+@media (max-width:480px){table.tight th,table.tight td{padding:7px 4px;font-size:.88rem}table.tight td:first-child,table.tight th:first-child{padding-inline-start:10px}}
+@media (max-width:480px){details.m th,details.m td{padding:6px 1px;font-size:.8rem;min-width:0}details.m th{font-size:.68rem;overflow-wrap:anywhere;hyphens:auto}details.m th small{font-size:.58rem}details.m td:first-child,details.m th:first-child{padding-inline-start:8px;text-align:start;white-space:normal}details.m td:last-child,details.m th:last-child{padding-inline-end:6px}table.tight td small{display:block}}
+table.nodur th:last-child,table.nodur td:last-child{display:none}
+.go{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-weight:700;text-decoration:none;margin:4px 6px 4px 0}</style><section class="hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Mubarly</a> › <a href="/prayer-times/">Prayer times</a> › Ramadan 2027 Timetable</nav>
+<h1>Ramadan 2027 Timetable: Suhoor and Iftar Times by City</h1></div></section>
 <main class="wrap">
 
-<p class="note">Ramadan 1448 is expected to begin on February 8, 2027 / February 9, 2027. The start depends on the moon sighting and may differ by a day.</p>
-<figure class="mobshot"><img src="/img/screens/en/05-360.webp" srcset="/img/screens/en/05-360.webp 360w, /img/screens/en/05-720.webp 720w" sizes="(max-width:860px) 68vw, 250px" width="360" height="640" alt="Ramadan sehri &amp; iftar times – Sehri alarm and a live iftar countdown" loading="lazy" decoding="async"></figure><div class="cta"><p><strong>Hear the adhan at alarm volume, even on silent<span class="os">Android</span></strong><small>Free · works offline · 20 languages · all four madhabs</small></p><div class="stores"><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Coming soon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Coming soon</small>App Store</span></span></div></div>
-<h2>Suhoor and Iftar Times by City</h2>
-<div class="scroll"><table><thead><tr><th>City</th><th>Date</th><th>Fajr (suhoor ends)</th><th>Iftar (sunset adhan)</th></tr></thead><tbody>
-<tr><td><a href="/prayer-times/istanbul/#ramadan">Istanbul</a> <small>Türkiye</small></td><td>Mon, February 8</td><td>06:35</td><td>18:36</td></tr>
-<tr><td><a href="/prayer-times/ankara/#ramadan">Ankara</a> <small>Türkiye</small></td><td>Mon, February 8</td><td>06:19</td><td>18:22</td></tr>
-<tr><td><a href="/prayer-times/izmir/#ramadan">Izmir</a> <small>Türkiye</small></td><td>Mon, February 8</td><td>06:41</td><td>18:48</td></tr>
-<tr><td><a href="/prayer-times/bursa/#ramadan">Bursa</a> <small>Türkiye</small></td><td>Mon, February 8</td><td>06:34</td><td>18:37</td></tr>
-<tr><td><a href="/prayer-times/antalya/#ramadan">Antalya</a> <small>Türkiye</small></td><td>Mon, February 8</td><td>06:26</td><td>18:36</td></tr>
-<tr><td><a href="/prayer-times/konya/#ramadan">Konya</a> <small>Türkiye</small></td><td>Mon, February 8</td><td>06:19</td><td>18:27</td></tr>
-<tr><td><a href="/prayer-times/mecca/#ramadan">Mecca</a> <small>Saudi Arabia</small></td><td>Mon, February 8</td><td>05:38</td><td>18:15</td></tr>
-<tr><td><a href="/prayer-times/medina/#ramadan">Medina</a> <small>Saudi Arabia</small></td><td>Mon, February 8</td><td>05:41</td><td>18:12</td></tr>
-<tr><td><a href="/prayer-times/riyadh/#ramadan">Riyadh</a> <small>Saudi Arabia</small></td><td>Mon, February 8</td><td>05:12</td><td>17:43</td></tr>
-<tr><td><a href="/prayer-times/jeddah/#ramadan">Jeddah</a> <small>Saudi Arabia</small></td><td>Mon, February 8</td><td>05:40</td><td>18:17</td></tr>
-<tr><td><a href="/prayer-times/dammam/#ramadan">Dammam</a> <small>Saudi Arabia</small></td><td>Mon, February 8</td><td>05:00</td><td>17:27</td></tr>
-<tr><td><a href="/prayer-times/dubai/#ramadan">Dubai</a> <small>United Arab Emirates</small></td><td>Mon, February 8</td><td>05:40</td><td>18:11</td></tr>
-<tr><td><a href="/prayer-times/abu-dhabi/#ramadan">Abu Dhabi</a> <small>United Arab Emirates</small></td><td>Mon, February 8</td><td>05:43</td><td>18:16</td></tr>
-<tr><td><a href="/prayer-times/sharjah/#ramadan">Sharjah</a> <small>United Arab Emirates</small></td><td>Mon, February 8</td><td>05:39</td><td>18:10</td></tr>
-<tr><td><a href="/prayer-times/doha/#ramadan">Doha</a> <small>Qatar</small></td><td>Mon, February 8</td><td>04:56</td><td>17:23</td></tr>
-<tr><td><a href="/prayer-times/kuwait-city/#ramadan">Kuwait City</a> <small>Kuwait</small></td><td>Mon, February 8</td><td>05:12</td><td>17:32</td></tr>
-<tr><td><a href="/prayer-times/manama/#ramadan">Manama</a> <small>Bahrain</small></td><td>Mon, February 8</td><td>05:00</td><td>17:25</td></tr>
-<tr><td><a href="/prayer-times/muscat/#ramadan">Muscat</a> <small>Oman</small></td><td>Mon, February 8</td><td>05:27</td><td>17:58</td></tr>
-<tr><td><a href="/prayer-times/amman/#ramadan">Amman</a> <small>Jordan</small></td><td>Mon, February 8</td><td>06:02</td><td>18:16</td></tr>
-<tr><td><a href="/prayer-times/baghdad/#ramadan">Baghdad</a> <small>Iraq</small></td><td>Mon, February 8</td><td>05:22</td><td>17:40</td></tr>
-<tr><td><a href="/prayer-times/erbil/#ramadan">Erbil</a> <small>Iraq</small></td><td>Mon, February 8</td><td>05:25</td><td>17:37</td></tr>
-<tr><td><a href="/prayer-times/damascus/#ramadan">Damascus</a> <small>Syria</small></td><td>Mon, February 8</td><td>05:54</td><td>18:13</td></tr>
-<tr><td><a href="/prayer-times/beirut/#ramadan">Beirut</a> <small>Lebanon</small></td><td>Mon, February 8</td><td>04:58</td><td>17:15</td></tr>
-<tr><td><a href="/prayer-times/cairo/#ramadan">Cairo</a> <small>Egypt</small></td><td>Mon, February 8</td><td>05:13</td><td>17:38</td></tr>
-<tr><td><a href="/prayer-times/alexandria/#ramadan">Alexandria</a> <small>Egypt</small></td><td>Mon, February 8</td><td>05:19</td><td>17:41</td></tr>
-<tr><td><a href="/prayer-times/khartoum/#ramadan">Khartoum</a> <small>Sudan</small></td><td>Mon, February 8</td><td>05:04</td><td>17:51</td></tr>
-<tr><td><a href="/prayer-times/tunis/#ramadan">Tunis</a> <small>Tunisia</small></td><td>Mon, February 8</td><td>05:48</td><td>17:52</td></tr>
-<tr><td><a href="/prayer-times/algiers/#ramadan">Algiers</a> <small>Algeria</small></td><td>Mon, February 8</td><td>06:16</td><td>18:20</td></tr>
-<tr><td><a href="/prayer-times/casablanca/#ramadan">Casablanca</a> <small>Morocco</small></td><td>Tue, February 9</td><td>05:56</td><td>18:09</td></tr>
-<tr><td><a href="/prayer-times/dakar/#ramadan">Dakar</a> <small>Senegal</small></td><td>Mon, February 8</td><td>06:24</td><td>19:12</td></tr>
-<tr><td><a href="/prayer-times/kano/#ramadan">Kano</a> <small>Nigeria</small></td><td>Mon, February 8</td><td>05:37</td><td>18:30</td></tr>
-<tr><td><a href="/prayer-times/abuja/#ramadan">Abuja</a> <small>Nigeria</small></td><td>Mon, February 8</td><td>05:39</td><td>18:38</td></tr>
-<tr><td><a href="/prayer-times/lagos/#ramadan">Lagos</a> <small>Nigeria</small></td><td>Mon, February 8</td><td>05:53</td><td>18:57</td></tr>
-<tr><td><a href="/prayer-times/dar-es-salaam/#ramadan">Dar es Salaam</a> <small>Tanzania</small></td><td>Mon, February 8</td><td>05:14</td><td>18:48</td></tr>
-<tr><td><a href="/prayer-times/nairobi/#ramadan">Nairobi</a> <small>Kenya</small></td><td>Mon, February 8</td><td>05:31</td><td>18:52</td></tr>
-<tr><td><a href="/prayer-times/kampala/#ramadan">Kampala</a> <small>Uganda</small></td><td>Mon, February 8</td><td>05:50</td><td>19:07</td></tr>
-<tr><td><a href="/prayer-times/mogadishu/#ramadan">Mogadishu</a> <small>Somalia</small></td><td>Mon, February 8</td><td>05:00</td><td>18:14</td></tr>
-<tr><td><a href="/prayer-times/johannesburg/#ramadan">Johannesburg</a> <small>South Africa</small></td><td>Mon, February 8</td><td>04:25</td><td>18:56</td></tr>
-<tr><td><a href="/prayer-times/cape-town/#ramadan">Cape Town</a> <small>South Africa</small></td><td>Mon, February 8</td><td>04:42</td><td>19:46</td></tr>
-<tr><td><a href="/prayer-times/durban/#ramadan">Durban</a> <small>South Africa</small></td><td>Mon, February 8</td><td>04:04</td><td>18:49</td></tr>
-<tr><td><a href="/prayer-times/tehran/#ramadan">Tehran</a> <small>Iran</small></td><td>Mon, February 8</td><td>05:34</td><td>17:58</td></tr>
-<tr><td><a href="/prayer-times/mashhad/#ramadan">Mashhad</a> <small>Iran</small></td><td>Mon, February 8</td><td>05:01</td><td>17:24</td></tr>
-<tr><td><a href="/prayer-times/kabul/#ramadan">Kabul</a> <small>Afghanistan</small></td><td>Mon, February 8</td><td>05:21</td><td>17:29</td></tr>
-<tr><td><a href="/prayer-times/dushanbe/#ramadan">Dushanbe</a> <small>Tajikistan</small></td><td>Mon, February 8</td><td>05:54</td><td>17:54</td></tr>
-<tr><td><a href="/prayer-times/tashkent/#ramadan">Tashkent</a> <small>Uzbekistan</small></td><td>Mon, February 8</td><td>05:54</td><td>17:48</td></tr>
-<tr><td><a href="/prayer-times/samarkand/#ramadan">Samarkand</a> <small>Uzbekistan</small></td><td>Mon, February 8</td><td>06:02</td><td>18:00</td></tr>
-<tr><td><a href="/prayer-times/bishkek/#ramadan">Bishkek</a> <small>Kyrgyzstan</small></td><td>Mon, February 8</td><td>06:33</td><td>18:23</td></tr>
-<tr><td><a href="/prayer-times/almaty/#ramadan">Almaty</a> <small>Kazakhstan</small></td><td>Mon, February 8</td><td>05:24</td><td>17:13</td></tr>
-<tr><td><a href="/prayer-times/astana/#ramadan">Astana</a> <small>Kazakhstan</small></td><td>Mon, February 8</td><td>05:48</td><td>17:17</td></tr>
-<tr><td><a href="/prayer-times/baku/#ramadan">Baku</a> <small>Azerbaijan</small></td><td>Mon, February 8</td><td>06:11</td><td>18:07</td></tr>
-<tr><td><a href="/prayer-times/moscow/#ramadan">Moscow</a> <small>Russia</small></td><td>Mon, February 8</td><td>06:04</td><td>17:18</td></tr>
-<tr><td><a href="/prayer-times/kazan/#ramadan">Kazan</a> <small>Russia</small></td><td>Mon, February 8</td><td>05:18</td><td>16:32</td></tr>
-<tr><td><a href="/prayer-times/karachi/#ramadan">Karachi</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:53</td><td>18:22</td></tr>
-<tr><td><a href="/prayer-times/lahore/#ramadan">Lahore</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:28</td><td>17:44</td></tr>
-<tr><td><a href="/prayer-times/islamabad/#ramadan">Islamabad</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:34</td><td>17:46</td></tr>
-<tr><td><a href="/prayer-times/rawalpindi/#ramadan">Rawalpindi</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:34</td><td>17:46</td></tr>
-<tr><td><a href="/prayer-times/faisalabad/#ramadan">Faisalabad</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:33</td><td>17:49</td></tr>
-<tr><td><a href="/prayer-times/multan/#ramadan">Multan</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:38</td><td>17:57</td></tr>
-<tr><td><a href="/prayer-times/peshawar/#ramadan">Peshawar</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:40</td><td>17:52</td></tr>
-<tr><td><a href="/prayer-times/quetta/#ramadan">Quetta</a> <small>Pakistan</small></td><td>Tue, February 9</td><td>05:56</td><td>18:15</td></tr>
-<tr><td><a href="/prayer-times/delhi/#ramadan">Delhi</a> <small>India</small></td><td>Tue, February 9</td><td>05:45</td><td>18:07</td></tr>
-<tr><td><a href="/prayer-times/mumbai/#ramadan">Mumbai</a> <small>India</small></td><td>Tue, February 9</td><td>05:55</td><td>18:36</td></tr>
-<tr><td><a href="/prayer-times/hyderabad/#ramadan">Hyderabad</a> <small>India</small></td><td>Tue, February 9</td><td>05:32</td><td>18:15</td></tr>
-<tr><td><a href="/prayer-times/lucknow/#ramadan">Lucknow</a> <small>India</small></td><td>Tue, February 9</td><td>05:29</td><td>17:54</td></tr>
-<tr><td><a href="/prayer-times/kolkata/#ramadan">Kolkata</a> <small>India</small></td><td>Tue, February 9</td><td>04:56</td><td>17:29</td></tr>
-<tr><td><a href="/prayer-times/bengaluru/#ramadan">Bengaluru</a> <small>India</small></td><td>Tue, February 9</td><td>05:32</td><td>18:24</td></tr>
-<tr><td><a href="/prayer-times/srinagar/#ramadan">Srinagar</a> <small>India</small></td><td>Tue, February 9</td><td>05:57</td><td>18:08</td></tr>
-<tr><td><a href="/prayer-times/chennai/#ramadan">Chennai</a> <small>India</small></td><td>Tue, February 9</td><td>05:21</td><td>18:13</td></tr>
-<tr><td><a href="/prayer-times/dhaka/#ramadan">Dhaka</a> <small>Bangladesh</small></td><td>Tue, February 9</td><td>05:19</td><td>17:50</td></tr>
-<tr><td><a href="/prayer-times/chittagong/#ramadan">Chittagong</a> <small>Bangladesh</small></td><td>Tue, February 9</td><td>05:12</td><td>17:46</td></tr>
-<tr><td><a href="/prayer-times/sylhet/#ramadan">Sylhet</a> <small>Bangladesh</small></td><td>Tue, February 9</td><td>05:14</td><td>17:43</td></tr>
-<tr><td><a href="/prayer-times/jakarta/#ramadan">Jakarta</a> <small>Indonesia</small></td><td>Mon, February 8</td><td>04:38</td><td>18:20</td></tr>
-<tr><td><a href="/prayer-times/surabaya/#ramadan">Surabaya</a> <small>Indonesia</small></td><td>Mon, February 8</td><td>04:13</td><td>17:58</td></tr>
-<tr><td><a href="/prayer-times/bandung/#ramadan">Bandung</a> <small>Indonesia</small></td><td>Mon, February 8</td><td>04:34</td><td>18:22</td></tr>
-<tr><td><a href="/prayer-times/medan/#ramadan">Medan</a> <small>Indonesia</small></td><td>Mon, February 8</td><td>05:23</td><td>18:42</td></tr>
-<tr><td><a href="/prayer-times/kuala-lumpur/#ramadan">Kuala Lumpur</a> <small>Malaysia</small></td><td>Mon, February 8</td><td>06:20</td><td>19:31</td></tr>
-<tr><td><a href="/prayer-times/singapore/#ramadan">Singapore</a> <small>Singapore</small></td><td>Mon, February 8</td><td>05:58</td><td>19:21</td></tr>
-<tr><td><a href="/prayer-times/london/#ramadan">London</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:34</td><td>17:02</td></tr>
-<tr><td><a href="/prayer-times/birmingham/#ramadan">Birmingham</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:41</td><td>17:07</td></tr>
-<tr><td><a href="/prayer-times/manchester/#ramadan">Manchester</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:43</td><td>17:05</td></tr>
-<tr><td><a href="/prayer-times/bradford/#ramadan">Bradford</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:41</td><td>17:02</td></tr>
-<tr><td><a href="/prayer-times/leicester/#ramadan">Leicester</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:38</td><td>17:03</td></tr>
-<tr><td><a href="/prayer-times/paris/#ramadan">Paris</a> <small>France</small></td><td>Mon, February 8</td><td>06:24</td><td>17:59</td></tr>
-<tr><td><a href="/prayer-times/brussels/#ramadan">Brussels</a> <small>Belgium</small></td><td>Mon, February 8</td><td>06:16</td><td>17:46</td></tr>
-<tr><td><a href="/prayer-times/montreal/#ramadan">Montreal</a> <small>Canada</small></td><td>Mon, February 8</td><td>05:43</td><td>17:11</td></tr>
-<tr><td><a href="/prayer-times/toronto/#ramadan">Toronto</a> <small>Canada</small></td><td>Mon, February 8</td><td>06:05</td><td>17:38</td></tr>
-<tr><td><a href="/prayer-times/new-york/#ramadan">New York</a> <small>United States</small></td><td>Mon, February 8</td><td>05:42</td><td>17:22</td></tr>
-<tr><td><a href="/prayer-times/chicago/#ramadan">Chicago</a> <small>United States</small></td><td>Mon, February 8</td><td>05:37</td><td>17:15</td></tr>
-<tr><td><a href="/prayer-times/houston/#ramadan">Houston</a> <small>United States</small></td><td>Mon, February 8</td><td>06:00</td><td>18:05</td></tr>
-<tr><td><a href="/prayer-times/los-angeles/#ramadan">Los Angeles</a> <small>United States</small></td><td>Mon, February 8</td><td>05:34</td><td>17:30</td></tr>
-<tr><td><a href="/prayer-times/dearborn/#ramadan">Dearborn</a> <small>United States</small></td><td>Mon, February 8</td><td>06:20</td><td>17:56</td></tr>
-<tr><td><a href="/prayer-times/sydney/#ramadan">Sydney</a> <small>Australia</small></td><td>Mon, February 8</td><td>04:51</td><td>19:55</td></tr>
-<tr><td><a href="/prayer-times/melbourne/#ramadan">Melbourne</a> <small>Australia</small></td><td>Mon, February 8</td><td>05:02</td><td>20:27</td></tr>
-<tr><td><a href="/prayer-times/leeds/#ramadan">Leeds</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:40</td><td>17:01</td></tr>
-<tr><td><a href="/prayer-times/sheffield/#ramadan">Sheffield</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:40</td><td>17:02</td></tr>
-<tr><td><a href="/prayer-times/luton/#ramadan">Luton</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:35</td><td>17:02</td></tr>
-<tr><td><a href="/prayer-times/blackburn/#ramadan">Blackburn</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:44</td><td>17:05</td></tr>
-<tr><td><a href="/prayer-times/liverpool/#ramadan">Liverpool</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:46</td><td>17:08</td></tr>
-<tr><td><a href="/prayer-times/glasgow/#ramadan">Glasgow</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:51</td><td>17:05</td></tr>
-<tr><td><a href="/prayer-times/cardiff/#ramadan">Cardiff</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:46</td><td>17:15</td></tr>
-<tr><td><a href="/prayer-times/oldham/#ramadan">Oldham</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:42</td><td>17:04</td></tr>
-<tr><td><a href="/prayer-times/slough/#ramadan">Slough</a> <small>United Kingdom</small></td><td>Mon, February 8</td><td>05:36</td><td>17:04</td></tr>
-<tr><td><a href="/prayer-times/dublin/#ramadan">Dublin</a> <small>Ireland</small></td><td>Mon, February 8</td><td>05:59</td><td>17:22</td></tr>
-<tr><td><a href="/prayer-times/dallas/#ramadan">Dallas</a> <small>United States</small></td><td>Mon, February 8</td><td>06:08</td><td>18:06</td></tr>
-<tr><td><a href="/prayer-times/philadelphia/#ramadan">Philadelphia</a> <small>United States</small></td><td>Mon, February 8</td><td>05:46</td><td>17:28</td></tr>
-<tr><td><a href="/prayer-times/detroit/#ramadan">Detroit</a> <small>United States</small></td><td>Mon, February 8</td><td>06:19</td><td>17:55</td></tr>
-<tr><td><a href="/prayer-times/atlanta/#ramadan">Atlanta</a> <small>United States</small></td><td>Mon, February 8</td><td>06:19</td><td>18:15</td></tr>
-<tr><td><a href="/prayer-times/washington-dc/#ramadan">Washington, D.C.</a> <small>United States</small></td><td>Mon, February 8</td><td>05:53</td><td>17:37</td></tr>
-<tr><td><a href="/prayer-times/minneapolis/#ramadan">Minneapolis</a> <small>United States</small></td><td>Mon, February 8</td><td>06:02</td><td>17:31</td></tr>
-<tr><td><a href="/prayer-times/paterson/#ramadan">Paterson</a> <small>United States</small></td><td>Mon, February 8</td><td>05:43</td><td>17:22</td></tr>
-<tr><td><a href="/prayer-times/jersey-city/#ramadan">Jersey City</a> <small>United States</small></td><td>Mon, February 8</td><td>05:42</td><td>17:22</td></tr>
-<tr><td><a href="/prayer-times/orlando/#ramadan">Orlando</a> <small>United States</small></td><td>Mon, February 8</td><td>06:03</td><td>18:11</td></tr>
-<tr><td><a href="/prayer-times/phoenix/#ramadan">Phoenix</a> <small>United States</small></td><td>Mon, February 8</td><td>06:09</td><td>18:06</td></tr>
-<tr><td><a href="/prayer-times/seattle/#ramadan">Seattle</a> <small>United States</small></td><td>Mon, February 8</td><td>05:59</td><td>17:22</td></tr>
-<tr><td><a href="/prayer-times/boston/#ramadan">Boston</a> <small>United States</small></td><td>Mon, February 8</td><td>05:31</td><td>17:07</td></tr>
-<tr><td><a href="/prayer-times/san-francisco/#ramadan">San Francisco</a> <small>United States</small></td><td>Mon, February 8</td><td>05:53</td><td>17:41</td></tr>
-<tr><td><a href="/prayer-times/columbus/#ramadan">Columbus</a> <small>United States</small></td><td>Mon, February 8</td><td>06:17</td><td>17:59</td></tr>
-<tr><td><a href="/prayer-times/austin/#ramadan">Austin</a> <small>United States</small></td><td>Mon, February 8</td><td>06:10</td><td>18:14</td></tr>
-<tr><td><a href="/prayer-times/san-diego/#ramadan">San Diego</a> <small>United States</small></td><td>Mon, February 8</td><td>05:29</td><td>17:28</td></tr>
-<tr><td><a href="/prayer-times/mississauga/#ramadan">Mississauga</a> <small>Canada</small></td><td>Mon, February 8</td><td>06:06</td><td>17:39</td></tr>
-<tr><td><a href="/prayer-times/ottawa/#ramadan">Ottawa</a> <small>Canada</small></td><td>Mon, February 8</td><td>05:52</td><td>17:20</td></tr>
-<tr><td><a href="/prayer-times/calgary/#ramadan">Calgary</a> <small>Canada</small></td><td>Mon, February 8</td><td>07:28</td><td>18:40</td></tr>
-<tr><td><a href="/prayer-times/edmonton/#ramadan">Edmonton</a> <small>Canada</small></td><td>Mon, February 8</td><td>07:28</td><td>18:30</td></tr>
-<tr><td><a href="/prayer-times/vancouver/#ramadan">Vancouver</a> <small>Canada</small></td><td>Mon, February 8</td><td>07:04</td><td>18:21</td></tr>
-<tr><td><a href="/prayer-times/winnipeg/#ramadan">Winnipeg</a> <small>Canada</small></td><td>Mon, February 8</td><td>06:20</td><td>17:35</td></tr>
-<tr><td><a href="/prayer-times/brisbane/#ramadan">Brisbane</a> <small>Australia</small></td><td>Mon, February 8</td><td>04:01</td><td>18:38</td></tr>
-<tr><td><a href="/prayer-times/perth/#ramadan">Perth</a> <small>Australia</small></td><td>Mon, February 8</td><td>04:18</td><td>19:13</td></tr>
-<tr><td><a href="/prayer-times/adelaide/#ramadan">Adelaide</a> <small>Australia</small></td><td>Mon, February 8</td><td>05:08</td><td>20:17</td></tr>
-<tr><td><a href="/prayer-times/auckland/#ramadan">Auckland</a> <small>New Zealand</small></td><td>Mon, February 8</td><td>05:06</td><td>20:26</td></tr>
-<tr><td><a href="/prayer-times/berlin/#ramadan">Berlin</a> <small>Germany</small></td><td>Mon, February 8</td><td>05:40</td><td>17:05</td></tr>
-<tr><td><a href="/prayer-times/hamburg/#ramadan">Hamburg</a> <small>Germany</small></td><td>Mon, February 8</td><td>05:54</td><td>17:16</td></tr>
-<tr><td><a href="/prayer-times/munich/#ramadan">Munich</a> <small>Germany</small></td><td>Mon, February 8</td><td>05:47</td><td>17:24</td></tr>
-<tr><td><a href="/prayer-times/frankfurt/#ramadan">Frankfurt</a> <small>Germany</small></td><td>Mon, February 8</td><td>05:59</td><td>17:31</td></tr>
-<tr><td><a href="/prayer-times/cologne/#ramadan">Cologne</a> <small>Germany</small></td><td>Mon, February 8</td><td>06:06</td><td>17:35</td></tr>
-<tr><td><a href="/prayer-times/stuttgart/#ramadan">Stuttgart</a> <small>Germany</small></td><td>Mon, February 8</td><td>05:56</td><td>17:32</td></tr>
-<tr><td><a href="/prayer-times/dusseldorf/#ramadan">Düsseldorf</a> <small>Germany</small></td><td>Mon, February 8</td><td>06:06</td><td>17:35</td></tr>
-<tr><td><a href="/prayer-times/amsterdam/#ramadan">Amsterdam</a> <small>Netherlands</small></td><td>Mon, February 8</td><td>06:14</td><td>17:40</td></tr>
-<tr><td><a href="/prayer-times/rotterdam/#ramadan">Rotterdam</a> <small>Netherlands</small></td><td>Mon, February 8</td><td>06:16</td><td>17:43</td></tr>
-<tr><td><a href="/prayer-times/the-hague/#ramadan">The Hague</a> <small>Netherlands</small></td><td>Mon, February 8</td><td>06:17</td><td>17:43</td></tr>
-<tr><td><a href="/prayer-times/antwerp/#ramadan">Antwerp</a> <small>Belgium</small></td><td>Mon, February 8</td><td>06:16</td><td>17:45</td></tr>
-<tr><td><a href="/prayer-times/vienna/#ramadan">Vienna</a> <small>Austria</small></td><td>Mon, February 8</td><td>05:27</td><td>17:05</td></tr>
-<tr><td><a href="/prayer-times/zurich/#ramadan">Zurich</a> <small>Switzerland</small></td><td>Mon, February 8</td><td>05:58</td><td>17:38</td></tr>
-<tr><td><a href="/prayer-times/stockholm/#ramadan">Stockholm</a> <small>Sweden</small></td><td>Mon, February 8</td><td>05:31</td><td>16:23</td></tr>
-<tr><td><a href="/prayer-times/malmo/#ramadan">Malmö</a> <small>Sweden</small></td><td>Mon, February 8</td><td>05:42</td><td>16:57</td></tr>
-<tr><td><a href="/prayer-times/oslo/#ramadan">Oslo</a> <small>Norway</small></td><td>Mon, February 8</td><td>06:02</td><td>16:49</td></tr>
-<tr><td><a href="/prayer-times/copenhagen/#ramadan">Copenhagen</a> <small>Denmark</small></td><td>Mon, February 8</td><td>05:44</td><td>16:59</td></tr>
-<tr><td><a href="/prayer-times/rome/#ramadan">Rome</a> <small>Italy</small></td><td>Mon, February 8</td><td>05:41</td><td>17:34</td></tr>
-<tr><td><a href="/prayer-times/milan/#ramadan">Milan</a> <small>Italy</small></td><td>Mon, February 8</td><td>05:55</td><td>17:40</td></tr>
-<tr><td><a href="/prayer-times/madrid/#ramadan">Madrid</a> <small>Spain</small></td><td>Mon, February 8</td><td>06:45</td><td>18:41</td></tr>
-<tr><td><a href="/prayer-times/barcelona/#ramadan">Barcelona</a> <small>Spain</small></td><td>Mon, February 8</td><td>06:22</td><td>18:16</td></tr>
-<tr><td><a href="/prayer-times/sarajevo/#ramadan">Sarajevo</a> <small>Bosnia &amp; Herzegovina</small></td><td>Mon, February 8</td><td>05:18</td><td>17:06</td></tr>
-<tr><td><a href="/prayer-times/tirana/#ramadan">Tirana</a> <small>Albania</small></td><td>Mon, February 8</td><td>05:11</td><td>17:05</td></tr>
-<tr><td><a href="/prayer-times/pristina/#ramadan">Pristina</a> <small>Kosovo</small></td><td>Mon, February 8</td><td>05:06</td><td>16:57</td></tr>
-<tr><td><a href="/prayer-times/skopje/#ramadan">Skopje</a> <small>North Macedonia</small></td><td>Mon, February 8</td><td>05:05</td><td>16:58</td></tr>
-<tr><td><a href="/prayer-times/addis-ababa/#ramadan">Addis Ababa</a> <small>Ethiopia</small></td><td>Mon, February 8</td><td>05:34</td><td>18:33</td></tr>
-<tr><td><a href="/prayer-times/accra/#ramadan">Accra</a> <small>Ghana</small></td><td>Mon, February 8</td><td>05:06</td><td>18:12</td></tr>
-<tr><td><a href="/prayer-times/ibadan/#ramadan">Ibadan</a> <small>Nigeria</small></td><td>Mon, February 8</td><td>05:51</td><td>18:54</td></tr>
-<tr><td><a href="/prayer-times/colombo/#ramadan">Colombo</a> <small>Sri Lanka</small></td><td>Tue, February 9</td><td>05:17</td><td>18:21</td></tr>
-<tr><td><a href="/prayer-times/male/#ramadan">Malé</a> <small>Maldives</small></td><td>Mon, February 8</td><td>05:10</td><td>18:19</td></tr>
-<tr><td><a href="/prayer-times/bangkok/#ramadan">Bangkok</a> <small>Thailand</small></td><td>Mon, February 8</td><td>05:31</td><td>18:21</td></tr>
-<tr><td><a href="/prayer-times/manila/#ramadan">Manila</a> <small>Philippines</small></td><td>Mon, February 8</td><td>05:10</td><td>17:58</td></tr>
-<tr><td><a href="/prayer-times/hong-kong/#ramadan">Hong Kong</a> <small>Hong Kong SAR China</small></td><td>Mon, February 8</td><td>05:43</td><td>18:16</td></tr>
-<tr><td><a href="/prayer-times/tokyo/#ramadan">Tokyo</a> <small>Japan</small></td><td>Mon, February 8</td><td>05:10</td><td>17:15</td></tr>
-<tr><td><a href="/prayer-times/seoul/#ramadan">Seoul</a> <small>South Korea</small></td><td>Mon, February 8</td><td>06:01</td><td>18:03</td></tr>
+<p class="note" style="margin-top:0">Ramadan 1448 is expected to begin on February 8, 2027 / February 9, 2027. The start depends on the moon sighting and may differ by a day.</p>
+<div class="find"><input id="cq" type="search" autocomplete="off" placeholder="Pick my city" aria-label="Choose your location"><button class="qbtn" id="cgeo" type="button">Use my location</button></div><ul class="cities" id="cres"></ul>
+<div class="scroll"><table class="tight"><thead><tr><th>City</th><th>Date</th><th>Suhoor ends</th><th>Iftar</th></tr></thead><tbody>
+<tr data-n="istanbul istanbul istanbul" data-g="41.0082,28.9784"><td><a href="/ramadan-2027/istanbul/">Istanbul</a> <small>Türkiye</small></td><td>Mon, Feb 8</td><td>06:35</td><td>18:36</td></tr>
+<tr data-n="ankara ankara ankara" data-g="39.9334,32.8597"><td><a href="/ramadan-2027/ankara/">Ankara</a> <small>Türkiye</small></td><td>Mon, Feb 8</td><td>06:19</td><td>18:22</td></tr>
+<tr data-n="izmir izmir izmir" data-g="38.4237,27.1428"><td><a href="/ramadan-2027/izmir/">Izmir</a> <small>Türkiye</small></td><td>Mon, Feb 8</td><td>06:41</td><td>18:48</td></tr>
+<tr data-n="bursa bursa bursa" data-g="40.1885,29.061"><td><a href="/ramadan-2027/bursa/">Bursa</a> <small>Türkiye</small></td><td>Mon, Feb 8</td><td>06:34</td><td>18:37</td></tr>
+<tr data-n="antalya antalya antalya" data-g="36.8969,30.7133"><td><a href="/ramadan-2027/antalya/">Antalya</a> <small>Türkiye</small></td><td>Mon, Feb 8</td><td>06:26</td><td>18:36</td></tr>
+<tr data-n="konya konya konya" data-g="37.8746,32.4932"><td><a href="/ramadan-2027/konya/">Konya</a> <small>Türkiye</small></td><td>Mon, Feb 8</td><td>06:19</td><td>18:27</td></tr>
+<tr data-n="mecca mecca mecca" data-g="21.4225,39.8262"><td><a href="/ramadan-2027/mecca/">Mecca</a> <small>Saudi Arabia</small></td><td>Mon, Feb 8</td><td>05:38</td><td>18:15</td></tr>
+<tr data-n="medina medina medina" data-g="24.4672,39.6111"><td><a href="/ramadan-2027/medina/">Medina</a> <small>Saudi Arabia</small></td><td>Mon, Feb 8</td><td>05:41</td><td>18:12</td></tr>
+<tr data-n="riyadh riyadh riyadh" data-g="24.7136,46.6753"><td><a href="/ramadan-2027/riyadh/">Riyadh</a> <small>Saudi Arabia</small></td><td>Mon, Feb 8</td><td>05:12</td><td>17:43</td></tr>
+<tr data-n="jeddah jeddah jeddah" data-g="21.4858,39.1925"><td><a href="/ramadan-2027/jeddah/">Jeddah</a> <small>Saudi Arabia</small></td><td>Mon, Feb 8</td><td>05:40</td><td>18:17</td></tr>
+<tr data-n="dammam dammam dammam" data-g="26.4207,50.0888"><td><a href="/ramadan-2027/dammam/">Dammam</a> <small>Saudi Arabia</small></td><td>Mon, Feb 8</td><td>05:00</td><td>17:27</td></tr>
+<tr data-n="dubai dubai dubai" data-g="25.2048,55.2708"><td><a href="/ramadan-2027/dubai/">Dubai</a> <small>United Arab Emirates</small></td><td>Mon, Feb 8</td><td>05:40</td><td>18:11</td></tr>
+<tr data-n="abu dhabi abu dhabi abu dhabi" data-g="24.4539,54.3773"><td><a href="/ramadan-2027/abu-dhabi/">Abu Dhabi</a> <small>United Arab Emirates</small></td><td>Mon, Feb 8</td><td>05:43</td><td>18:16</td></tr>
+<tr data-n="sharjah sharjah sharjah" data-g="25.3463,55.4209"><td><a href="/ramadan-2027/sharjah/">Sharjah</a> <small>United Arab Emirates</small></td><td>Mon, Feb 8</td><td>05:39</td><td>18:10</td></tr>
+<tr data-n="doha doha doha" data-g="25.2854,51.531"><td><a href="/ramadan-2027/doha/">Doha</a> <small>Qatar</small></td><td>Mon, Feb 8</td><td>04:56</td><td>17:23</td></tr>
+<tr data-n="kuwait city kuwait city kuwait city" data-g="29.3759,47.9774"><td><a href="/ramadan-2027/kuwait-city/">Kuwait City</a> <small>Kuwait</small></td><td>Mon, Feb 8</td><td>05:12</td><td>17:32</td></tr>
+<tr data-n="manama manama manama" data-g="26.2285,50.586"><td><a href="/ramadan-2027/manama/">Manama</a> <small>Bahrain</small></td><td>Mon, Feb 8</td><td>05:00</td><td>17:25</td></tr>
+<tr data-n="muscat muscat muscat" data-g="23.588,58.3829"><td><a href="/ramadan-2027/muscat/">Muscat</a> <small>Oman</small></td><td>Mon, Feb 8</td><td>05:27</td><td>17:58</td></tr>
+<tr data-n="amman amman amman" data-g="31.9454,35.9284"><td><a href="/ramadan-2027/amman/">Amman</a> <small>Jordan</small></td><td>Mon, Feb 8</td><td>06:02</td><td>18:16</td></tr>
+<tr data-n="baghdad baghdad baghdad" data-g="33.3152,44.3661"><td><a href="/ramadan-2027/baghdad/">Baghdad</a> <small>Iraq</small></td><td>Mon, Feb 8</td><td>05:22</td><td>17:40</td></tr>
+<tr data-n="erbil erbil erbil" data-g="36.1911,44.0092"><td><a href="/ramadan-2027/erbil/">Erbil</a> <small>Iraq</small></td><td>Mon, Feb 8</td><td>05:25</td><td>17:37</td></tr>
+<tr data-n="damascus damascus damascus" data-g="33.5138,36.2765"><td><a href="/ramadan-2027/damascus/">Damascus</a> <small>Syria</small></td><td>Mon, Feb 8</td><td>05:54</td><td>18:13</td></tr>
+<tr data-n="beirut beirut beirut" data-g="33.8938,35.5018"><td><a href="/ramadan-2027/beirut/">Beirut</a> <small>Lebanon</small></td><td>Mon, Feb 8</td><td>04:58</td><td>17:15</td></tr>
+<tr data-n="cairo cairo cairo" data-g="30.0444,31.2357"><td><a href="/ramadan-2027/cairo/">Cairo</a> <small>Egypt</small></td><td>Mon, Feb 8</td><td>05:13</td><td>17:38</td></tr>
+<tr data-n="alexandria alexandria alexandria" data-g="31.2001,29.9187"><td><a href="/ramadan-2027/alexandria/">Alexandria</a> <small>Egypt</small></td><td>Mon, Feb 8</td><td>05:19</td><td>17:41</td></tr>
+<tr data-n="khartoum khartoum khartoum" data-g="15.5007,32.5599"><td><a href="/ramadan-2027/khartoum/">Khartoum</a> <small>Sudan</small></td><td>Mon, Feb 8</td><td>05:04</td><td>17:51</td></tr>
+<tr data-n="tunis tunis tunis" data-g="36.8065,10.1815"><td><a href="/ramadan-2027/tunis/">Tunis</a> <small>Tunisia</small></td><td>Mon, Feb 8</td><td>05:48</td><td>17:52</td></tr>
+<tr data-n="algiers algiers algiers" data-g="36.7538,3.0588"><td><a href="/ramadan-2027/algiers/">Algiers</a> <small>Algeria</small></td><td>Mon, Feb 8</td><td>06:16</td><td>18:20</td></tr>
+<tr data-n="casablanca casablanca casablanca" data-g="33.5731,-7.5898"><td><a href="/ramadan-2027/casablanca/">Casablanca</a> <small>Morocco</small></td><td>Tue, Feb 9</td><td>05:56</td><td>18:09</td></tr>
+<tr data-n="dakar dakar dakar" data-g="14.7167,-17.4677"><td><a href="/ramadan-2027/dakar/">Dakar</a> <small>Senegal</small></td><td>Mon, Feb 8</td><td>06:24</td><td>19:12</td></tr>
+<tr data-n="kano kano kano" data-g="12.0022,8.592"><td><a href="/ramadan-2027/kano/">Kano</a> <small>Nigeria</small></td><td>Mon, Feb 8</td><td>05:37</td><td>18:30</td></tr>
+<tr data-n="abuja abuja abuja" data-g="9.0765,7.3986"><td><a href="/ramadan-2027/abuja/">Abuja</a> <small>Nigeria</small></td><td>Mon, Feb 8</td><td>05:39</td><td>18:38</td></tr>
+<tr data-n="lagos lagos lagos" data-g="6.5244,3.3792"><td><a href="/ramadan-2027/lagos/">Lagos</a> <small>Nigeria</small></td><td>Mon, Feb 8</td><td>05:53</td><td>18:57</td></tr>
+<tr data-n="dar es salaam dar es salaam dar es salaam" data-g="-6.7924,39.2083"><td><a href="/ramadan-2027/dar-es-salaam/">Dar es Salaam</a> <small>Tanzania</small></td><td>Mon, Feb 8</td><td>05:14</td><td>18:48</td></tr>
+<tr data-n="nairobi nairobi nairobi" data-g="-1.2921,36.8219"><td><a href="/ramadan-2027/nairobi/">Nairobi</a> <small>Kenya</small></td><td>Mon, Feb 8</td><td>05:31</td><td>18:52</td></tr>
+<tr data-n="kampala kampala kampala" data-g="0.3476,32.5825"><td><a href="/ramadan-2027/kampala/">Kampala</a> <small>Uganda</small></td><td>Mon, Feb 8</td><td>05:50</td><td>19:07</td></tr>
+<tr data-n="mogadishu mogadishu mogadishu" data-g="2.0469,45.3182"><td><a href="/ramadan-2027/mogadishu/">Mogadishu</a> <small>Somalia</small></td><td>Mon, Feb 8</td><td>05:00</td><td>18:14</td></tr>
+<tr data-n="johannesburg johannesburg johannesburg" data-g="-26.2041,28.0473"><td><a href="/ramadan-2027/johannesburg/">Johannesburg</a> <small>South Africa</small></td><td>Mon, Feb 8</td><td>04:25</td><td>18:56</td></tr>
+<tr data-n="cape town cape town cape town" data-g="-33.9249,18.4241"><td><a href="/ramadan-2027/cape-town/">Cape Town</a> <small>South Africa</small></td><td>Mon, Feb 8</td><td>04:42</td><td>19:46</td></tr>
+<tr data-n="durban durban durban" data-g="-29.8587,31.0218"><td><a href="/ramadan-2027/durban/">Durban</a> <small>South Africa</small></td><td>Mon, Feb 8</td><td>04:04</td><td>18:49</td></tr>
+<tr data-n="tehran tehran tehran" data-g="35.6892,51.389"><td><a href="/ramadan-2027/tehran/">Tehran</a> <small>Iran</small></td><td>Mon, Feb 8</td><td>05:34</td><td>17:58</td></tr>
+<tr data-n="mashhad mashhad mashhad" data-g="36.2605,59.6168"><td><a href="/ramadan-2027/mashhad/">Mashhad</a> <small>Iran</small></td><td>Mon, Feb 8</td><td>05:01</td><td>17:24</td></tr>
+<tr data-n="kabul kabul kabul" data-g="34.5553,69.2075"><td><a href="/ramadan-2027/kabul/">Kabul</a> <small>Afghanistan</small></td><td>Mon, Feb 8</td><td>05:21</td><td>17:29</td></tr>
+<tr data-n="dushanbe dushanbe dushanbe" data-g="38.5598,68.787"><td><a href="/ramadan-2027/dushanbe/">Dushanbe</a> <small>Tajikistan</small></td><td>Mon, Feb 8</td><td>05:54</td><td>17:54</td></tr>
+<tr data-n="tashkent tashkent tashkent" data-g="41.2995,69.2401"><td><a href="/ramadan-2027/tashkent/">Tashkent</a> <small>Uzbekistan</small></td><td>Mon, Feb 8</td><td>05:54</td><td>17:48</td></tr>
+<tr data-n="samarkand samarkand samarkand" data-g="39.627,66.975"><td><a href="/ramadan-2027/samarkand/">Samarkand</a> <small>Uzbekistan</small></td><td>Mon, Feb 8</td><td>06:02</td><td>18:00</td></tr>
+<tr data-n="bishkek bishkek bishkek" data-g="42.8746,74.5698"><td><a href="/ramadan-2027/bishkek/">Bishkek</a> <small>Kyrgyzstan</small></td><td>Mon, Feb 8</td><td>06:33</td><td>18:23</td></tr>
+<tr data-n="almaty almaty almaty" data-g="43.222,76.8512"><td><a href="/ramadan-2027/almaty/">Almaty</a> <small>Kazakhstan</small></td><td>Mon, Feb 8</td><td>05:24</td><td>17:13</td></tr>
+<tr data-n="astana astana astana" data-g="51.1694,71.4491"><td><a href="/ramadan-2027/astana/">Astana</a> <small>Kazakhstan</small></td><td>Mon, Feb 8</td><td>05:48</td><td>17:17</td></tr>
+<tr data-n="baku baku baku" data-g="40.4093,49.8671"><td><a href="/ramadan-2027/baku/">Baku</a> <small>Azerbaijan</small></td><td>Mon, Feb 8</td><td>06:11</td><td>18:07</td></tr>
+<tr data-n="moscow moscow moscow" data-g="55.7558,37.6173"><td><a href="/ramadan-2027/moscow/">Moscow</a> <small>Russia</small></td><td>Mon, Feb 8</td><td>06:04</td><td>17:18</td></tr>
+<tr data-n="kazan kazan kazan" data-g="55.7961,49.1064"><td><a href="/ramadan-2027/kazan/">Kazan</a> <small>Russia</small></td><td>Mon, Feb 8</td><td>05:18</td><td>16:32</td></tr>
+<tr data-n="karachi karachi karachi" data-g="24.8607,67.0011"><td><a href="/ramadan-2027/karachi/">Karachi</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:53</td><td>18:22</td></tr>
+<tr data-n="lahore lahore lahore" data-g="31.5204,74.3587"><td><a href="/ramadan-2027/lahore/">Lahore</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:28</td><td>17:44</td></tr>
+<tr data-n="islamabad islamabad islamabad" data-g="33.6844,73.0479"><td><a href="/ramadan-2027/islamabad/">Islamabad</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:34</td><td>17:46</td></tr>
+<tr data-n="rawalpindi rawalpindi rawalpindi" data-g="33.5651,73.0169"><td><a href="/ramadan-2027/rawalpindi/">Rawalpindi</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:34</td><td>17:46</td></tr>
+<tr data-n="faisalabad faisalabad faisalabad" data-g="31.418,73.0791"><td><a href="/ramadan-2027/faisalabad/">Faisalabad</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:33</td><td>17:49</td></tr>
+<tr data-n="multan multan multan" data-g="30.1575,71.5249"><td><a href="/ramadan-2027/multan/">Multan</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:38</td><td>17:57</td></tr>
+<tr data-n="peshawar peshawar peshawar" data-g="34.0151,71.5249"><td><a href="/ramadan-2027/peshawar/">Peshawar</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:40</td><td>17:52</td></tr>
+<tr data-n="quetta quetta quetta" data-g="30.1798,66.975"><td><a href="/ramadan-2027/quetta/">Quetta</a> <small>Pakistan</small></td><td>Tue, Feb 9</td><td>05:56</td><td>18:15</td></tr>
+<tr data-n="delhi delhi delhi" data-g="28.6139,77.209"><td><a href="/ramadan-2027/delhi/">Delhi</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:45</td><td>18:07</td></tr>
+<tr data-n="mumbai mumbai mumbai" data-g="19.076,72.8777"><td><a href="/ramadan-2027/mumbai/">Mumbai</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:55</td><td>18:36</td></tr>
+<tr data-n="hyderabad hyderabad hyderabad" data-g="17.385,78.4867"><td><a href="/ramadan-2027/hyderabad/">Hyderabad</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:32</td><td>18:15</td></tr>
+<tr data-n="lucknow lucknow lucknow" data-g="26.8467,80.9462"><td><a href="/ramadan-2027/lucknow/">Lucknow</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:29</td><td>17:54</td></tr>
+<tr data-n="kolkata kolkata kolkata" data-g="22.5726,88.3639"><td><a href="/ramadan-2027/kolkata/">Kolkata</a> <small>India</small></td><td>Tue, Feb 9</td><td>04:56</td><td>17:29</td></tr>
+<tr data-n="bengaluru bengaluru bengaluru" data-g="12.9716,77.5946"><td><a href="/ramadan-2027/bengaluru/">Bengaluru</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:32</td><td>18:24</td></tr>
+<tr data-n="srinagar srinagar srinagar" data-g="34.0837,74.7973"><td><a href="/ramadan-2027/srinagar/">Srinagar</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:57</td><td>18:08</td></tr>
+<tr data-n="chennai chennai chennai" data-g="13.0827,80.2707"><td><a href="/ramadan-2027/chennai/">Chennai</a> <small>India</small></td><td>Tue, Feb 9</td><td>05:21</td><td>18:13</td></tr>
+<tr data-n="dhaka dhaka dhaka" data-g="23.8103,90.4125"><td><a href="/ramadan-2027/dhaka/">Dhaka</a> <small>Bangladesh</small></td><td>Tue, Feb 9</td><td>05:19</td><td>17:50</td></tr>
+<tr data-n="chittagong chittagong chittagong" data-g="22.3569,91.7832"><td><a href="/ramadan-2027/chittagong/">Chittagong</a> <small>Bangladesh</small></td><td>Tue, Feb 9</td><td>05:12</td><td>17:46</td></tr>
+<tr data-n="sylhet sylhet sylhet" data-g="24.8949,91.8687"><td><a href="/ramadan-2027/sylhet/">Sylhet</a> <small>Bangladesh</small></td><td>Tue, Feb 9</td><td>05:14</td><td>17:43</td></tr>
+<tr data-n="jakarta jakarta jakarta" data-g="-6.2088,106.8456"><td><a href="/ramadan-2027/jakarta/">Jakarta</a> <small>Indonesia</small></td><td>Mon, Feb 8</td><td>04:38</td><td>18:20</td></tr>
+<tr data-n="surabaya surabaya surabaya" data-g="-7.2575,112.7521"><td><a href="/ramadan-2027/surabaya/">Surabaya</a> <small>Indonesia</small></td><td>Mon, Feb 8</td><td>04:13</td><td>17:58</td></tr>
+<tr data-n="bandung bandung bandung" data-g="-6.9175,107.6191"><td><a href="/ramadan-2027/bandung/">Bandung</a> <small>Indonesia</small></td><td>Mon, Feb 8</td><td>04:34</td><td>18:22</td></tr>
+<tr data-n="medan medan medan" data-g="3.5952,98.6722"><td><a href="/ramadan-2027/medan/">Medan</a> <small>Indonesia</small></td><td>Mon, Feb 8</td><td>05:23</td><td>18:42</td></tr>
+<tr data-n="kuala lumpur kuala lumpur kuala lumpur" data-g="3.139,101.6869"><td><a href="/ramadan-2027/kuala-lumpur/">Kuala Lumpur</a> <small>Malaysia</small></td><td>Mon, Feb 8</td><td>06:20</td><td>19:31</td></tr>
+<tr data-n="singapore singapore singapore" data-g="1.3521,103.8198"><td><a href="/ramadan-2027/singapore/">Singapore</a> <small>Singapore</small></td><td>Mon, Feb 8</td><td>05:58</td><td>19:21</td></tr>
+<tr data-n="london london london" data-g="51.5074,-0.1278"><td><a href="/ramadan-2027/london/">London</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:34</td><td>17:02</td></tr>
+<tr data-n="birmingham birmingham birmingham" data-g="52.4862,-1.8904"><td><a href="/ramadan-2027/birmingham/">Birmingham</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:41</td><td>17:07</td></tr>
+<tr data-n="manchester manchester manchester" data-g="53.4808,-2.2426"><td><a href="/ramadan-2027/manchester/">Manchester</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:43</td><td>17:05</td></tr>
+<tr data-n="bradford bradford bradford" data-g="53.795,-1.7594"><td><a href="/ramadan-2027/bradford/">Bradford</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:41</td><td>17:02</td></tr>
+<tr data-n="leicester leicester leicester" data-g="52.6369,-1.1398"><td><a href="/ramadan-2027/leicester/">Leicester</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:38</td><td>17:03</td></tr>
+<tr data-n="paris paris paris" data-g="48.8566,2.3522"><td><a href="/ramadan-2027/paris/">Paris</a> <small>France</small></td><td>Mon, Feb 8</td><td>06:24</td><td>17:59</td></tr>
+<tr data-n="brussels brussels brussels" data-g="50.8503,4.3517"><td><a href="/ramadan-2027/brussels/">Brussels</a> <small>Belgium</small></td><td>Mon, Feb 8</td><td>06:16</td><td>17:46</td></tr>
+<tr data-n="montreal montreal montreal" data-g="45.5017,-73.5673"><td><a href="/ramadan-2027/montreal/">Montreal</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>05:43</td><td>17:11</td></tr>
+<tr data-n="toronto toronto toronto" data-g="43.6532,-79.3832"><td><a href="/ramadan-2027/toronto/">Toronto</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>06:05</td><td>17:38</td></tr>
+<tr data-n="new york new york new york" data-g="40.7128,-74.006"><td><a href="/ramadan-2027/new-york/">New York</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:42</td><td>17:22</td></tr>
+<tr data-n="chicago chicago chicago" data-g="41.8781,-87.6298"><td><a href="/ramadan-2027/chicago/">Chicago</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:37</td><td>17:15</td></tr>
+<tr data-n="houston houston houston" data-g="29.7604,-95.3698"><td><a href="/ramadan-2027/houston/">Houston</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:00</td><td>18:05</td></tr>
+<tr data-n="los angeles los angeles los angeles" data-g="34.0522,-118.2437"><td><a href="/ramadan-2027/los-angeles/">Los Angeles</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:34</td><td>17:30</td></tr>
+<tr data-n="dearborn dearborn dearborn" data-g="42.3223,-83.1763"><td><a href="/ramadan-2027/dearborn/">Dearborn</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:20</td><td>17:56</td></tr>
+<tr data-n="sydney sydney sydney" data-g="-33.8688,151.2093"><td><a href="/ramadan-2027/sydney/">Sydney</a> <small>Australia</small></td><td>Mon, Feb 8</td><td>04:51</td><td>19:55</td></tr>
+<tr data-n="melbourne melbourne melbourne" data-g="-37.8136,144.9631"><td><a href="/ramadan-2027/melbourne/">Melbourne</a> <small>Australia</small></td><td>Mon, Feb 8</td><td>05:02</td><td>20:27</td></tr>
+<tr data-n="leeds leeds leeds" data-g="53.8008,-1.5491"><td><a href="/ramadan-2027/leeds/">Leeds</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:40</td><td>17:01</td></tr>
+<tr data-n="sheffield sheffield sheffield" data-g="53.3811,-1.4701"><td><a href="/ramadan-2027/sheffield/">Sheffield</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:40</td><td>17:02</td></tr>
+<tr data-n="luton luton luton" data-g="51.8787,-0.42"><td><a href="/ramadan-2027/luton/">Luton</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:35</td><td>17:02</td></tr>
+<tr data-n="blackburn blackburn blackburn" data-g="53.7486,-2.4875"><td><a href="/ramadan-2027/blackburn/">Blackburn</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:44</td><td>17:05</td></tr>
+<tr data-n="liverpool liverpool liverpool" data-g="53.4084,-2.9916"><td><a href="/ramadan-2027/liverpool/">Liverpool</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:46</td><td>17:08</td></tr>
+<tr data-n="glasgow glasgow glasgow" data-g="55.8642,-4.2518"><td><a href="/ramadan-2027/glasgow/">Glasgow</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:51</td><td>17:05</td></tr>
+<tr data-n="cardiff cardiff cardiff" data-g="51.4816,-3.1791"><td><a href="/ramadan-2027/cardiff/">Cardiff</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:46</td><td>17:15</td></tr>
+<tr data-n="oldham oldham oldham" data-g="53.5409,-2.1114"><td><a href="/ramadan-2027/oldham/">Oldham</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:42</td><td>17:04</td></tr>
+<tr data-n="slough slough slough" data-g="51.5105,-0.595"><td><a href="/ramadan-2027/slough/">Slough</a> <small>United Kingdom</small></td><td>Mon, Feb 8</td><td>05:36</td><td>17:04</td></tr>
+<tr data-n="dublin dublin dublin" data-g="53.3498,-6.2603"><td><a href="/ramadan-2027/dublin/">Dublin</a> <small>Ireland</small></td><td>Mon, Feb 8</td><td>05:59</td><td>17:22</td></tr>
+<tr data-n="dallas dallas dallas" data-g="32.7767,-96.797"><td><a href="/ramadan-2027/dallas/">Dallas</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:08</td><td>18:06</td></tr>
+<tr data-n="philadelphia philadelphia philadelphia" data-g="39.9526,-75.1652"><td><a href="/ramadan-2027/philadelphia/">Philadelphia</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:46</td><td>17:28</td></tr>
+<tr data-n="detroit detroit detroit" data-g="42.3314,-83.0458"><td><a href="/ramadan-2027/detroit/">Detroit</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:19</td><td>17:55</td></tr>
+<tr data-n="atlanta atlanta atlanta" data-g="33.749,-84.388"><td><a href="/ramadan-2027/atlanta/">Atlanta</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:19</td><td>18:15</td></tr>
+<tr data-n="washington, d.c. washington, d.c. washington dc" data-g="38.9072,-77.0369"><td><a href="/ramadan-2027/washington-dc/">Washington, D.C.</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:53</td><td>17:37</td></tr>
+<tr data-n="minneapolis minneapolis minneapolis" data-g="44.9778,-93.265"><td><a href="/ramadan-2027/minneapolis/">Minneapolis</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:02</td><td>17:31</td></tr>
+<tr data-n="paterson paterson paterson" data-g="40.9168,-74.1718"><td><a href="/ramadan-2027/paterson/">Paterson</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:43</td><td>17:22</td></tr>
+<tr data-n="jersey city jersey city jersey city" data-g="40.7178,-74.0431"><td><a href="/ramadan-2027/jersey-city/">Jersey City</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:42</td><td>17:22</td></tr>
+<tr data-n="orlando orlando orlando" data-g="28.5383,-81.3792"><td><a href="/ramadan-2027/orlando/">Orlando</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:03</td><td>18:11</td></tr>
+<tr data-n="phoenix phoenix phoenix" data-g="33.4484,-112.074"><td><a href="/ramadan-2027/phoenix/">Phoenix</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:09</td><td>18:06</td></tr>
+<tr data-n="seattle seattle seattle" data-g="47.6062,-122.3321"><td><a href="/ramadan-2027/seattle/">Seattle</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:59</td><td>17:22</td></tr>
+<tr data-n="boston boston boston" data-g="42.3601,-71.0589"><td><a href="/ramadan-2027/boston/">Boston</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:31</td><td>17:07</td></tr>
+<tr data-n="san francisco san francisco san francisco" data-g="37.7749,-122.4194"><td><a href="/ramadan-2027/san-francisco/">San Francisco</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:53</td><td>17:41</td></tr>
+<tr data-n="columbus columbus columbus" data-g="39.9612,-82.9988"><td><a href="/ramadan-2027/columbus/">Columbus</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:17</td><td>17:59</td></tr>
+<tr data-n="austin austin austin" data-g="30.2672,-97.7431"><td><a href="/ramadan-2027/austin/">Austin</a> <small>United States</small></td><td>Mon, Feb 8</td><td>06:10</td><td>18:14</td></tr>
+<tr data-n="san diego san diego san diego" data-g="32.7157,-117.1611"><td><a href="/ramadan-2027/san-diego/">San Diego</a> <small>United States</small></td><td>Mon, Feb 8</td><td>05:29</td><td>17:28</td></tr>
+<tr data-n="mississauga mississauga mississauga" data-g="43.589,-79.6441"><td><a href="/ramadan-2027/mississauga/">Mississauga</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>06:06</td><td>17:39</td></tr>
+<tr data-n="ottawa ottawa ottawa" data-g="45.4215,-75.6972"><td><a href="/ramadan-2027/ottawa/">Ottawa</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>05:52</td><td>17:20</td></tr>
+<tr data-n="calgary calgary calgary" data-g="51.0447,-114.0719"><td><a href="/ramadan-2027/calgary/">Calgary</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>07:28</td><td>18:40</td></tr>
+<tr data-n="edmonton edmonton edmonton" data-g="53.5461,-113.4938"><td><a href="/ramadan-2027/edmonton/">Edmonton</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>07:28</td><td>18:30</td></tr>
+<tr data-n="vancouver vancouver vancouver" data-g="49.2827,-123.1207"><td><a href="/ramadan-2027/vancouver/">Vancouver</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>07:04</td><td>18:21</td></tr>
+<tr data-n="winnipeg winnipeg winnipeg" data-g="49.8951,-97.1384"><td><a href="/ramadan-2027/winnipeg/">Winnipeg</a> <small>Canada</small></td><td>Mon, Feb 8</td><td>06:20</td><td>17:35</td></tr>
+<tr data-n="brisbane brisbane brisbane" data-g="-27.4698,153.0251"><td><a href="/ramadan-2027/brisbane/">Brisbane</a> <small>Australia</small></td><td>Mon, Feb 8</td><td>04:01</td><td>18:38</td></tr>
+<tr data-n="perth perth perth" data-g="-31.9505,115.8605"><td><a href="/ramadan-2027/perth/">Perth</a> <small>Australia</small></td><td>Mon, Feb 8</td><td>04:18</td><td>19:13</td></tr>
+<tr data-n="adelaide adelaide adelaide" data-g="-34.9285,138.6007"><td><a href="/ramadan-2027/adelaide/">Adelaide</a> <small>Australia</small></td><td>Mon, Feb 8</td><td>05:08</td><td>20:17</td></tr>
+<tr data-n="auckland auckland auckland" data-g="-36.8485,174.7633"><td><a href="/ramadan-2027/auckland/">Auckland</a> <small>New Zealand</small></td><td>Mon, Feb 8</td><td>05:06</td><td>20:26</td></tr>
+<tr data-n="berlin berlin berlin" data-g="52.52,13.405"><td><a href="/ramadan-2027/berlin/">Berlin</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>05:40</td><td>17:05</td></tr>
+<tr data-n="hamburg hamburg hamburg" data-g="53.5511,9.9937"><td><a href="/ramadan-2027/hamburg/">Hamburg</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>05:54</td><td>17:16</td></tr>
+<tr data-n="munich munich munich" data-g="48.1351,11.582"><td><a href="/ramadan-2027/munich/">Munich</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>05:47</td><td>17:24</td></tr>
+<tr data-n="frankfurt frankfurt frankfurt" data-g="50.1109,8.6821"><td><a href="/ramadan-2027/frankfurt/">Frankfurt</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>05:59</td><td>17:31</td></tr>
+<tr data-n="cologne cologne cologne" data-g="50.9375,6.9603"><td><a href="/ramadan-2027/cologne/">Cologne</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>06:06</td><td>17:35</td></tr>
+<tr data-n="stuttgart stuttgart stuttgart" data-g="48.7758,9.1829"><td><a href="/ramadan-2027/stuttgart/">Stuttgart</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>05:56</td><td>17:32</td></tr>
+<tr data-n="dusseldorf dusseldorf dusseldorf" data-g="51.2277,6.7735"><td><a href="/ramadan-2027/dusseldorf/">Düsseldorf</a> <small>Germany</small></td><td>Mon, Feb 8</td><td>06:06</td><td>17:35</td></tr>
+<tr data-n="amsterdam amsterdam amsterdam" data-g="52.3676,4.9041"><td><a href="/ramadan-2027/amsterdam/">Amsterdam</a> <small>Netherlands</small></td><td>Mon, Feb 8</td><td>06:14</td><td>17:40</td></tr>
+<tr data-n="rotterdam rotterdam rotterdam" data-g="51.9244,4.4777"><td><a href="/ramadan-2027/rotterdam/">Rotterdam</a> <small>Netherlands</small></td><td>Mon, Feb 8</td><td>06:16</td><td>17:43</td></tr>
+<tr data-n="the hague the hague the hague" data-g="52.0705,4.3007"><td><a href="/ramadan-2027/the-hague/">The Hague</a> <small>Netherlands</small></td><td>Mon, Feb 8</td><td>06:17</td><td>17:43</td></tr>
+<tr data-n="antwerp antwerp antwerp" data-g="51.2194,4.4025"><td><a href="/ramadan-2027/antwerp/">Antwerp</a> <small>Belgium</small></td><td>Mon, Feb 8</td><td>06:16</td><td>17:45</td></tr>
+<tr data-n="vienna vienna vienna" data-g="48.2082,16.3738"><td><a href="/ramadan-2027/vienna/">Vienna</a> <small>Austria</small></td><td>Mon, Feb 8</td><td>05:27</td><td>17:05</td></tr>
+<tr data-n="zurich zurich zurich" data-g="47.3769,8.5417"><td><a href="/ramadan-2027/zurich/">Zurich</a> <small>Switzerland</small></td><td>Mon, Feb 8</td><td>05:58</td><td>17:38</td></tr>
+<tr data-n="stockholm stockholm stockholm" data-g="59.3293,18.0686"><td><a href="/ramadan-2027/stockholm/">Stockholm</a> <small>Sweden</small></td><td>Mon, Feb 8</td><td>05:31</td><td>16:23</td></tr>
+<tr data-n="malmo malmo malmo" data-g="55.605,13.0038"><td><a href="/ramadan-2027/malmo/">Malmö</a> <small>Sweden</small></td><td>Mon, Feb 8</td><td>05:42</td><td>16:57</td></tr>
+<tr data-n="oslo oslo oslo" data-g="59.9139,10.7522"><td><a href="/ramadan-2027/oslo/">Oslo</a> <small>Norway</small></td><td>Mon, Feb 8</td><td>06:02</td><td>16:49</td></tr>
+<tr data-n="copenhagen copenhagen copenhagen" data-g="55.6761,12.5683"><td><a href="/ramadan-2027/copenhagen/">Copenhagen</a> <small>Denmark</small></td><td>Mon, Feb 8</td><td>05:44</td><td>16:59</td></tr>
+<tr data-n="rome rome rome" data-g="41.9028,12.4964"><td><a href="/ramadan-2027/rome/">Rome</a> <small>Italy</small></td><td>Mon, Feb 8</td><td>05:41</td><td>17:34</td></tr>
+<tr data-n="milan milan milan" data-g="45.4642,9.19"><td><a href="/ramadan-2027/milan/">Milan</a> <small>Italy</small></td><td>Mon, Feb 8</td><td>05:55</td><td>17:40</td></tr>
+<tr data-n="madrid madrid madrid" data-g="40.4168,-3.7038"><td><a href="/ramadan-2027/madrid/">Madrid</a> <small>Spain</small></td><td>Mon, Feb 8</td><td>06:45</td><td>18:41</td></tr>
+<tr data-n="barcelona barcelona barcelona" data-g="41.3874,2.1686"><td><a href="/ramadan-2027/barcelona/">Barcelona</a> <small>Spain</small></td><td>Mon, Feb 8</td><td>06:22</td><td>18:16</td></tr>
+<tr data-n="sarajevo sarajevo sarajevo" data-g="43.8563,18.4131"><td><a href="/ramadan-2027/sarajevo/">Sarajevo</a> <small>Bosnia &amp; Herzegovina</small></td><td>Mon, Feb 8</td><td>05:18</td><td>17:06</td></tr>
+<tr data-n="tirana tirana tirana" data-g="41.3275,19.8187"><td><a href="/ramadan-2027/tirana/">Tirana</a> <small>Albania</small></td><td>Mon, Feb 8</td><td>05:11</td><td>17:05</td></tr>
+<tr data-n="pristina pristina pristina" data-g="42.6629,21.1655"><td><a href="/ramadan-2027/pristina/">Pristina</a> <small>Kosovo</small></td><td>Mon, Feb 8</td><td>05:06</td><td>16:57</td></tr>
+<tr data-n="skopje skopje skopje" data-g="41.9981,21.4254"><td><a href="/ramadan-2027/skopje/">Skopje</a> <small>North Macedonia</small></td><td>Mon, Feb 8</td><td>05:05</td><td>16:58</td></tr>
+<tr data-n="addis ababa addis ababa addis ababa" data-g="8.9806,38.7578"><td><a href="/ramadan-2027/addis-ababa/">Addis Ababa</a> <small>Ethiopia</small></td><td>Mon, Feb 8</td><td>05:34</td><td>18:33</td></tr>
+<tr data-n="accra accra accra" data-g="5.6037,-0.187"><td><a href="/ramadan-2027/accra/">Accra</a> <small>Ghana</small></td><td>Mon, Feb 8</td><td>05:06</td><td>18:12</td></tr>
+<tr data-n="ibadan ibadan ibadan" data-g="7.3775,3.947"><td><a href="/ramadan-2027/ibadan/">Ibadan</a> <small>Nigeria</small></td><td>Mon, Feb 8</td><td>05:51</td><td>18:54</td></tr>
+<tr data-n="colombo colombo colombo" data-g="6.9271,79.8612"><td><a href="/ramadan-2027/colombo/">Colombo</a> <small>Sri Lanka</small></td><td>Tue, Feb 9</td><td>05:17</td><td>18:21</td></tr>
+<tr data-n="male male male" data-g="4.1755,73.5093"><td><a href="/ramadan-2027/male/">Malé</a> <small>Maldives</small></td><td>Mon, Feb 8</td><td>05:10</td><td>18:19</td></tr>
+<tr data-n="bangkok bangkok bangkok" data-g="13.7563,100.5018"><td><a href="/ramadan-2027/bangkok/">Bangkok</a> <small>Thailand</small></td><td>Mon, Feb 8</td><td>05:31</td><td>18:21</td></tr>
+<tr data-n="manila manila manila" data-g="14.5995,120.9842"><td><a href="/ramadan-2027/manila/">Manila</a> <small>Philippines</small></td><td>Mon, Feb 8</td><td>05:10</td><td>17:58</td></tr>
+<tr data-n="hong kong hong kong hong kong" data-g="22.3193,114.1694"><td><a href="/ramadan-2027/hong-kong/">Hong Kong</a> <small>Hong Kong SAR China</small></td><td>Mon, Feb 8</td><td>05:43</td><td>18:16</td></tr>
+<tr data-n="tokyo tokyo tokyo" data-g="35.6762,139.6503"><td><a href="/ramadan-2027/tokyo/">Tokyo</a> <small>Japan</small></td><td>Mon, Feb 8</td><td>05:10</td><td>17:15</td></tr>
+<tr data-n="seoul seoul seoul" data-g="37.5665,126.978"><td><a href="/ramadan-2027/seoul/">Seoul</a> <small>South Korea</small></td><td>Mon, Feb 8</td><td>06:01</td><td>18:03</td></tr>
 </tbody></table></div>
+<p class="lead">The expected start of Ramadan 1448 (2027), the first day's suhoor and iftar times and the full timetable for each city.</p>
+<p><a class="go" href="/eid-prayer-time/">Eid Prayer Times 2027 by City →</a><a class="go" href="/islamic-calendar-2027/">Islamic Calendar 2027 →</a></p>
+<figure class="mobshot"><img src="/img/screens/en/05-360.webp" srcset="/img/screens/en/05-360.webp 360w, /img/screens/en/05-720.webp 720w" sizes="(max-width:860px) 68vw, 250px" width="360" height="640" alt="Ramadan sehri &amp; iftar times – Sehri alarm and a live iftar countdown" loading="lazy" decoding="async"></figure><div class="cta" id="app"><p><strong>Hear the adhan at alarm volume, even on silent<span class="os">Android</span></strong><small>Free · works offline · 20 languages · all four madhabs</small></p><div class="stores"><a class="badge" href="https://appgallery.huawei.com/app/C119470731" rel="noopener"><img src="/img/badges/appgallery.svg" alt="Explore it on AppGallery" width="180" height="54" loading="lazy"></a><span class="badge soon" role="img" aria-label="App Store – Coming soon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 5h3"/><circle cx="12" cy="18.2" r=".9" fill="#fff" stroke="none"/></svg><span><small>Coming soon</small>App Store</span></span></div></div>
+<script>(function(){var q=document.getElementById('cq');if(!q)return;var N=function(s){return s.toLocaleLowerCase('tr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i')};
+var items=[].slice.call(document.querySelectorAll('[data-n]')),res=document.getElementById('cres'),src=q.getAttribute('data-src'),base=q.getAttribute('data-base')||'',extra=null;
+function load(cb){if(!src||extra)return cb();fetch(src).then(function(r){return r.json()}).then(function(j){extra=j;cb()}).catch(function(){extra=[];cb()})}
+function run(){var v=N(q.value.trim());items.forEach(function(e){e.hidden=!!v&&e.getAttribute('data-n').indexOf(v)<0});
+[].forEach.call(document.querySelectorAll('.grp'),function(g){g.hidden=!g.querySelector('[data-n]:not([hidden])')});
+res.innerHTML='';if(v.length>1&&extra)extra.filter(function(x){return x[0].indexOf(v)>=0}).slice(0,12).forEach(function(x){var li=document.createElement('li'),a=document.createElement('a');a.href=base+x[2]+'/';a.textContent=x[1];li.appendChild(a);res.appendChild(li)})}
+q.addEventListener('input',function(){load(run)});q.addEventListener('focus',function(){load(function(){})});
+var g=document.getElementById('cgeo');if(!navigator.geolocation){g.hidden=true;return}
+g.onclick=function(){navigator.geolocation.getCurrentPosition(function(p){load(function(){var la=p.coords.latitude,lo=p.coords.longitude,best=null,bd=1e9,k=Math.cos(la*Math.PI/180);
+function d2(a,b){var x=(b-lo)*k,y=a-la;return x*x+y*y}
+items.forEach(function(e){var c=(e.getAttribute('data-g')||'').split(','),a=e.querySelector('a');if(c.length===2&&a){var d=d2(+c[0],+c[1]);if(d<bd){bd=d;best=a.href}}});
+(extra||[]).forEach(function(x){var d=d2(x[3],x[4]);if(d<bd){bd=d;best=base+x[2]+'/'}});if(best)location.href=best})},function(){q.focus()},{timeout:15000,maximumAge:6e5})}})();(function(){if(!/HUAWEI|HONOR|HarmonyOS|HMSCore/i.test(navigator.userAgent))return;document.querySelectorAll('.stores').forEach(function(s){var a=s.querySelector('a[href*="appgallery"]');if(a)s.insertBefore(a,s.firstChild)})})();</script>
 </main>
 <footer class="wrap">
+<section class="allmenu" id="menu" aria-label="Explore"><h2>Explore</h2><ul class="tiles"><li><a href="/prayer-times/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></i><span>Prayer times</span></a></li><li><a href="/ramadan-2027/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/><path d="M17 3l.6 1.6L19.2 5l-1.6.6L17 7.2l-.6-1.6L14.8 5l1.6-.4z"/></svg></i><span>Ramadan 2027</span></a></li><li><a href="/eid-prayer-time/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.3l5-.7z"/><path d="M5 20.5h14"/></svg></i><span>Eid Prayer Times 2027 by City</span></a></li><li><a href="/qibla-direction/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></i><span>Qibla</span></a></li><li><a href="/islamic-calendar-2027/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M12 13.5l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z"/></svg></i><span>Calendar</span></a></li><li><a href="/tasbih-counter/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="3.5" r="1.4"/><circle cx="20.5" cy="12" r="1.4"/><circle cx="12" cy="20.5" r="1.4"/><circle cx="3.5" cy="12" r="1.4"/><path d="M12 8.5v3.5l2.4 1.6"/></svg></i><span>Online Tasbih Counter</span></a></li><li><a href="/qada-prayer-calculator/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="3" width="15" height="18" rx="2.2"/><path d="M8 7.5h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg></i><span>Qada Prayer Calculator</span></a></li><li><a href="/zakat-calculator/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="M14.9 9.9a5.5 5.5 0 1 1-5 5"/><path d="M9 6.8v4.4M7.3 8.3h3.2"/></svg></i><span>Zakat Calculator</span></a></li><li><a href="/blog/"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2z"/><path d="M18 8h2v10a2 2 0 0 1-2 2"/><path d="M8 8h6M8 12h6M8 16h4"/></svg></i><span>Blog</span></a></li></ul><h3><a href="/islamic-guides/">Islamic Guides →</a></h3><ul class="tiles txt"><li><a href="/99-names-of-allah/">99 Names of Allah</a></li><li><a href="/how-to-pray/">How to Pray Salah</a></li><li><a href="/how-to-perform-wudu/">How to Perform Wudu</a></li><li><a href="/how-to-perform-ghusl/">How to Perform Ghusl</a></li><li><a href="/fasting-in-islam/">Fasting in Islam</a></li><li><a href="/how-to-perform-umrah/">How to Perform Umrah Step by Step</a></li><li><a href="/hajj-guide/">Hajj Guide</a></li><li><a href="/prophets-in-islam/">The 25 Prophets in Islam</a></li><li><a href="/tasbih-after-salah/">Tasbih After Salah and Daily Dhikr with Meanings</a></li><li><a href="/jummah-mubarak-messages/">Jummah Mubarak Messages</a></li><li><a href="/tajweed-rules/">Tajweed Rules</a></li></ul></section>
 <nav aria-label="Languages"><a href="/ramadan-2027/" hreflang="en">English</a><a href="/tr/ramazan-imsakiyesi-2027/" hreflang="tr">Türkçe</a><a href="/ar/imsakiyat-ramadan-2027/" hreflang="ar">العربية</a><a href="/id/jadwal-imsakiyah-2027/" hreflang="id">Bahasa Indonesia</a><a href="/ur/ramzan-timetable-2027/" hreflang="ur">اردو</a><a href="/fr/calendrier-ramadan-2027/" hreflang="fr">Français</a><a href="/ru/raspisanie-ramadana-2027/" hreflang="ru">Русский</a><a href="/bn/romjaner-shomoysuchi-2027/" hreflang="bn">বাংলা</a><a href="/fa/jadval-ramazan-2027/" hreflang="fa">فارسی</a><a href="/ms/jadual-imsakiah-2027/" hreflang="ms">Bahasa Melayu</a><a href="/sw/ratiba-ya-ramadhani-2027/" hreflang="sw">Kiswahili</a><a href="/ha/jadawalin-ramadan-2027/" hreflang="ha">Hausa</a><a href="/uz/ramazon-taqvimi-2027/" hreflang="uz">Oʻzbekcha</a><a href="/ky/ramazan-zhadybaly-2027/" hreflang="ky">Кыргызча</a><a href="/so/jadwalka-ramadaan-2027/" hreflang="so">Soomaali</a><a href="/ckb/xshtay-ramazan-2027/" hreflang="ku-Arab">کوردی</a><a href="/hi/ramzan-time-table-2027/" hreflang="hi">हिन्दी</a><a href="/ps/da-rozhe-mahalwesh-2027/" hreflang="ps">پښتو</a><a href="/ku/remezan-2027/" hreflang="ku-Latn">Kurmancî</a><a href="/pa/ramzan-time-table-2027/" hreflang="pa-Arab">پنجابی</a></nav>
 <nav aria-label="Social"><a href="https://www.instagram.com/mubarly" rel="me noopener">Instagram</a><a href="https://www.tiktok.com/@mubarly" rel="me noopener">TikTok</a><a href="https://www.youtube.com/@mubarly" rel="me noopener">YouTube</a><a href="https://www.facebook.com/mubarlyapp" rel="me noopener">Facebook</a><a href="https://x.com/mubarlyapp" rel="me noopener">X</a></nav>
 <nav><a href="/islamic-guides/">Islamic Guides</a><a href="/app/">Features</a><a href="/blog/">Mubarly Blog</a><a href="/download/">Download Mubarly</a><a href="/premium/">Mubarly Premium</a><a href="/about/">About Mubarly</a><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of use</a><a href="mailto:support@mubarly.com">support@mubarly.com</a></nav>

@@ -1,16 +1,17 @@
 # Mubarly
 
-> Azan alarm even on silent, namaz times, Qibla, Quran offline, duas and tasbih
+> mubarly.com: today's prayer times for cities and districts with a live countdown, Ramadan 2027 suhoor and iftar timetables and Eid prayer times for every city, a qibla finder, an online tasbih counter, zakat and qada prayer calculators and Islamic guides, free and in 20 languages. Mubarly is also a free Android app.
 
-Mubarly is a free Islamic app for Android (Google Play and Huawei AppGallery) in 20 languages. Prayer times are
-calculated on the phone for the user's location with the method used in their country; the adhan plays at alarm
-volume at each prayer time, even when the phone is on silent. It follows all four Sunni schools (Hanafi, Shafi'i,
-Maliki, Hanbali), needs no account, and its worship screens carry no ads.
+mubarly.com is the website of Mubarly. Its prayer times are computed with the calculation method used in each
+country (the same code as the app), for the four Sunni schools (Hanafi, Shafi'i, Maliki, Hanbali; Asr is shown both
+ways). Every city has three pages: prayer times (today and the monthly timetable to the end of 2027), the Ramadan
+1448 (2027) timetable with all days of suhoor and iftar, and the Eid al-Fitr / Eid al-Adha 2027 prayer time. Turkey
+is covered down to its 922 districts. The tools run in the browser and need no account. The Android app (Huawei
+AppGallery) plays the adhan at alarm volume at each prayer time, even when the phone is on silent, works offline and
+shows no ads on its worship screens.
 
-## App
-- [Google Play](https://play.google.com/store/apps/details?id=app.mubarly)
-- [Huawei AppGallery](https://appgallery.huawei.com/app/C119470731)
-- [Home page (English)](https://mubarly.com/)
+## Home pages (20 languages)
+- [English](https://mubarly.com/)
 - [Türkçe](https://mubarly.com/tr/)
 - [العربية](https://mubarly.com/ar/)
 - [Bahasa Indonesia](https://mubarly.com/id/)
@@ -30,6 +31,93 @@ Maliki, Hanbali), needs no account, and its worship screens carry no ads.
 - [پښتو](https://mubarly.com/ps/)
 - [Kurmancî](https://mubarly.com/ku/)
 - [پنجابی](https://mubarly.com/pa/)
+
+## Online tools (tasbih counter, qada prayer calculator, zakat calculator)
+- [Online Tasbih Counter](https://mubarly.com/tasbih-counter/) (en)
+- [Qada Prayer Calculator](https://mubarly.com/qada-prayer-calculator/) (en)
+- [Zakat Calculator](https://mubarly.com/zakat-calculator/) (en)
+- [Online Zikirmatik](https://mubarly.com/tr/zikirmatik/) (tr)
+- [Kaza Namazı Hesaplama](https://mubarly.com/tr/kaza-namazi-hesaplama/) (tr)
+- [Zekât Hesaplama](https://mubarly.com/tr/zekat-hesaplama/) (tr)
+- [المسبحة الإلكترونية أونلاين](https://mubarly.com/ar/misbaha-electroniya/) (ar)
+- [حاسبة قضاء الصلاة](https://mubarly.com/ar/hisab-qada-al-salah/) (ar)
+- [حاسبة الزكاة](https://mubarly.com/ar/hasibat-al-zakat/) (ar)
+- [Tasbih Digital Online](https://mubarly.com/id/tasbih-digital/) (id)
+- [Kalkulator Qadha Sholat](https://mubarly.com/id/kalkulator-qadha-sholat/) (id)
+- [Kalkulator Zakat](https://mubarly.com/id/kalkulator-zakat/) (id)
+- [آن لائن تسبیح کاؤنٹر](https://mubarly.com/ur/tasbeeh-counter/) (ur)
+- [قضا نماز کیلکولیٹر](https://mubarly.com/ur/qaza-namaz-calculator/) (ur)
+- [زکوٰۃ کیلکولیٹر](https://mubarly.com/ur/zakat-calculator/) (ur)
+- [Compteur de tasbih en ligne](https://mubarly.com/fr/compteur-tasbih/) (fr)
+- [Calcul des prières à rattraper (qada)](https://mubarly.com/fr/calcul-prieres-a-rattraper/) (fr)
+- [Calcul de la zakat](https://mubarly.com/fr/calcul-zakat/) (fr)
+- [Тасбих онлайн](https://mubarly.com/ru/tasbih-onlain/) (ru)
+- [Расчёт каза-намазов](https://mubarly.com/ru/raschet-kaza-namazov/) (ru)
+- [Калькулятор закята](https://mubarly.com/ru/kalkulyator-zakyata/) (ru)
+- [অনলাইন তাসবিহ কাউন্টার](https://mubarly.com/bn/tasbih-counter/) (bn)
+- [কাজা নামাজের হিসাব](https://mubarly.com/bn/kaza-namaz-hisab/) (bn)
+- [জাকাত ক্যালকুলেটর](https://mubarly.com/bn/zakat-calculator/) (bn)
+- [ذکرشمار آنلاین](https://mubarly.com/fa/zekr-shomar/) (fa)
+- [محاسبه نماز قضا](https://mubarly.com/fa/mohasebe-namaz-qaza/) (fa)
+- [محاسبه زکات](https://mubarly.com/fa/mohasebe-zakat/) (fa)
+- [Tasbih Digital Dalam Talian](https://mubarly.com/ms/tasbih-digital/) (ms)
+- [Kalkulator Solat Qada](https://mubarly.com/ms/kalkulator-solat-qada/) (ms)
+- [Kira Zakat Online](https://mubarly.com/ms/kalkulator-zakat/) (ms)
+- [Tasbihi Mtandaoni](https://mubarly.com/sw/tasbihi-mtandaoni/) (sw)
+- [Hesabu ya Swala za Qadha](https://mubarly.com/sw/hesabu-ya-swala-za-qadha/) (sw)
+- [Kikokotoo cha Zaka](https://mubarly.com/sw/kikokotoo-cha-zaka/) (sw)
+- [Carbin Zikiri na Intanet](https://mubarly.com/ha/carbin-zikiri/) (ha)
+- [Lissafin Ramuwar Sallah](https://mubarly.com/ha/lissafin-ramuwar-sallah/) (ha)
+- [Lissafin Zakka](https://mubarly.com/ha/lissafin-zakka/) (ha)
+- [Onlayn tasbeh](https://mubarly.com/uz/tasbeh-onlayn/) (uz)
+- [Qazo namozini hisoblash](https://mubarly.com/uz/qazo-namoz-hisoblash/) (uz)
+- [Zakot hisoblash](https://mubarly.com/uz/zakot-hisoblash/) (uz)
+- [Онлайн тасбих](https://mubarly.com/ky/tasbih-onlain/) (ky)
+- [Каза намазды эсептөө](https://mubarly.com/ky/kaza-namaz-esepteo/) (ky)
+- [Зекет эсептегич](https://mubarly.com/ky/zekettin-eseptegichi/) (ky)
+- [Tusbax Online](https://mubarly.com/so/tusbax-online/) (so)
+- [Xisaabinta Salaadda Qadada](https://mubarly.com/so/xisaabinta-salaadda-qadada/) (so)
+- [Xisaabiyaha Sakada](https://mubarly.com/so/xisaabiyaha-sakada/) (so)
+- [تەسبیحی ئۆنلاین](https://mubarly.com/ckb/tasbihi-online/) (ckb)
+- [ژماردنی نوێژی قەزا](https://mubarly.com/ckb/zhmardni-nwezhi-qaza/) (ckb)
+- [ژمێرەری زەکات](https://mubarly.com/ckb/zhmerey-zakat/) (ckb)
+- [ऑनलाइन तस्बीह काउंटर](https://mubarly.com/hi/tasbih-counter/) (hi)
+- [क़ज़ा नमाज़ कैलकुलेटर](https://mubarly.com/hi/qaza-namaz-calculator/) (hi)
+- [ज़कात कैलकुलेटर](https://mubarly.com/hi/zakat-calculator/) (hi)
+- [آنلاین تسبیح](https://mubarly.com/ps/tasbih-online/) (ps)
+- [د قضا لمانځه حساب](https://mubarly.com/ps/da-qaza-lmunz-hisab/) (ps)
+- [د زکات حساب](https://mubarly.com/ps/da-zakat-hisab/) (ps)
+- [Tesbîha Online](https://mubarly.com/ku/tesbih-online/) (ku)
+- [Hesabkirina Nimêja Qeza](https://mubarly.com/ku/hesabkirina-nimeja-qeza/) (ku)
+- [Hesabkera Zekatê](https://mubarly.com/ku/hesabkera-zekate/) (ku)
+- [آن لائن تسبیح کاؤنٹر](https://mubarly.com/pa/tasbeeh-counter/) (pa)
+- [قضا نماز کیلکولیٹر](https://mubarly.com/pa/qaza-namaz-calculator/) (pa)
+- [زکوٰۃ کیلکولیٹر](https://mubarly.com/pa/zakat-calculator/) (pa)
+
+## Eid prayer times 2027 (Eid al-Fitr and Eid al-Adha, by city)
+- [Eid Prayer Times 2027 by City: Eid al-Fitr and Eid al-Adha](https://mubarly.com/eid-prayer-time/) (en)
+- [Bayram Namazı Saatleri 2027: İl İl Ramazan ve Kurban Bayramı](https://mubarly.com/tr/bayram-namazi-saati/) (tr)
+- [مواعيد صلاة العيد 2027 حسب المدينة: عيد الفطر وعيد الأضحى](https://mubarly.com/ar/mawid-salat-al-eid/) (ar)
+- [Waktu Sholat Id 2027 per Kota: Idul Fitri dan Idul Adha](https://mubarly.com/id/waktu-sholat-id/) (id)
+- [نمازِ عید کے اوقات 2027 شہر بہ شہر: عید الفطر اور عید الاضحیٰ](https://mubarly.com/ur/namaz-e-eid-ka-waqt/) (ur)
+- [Heures de la prière de l’Aïd 2027 par ville : Aïd el-Fitr et Aïd el-Adha](https://mubarly.com/fr/heure-priere-aid/) (fr)
+- [Время праздничного намаза 2027 по городам: Ураза-байрам и Курбан-байрам](https://mubarly.com/ru/vremya-bayram-namaza/) (ru)
+- [ঈদের নামাজের সময় 2027 শহর অনুযায়ী: ঈদুল ফিতর ও ঈদুল আজহা](https://mubarly.com/bn/eider-namajer-somoy/) (bn)
+- [وقت نماز عید ۲۰۲۷ به تفکیک شهر: عید فطر و عید قربان](https://mubarly.com/fa/waqt-namaz-eid/) (fa)
+- [Waktu Solat Hari Raya 2027 Mengikut Bandar: Aidilfitri dan Aidiladha](https://mubarly.com/ms/waktu-solat-hari-raya/) (ms)
+- [Muda wa Swala ya Idd 2027 kwa Miji: Idd el-Fitr na Idd el-Hajj](https://mubarly.com/sw/muda-wa-swala-ya-idd/) (sw)
+- [Lokutan Sallar Idi 2027 a Garuruwa: Ƙaramar da Babbar Sallah](https://mubarly.com/ha/lokacin-sallar-idi/) (ha)
+- [Hayit namozi vaqtlari 2027 shaharlar bo‘yicha: Ramazon va Qurbon hayiti](https://mubarly.com/uz/hayit-namozi-vaqti/) (uz)
+- [Айт намазынын убактысы 2027 шаарлар боюнча: Орозо айт жана Курман айт](https://mubarly.com/ky/ait-namazynyn-ubaktysy/) (ky)
+- [Waqtiyada Salaadda Ciidda 2027 Magaalo Magaalo: Ciidul Fidr iyo Ciidul Adxa](https://mubarly.com/so/waqtiga-salaadda-ciidda/) (so)
+- [کاتەکانی نوێژی جەژن 2027 بەپێی شار: جەژنی ڕەمەزان و قوربان](https://mubarly.com/ckb/kati-nwezhi-jazhn/) (ckb)
+- [ईद की नमाज़ का समय 2027 शहरवार: ईद-उल-फ़ित्र और ईद-उल-अज़हा](https://mubarly.com/hi/eid-ki-namaz-ka-samay/) (hi)
+- [د اختر د لمانځه وختونه 2027 د ښارونو له مخې: کوچنی او لوی اختر](https://mubarly.com/ps/da-akhtar-lmunz-wakht/) (ps)
+- [Demên Nimêja Cejnê 2027 li gorî Bajaran: Cejna Remezanê û Qurbanê](https://mubarly.com/ku/dema-nimeja-cejne/) (ku)
+- [نمازِ عید دے ویلے 2027 شہر وار: عید الفطر تے عید الاضحیٰ](https://mubarly.com/pa/namaz-e-eid-da-waqt/) (pa)
+
+## App
+- [Huawei AppGallery](https://appgallery.huawei.com/app/C119470731)
 
 ## Prayer times by city
 - [Prayer times by city](https://mubarly.com/prayer-times/) (en, 164 cities)
@@ -97,7 +185,7 @@ Maliki, Hanbali), needs no account, and its worship screens carry no ads.
 - [Salnameya Îslamî 2027: Cejn û Rojên Pîroz](https://mubarly.com/ku/salnameya-islami-2027/) (ku)
 - [اسلامی کیلنڈر 2027: اسلامی تہوار تے پاک دن](https://mubarly.com/pa/islami-calendar-2027/) (pa)
 
-## Ramadan 2027 timetables
+## Ramadan 2027 timetables (each city has its own page under these addresses: <address><city>/)
 - [Ramadan 2027 Timetable: Suhoor and Iftar Times by City](https://mubarly.com/ramadan-2027/) (en)
 - [Ramazan İmsakiyesi 2027: Şehirlere Göre Sahur ve İftar Vakitleri](https://mubarly.com/tr/ramazan-imsakiyesi-2027/) (tr)
 - [إمساكية رمضان 2027: مواعيد السحور والإفطار حسب المدينة](https://mubarly.com/ar/imsakiyat-ramadan-2027/) (ar)
