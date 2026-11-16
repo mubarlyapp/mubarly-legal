@@ -4,7 +4,8 @@
      2026-11-02); only mubarly.dev@gmail.com is passed on to Supabase (signInWithPassword), and site_stats checks that
      address again on the server. v2 (2026-11-04, the owner: "clearer, tidier, more detail"): tabs (summary, visits,
      pages, stores, Google), people and bots apart, a stream of the people's visits and every store click
-     (supabase/migrations/20261104120000_site_stats_v2.sql). -->
+     (supabase/migrations/20261104120000_site_stats_v2.sql). 2026-11-16: the site's look (app theme: cream, emerald, gold,
+     Playfair Display and Plus Jakarta Sans); Google Play left out everywhere (the developer account was closed). -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -12,25 +13,28 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Mubarly</title>
 <link rel="icon" type="image/png" href="/img/icon-192.png">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
-:root{color-scheme:light dark;--bg:#F4EFE2;--fg:#0B2F24;--muted:#6A6553;--gold:#8A6A22;--card:#FFFCF5;--line:#E6DCC4;--green:#0B3B2C;--ok:#1a9c4e;--bot:#B9B3A2}
-@media (prefers-color-scheme:dark){:root{--bg:#071C15;--fg:#EEE7D2;--muted:#B9AF92;--gold:#D4B062;--card:#0D2A20;--line:#1B3F31;--green:#D4B062;--ok:#3ccf7a;--bot:#4b5a52}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:root{color-scheme:light dark;--bg:#F4EEDF;--bg2:#EFE7D3;--fg:#0B3B2C;--muted:#5F5A48;--gold:#76571A;--gold2:#D4B062;--card:#FFFBF2;--line:#E4DAC2;--green:#0B3B2C;--ok:#1a9c4e;--bot:#C9BFA6}
+@media (prefers-color-scheme:dark){:root{--bg:#061A13;--bg2:#0A241B;--fg:#EDE6CF;--muted:#BDB292;--gold:#D4B062;--card:#0B2A1F;--line:#173D2F;--green:#D4B062;--ok:#3ccf7a;--bot:#4b5a52}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body:before{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23D4B062' stroke-width='1'%3E%3Crect x='28' y='28' width='40' height='40'/%3E%3Crect x='28' y='28' width='40' height='40' transform='rotate(45 48 48)'/%3E%3Ccircle cx='48' cy='48' r='9'/%3E%3Cpath d='M0 0L28 28M96 0L68 28M0 96L28 68M96 96L68 68'/%3E%3C/g%3E%3C/svg%3E");background-size:110px;opacity:.05;pointer-events:none;z-index:-1}
+h2,h3,.kpi b{font-family:"Playfair Display",Georgia,serif}
 a{color:var(--gold)}[hidden]{display:none!important}
-.top{position:sticky;top:0;z-index:5;background:#0B3B2C;color:#EDE6CF;box-shadow:0 2px 12px #0003}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--fg);border-bottom:1px solid var(--line)}
 .top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.14em;color:#D4B062;margin-inline-end:auto}.brand img{width:30px;height:30px;border-radius:8px}
-.range{display:flex;gap:4px;background:#ffffff12;padding:4px;border-radius:999px}.range button{border:0;background:none;color:#CFC6AA;font:600 .85rem/1 inherit;font-family:inherit;padding:8px 12px;border-radius:999px;cursor:pointer}.range button.on{background:#D4B062;color:#061A13}
-.who{font-size:.85rem;color:#CFC6AA}.who a{color:#D4B062}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.14em;color:var(--fg);margin-inline-end:auto}.brand small{color:var(--gold);font-weight:700;letter-spacing:.12em}.brand img{width:30px;height:30px;border-radius:8px}
+.range{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);padding:4px;border-radius:999px}.range button{border:0;background:none;color:var(--muted);font:600 .85rem/1 inherit;font-family:inherit;padding:8px 12px;border-radius:999px;cursor:pointer}.range button.on{background:#0B3B2C;color:#F4EEDF}@media (prefers-color-scheme:dark){.range button.on{background:#D4B062;color:#061A13}}
+.who{font-size:.85rem;color:var(--muted)}.who a{color:var(--gold)}
 .tabs{max-width:1180px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
-.tabs button{flex:none;border:0;background:none;color:#CFC6AA;font:600 .92rem/1 inherit;font-family:inherit;padding:12px 14px;border-bottom:3px solid transparent;cursor:pointer}.tabs button[aria-selected=true]{color:#F3E7C2;border-bottom-color:#D4B062}
+.tabs button{flex:none;border:0;background:none;color:var(--muted);font:600 .92rem/1 inherit;font-family:inherit;padding:12px 14px;border-bottom:3px solid transparent;cursor:pointer}.tabs button[aria-selected=true]{color:var(--fg);border-bottom-color:var(--gold2)}
 main{max-width:1180px;margin:0 auto;padding:18px 16px 60px}
-h2{font-size:1.05rem;margin:26px 0 4px}.hint{color:var(--muted);font-size:.85rem;margin:0 0 10px}
+h2{font-size:1.2rem;margin:26px 0 4px}.hint{color:var(--muted);font-size:.85rem;margin:0 0 10px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
-.kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}.kpi b{display:block;font-size:1.9rem;line-height:1.1;font-variant-numeric:tabular-nums}.kpi .t{font-weight:700;font-size:.9rem;margin-top:2px}.kpi .h{color:var(--muted);font-size:.78rem;margin-top:4px;line-height:1.35}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px 16px;box-shadow:0 18px 40px -32px #0b3b2c66}.kpi b{display:block;font-size:1.9rem;line-height:1.1;font-variant-numeric:tabular-nums}.kpi .t{font-weight:700;font-size:.9rem;margin-top:2px}.kpi .h{color:var(--muted);font-size:.78rem;margin-top:4px;line-height:1.35}
 .kpi.live b{color:var(--ok)}.kpi.dim b{color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
-.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;overflow:hidden}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px 16px;overflow:hidden}
 .box h3{font-size:.95rem;margin:0 0 2px}.box .hint{margin-bottom:8px}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.88rem}
 th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:end;vertical-align:top}th{color:var(--muted);font-weight:600;font-size:.76rem;text-transform:uppercase;letter-spacing:.04em}
@@ -40,21 +44,21 @@ th:first-child,td:first-child{text-align:start}td.l,th.l{text-align:start}tr:las
 .days{display:grid;gap:6px}.day{display:grid;grid-template-columns:86px 1fr 128px;align-items:center;gap:10px;font-size:.85rem;font-variant-numeric:tabular-nums}
 .stack{display:flex;height:16px;border-radius:6px;overflow:hidden;background:var(--line)}.stack i{display:block;height:100%}.stack .p{background:var(--ok)}.stack .b{background:var(--bot)}
 .legend{display:flex;gap:16px;font-size:.8rem;color:var(--muted);margin:6px 0 10px}.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px;background:var(--ok)}.legend span.b:before{background:var(--bot)}
-.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.74rem;font-weight:700;margin:1px 2px;white-space:nowrap}.tag.play{background:#e7f6ec;color:#11683a}.tag.appgallery{background:#fde8e8;color:#b3261e}.tag.appstore{background:#e8eef8;color:#1d4f91}.tag.google{background:#fff4d6;color:#8a5a00}.tag.direct{background:var(--line);color:var(--muted)}
-@media (prefers-color-scheme:dark){.tag.play{background:#11402a;color:#8be0ac}.tag.appgallery{background:#4a1d1d;color:#f3a6a0}.tag.appstore{background:#1d2c45;color:#a9c4ee}.tag.google{background:#3f3415;color:#f0cf7a}}
+.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.74rem;font-weight:700;margin:1px 2px;white-space:nowrap}.tag.appgallery{background:#fde8e8;color:#b3261e}.tag.appstore{background:#e8eef8;color:#1d4f91}.tag.google{background:#fff4d6;color:#8a5a00}.tag.direct{background:var(--line);color:var(--muted)}
+@media (prefers-color-scheme:dark){.tag.appgallery{background:#4a1d1d;color:#f3a6a0}.tag.appstore{background:#1d2c45;color:#a9c4ee}.tag.google{background:#3f3415;color:#f0cf7a}}
 .page{word-break:break-all}.muted{color:var(--muted)}.empty{color:var(--muted);font-size:.88rem;padding:6px 0}
 #err{color:#c0392b;font-weight:700}
-#gate{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:24px}#gate img{width:72px;height:72px;border-radius:18px}#gate p{margin:0;color:var(--muted);min-height:1.5em}
-#gate form{display:flex;flex-direction:column;gap:10px;width:min(300px,100%)}#gate input{font:inherit;padding:11px 14px;border-radius:12px;border:1px solid var(--line,#ccc);background:transparent;color:inherit}#gate button{font:inherit;font-weight:700;padding:11px 14px;border-radius:999px;border:0;background:#111;color:#fff;cursor:pointer}#gate button:disabled{opacity:.6}
+#gate{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px}#gate h1{margin:0;font:700 1.5rem "Playfair Display",Georgia,serif;letter-spacing:.02em}#gate img{width:72px;height:72px;border-radius:18px}#gate p{margin:0;color:var(--muted);min-height:1.5em}
+#gate form{display:flex;flex-direction:column;gap:10px;width:min(320px,100%);padding:20px;border-radius:24px;background:var(--card);border:1px solid var(--line);box-shadow:0 30px 60px -36px #0b3b2c66}#gate input{font:inherit;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:inherit}#gate button{font:inherit;font-weight:700;padding:12px 14px;border-radius:14px;border:0;background:#0B3B2C;color:#F4EEDF;cursor:pointer}@media (prefers-color-scheme:dark){#gate button{background:#D4B062;color:#061A13}}#gate button:disabled{opacity:.6}
 @media (max-width:640px){.day{grid-template-columns:62px 1fr 112px;font-size:.8rem}.kpi b{font-size:1.6rem}}
 </style>
 </head>
 <body>
-<div id="gate"><img src="/img/icon-192.png" alt="Mubarly" width="72" height="72"><form id="login" autocomplete="on"><input id="email" type="email" name="email" autocomplete="username" required aria-label="E-posta" placeholder="E-posta"><input id="pass" type="password" name="password" autocomplete="current-password" required aria-label="Şifre" placeholder="Şifre"><button type="submit">Giriş</button></form><p id="gmsg"></p></div>
+<div id="gate"><img src="/img/icon-192.png" alt="Mubarly" width="72" height="72"><h1>Mubarly · Panel</h1><form id="login" autocomplete="on"><input id="email" type="email" name="email" autocomplete="username" required aria-label="E-posta" placeholder="E-posta"><input id="pass" type="password" name="password" autocomplete="current-password" required aria-label="Şifre" placeholder="Şifre"><button type="submit">Giriş</button></form><p id="gmsg"></p></div>
 <div id="app" hidden>
 <div class="top">
   <div class="in">
-    <div class="brand"><img src="/img/icon-192.png" alt="">MUBARLY · PANEL</div>
+    <div class="brand"><img src="/img/icon-192.png" alt="">MUBARLY <small>PANEL</small></div>
     <div class="range" id="range"><button data-d="1">Bugün</button><button data-d="7">7 gün</button><button data-d="30" class="on">30 gün</button><button data-d="90">90 gün</button><button data-d="365">1 yıl</button></div>
     <div class="who" id="who"></div>
   </div>
@@ -97,7 +101,7 @@ th:first-child,td:first-child{text-align:start}td.l,th.l{text-align:start}tr:las
 
 <section data-panel="stores" hidden>
   <div class="kpis" id="store-kpis"></div>
-  <h2>Tüm mağaza tıklamaları</h2><p class="hint">Mağaza düğmelerine her tıklama (en yeni üstte). "Play (yakında)" Play herkese açılana kadar soluk rozete yapılan tıklamadır.</p>
+  <h2>Tüm mağaza tıklamaları</h2><p class="hint">AppGallery ve App Store düğmelerine her tıklama (en yeni üstte).</p>
   <div class="box scroll"><div id="clicks"></div></div>
 </section>
 
@@ -123,7 +127,7 @@ th:first-child,td:first-child{text-align:start}td.l,th.l{text-align:start}tr:las
   // Search Console gives ISO 3166 alpha-3 country codes.
   var A3 = {TUR: 'TR',USA: 'US',GBR: 'GB',DEU: 'DE',FRA: 'FR',NLD: 'NL',BEL: 'BE',AUT: 'AT',CHE: 'CH',SWE: 'SE',NOR: 'NO',DNK: 'DK',FIN: 'FI',ITA: 'IT',ESP: 'ES',PRT: 'PT',IRL: 'IE',POL: 'PL',RUS: 'RU',UKR: 'UA',AZE: 'AZ',KAZ: 'KZ',UZB: 'UZ',KGZ: 'KG',TJK: 'TJ',TKM: 'TM',AFG: 'AF',PAK: 'PK',IND: 'IN',BGD: 'BD',LKA: 'LK',MDV: 'MV',NPL: 'NP',IRN: 'IR',IRQ: 'IQ',SYR: 'SY',LBN: 'LB',JOR: 'JO',PSE: 'PS',ISR: 'IL',SAU: 'SA',ARE: 'AE',QAT: 'QA',KWT: 'KW',BHR: 'BH',OMN: 'OM',YEM: 'YE',EGY: 'EG',LBY: 'LY',TUN: 'TN',DZA: 'DZ',MAR: 'MA',MRT: 'MR',SDN: 'SD',SOM: 'SO',DJI: 'DJ',ETH: 'ET',KEN: 'KE',TZA: 'TZ',UGA: 'UG',NGA: 'NG',NER: 'NE',SEN: 'SN',MLI: 'ML',GIN: 'GN',CIV: 'CI',GHA: 'GH',BFA: 'BF',TCD: 'TD',CMR: 'CM',ZAF: 'ZA',IDN: 'ID',MYS: 'MY',SGP: 'SG',BRN: 'BN',THA: 'TH',PHL: 'PH',CHN: 'CN',HKG: 'HK',JPN: 'JP',KOR: 'KR',AUS: 'AU',NZL: 'NZ',CAN: 'CA',MEX: 'MX',BRA: 'BR',ARG: 'AR',BIH: 'BA',ALB: 'AL',XKX: 'XK',MKD: 'MK',SRB: 'RS',BGR: 'BG',GRC: 'GR',ROU: 'RO',HUN: 'HU',CZE: 'CZ',CYP: 'CY',GEO: 'GE',ARM: 'AM'};
   var DEVICE = { android: 'Android', huawei: 'Huawei / Honor', ios: 'iPhone / iPad', desktop: 'Bilgisayar', other: 'Diğer' };
-  var STORE = { play: 'Google Play', appgallery: 'AppGallery', appstore: 'App Store (yakında)' };
+  var STORE = { appgallery: 'AppGallery', appstore: 'App Store (yakında)' };
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var n = function (x) { return (x || 0).toLocaleString('tr-TR'); };
   var pct = function (a, b) { return b ? Math.round(100 * a / b) + '%' : '—'; };
@@ -133,7 +137,7 @@ th:first-child,td:first-child{text-align:start}td.l,th.l{text-align:start}tr:las
   var lang = function (l) { if (!l || l === '?') return '—'; try { return langName.of(l); } catch (e) { return l; } };
   var page = function (p) { var d; try { d = decodeURIComponent(p); } catch (e) { d = p; } return '<a class="page" href="https://mubarly.com' + esc(p) + '" target="_blank" rel="noopener">' + esc(d || '/') + '</a>'; };
   var ref = function (r) { return !r ? '<span class="tag direct">Doğrudan</span>' : /^google\./.test(r) ? '<span class="tag google">Google</span>' : esc(r); };
-  var stores = function (s) { return s ? s.split(',').map(function (x) { return '<span class="tag ' + esc(x) + '">' + esc(STORE[x] || x) + '</span>'; }).join('') : '<span class="muted">—</span>'; };
+  var stores = function (s) { s = (s || '').split(',').filter(function (x) { return x && x !== 'play'; }).join(','); return s ? s.split(',').map(function (x) { return '<span class="tag ' + esc(x) + '">' + esc(STORE[x] || x) + '</span>'; }).join('') : '<span class="muted">—</span>'; };
   var ago = function (iso) {
     var m = Math.round((Date.now() - new Date(iso)) / 60000);
     var rel = m < 1 ? 'şimdi' : m < 60 ? m + ' dk önce' : m < 1440 ? Math.round(m / 60) + ' sa önce' : Math.round(m / 1440) + ' gün önce';
@@ -174,8 +178,8 @@ th:first-child,td:first-child{text-align:start}td.l,th.l{text-align:start}tr:las
     $('pages').innerHTML = table(d.pages, [['path', 'Sayfa', page, 1], ['views', 'Görüntüleme'], ['people', 'Kişi'], ['clicks', 'Mağaza tık.']], 'views');
     $('landing').innerHTML = table(d.landing, [['path', 'Sayfa', page, 1], ['people', 'Kişi']], 'people');
     $('botpages').innerHTML = table(d.bot_pages, [['path', 'Sayfa', page, 1], ['views', 'Okuma']], 'views');
-    $('store-kpis').innerHTML = kpi(n(t.play), 'Google Play', 'Play rozetine tıklama') + kpi(n(t.appgallery), 'AppGallery', 'Huawei rozetine tıklama') + kpi(n(t.appstore), 'App Store (yakında)', 'iPhone sürümünü bekleyenler') + kpi(pct(t.clickers, t.people), 'Dönüşüm', 'Gerçek ziyaretçilerin mağazaya tıklama oranı');
-    $('clicks').innerHTML = table(d.clicks, [['at', 'Ne zaman', ago, 1], ['store', 'Mağaza', function (v) { return stores(v); }, 1], ['path', 'Hangi sayfadan', page, 1], ['country', 'Nereden', function (v, r) { return country(v) + ' <span class="muted">' + esc(place(r.tz)) + '</span>'; }, 1], ['device', 'Cihaz', function (v) { return esc(DEVICE[v] || v || '—'); }, 1]]);
+    $('store-kpis').innerHTML = kpi(n(t.appgallery), 'AppGallery', 'Huawei rozetine tıklama') + kpi(n(t.appstore), 'App Store (yakında)', 'iPhone sürümünü bekleyenler') + kpi(pct(t.clickers, t.people), 'Dönüşüm', 'Gerçek ziyaretçilerin mağazaya tıklama oranı');
+    $('clicks').innerHTML = table(d.clicks.filter(function (c) { return c.store !== 'play'; }), [['at', 'Ne zaman', ago, 1], ['store', 'Mağaza', function (v) { return stores(v); }, 1], ['path', 'Hangi sayfadan', page, 1], ['country', 'Nereden', function (v, r) { return country(v) + ' <span class="muted">' + esc(place(r.tz)) + '</span>'; }, 1], ['device', 'Cihaz', function (v) { return esc(DEVICE[v] || v || '—'); }, 1]]);
     var g = d.search || { totals: {}, queries: [], pages: [], countries: [] };
     $('search-note').textContent = "Google'da hangi kelimelerle arandığın (Search Console). Google veriyi 2–3 gün geç verir." + (g.updated ? ' Son veri günü: ' + g.updated + '.' : ' Henüz veri yok: site yeni, Google sayfaları dizine alıyor.');
     $('search-kpis').innerHTML = kpi(n(g.totals.impressions), "Google'da gösterim", 'Arama sonuçlarında görünme sayısı') + kpi(n(g.totals.clicks), "Google'dan tıklama", 'Sonuçtan siteye tıklayan') + kpi(pct(g.totals.clicks, g.totals.impressions), 'Tıklama oranı', 'Gösterimlerin kaçı tıklamaya döndü');
